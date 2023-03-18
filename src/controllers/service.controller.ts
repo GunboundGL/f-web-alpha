@@ -1,14 +1,8 @@
+import { service } from "@/services/service.service";
 import { Controller } from "gunbound-typescript-sdk";
 import { StatusCodes } from "http-status-codes";
 
-const controller = new Controller(
-    async (req) => {
-        return {
-            status: StatusCodes.OK,
-            data: [0]
-        }
-    }
-);
+const controller = new Controller(service);
 
 export default controller.routes([
     '/s'
