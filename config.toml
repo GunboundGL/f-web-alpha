@@ -1,0 +1,10 @@
+[service]
+id = "boilerplate"
+name = "boilerplate"
+port = 9000
+
+[mongoose.test]
+uri = "mongodb://0.0.0.0:27017/test"
+
+[provider.user]
+host = "http://localhost:9000/test"
