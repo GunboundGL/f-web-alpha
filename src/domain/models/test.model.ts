@@ -1,6 +1,6 @@
 import { config } from '@/config';
 import { COLLECTION } from '@/shared/enum';
-import { createModelMongo } from '@/shared/helpers';
+import { createModelMongo } from 'gunbound-typescript-sdk';
 import { Schema } from 'mongoose';
 
 
