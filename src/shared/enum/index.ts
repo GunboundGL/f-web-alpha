@@ -1,3 +1,2 @@
-export enum COLLECTION {
-    TEST = 'test',
-}
+export * from './messages';
+export * from './values';

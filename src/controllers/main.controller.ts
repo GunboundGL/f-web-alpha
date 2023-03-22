@@ -1,10 +1,10 @@
-import { TemplateController } from "gunbound-typescript-sdk";
+import { Logger, TemplateController } from "gunbound-typescript-sdk";
 
-const controller = new TemplateController(async (req) => {
+const controller = new TemplateController(async ({ meta }) => {
+    Logger.info(meta);
+
     return {
-        data: {
-
-        },
+        data: {},
         template: "pages/index"
     }
 });

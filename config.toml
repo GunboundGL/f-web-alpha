@@ -1,6 +1,6 @@
 [service]
-id = "boilerplate"
-name = "boilerplate"
+id = "web-alpha"
+name = "web-alpha"
 port = 9000
 
 [mongoose.test]
@@ -9,5 +9,8 @@ uri = "mongodb://0.0.0.0:27017/test"
 [mongoose.commons]
 uri = "mongodb://0.0.0.0:27017/commons"
 
-[provider.user]
-host = "http://localhost:9000/test"
+[supplier.iam]
+host = "http://localhost:3001"
+
+[supplier.user]
+host = "http://localhost:3003"
