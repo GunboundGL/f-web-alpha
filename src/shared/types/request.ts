@@ -3,3 +3,9 @@ export type RegisterRequest = {
     password: string;
     gender: string;
 }
+
+export type LoginRequest = {
+    u: string;
+    p: string;
+    r: number;
+}

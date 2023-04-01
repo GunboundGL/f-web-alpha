@@ -14,3 +14,9 @@ host = "http://localhost:3001"
 
 [supplier.user]
 host = "http://localhost:3003"
+
+[jwt]
+secret = "lnferno"
+refreshSecret = "lnferno"
+expiresIn = "1h"
+refreshExpiresIn = "1h"

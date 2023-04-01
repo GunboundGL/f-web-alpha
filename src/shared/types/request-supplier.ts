@@ -13,5 +13,18 @@ export type CreateSupplierUserRequest = {
     rank: number;
     gold: number;
     cash: number;
-    gp: number;        
+    gp: number;
+}
+
+export type SigninSupplierIamRequest = {
+    username: string;
+    password: string;
+}
+
+export type GetByWhereSupplierIamRequest = {
+    where: {
+        username?: string;
+        slug?: string;
+        _id?: string;
+    }
 }

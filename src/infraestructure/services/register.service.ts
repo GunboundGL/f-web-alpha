@@ -6,6 +6,7 @@ import * as yup from "yup"
 import { RegiterSchema } from "@/schemas/register.schema"
 import { ERROR_VALIDATION_MESSAGE } from "@/shared/enum/messages"
 import { create } from "../suppliers/users/create.supplier"
+import { jwt } from "@/jwt"
 
 export const register = async (data: RegisterRequest, supplier: Supplier) => {
     const existIam = await iamSupplier.getByUsername({ username: data.name }, supplier)
@@ -35,11 +36,17 @@ export const register = async (data: RegisterRequest, supplier: Supplier) => {
         gp: 0
     }, supplier)
 
+    const payload = {
+        token: "wilmer"
+    }
+
+    const { token } = await jwt.generate(payload);
+    
     await iamSupplier.signup({
         username: data.name,
         password: data.password,
         userId: userCreated._id as any
     }, supplier);
 
-    return [0]
+    return [0, userCreated.rank, token, userCreated.slug, userCreated.username]
 }
