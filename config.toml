@@ -12,6 +12,9 @@ uri = "mongodb://0.0.0.0:27017/commons"
 [supplier.iam]
 host = "http://localhost:3001"
 
+[supplier.servers]
+host = "http://localhost:3002"
+
 [supplier.user]
 host = "http://localhost:3003"
 
