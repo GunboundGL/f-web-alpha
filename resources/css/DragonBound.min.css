@@ -136,9 +136,15 @@ table {
     font-family: 'S3';
     src: url(/static/images/font/GunboundS3.ttf);
 }
+
 @font-face {
     font-family: 'S4';
     src: url(/static/images/font/GunboundS4.ttf);
+}
+
+@font-face {
+    font-family: 'Gunbound';
+    src: url(/static/images/font/Gunbound.ttf);
 }
 
 html,
@@ -148,13 +154,16 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    color: white;
+    color: #4a4d4a;
     animation: cursor-gb 0.7s infinite;
+    font-family: 'Gunbound';
+    font-size: 17px;
 }
 
 body,
 input {
-    font-family: Emoji, Verdana, sans-serif
+    font-family: 'Gunbound';
+    font-size: 17px;
 }
 
 body {
@@ -270,44 +279,10 @@ a:active {
     cursor: url(/static/images/hand.cur), move !important
 }
 
-.screen {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
 .DialogLayer {
     position: absolute;
     width: 100%;
     height: 100%
-}
-
-#channelInput {
-    position: absolute;
-    left: 185px;
-    top: 519px;
-    width: 427px;
-    height: 15px;
-    color: #acf2f6;
-    font-size: 12px;
-    background: transparent;
-    border: 1px solid transparent;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-}
-
-#channelInput:focus {
-    background-color: #004283;
-    outline: none;
-    border: 0
-}
-
-#channelInputAlt {
-    position: absolute;
-    left: 540px;
-    top: 578px
 }
 
 #channelEmojiBtn {
@@ -403,39 +378,6 @@ a:active {
     height: 1px;
     margin: 2px auto 1px auto;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(90, 90, 200, 0.5), rgba(0, 0, 0, 0))
-}
-
-#channel {
-    position: absolute;
-    left: 103px;
-    top: 423px;
-    width: 515px;
-    height: 87px;
-    color: #000000
-}
-
-#channel .viewport {
-    width: 532px;
-    height: 116px;
-    overflow: hidden;
-    position: relative
-}
-
-#channel .overview {
-    list-style: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0;
-    word-wrap: break-word;
-    width: 522px
-}
-
-#channel .scrollbar {
-    position: relative;
-    float: right;
-    width: 13px;
-    padding-top: 11px
 }
 
 #gameChatHtml .zotata-chat-type0 {
@@ -622,8 +564,8 @@ a:active {
 }
 
 .blackShadow {
-    text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
-    filter: progid:DXImageTransform.Microsoft.Glow(Strength=1, Color=#000000)
+    font-family: "Gunbound";
+    font-size: 20px;
 }
 
 .blackShadow2 {
@@ -658,41 +600,6 @@ a:active {
     filter: progid:DXImageTransform.Microsoft.Chroma(Color=#083863) progid:DXImageTransform.Microsoft.Glow(Strength=1, Color=#083863)
 }
 
-#playersList {
-    position: absolute;
-    left: 670px;
-    top: 345px;
-    width: 184px;
-    height: 168px;
-    z-index: 14;
-}
-
-#playersList .viewport {
-    left: 0px;
-    top: 0px;
-    width: 184px;
-    height: 168px;
-    overflow: hidden;
-    position: relative
-}
-
-#playersList .overview {
-    list-style: none;
-    position: absolute;
-    left: 7px;
-    top: 8px;
-    padding: 0;
-    margin: 0;
-    width: 100%
-}
-
-#playersList .scrollbar {
-    position: relative;
-    float: right;
-    width: 13px;
-    padding-top: 11px
-}
-
 .playerListItem {
     position: relative;
     margin-bottom: 8px;
@@ -721,63 +628,11 @@ a:active {
     height: 15px
 }
 
-#itemsSelection {
-    position: absolute;
-    left: 585px;
-    top: 306px;
-    width: 209px;
-    height: 220px;
-    z-index: 13;
-    background-color: rgba(0, 0, 60, 0.5)
-}
-
-#itemsSelection.InRoom {
-    top: 256px;
-    background-color: inherit
-}
-
 #itemsSelectText {
     position: absolute;
     top: 44px;
     width: 100%;
     text-align: center
-}
-
-#friendsList {
-    position: absolute;
-    left: 670px;
-    top: 345px;
-    width: 184px;
-    height: 168px;
-    z-index: 13;
-}
-
-#friendsList.InGame {
-    top: 293px
-}
-
-#friendsList .viewport {
-    width: 198px;
-    height: 223px;
-    overflow: hidden;
-    position: relative
-}
-
-#friendsList .overview {
-    list-style: none;
-    position: absolute;
-    left: 7px;
-    top: 8px;
-    padding: 0;
-    margin: 0;
-    width: 100%
-}
-
-#friendsList .scrollbar {
-    position: relative;
-    float: right;
-    width: 13px;
-    padding-top: 11px
 }
 
 #container.Game #friendsList,
@@ -971,329 +826,6 @@ a:active {
     top: 3px
 }
 
-.rank {
-    width: 25px;
-    height: 15px;
-    background-repeat: no-repeat
-}
-
-.rank0 {
-    background-position: 0 -723px
-}
-
-.rank1 {
-    background-position: -26px -723px
-}
-
-.rank2 {
-    background-position: -52px -723px
-}
-
-.rank3 {
-    background-position: -78px -723px
-}
-
-.rank4 {
-    background-position: -104px -723px
-}
-
-.rank5 {
-    background-position: -130px -723px
-}
-
-.rank6 {
-    background-position: -156px -723px
-}
-
-.rank7 {
-    background-position: -182px -723px
-}
-
-.rank8 {
-    background-position: -208px -723px
-}
-
-.rank9 {
-    background-position: -234px -723px
-}
-
-.rank10 {
-    background-position: -260px -723px
-}
-
-.rank11 {
-    background-position: -286px -723px
-}
-
-.rank12 {
-    background-position: -312px -723px
-}
-
-.rank13 {
-    background-position: 0 -739px
-}
-
-.rank14 {
-    background-position: -26px -739px
-}
-
-.rank15 {
-    background-position: -52px -739px
-}
-
-.rank16 {
-    background-position: -78px -739px
-}
-
-.rank17 {
-    background-position: -104px -739px
-}
-
-.rank18 {
-    background-position: -130px -739px
-}
-
-.rank19 {
-    background-position: -156px -739px
-}
-
-.rank20 {
-    background-position: -182px -739px
-}
-
-.rank21 {
-    background-position: 0 0
-}
-
-.rank22 {
-    background-position: -208px -739px
-}
-
-.rank23 {
-    background-position: -234px -739px
-}
-
-.rank24 {
-    background-position: -260px -739px
-}
-
-.rank25 {
-    background-position: -312px -739px
-}
-
-.rank26 {
-    background-position: -286px -739px
-}
-
-.rank27 {
-    background-position: -26px 0
-}
-
-.rank28 {
-    background-position: -52px 0
-}
-
-.rank29 {
-    background-position: -78px 0
-}
-
-.rank30 {
-    background-position: -104px 0
-}
-
-.rank31 {
-    background-position: -130px 0
-}
-
-.HD .rank0 {
-    background-position: -672px -1px
-}
-
-.HD .rank1 {
-    background-position: -672px -17px
-}
-
-.HD .rank2 {
-    background-position: -672px -33px
-}
-
-.HD .rank3 {
-    background-position: -672px -49px
-}
-
-.HD .rank4 {
-    background-position: -672px -65px
-}
-
-.HD .rank5 {
-    background-position: -672px -97px
-}
-
-.HD .rank6 {
-    background-position: -672px -113px
-}
-
-.HD .rank7 {
-    background-position: -672px -129px
-}
-
-.HD .rank8 {
-    background-position: -672px -1046px
-}
-
-.HD .rank9 {
-    background-position: -672px -145px
-}
-
-.HD .rank10 {
-    background-position: -672px -161px
-}
-
-.HD .rank11 {
-    background-position: -672px -177px
-}
-
-.HD .rank12 {
-    background-position: -672px -193px
-}
-
-.HD .rank13 {
-    background-position: -672px -209px
-}
-
-.HD .rank14 {
-    background-position: -672px -225px
-}
-
-.HD .rank15 {
-    background-position: -672px -241px
-}
-
-.HD .rank16 {
-    background-position: -672px -257px
-}
-
-.HD .rank17 {
-    background-position: -672px -273px
-}
-
-.HD .rank18 {
-    background-position: -672px -289px
-}
-
-.HD .rank19 {
-    background-position: -672px -305px
-}
-
-.HD .rank20 {
-    background-position: -672px -321px
-}
-
-.HD .rank21 {
-    background-position: -672px -337px
-}
-
-.HD .rank22 {
-    background-position: -672px -353px
-}
-
-.HD .rank23 {
-    background-position: -672px -369px
-}
-
-.HD .rank24 {
-    background-position: -672px -385px
-}
-
-.HD .rank25 {
-    background-position: -672px -401px
-}
-
-.HD .rank26 {
-    background-position: -672px -417px
-}
-
-.HD .rank27 {
-    background-position: -672px -433px
-}
-
-.HD .rank28 {
-    background-position: -672px -449px
-}
-
-.HD .rank29 {
-    background-position: -672px -465px
-}
-
-.HD .rank30 {
-    background-position: -672px -481px
-}
-
-.HD .rank31 {
-    background-position: -672px -497px
-}
-
-.HD .rank32 {
-    background-position: -672px -513px
-}
-
-.HD .rank33 {
-    background-position: -672px -529px
-}
-
-.HD .rank34 {
-    background-position: -672px -545px
-}
-
-.HD .rank35 {
-    background-position: -672px -561px
-}
-
-.HD .rank36 {
-    background-position: -672px -577px
-}
-
-.HD .rank37 {
-    background-position: -672px -593px
-}
-
-.HD .rank38 {
-    
-    background-position: -672px -609px
-}
-
-.HD .rank39 {
-    background-position: -672px -625px
-}
-
-.HD .rank40 {
-    background-position: -672px -641px
-}
-
-.HD .rank41 {
-    background-position: -672px -657px
-}
-
-.HD .rank42 {
-    background-position: -672px -673px
-}
-
-.HD .rank43 {
-    background-position: -672px -689px
-}
-
-.HD .rank44 {
-    background-position: -672px -705px
-}
-
-.HD .rank45 {
-    background-position: -672px -721px
-}
-
-.HD .rank46 {
-    background-position: -672px -737px
-}
-
 #myPUGP {
     position: absolute;
     right: 12px;
@@ -1331,28 +863,6 @@ a:active {
     padding: 1px;
     display: none;
     pointer-events: none
-}
-
-#roomsList {
-    position: absolute;
-    left: 15px;
-    top: 168px;
-    width: 540px;
-    color: white;
-    font-size: 11px
-}
-
-.room {
-    position: absolute;
-    background-position: 0 -543px;
-    width: 251px;
-    height: 62px;
-    display: none
-}
-
-.HD .room {
-    background-position: 0 -110px;
-    background-size: 1000px 1500px
 }
 
 .powerUserRoom {
@@ -1428,148 +938,11 @@ a:active {
     top: 125px
 }
 
-#room0 {
-    left: 0;
-    top: 0
-}
-
-#room1 {
-    left: 265px;
-    top: 0
-}
-
-#room2 {
-    left: 0;
-    top: 75px
-}
-
-#room3 {
-    left: 265px;
-    top: 75px
-}
-
-#room4 {
-    left: 0;
-    top: 150px
-}
-
-#room5 {
-    left: 265px;
-    top: 150px
-}
-
-.room:hover {
-    opacity: .7
-}
-
-.room:active {
-    opacity: .7;
-    margin-left: 2px;
-    margin-top: 2px;
-    margin-right: 12px;
-    margin-bottom: 11px
-}
-
-.roomNumber {
-    position: absolute;
-    left: 2px;
-    top: 7px;
-    width: 30px;
-    text-align: right
-}
-
-.numPlayers {
-    position: absolute;
-    left: 213px;
-    top: 6px;
-    width: 10px;
-    color: black;
-    font-size: 14px
-}
-
-.maxPlayers {
-    position: absolute;
-    left: 233px;
-    top: 6px;
-    width: 10px;
-    color: black;
-    font-size: 14px
-}
-
-.status {
-    position: absolute;
-    left: 8px;
-    top: 33px
-}
-
-.status-waiting {
-    width: 89px;
-    height: 27px;
-    background-position: 0 -606px
-}
-
-.HD .status-waiting {
-    background-position: -504px -174.5px;
-    width: 89px;
-    height: 25px
-}
-
-.status-playing {
-    width: 86px;
-    height: 27px;
-    background-position: -90px -606px
-}
-
-.HD .status-playing {
-    background-position: -504px -201px;
-    width: 89px;
-    height: 25px
-}
-
-.status-full {
-    width: 42px;
-    height: 27px;
-    left: 30px;
-    background-position: -177px -606px
-}
-
-.HD .status-full,
 .HD .BrokerChannel.BrokerChannelFull .BrokerChannelFullIcon {
     background-position: -504px -227.5px;
     width: 89px;
     height: 25px;
     left: 8px
-}
-
-.gameMode {
-    position: absolute;
-    left: 208px;
-    top: 17px
-}
-
-.roomMap {
-    position: absolute;
-    left: 59px;
-    top: 18px;
-    width: 213px;
-    height: 49px;
-    transform: scale(0.6)
-}
-
-.roomLock {
-    position: absolute;
-    left: 147px;
-    top: 33px
-}
-
-.roomLocked {
-    background-position: -220px -606px;
-    width: 20px;
-    height: 21px
-}
-
-.HD .roomLocked {
-    background-position: -660px -324.5px
 }
 
 .allowWatch {
@@ -1775,46 +1148,28 @@ a:active {
     }
 }
 
-#dialogCreateRoomButtonOK {
-    position: absolute;
-    right: -32px;
-    bottom: -7px
-}
-
-#dialogCreateRoomButtonCancel {
-    position: absolute;
-    left: -39px;
-    bottom: -7px
-}
-
 #CreateRoomNumPlayersPrev {
     position: absolute;
-    left: 234px;
-    top: 98px
+    left: 140px;
+    top: 126px
 }
 
 #CreateRoomNumPlayersNext {
     position: absolute;
-    left: 319px;
-    top: 98px
+    left: 245px;
+    top: 126px
 }
 
 #CreateRoomModePrev {
     position: absolute;
-    left: 234px;
-    top: 135px
+    left: 140px;
+    top: 147px
 }
 
 #CreateRoomModeNext {
     position: absolute;
-    left: 319px;
-    top: 135px
-}
-
-#CreateRoomPrivateCheckbox {
-    position: absolute;
-    left: 45px;
-    top: 64px
+    left: 245px;
+    top: 147px
 }
 
 .SD .buttonOK {
@@ -1873,54 +1228,6 @@ a:active {
     transform: scale(0.94)
 }
 
-.room_list-optionleft {
-    background-position: -1082px -1px;
-    width: 7px;
-    height: 10px
-}
-
-.HD .room_list-optionleft {
-    background-position: -1082px -1px;
-    width: 7px;
-    height: 10px;
-    margin-left: 0px !important;
-    margin-top: 0px !important
-}
-
-.room_list-optionright {
-    background-position: -1106px -1px;
-    width: 7px;
-    height: 10px
-}
-
-.HD .room_list-optionright {
-    background-position: -1106px -1px;
-    width: 7px;
-    height: 10px;
-    margin-left: 0px !important;
-    margin-top: 0px !important
-}
-
-.checkboxOff {
-    background-position: 0 -695px;
-    width: 101px;
-    height: 14px
-}
-
-.HD .checkboxOff {
-    background-position: -504px -277px
-}
-
-.checkboxOn {
-    background-position: -102px -695px;
-    width: 101px;
-    height: 14px
-}
-
-.HD .checkboxOn {
-    background-position: -504px -261.5px
-}
-
 .CheckboxOff {
     background-position: 0 -695px;
     width: 14px;
@@ -1937,18 +1244,6 @@ a:active {
     display: none
 }
 
-#roomScreen {
-    display: none;
-    color: white;
-    font-size: 12px
-}
-
-#roomNumber {
-    position: absolute;
-    left: 55px;
-    top: 5px;
-    width: 30px
-}
 
 .buttonMobile {
     width: 33px;
@@ -1984,44 +1279,12 @@ a:active {
     top: 145px
 }
 
-#roomButtonMobile {
-    position: absolute;
-    left: 241px;
-    top: 345px
-}
-
-.playerInRoom {
-    width: 223px;
-    height: 95px;
-    display: none
-}
-
 .SideA .roomPlayerRank {
     position: absolute;
     left: 0;
     top: 0;
     width: 25px;
     height: 15px
-}
-
-.SideA .roomPlayerName {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 235px;
-    height: 15px;
-    z-index: 10
-}
-
-.SideA .roomPlayerInfo {
-    position: absolute;
-    left: -16px;
-    top: 34px;
-    width: 43px;
-    height: 30px;
-    background-position: -260px -216px;
-    z-index: 8;
-    transform: scale(0.65) rotate(270deg)
 }
 
 .chatDialogProfile {
@@ -2033,71 +1296,6 @@ a:active {
     background-position: -260px -216px
 }
 
-.SideA .roomPlayerNotReady {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 77px;
-    height: 78px;
-    background-position: 0 -121px;
-    z-index: 6
-}
-
-.HD .SideA .roomPlayerNotReady {
-    background-position: -752px -617px
-}
-
-.SideA .roomPlayerReady {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 77px;
-    height: 78px;
-    background-position: -78px -121px;
-    z-index: 6
-}
-
-.HD .SideA .roomPlayerReady {
-    background-position: -830.5px -617px
-}
-
-.SideA .roomPlayerMaster {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 77px;
-    height: 78px;
-    background-position: -156px -121px;
-    z-index: 2
-}
-
-.HD .SideA .roomPlayerMaster {
-    background-position: -909px -617px
-}
-
-.SideA .roomPlayerShadow {
-    position: absolute;
-    left: 58px;
-    bottom: 0;
-    width: 78px;
-    height: 10px;
-    background-position: -155px 0
-}
-
-.SideA .roomPlayerMyself {
-    position: absolute;
-    left: -3px;
-    top: 67px;
-    display: none;
-    z-index: 8
-}
-
-.SideA .roomPlayerMobile {
-    position: absolute;
-    left: 100px;
-    top: 88px
-}
-
 .FlipH {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -2105,139 +1303,6 @@ a:active {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH"
-}
-
-.SideB .roomPlayerRank {
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 25px;
-    height: 15px
-}
-
-.SideB .roomPlayerName {
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 235px;
-    height: 15px;
-    z-index: 10
-}
-
-.SideB .roomPlayerInfo {
-    position: absolute;
-    right: -16px;
-    top: 34px;
-    width: 43px;
-    height: 30px;
-    background-position: -260px -216px;
-    z-index: 8;
-    transform: scale(0.65) rotate(90deg)
-}
-
-.HD .roomPlayerInfo,
-.HD .chatDialogProfile {
-    background-position: -654.5px -156px
-}
-
-.SideB .roomPlayerNotReady {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 77px;
-    height: 78px;
-    background-position: 0 -200px;
-    z-index: 6
-}
-
-.HD .SideB .roomPlayerNotReady {
-    background-position: -752px -696.5px
-}
-
-.SideB .roomPlayerReady {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 77px;
-    height: 78px;
-    background-position: -78px -200px;
-    z-index: 6
-}
-
-.HD .SideB .roomPlayerReady {
-    background-position: -830.5px -696.5px
-}
-
-.SideB .roomPlayerMaster {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 77px;
-    height: 78px;
-    background-position: -156px -200px;
-    z-index: 2
-}
-
-.HD .SideB .roomPlayerMaster {
-    background-position: -909px -696.5px
-}
-
-.SideB .roomPlayerShadow {
-    position: absolute;
-    right: 58px;
-    bottom: 0;
-    width: 78px;
-    height: 10px;
-    background-position: -155px 0
-}
-
-.HD .SideA .roomPlayerShadow,
-.HD .SideB .roomPlayerShadow {
-    background-position: -837.5px -495.5px
-}
-
-.SideB .roomPlayerMyself {
-    position: absolute;
-    right: -3px;
-    top: 67px;
-    display: none;
-    z-index: 8;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH"
-}
-
-.roomPlayerMyself {
-    width: 28px;
-    height: 19px;
-    background: url(data:image/gif;base64,R0lGODlhHAATANUpAAAAALWlUrWmUrWqWrWtWrWqY7WtY7WuY7Wqa7Wta7Wua7Wqc7Wtc7Wuc7Wqe7Wte7Wue//ve7WqhLWthLWuhLWyhLW1hP/vjP/zhP/3hP/3jP/zlP/3lP/3nP/3pf/zrf/3rf/7rf//rf/3tf/3vf/7vf//vf/7xv//xgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJDwApACwAAAAAHAATAAAGs0CAcEgsClPIpDJlbBaXSyFqOhmiqlIsAJqUTq9eLHXIZQJIaHQ1vVaToUKTfG4B0O3y+jEKGPn/Iw99foJ/gntdACCLjIuCjI+Ob0hCIpaXlwwAmZuWmohCHqKjpJqjpqKfW2Ydra6uCQCwsq2xoAAcubq5sbq9vJNmF8PEFwYAxMfJwWYazs/H0ADSiIkZ19cEANja3MyU297h2uPf4BHoAUMR6kLs5uBOTmXx8k/0KUEAACH5BAkPACkALAAAAAAcABMAAAa4QIBwCEgRj8WUcrlEOpHMqBBFnRBR1mk2GTUCqNVh+Isddr2kdDqrtrbNUoBpTrfI63eTXRgf+f8jDwCAgn+CfE0AIIuMi4KNj45wXiKVlpYMAJeZmHBCHqChopmjAKGZfEIdq6ysCQCtr66eABy2t7avuLq5k0IXwMEXBgDCxMHEiEpCGs3OxM4a0M3JXMsAGdnZBELa3N6TidoZ3N3k5uXWiRHsAUQR7kLw4UxP9spdTl5PZ0tBAAAh+QQJDwApACwAAAAAHAATAAAGwkCAcAhIEYvHlHK5PAqNziSzCUChJscrUfucQq1coRUrDnuFpDSJDFCT3cOp0ESnW+b1e9107yqFI4GCDwCCgYSGhH5CII2OIISPkACPikVQIpmamQwAmyKdm51PQh6mp6edqB6qqUcdsLGwCQCyHbSytKQAHL2+HLS/wLy+updCF8nKBgDKyczOzIsAGtXV0tYazNnSl38AGeEZBEPi5ODh597f5kTp5eNxcgAREQFH9kT5fkxRUFHyzkhJIsVLiiAAACH5BAkPACkALAAAAAAcABMAAAa8QIBwSBSmUsWjcllsGptLJgA1KVKtVWMUOb0OUV4hOAvYCkloMpqkTg+jQpPcZInP64A5/a0Ujv5/DwCAgYOEglpcIIuMgoyLjo+IZVwilpciDACYmZuYmk8AHqOko5qlHqeloEMdrq8dCQCwsbOwsqEcuruyu7q9vriUQhfFxQYAxsfJysiJQhrRGs7S09DSzpRHQhndBEPdGd/c3nx9AOXg4kTp2ucRAUXw8vGJUkRc+FBb+VpJ/e6iBAEAIfkECQ8AKQAsAAAAABwAEwAABrpAgHBIBKRSxaNyiSw6m0TmUoiaEKtFrFB6pGoBqC/4yxWSzlbAmZRWo4dSoWlusgDodTndvp0CRoCAD3+Bg4GCcEpCIIyNg40gj5CDfU0il5giDACZm5maiUIeo6Sjm6WnqHBCHa2uHQkAr7GvsKEAHLm6sbocvL2xlUIXxMQGAMUXx8nKiV0AGtEax9LTQtXHlc8Z3ARC3Bne393OigDk4+Lp5eYRAUTuRfHafk5RT1xQW0n6RvkpQQAAIfkEBQ8AKQAsAAAAABwAEwAABrxAgHBIBKSKqaRyeSw6nUym8HSSDKtErDCqnFKtgO9Va+QKSWgSBZBes9HushRQqtcr9Htev52P/oAOAIGDhH1dAB+Kix8QiYqOjI6HTSGWl5YLAJeamJqHQh6io6MNAKWnqH1CHa2urQgArrGvsaAAG7m6Gwq4ub27vZRCF8XGBQDHycqUTRrPzwcA0NLQGtLNTRjbGAMA3N7f2+FyS0IZ6OHpQ+vZSUIREQJD8kT17u9P+vj5+01DXJYEAQA7) no-repeat
-}
-
-.SideB .roomPlayerMobile {
-    position: absolute;
-    right: 100px;
-    top: 88px
-}
-
-.SideA .roomPlayerBalloon {
-    position: absolute;
-    left: 55px;
-    bottom: 55px;
-    background-color: white;
-    min-width: 30px;
-    border: 1px solid black;
-    text-shadow: none;
-    color: black;
-    border-radius: 8px;
-    padding: 5px;
-    max-width: 300px;
-    word-wrap: break-word;
-    opacity: .9;
-    display: none;
-    z-index: 33
 }
 
 .bg1 {
@@ -2248,142 +1313,6 @@ a:active {
 .bg2 {
     background-color: #efe !important;
     box-shadow: 0 0 8px 4px #4f4
-}
-
-.SideB .roomPlayerBalloon {
-    position: absolute;
-    right: 55px;
-    bottom: 55px;
-    background-color: white;
-    min-width: 30px;
-    border: 1px solid black;
-    text-shadow: none;
-    color: black;
-    border-radius: 8px;
-    padding: 5px;
-    max-width: 300px;
-    word-wrap: break-word;
-    opacity: .9;
-    display: none;
-    z-index: 33
-}
-
-.roomBotSelect {
-    position: absolute;
-    left: 136px;
-    top: 0;
-    width: 82px;
-    height: 19px;
-    background-position: 0 -279px;
-    display: none;
-    z-index: 11
-}
-
-.HD .roomBotSelect {
-    background-position: -751px -776px
-}
-
-.roomBotRemove {
-    position: absolute;
-    left: 136px;
-    top: 0;
-    width: 82px;
-    height: 19px;
-    background-position: 0 -299px;
-    display: none;
-    z-index: 11
-}
-
-.HD .roomBotRemove {
-    background-position: -917px -776px
-}
-
-.roomPlayerBalloon a:link {
-    color: blue
-}
-
-.roomPlayerBalloon a:visited {
-    color: purple
-}
-
-.SideA .roomPlayerBalloonTip {
-    position: absolute;
-    left: 80px;
-    bottom: 48px;
-    background-position: -85px 0;
-    width: 9px;
-    height: 8px;
-    opacity: .9;
-    display: none;
-    z-index: 34
-}
-
-.SideA .roomPlayerBalloonTip {
-    background-position: -837.5px -514.5px
-}
-
-.SideB .roomPlayerBalloonTip {
-    position: absolute;
-    right: 80px;
-    bottom: 48px;
-    background-position: -95px 0;
-    width: 9px;
-    height: 8px;
-    opacity: .9;
-    display: none;
-    z-index: 34
-}
-
-.SideB .roomPlayerBalloonTip {
-    background-position: -847.5px -514.5px
-}
-
-#playerInRoom0 {
-    position: absolute;
-    left: 5px;
-    top: 113px
-}
-
-#playerInRoom2 {
-    position: absolute;
-    left: 5px;
-    top: 210px
-}
-
-#playerInRoom4 {
-    position: absolute;
-    left: 5px;
-    top: 307px
-}
-
-#playerInRoom6 {
-    position: absolute;
-    left: 5px;
-    top: 404px
-}
-
-#playerInRoom1 {
-    position: absolute;
-    left: 336px;
-    top: 113px
-}
-
-#playerInRoom3 {
-    position: absolute;
-    left: 336px;
-    top: 210px
-}
-
-#playerInRoom5 {
-    position: absolute;
-    left: 336px;
-    top: 307px
-}
-
-#playerInRoom7 {
-    position: absolute;
-    left: 336px;
-    top: 404px
 }
 
 #room_timer {
@@ -2405,108 +1334,14 @@ a:active {
     color: #b5d68c
 }
 
-#itemDual {
-    position: absolute;
-    left: 29px;
-    top: 121px
-}
-
-.itemDual {
-    width: 69px;
-    height: 31px
-}
-
-#itemTeleport {
-    position: absolute;
-    left: 111px;
-    top: 121px
-}
-
 .itemNone {
     width: 69px;
     height: 31px;
     background: rgba(150, 150, 150, 0.5)
 }
 
-.itemTeleport {
-    background-position: -343px 0;
-    width: 69px;
-    height: 31px
-}
-
-#itemDualP {
-    position: absolute;
-    left: 29px;
-    top: 158px
-}
-
-.itemDualP {
-    background-position: -69px 0;
-    width: 69px;
-    height: 31px
-}
-
-.HD .itemDual {
-    background-position: -480px -1382.5px
-}
-
-.HD .itemDualP {
-    background-position: -480px -1414px
-}
-
-.HD .itemTeleport {
-    background-position: -480px -1445.5px
-}
-
-.ItemBtn:hover {
-    opacity: .5;
-    cursor: pointer
-}
-
-.ItemBtn:active {
-    margin: 1px 0 0 1px;
-    opacity: .5;
-    cursor: pointer
-}
-
 .ItemBtn.Pressed {
     box-shadow: inset 0 0 3px 3px #0f0
-}
-
-#itemSlot0 {
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-#itemSlot1 {
-    position: absolute;
-    left: 35px;
-    top: 0
-}
-
-#itemSlot2 {
-    position: absolute;
-    left: 70px;
-    top: 0
-}
-
-#itemSlot3 {
-    position: absolute;
-    left: 105px;
-    top: 0
-}
-
-#itemSlot4 {
-    position: absolute;
-    left: 140px;
-    top: 0
-}
-
-#itemSlot5 {
-    position: absolute;
-    left: 175px;
-    top: 0
 }
 
 #gameItemSlot0 {
@@ -3738,14 +2573,6 @@ a:active {
     top: 0
 }
 
-.glow_button:hover {
-    box-shadow: 0 0 10px 10px #ff0 !important
-}
-
-.glow_button:active {
-    box-shadow: 0 0 10px 10px #9f9 !important
-}
-
 .glow_button_anim {
     -webkit-transition: box-shadow .15s ease-in-out;
     -moz-transition: box-shadow .15s ease-in-out;
@@ -4182,37 +3009,6 @@ a:active {
     background-color: rgba(148, 140, 132, 0.75)
 }
 
-.AlertBoxBackground,.NewUserBoxBackground {
-    position: absolute;
-    width: 960px;
-    height: 600px;
-    background: url(/static/images/themes/season3/serverlist_back.png) no-repeat;
-    background-size: cover;
-    z-index: 997
-}
-
-.NewUserBoxBackground{
-    display: none;
-    width: 960px;
-    height: 600px;
-    background: url(/static/images/themes/season3/server_ad.png) no-repeat;
-    background-size: cover;
-}
-
-.AlertBox {
-    position: absolute;
-    left: 260px;
-    top: 223px;
-    width: 300px;
-    height: 176px;
-    z-index: 999;
-    background-position: 0 0
-}
-
-.HD .AlertBox {
-    background-position: -680px -318px;
-}
-
 .AlertBoxTitle {
     position: absolute;
     left: 23px;
@@ -4243,17 +3039,12 @@ a:active {
     color: #f90
 }
 
-.HD #dialogGiftOK,
-.HD #RoomOptionsOK,
-.HD #roomMobileSelectCancel,
-.HD #dialog_change_title_ok {
+.HD #dialogGiftOK {
     right: 10px;
     bottom: 12px
 }
 
-.HD #dialogGiftCancel,
-.HD #RoomOptionsCancel,
-.HD #dialog_change_title_cancel {
+.HD #dialogGiftCancel {
     left: 78px;
     bottom: 12px
 }
@@ -4551,19 +3342,23 @@ a:active {
 }
 
 #dialog_change_name_div {
-    display: none
+    display: none;
+    position: absolute;
+    left: 331px;
+    top: 158px;
+    z-index: 2;
 }
 
 #dialog_change_name_ok {
     position: absolute;
-    right: -35px;
-    bottom: -7px
+    left: 363px;
+    top: 217px
 }
 
 #dialog_change_name_cancel {
     position: absolute;
-    left: -42px;
-    bottom: -7px
+    left: 363px;
+    top: 217px
 }
 
 #myInfoProfile {
@@ -4576,36 +3371,8 @@ a:active {
     font-weight: normal
 }
 
-#dialog_join_room_ok {
-    position: absolute;
-    right: -31px;
-    bottom: -7px
-}
-
 #dialog_join_room_divx .xAlertBoxx {
     top: 150px
-}
-
-#dialog_join_room_cancel {
-    position: absolute;
-    left: -38px;
-    bottom: -7px
-}
-
-#join_room_input {
-    width: 118px
-}
-
-#join_password_input {
-    width: 118px;
-    margin-top: 9px
-}
-
-.input_field {
-    outline: none;
-    border: 0;
-    background: none;
-    color: #acf2f6
 }
 
 #dialogGift {
@@ -4741,25 +3508,6 @@ a:active {
     background-position: -192px 0
 }
 
-#room_game_mode {
-    position: absolute;
-    top: 28px;
-    left: 389px;
-    text-align: center;
-    width: 100px
-}
-
-#room_players {
-    position: absolute;
-    left: 381px;
-    top: 41px;
-    text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
-    color: #ff6;
-    width: 115px;
-    color: #ff6;
-    text-align: center
-}
-
 #room_avatars {
     position: absolute;
     left: 390px;
@@ -4780,36 +3528,6 @@ a:active {
     font-size: 12px;
     text-align: center;
     font-weight: 600
-}
-
-#room_turn_time_text {
-    position: absolute;
-    right: 425px;
-    top: 83px;
-    font-weight: bold
-}
-
-#room_turn_time {
-    position: absolute;
-    left: 390px;
-    top: 83px;
-    width: 100px;
-    color: white;
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold
-}
-
-#dialog_change_title_ok {
-    position: absolute;
-    right: -31px;
-    bottom: -7px
-}
-
-#dialog_change_title_cancel {
-    position: absolute;
-    left: -38px;
-    bottom: -7px
 }
 
 .light_button {
@@ -5705,7 +4423,6 @@ a:active {
     left: 28px;
     top: 185px;
     color: #847d63;
-    font-size: 12px;
     width: 200px
 }
 
@@ -5760,15 +4477,13 @@ a:active {
     position: absolute;
     left: 241px;
     top: 221px;
-    width: 317px;
-    height: 247px;
-    background: #314a5a;
+    width: 323px;
+    height: 245px;
+    background-position: -536px -541px;
     z-index: 100;
     display: none;
-    font-size: 10px;
+    font-weight: 900;
     color: #cecece;
-    border: 1px solid black;
-    box-shadow: 5px 5px 30px 10px #000, inset 0 2px 1px #7394b5
 }
 
 .OptionsDialogTitle {
@@ -5782,12 +4497,8 @@ a:active {
 
 #OptionsBG {
     position: absolute;
-    top: 57px;
-    left: 14px
-}
-
-.OptionTitle1 {
-    color: #ffc65a
+    top: 71px;
+    left: -198px;
 }
 
 .GOption {
@@ -5805,14 +4516,7 @@ a:active {
 #OptionsOK {
     position: absolute;
     left: 175px;
-    top: 216px;
-    width: 116px;
-    height: 17px;
-    background-position: -117px -1262px
-}
-
-.HD #OptionsOK {
-    background-position: -503px -292.5px
+    top: 209px;
 }
 
 #OptionsLeave {
@@ -5831,60 +4535,76 @@ a:active {
 .RadioOn {
     width: 10px;
     height: 10px;
-    background-position: -234px -1262px
-}
-
-.HD .RadioOn {
-    background-position: -699px -156px
+    background-position: -860px -562px
 }
 
 .RadioOff {
     width: 10px;
     height: 10px;
-    background-position: -245px -1262px
+    background-position: -860px -573px
 }
 
-.HD .RadioOff {
-    background-position: -699px -166.5px
+#OptionsText8 {
+    position: absolute;
+    left: 38px;
+    top: 212px;
 }
 
 #OptionsLangEN {
     position: absolute;
     left: 95px;
-    top: 117px
+    top: 212px;
 }
 
 #OptionsLangES {
     position: absolute;
     left: 160px;
-    top: 117px
+    top: 212px;
 }
-
+@font-face {
+    font-family: 'Colatera Font';
+    src: url('/static/images/font/ColateraSoft.otf') format('truetype');
+}
+#slidersection2 {
+    position: absolute;
+    left: 301px;
+    top: 36px;
+    width: 200px
+}
 #OptionsText1 {
     position: absolute;
-    left: 14px;
-    top: 29px
+    left: 38px;
+    top: 46px;
 }
-
-#OptionsDrag {
+#slidersection1 {
     position: absolute;
-    left: 99px;
-    top: 25px;
-    width: 114px;
-    height: 27px;
-    cursor: pointer
+    left: 301px;
+    top: 57px;
+    width: 200px;
 }
-
+#OptionsText2 {
+    font-size: 19px;
+}
+#OptionsText7 {
+    position: absolute;
+    left: 255px;
+    top: 25px;
+}
 #OptionsShootingModeDrag {
     position: absolute;
-    left: 34px;
-    top: 0
+    left: 83px;
+    top: 1px;
 }
-
-#OptionsText2 {
+.OptionTitle1 {
+    color: #31597b
+}
+.OptionTitle2 {
+    color: #fff
+}
+#OptionsDrag {
     position: absolute;
-    left: 48px;
-    top: 0
+    left: 59px;
+    top: 59px;
 }
 
 #OptionsText4 {
@@ -5896,23 +4616,19 @@ a:active {
 
 #OptionsSlice {
     position: absolute;
-    left: 226px;
-    top: 25px;
-    width: 91px;
-    height: 27px;
-    cursor: pointer
+    left: 236px;
+    top: 59px;
 }
 
 #OptionsShootingModeSlice {
     position: absolute;
-    left: 9px;
-    top: 0
+    left: 42px;
+    top: 1px;
 }
 
 #OptionsText3 {
-    position: absolute;
-    left: 24px;
-    top: 0
+    font-family: 'Colatera Font';
+    font-size: 13px;
 }
 
 #OptionsText5 {
@@ -5925,7 +4641,7 @@ a:active {
 #OptionsTextEN {
     position: absolute;
     left: 110px;
-    top: 117px;
+    top: 212px;
     cursor: pointer;
     color: white
 }
@@ -5933,7 +4649,7 @@ a:active {
 #OptionsTextES {
     position: absolute;
     left: 175px;
-    top: 117px;
+    top: 212px;
     cursor: pointer;
     color: white
 }
@@ -5942,16 +4658,6 @@ a:active {
     white-space: nowrap;
     margin: 11px 0;
     height: 15px
-}
-
-.buttonAllBuddyList1.Guild {
-    background-position: 0 -1814px;
-    width: 69px
-}
-
-.HD .buttonAllBuddyList1.Guild {
-    background-position: -785px -61px;
-    width: 64.5px
 }
 
 #buttonAllBuddyList2.room_item_buddy_tab2.Guild {
@@ -5967,17 +4673,12 @@ a:active {
 .HD #room_item_buddy_tab2.BuddyList,
 .HD #room_item_buddy_tab2.Guild,
 .HD #buttonAllBuddyList2.room_item_buddy_tab2.Guild {
-    left: 690px
-}
-
-.buttonAllBuddyList2.Guild {
-    background-position: -68px -1814px;
-    width: 76px
+    left: 646px
 }
 
 .HD .room_item_buddy_tab2 {
-    background-position: -108px -1733px;
-    width: 108px
+    background-position: -849px 0;
+    width: 82px;
 }
 
 .HD .room_item_buddy_tab2.BuddyList {
@@ -5985,7 +4686,6 @@ a:active {
     width: 82px
 }
 
-.HD .buttonAllBuddyList2.Guild,
 .HD .room_item_buddy_tab2.Guild {
     background-position: -849px -61px;
     width: 82px
@@ -6478,196 +5178,17 @@ a:active {
     width: 15px;
     padding-top: 11px
 }
-
-#dialog_room_options {
+.AlertBox {
     position: absolute;
-    left: 94px;
-    top: 111px;
-    width: 375px;
-    height: 383px;
-    background-position: 0 -972px;
-    z-index: 11
+    left: 260px;
+    top: 223px;
+    width: 300px;
+    height: 176px;
+    z-index: 999;
+    background-position: 0 0
 }
-
-.HD #dialog_room_options {
-    background-position: -375.5px -494.5px
-}
-
-@media(max-height:590px) {
-    #dialog_room_options {
-        transform: scale(1.25)
-    }
-}
-
-@media(max-height:500px) {
-    #dialog_room_options {
-        transform: scale(1.5)
-    }
-}
-
-#RoomOptionsModePrev {
-    position: absolute;
-    left: 88px;
-    top: 63px
-}
-
-#RoomOptionsModeNext {
-    position: absolute;
-    left: 212px;
-    top: 63px
-}
-
-#RoomOptionsMode {
-    position: absolute;
-    left: 105px;
-    top: 61.5px;
-    width: 100px;
-    text-align: center
-}
-
-#RoomOptionsModeIcon {
-    position: absolute;
-    left: 233px;
-    top: 48px
-}
-
-#RoomOptionsNumPlayersPrev {
-    position: absolute;
-    left: 88px;
-    top: 108px
-}
-
-#RoomOptionsNumPlayersNext {
-    position: absolute;
-    left: 212px;
-    top: 108px
-}
-
-#RoomOptionsPlayers {
-    position: absolute;
-    left: 97px;
-    top: 106px;
-    width: 115px;
-    color: #ff6;
-    text-align: center
-}
-
-#RoomOptionsMapPrev {
-    position: absolute;
-    left: 88px;
-    top: 153px
-}
-
-#RoomOptionsMapNext {
-    position: absolute;
-    left: 212px;
-    top: 153px
-}
-
-#RoomOptionsMapName {
-    position: absolute;
-    left: 100px;
-    top: 151.5px;
-    color: #6f9;
-    width: 110px;
-    text-align: center
-}
-
-#RoomOptionsMapImage {
-    position: absolute;
-    left: 47px;
-    top: 171px;
-    width: 213px;
-    height: 49px
-}
-
-#RoomOptionsMapLock {
-    position: absolute;
-    left: 47px;
-    top: 171px;
-    width: 213px;
-    height: 49px;
-    background: rgba(128, 128, 128, 0.5)
-}
-
-#RoomOptionsMapLockImg {
-    position: absolute;
-    left: 100px;
-    top: 13px
-}
-
-#RoomOptionsMapLockBtn {
-    position: absolute;
-    left: 15px;
-    top: 14px;
-    font-size: 9px;
-    padding: 0 5px
-}
-
-#RoomOptionsAvatars {
-    position: absolute;
-    left: 100px;
-    top: 262px;
-    width: 110px;
-    text-align: center
-}
-
-#RoomOptionsAvatarsGP {
-    position: absolute;
-    left: 135px;
-    top: 238px;
-    color: #ff0
-}
-
-#RoomOptionsAvatarsPrev {
-    position: absolute;
-    left: 88px;
-    top: 263px
-}
-
-#RoomOptionsAvatarsNext {
-    position: absolute;
-    left: 212px;
-    top: 263px
-}
-
-#RoomOptionsWind {
-    position: absolute;
-    left: 100px;
-    top: 309px;
-    width: 110px;
-    text-align: center
-}
-
-#RoomOptionsWindGP {
-    position: absolute;
-    left: 135px;
-    top: 287px;
-    color: #ff0
-}
-
-#RoomOptionsWindPrev {
-    position: absolute;
-    left: 88px;
-    top: 311px
-}
-
-#RoomOptionsWindNext {
-    position: absolute;
-    left: 212px;
-    top: 311px
-}
-
-#RoomOptionsCancel {
-    position: absolute;
-    left: -30px;
-    bottom: -6px
-}
-
-#RoomOptionsOK {
-    position: absolute;
-    right: -23px;
-    bottom: -6px
+.HD .AlertBox {
+    background-position: -680px -318px;
 }
 
 #RoomOptionsRandomTeams {
@@ -6821,18 +5342,6 @@ a:active {
     background-position: -393.5px -63.5px;
     width: 44px;
     height: 41px
-}
-
-#myGPBar{
-    width: 157px;
-    height: 16px;
-    pointer-events: none;
-    z-index: 9;
-    position: absolute;
-    left: 707px;
-    top: 191px;
-    background: rgb(118,113,195);
-background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1) 58%, rgba(162,176,238,1) 88%, rgba(97,141,193,1) 100%);
 }
 
 #myPhotoDiv {
@@ -7114,39 +5623,582 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     color: #09f;
     display: inline-block
 }
-
-#BrokerScreen {
-    display: none
+#Mensajex {
+    position: absolute;
+    width: 960px;
+    height: 600px;
+    transform: scale(0.8,0.9);
+    z-index: 1;
 }
-
-/*** Season 3 serverlist_back**/
-.filter-black{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%)
+/*** Season 3 popup**/
+#popup_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 712px;
+    height: 499px;
+    background-position: -2088px -1301px;
+    display: none;
 }
+.title_normal,
+.title_rare,
+.title_epic,
+.title_legend {
+    position: absolute;
+    left: 51px;
+    top: 71px; 
+    width: 65px;
+    height: 30px;
+    background-position: -970px -1229px;
+}
+.title_normal:hover {
+    background-position: -970px -1260px;
+}
+.title_normal:active {
+    background-position: -970px -1291px;
+}
+.title_rare {
+    left: 118px;
+    background-position: -1036px -1229px;
+}
+.title_rare:hover {
+    background-position: -1036px -1260px;
+}
+.title_rare:active {
+    background-position: -1036px -1291px;
+}
+.title_epic {
+    left: 186px;
+    background-position: -1102px -1229px;
+}
+.title_epic:hover {
+    background-position: -1102px -1260px;
+}
+.title_epic:active {
+    background-position: -1102px -1291px;
+}
+.title_legend {
+    left: 253px;
+    background-position: -1168px -1229px;
+}
+.title_legend:hover {
+    background-position: -1168px -1260px;
+}
+.title_legend:active {
+    background-position: -1168px -1291px;
+}
+.Title {
+    position: absolute;
+    left: 32px;
+    top: 118px; 
+    width: 69px;
+    height: 69px;
+    background-position: -1411px -1084px;
+}
+.Title_1 {
+    background-position: -1411px -1084px;
+}
+.Title_2 {
+    background-position: -1481px -1084px;
+}
+.Title_3 {
+    background-position: -1551px -1084px;
+}
+.Title_4 {
+    background-position: -1411px -1154px;
+}
+.Title_5 {
+    background-position: -1481px -1154px;
+}
+.Title_6 {
+    background-position: -1551px -1154px;
+}
+.Title_7 {
+    background-position: -1411px -1224px;
+}
+.Title_8 {
+    background-position: -1481px -1224px;
+}
+.Title_9 {
+    background-position: -1551px -1224px;
+}
+.Title_10 {
+    background-position: -1411px -1294px;
+}
+.Title_11 {
+    background-position: -1481px -1294px;
+}
+.Title_12 {
+    background-position: -1551px -1294px;
+}
+.Title_13 {
+    background-position: -1411px -1364px;
+}
+.Title_14 {
+    background-position: -1481px -1364px;
+}
+.Title_15 {
+    background-position: -1551px -1364px;
+}
+.Title_16 {
+    background-position: -1411px -1434px;
+}
+.Title_17 {
+    background-position: -1481px -1434px;
+}
+.Title_18 {
+    background-position: -1551px -11434px;
+}
+.Title_19 {
+    background-position: -1411px -1504px;
+}
+.Title_20 {
+    background-position: -1481px -1504px;
+}
+.Title_21 {
+    background-position: -1551px -1504px;
+}
+.Title_22 {
+    background-position: -1411px -1574px;
+}
+.Title_23 {
+    background-position: -1481px -1574px;
+}
+.Title_24 {
+    background-position: -1551px -1574px;
+}
+.Title_25 {
+    background-position: -1411px -1644px;
+}
+.Title_26 {
+    background-position: -1481px -1644px;
+}
+.Title_27 {
+    background-position: -1551px -1644px;
+}
+.Title_28 {
+    background-position: -1411px -1714px;
+}
+#titleListUp,#titleListDown {
+    position: absolute;
+    left: 146px;
+    top: 447px;
+    width: 19px;
+    height: 22px
+}
+#titleListDown {
+    left: 203px;
+}
+.popup_close {
+    position: absolute;
+    left: 686px;
+    top: 11px;
+    width: 14px;
+    height: 12px;
+    background-position: -257px -1454px;
+}
+.popup_close:hover {
+    background-position: -272px -1454px;
+}
+.popup_close:active {
+    background-position: -287px -1454px;
+}
+/*** Season 3 Font**/
+
 .font{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*letter-spacing: -0.9px;*/
     font-size: 12px;
     transform: scale(1.4,1.7);
-    transform-origin: left
+    transform-origin: left;
 }
 .font-S3:first-child{
-    font-family: 'S3';
     position: absolute;
-    letter-spacing: -1.3px;
-}
-.font-S3:first-child{
+    font-family: 'S3';
     color: #49475C;
 }
 .font-S3:last-child{
     font-family: 'S4';
+    color: #ffffff
+}
+.font-S3:first-child,
+.font-S3:last-child{
     letter-spacing: -1.3px;
 }
-.font-S3:last-child{
-    color: #ffffff
+.font-s3-system{
+    text-shadow: none!important;
+}
+.font-s3-color-gcoin{
+    color: #00fb5e!important;
+}
+.font-s3-shadow-gcoin{
+    color: #000!important;
+}
+.font-s3-color-cash{
+    color: #71bfe9!important;
+}
+.font-s3-shadow-cash{
+    color: #003564!important;
+}
+.font-s3-color-gold{
+    color: #ffe834!important;
+}
+.font-s3-shadow-gold{
+    color: #6d4300!important;
+}
+.font-s3-color-normal{
+    color: #FFF!important;
+}
+.font-s3-shadow-normal{
+    color: #494749!important;
+}
+.font-s3-color-base{
+    color: #FFF!important;
+}
+.font-s3-shadow-base{
+    color: #49475c!important;
+}
+.font-s3-color-6{
+    color: #ffdc9a!important;
+}
+.font-s3-shadow-6{
+    color: #ff4c09 !important;
+}
+.font-s3-color-9{
+    color: #9cffde!important;
+}
+.font-s3-shadow-9{
+    color: #41594a !important;
+}
+.font-s3-color-guild, .font-s3-color-guild-0{
+    color: #daad61!important;
+}
+.font-s3-shadow-guild, .font-s3-shadow-guild-0{
+    color: #613200!important;
+}
+.font-s3-color-guild-1{
+    color: #efc548!important;
+}
+.font-s3-shadow-guild-1{
+    color: #928444!important;
+}
+.font-s3-color-guild-2{
+    color: #b5bdcc!important;
+}
+.font-s3-shadow-guild-2{
+    color: #edf2fa!important;
+}
+.font-s3-color-guild-3{
+    color: #d21e1c!important;
+}
+.font-s3-shadow-guild-3{
+    color: #721e31!important;
+}
+/*** Fin**/
+
+/*** Season 3 rank**/
+
+.rank {
+    width: 25px;
+    height: 15px;
+    background-repeat: no-repeat
+}
+.rank0 {
+    background-position: -672px -1px
+}
+.rank1 {
+    background-position: -672px -17px
+}
+.rank2 {
+    background-position: -672px -33px
+}
+.rank3 {
+    background-position: -672px -49px
+}
+.rank4 {
+    background-position: -672px -65px
+}
+.rank5 {
+    background-position: -672px -97px
+}
+.rank6 {
+    background-position: -672px -113px
+}
+.rank7 {
+    background-position: -672px -129px
+}
+.rank8 {
+    background-position: -672px -1046px
+}
+.rank9 {
+    background-position: -672px -145px
+}
+.rank10 {
+    background-position: -672px -161px
+}
+.rank11 {
+    background-position: -672px -177px
+}
+.rank12 {
+    background-position: -672px -193px
+}
+.rank13 {
+    background-position: -672px -209px
+}
+.rank14 {
+    background-position: -672px -225px
+}
+.rank15 {
+    background-position: -672px -241px
+}
+.rank16 {
+    background-position: -672px -257px
+}
+.rank17 {
+    background-position: -672px -273px
+}
+.rank18 {
+    background-position: -672px -289px
+}
+.rank19 {
+    background-position: -672px -305px
+}
+.rank20 {
+    background-position: -672px -321px
+}
+.rank21 {
+    background-position: -672px -337px
+}
+.rank22 {
+    background-position: -672px -353px
+}
+.rank23 {
+    background-position: -672px -369px
+}
+.rank24 {
+    background-position: -672px -385px
+}
+.rank25 {
+    background-position: -672px -401px
+}
+.rank26 {
+    background-position: -672px -417px
+}
+.rank27 {
+    background-position: -672px -433px
+}
+.rank28 {
+    background-position: -672px -449px
+}
+.rank29 {
+    background-position: -672px -465px
+}
+.rank30 {
+    background-position: -672px -481px
+}
+.rank31 {
+    background-position: -672px -497px
+}
+.rank32 {
+    background-position: -672px -513px
+}
+.rank33 {
+    background-position: -672px -529px
+}
+.rank34 {
+    background-position: -672px -545px
+}
+.rank35 {
+    background-position: -672px -561px
+}
+.rank36 {
+    background-position: -672px -577px
+}
+.rank37 {
+    background-position: -672px -593px
+}
+.rank38 {
+    background-position: -672px -609px
+}
+.rank39 {
+    background-position: -672px -625px
+}
+.rank40 {
+    background-position: -672px -641px
+}
+.rank41 {
+    background-position: -672px -657px
+}
+.rank42 {
+    background-position: -672px -673px
+}
+.rank43 {
+    background-position: -672px -689px
+}
+.rank44 {
+    background-position: -672px -705px
+}
+.rank45 {
+    background-position: -672px -721px
+}
+.rank46 {
+    background-position: -672px -737px
+}
+.rank-vertical{
+    width: 15px;
+    height: 25px;
+}
+.rank_vertical_0{
+     background-position: -698px -27px;
+}
+ .rank_vertical_1{
+     background-position: -698px -53px;
+}
+ .rank_vertical_2{
+     background-position: -698px -79px;
+}
+ .rank_vertical_3{
+     background-position: -698px -105px;
+}
+ .rank_vertical_4{
+     background-position: -698px -131px;
+}
+ .rank_vertical_5{
+     background-position: -698px -157px;
+}
+ .rank_vertical_6{
+     background-position: -698px -183px;
+}
+ .rank_vertical_7{
+     background-position: -698px -209px;
+}
+ .rank_vertical_8{
+     background-position: -698px -235px;
+}
+ .rank_vertical_9{
+     background-position: -698px -261px;
+}
+ .rank_vertical_10{
+     background-position: -698px -287px;
+}
+ .rank_vertical_11{
+     background-position: -698px -313px;
+}
+ .rank_vertical_12{
+     background-position: -698px -339px;
+}
+ .rank_vertical_13{
+     background-position: -698px -365px;
+}
+ .rank_vertical_14{
+     background-position: -698px -391px;
+}
+ .rank_vertical_15{
+     background-position: -698px -417px;
+}
+ .rank_vertical_16{
+     background-position: -698px -443px;
+}
+ .rank_vertical_17{
+     background-position: -698px -469px;
+}
+ .rank_vertical_18{
+     background-position: -698px -495px;
+}
+ .rank_vertical_19{
+     background-position: -698px -521px;
+}
+ .rank_vertical_20{
+     background-position: -698px -547px;
+}
+ .rank_vertical_21{
+     background-position: -698px -573px;
+}
+ .rank_vertical_22{
+     background-position: -698px -599px;
+}
+ .rank_vertical_23{
+     background-position: -698px -625px;
+}
+ .rank_vertical_24{
+     background-position: -698px -651px;
+}
+ .rank_vertical_25{
+     background-position: -698px -677px;
+}
+ .rank_vertical_26{
+     background-position: -698px -703px;
+}
+ .rank_vertical_27{
+     background-position: -698px -729px;
+}
+ .rank_vertical_28{
+     background-position: -698px -755px;
+}
+ .rank_vertical_29{
+     background-position: -698px -781px;
+}
+ .rank_vertical_30{
+     background-position: -698px -807px;
+}
+ .rank_vertical_31{
+     background-position: -698px -833px;
+}
+ .rank_vertical_32{
+     background-position: -698px -859px;
+}
+ .rank_vertical_33{
+     background-position: -698px -885px;
+}
+ .rank_vertical_34{
+     background-position: -698px -911px;
+}
+ .rank_vertical_35{
+     background-position: -698px -937px;
+}
+ .rank_vertical_36{
+     background-position: -698px -963px;
+}
+ .rank_vertical_37{
+     background-position: -698px -989px;
+}
+ .rank_vertical_38{
+     background-position: -698px -1015px;
+}
+ .rank_vertical_39{
+     background-position: -698px -1041px;
+}
+ .rank_vertical_40{
+     background-position: -698px -1067px;
+}
+ .rank_vertical_41{
+     background-position: -698px -1093px;
+}
+ .rank_vertical_42{
+     background-position: -698px -1119px;
+}
+ .rank_vertical_43{
+     background-position: -698px -1145px;
+}
+.rank_vertical_44{
+     background-position: -698px -2px;
+}
+
+/*** Season 3 serverlist_back**/
+
+#BrokerScreen {
+    display: none;
+}
+.AlertBoxBackground,.NewUserBoxBackground {
+    position: absolute;
+    width: 960px;
+    height: 600px;
+    background-size: cover;
+    z-index: 997
 }
 #BrokerWindow {
     position: absolute;
@@ -7155,150 +6207,161 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     width: 642px;
     height: 435px;
     z-index: 999;
-    background-position: 0 0
+    background-position: 0 0;
 }
-
+#BrokerTitle {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: white
+}
 #BrokerWindow.scene1{
- background-position: 0 0   
+ background-position: 0 0;   
 }
 #BrokerWindow.scene2{
- background-position: 0 -435px   
+ background-position: 0 -435px;   
 }
 #BrokerWindow.scene3{
- background-position: 0 -870px
+ background-position: 0 -870px;
 }
 #BrokerWindow.scene4{
- background-position: 0 -1305px
+ background-position: 0 -1305px;
 }
-
-.BrokerChannel {
+#broker-list,.BrokerChannel {
     position: absolute;
     width: 312px;
-    height: 75px
-}
-#BrokerChannel0 {
+    height: 75px;
     left: 294px;
-    top: 57px
+    top: 57px;
+    z-index: 999;
 }
-#BrokerChannel1 {
-    left: 294px;
-    top: 138px
-}
-#BrokerChannel2 {
-    left: 294px;
-    top: 219px
-}
-#BrokerChannel3 {
-    left: 294px;
-    top: 300px
+.BrokerChannel {
+    left: 0;
+    top: 0;
 }
 .serverimage_1 {
-    left: 584px;
-    top: 102px;
     background-position: -645px -2505px;
-    z-index: 999
 }
 .serverimage_2 {
-    left: 584px;
-    top: 260px;
     background-position: -645px -2805px;
-    z-index: 999
 }
 .serverimage_3 {
-    left: 584px;
-    top: 418px;
     background-position: -645px -3105px;
-    z-index: 999
 }
 .serverimage_4 {
-    left: 584px;
-    top: 576px;
     background-position: -645px -3405px;
-    z-index: 999
+}
+#BrokerChannel0 {
+    top: 0;
+}
+#BrokerChannel1 {
+    top: 81px;
+}
+#BrokerChannel2 {
+    top: 162px;
+}
+#BrokerChannel3 {
+    top: 243px;
 }
 .BrokerChannelOnline:hover {
-    cursor: pointer
+    background-position: -645px -2355px;
 }
 .BrokerChannelOnline:active {
-    cursor: pointer
+    background-position: -645px -2430px;
 }
-
 .BrokerChannelOnline__1{
-    background-position: -645px -2280px
+    background-position: -645px -2280px;
 }
 .BrokerChannelOnline__1:hover{
-    background-position: -645px -2355px
+    background-position: -645px -2355px;
 }
 .BrokerChannelOnline__1:active{
-    background-position: -645px -2430px
+    background-position: -645px -2430px;
 }
 .BrokerChannelOnline__2{
-    background-position: -645px -2580px
+    background-position: -645px -2580px;
 }
 .BrokerChannelOnline__2:hover{
-    background-position: -645px -2655px
+    background-position: -645px -2655px;
 }
 .BrokerChannelOnline__2:active{
-    background-position: -645px -2730px
+    background-position: -645px -2730px;
 }
 .BrokerChannelOnline__3{
-    background-position: -645px -2880px
+    background-position: -645px -2880px;
 }
 .BrokerChannelOnline__3:hover{
-    background-position: -645px -2955px
+    background-position: -645px -2955px;
 }
 .BrokerChannelOnline__3:active{
-    background-position: -645px -3030px
+    background-position: -645px -3030px;
 }
 .BrokerChannelOnline__4{
-    background-position: -645px -3180px
+    background-position: -645px -3180px;
 }
 .BrokerChannelOnline__4:hover{
-    background-position: -645px -3255px
+    background-position: -645px -3255px;
 }
 .BrokerChannelOnline__4:active{
-    background-position: -645px -3330px
+    background-position: -645px -3330px;
 }
-
 .server__name-container{
     display: flex;
     flex-direction: row;
     gap: 19px;
     position: absolute;
     top: 8px;
-    left: 13px;
-    align-items: center
+    left: 12px;
+    align-items: center;
 }
 .server__name-number{
     width: 14px;
-    height: 20px
+    height: 20px;
 }
 .server__name-number-1{
-    background-position: -871px -136px
+    background-position: -85px -172px;
 }
 .server__name-number-2{
-    background-position: -885px -136px
+    background-position: -99px -172px;
 }
 .server__name-number-3{
-    background-position: -899px -135px
+    background-position: -113px -172px;
 }
 .server__name-number-4{
-    background-position: -913px -135px
+    background-position: -128px -171px
 }
 .server__name-Get{
-    color: white;
+    color: white;   
     font-size: 12px;
-    text-transform: capitalize
+    text-transform: capitalize;
+}
+.server___rank{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    position: absolute;
+    top: 53px;
+    left: 20px;
+    align-items: center;
+}
+.InlineRank {
+    display: inline-block;
 }
 .server__Item-Get{
     position: absolute;
     top: 50%;
-    left: 34%
+    left: 34%;
 }
 .server__Item-Event{
     position: absolute;
     top: 75%;
     left: 34%
+}
+.filter-black{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 .server__batery-online{
     position: absolute;
@@ -7308,30 +6371,21 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     top: 8px
 }
 .server__batery_1{
-    background-position: -938px -156px
+    background-position: -938px -156px;
 }
 .server__batery_2{
-    background-position: -916px -156px
+    background-position: -916px -156px;
 }
 .server__batery_3{
-    background-position: -894px -156px
+    background-position: -894px -156px;
 }
 .server__batery_4{
-    background-position: -872px -156px
+    background-position: -872px -156px;
 }
 .server__batery_5{
-    background-position: -850px -156px
+    background-position: -850px -156px;
 }
-.server___rank{
-    display: flex;
-    flex-direction: row;
-    gap: 1px;
-    position: absolute;
-    top: 53px;
-    left: 20px;
-    align-items: center
-}
-.server___rank-up{
+.server___rank-up,.server___rank-down{
     position: absolute;
     left: 11px;
     top: 4px;
@@ -7340,162 +6394,1442 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     background-position: -746px -137px
 }
 .server___rank-down{
-    position: absolute;
     left: 37px;
-    top: 4px;
-    width: 14px;
-    height: 14px;
-    background-position: -761px -137px
+    background-position: -761px -137px;
 }
 .rank-0{
     width: 25px;
     height: 15px;
-    background-position: -646px -15px
+    background-position: -646px -15px;
 }
 .rank-1{
     width: 25px;
     height: 15px;
-    background-position: -646px -90px
+    background-position: -646px -90px;
 }
-
 .broker__avatar{
     width: 27px;
     height: 17px;
 }
 .broker__avatar.on{
-    background-position: -672px -797px
+    background-position: -672px -797px;
 }
 .broker__avatar.off{
-    background-position: -672px -815px
+    background-position: -672px -815px;
 }
-
-#lobby_close_small {
+#lobby_close_small,#lobby_refresh {
     display: block;
     position: absolute;
-    width: 108px;
-    height: 45px;
-    background-position: -743px 0px;
-    z-index: 999;
     left: 361px;
     top: 531px;
+    width: 108px;
+    height: 45px;
+    z-index: 999;
+}
+#lobby_close_small {
+    background-position: -743px 0px;
 }
 #lobby_close_small:hover {
     background-position: -743px -45px;
-    cursor: pointer
 }
 #lobby_close_small:active {
     background-position: -743px -90px;
-    cursor: pointer
 }
-#lobby_close_small.disabled{
-    filter: grayscale(1);
-}
-#lobby_refresh {
-    position: absolute;
-    z-index: 999;
-    left: 492px;
-    top: 531px;
-    width: 108px;
-    height: 45px;
-    background-position: -852px -0px
-}
-#lobby_refresh:hover {
-    background-position: -852px -45px;
-    cursor: pointer
-}
-#lobby_refresh:active {
-    background-position: -852px -90px;
-    cursor: pointer
-}
-
+#lobby_close_small.disabled,
 #lobby_refresh.disabled{
     filter: grayscale(1);
 }
-
-/*** Season 3 roomlist_back **/
-.room__list-Downmenu {
+#lobby_refresh {
+    left: 492px;
+    background-position: -852px -0px;
+}
+#lobby_refresh:hover {
+    background-position: -852px -45px;
+}
+#lobby_refresh:active {
+    background-position: -852px -90px;
+}
+.NewUserBoxBackground{
+    display: none;
+    width: 960px;
+    height: 600px;
+    background-size: cover;
+}
+#NewGameIdWindow{
+    width: 380px;
+    height: 217px;
     position: absolute;
+    background-position: -1149px 0px;
+    z-index: 999;
+    left: 290px;
+    top: 114px;
+    display: none;
+}
+#input-new-gameid{
+    position: absolute;
+    top: 88px;
+    left: 42px;
+    width: 292px;
+    height: 27px;
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+}
+#input-new-gameid:focus{
+    outline: none;
+}
+#btn-ok-new-gameid,#btn-cancel-new-gameid{
+    width: 64px;
+    height: 24px;
+    position: absolute;
+}
+#btn-ok-new-gameid{
+    background-position: -915px -774px;
+    bottom: 16px;
+    right: 114px;
+}
+#btn-ok-new-gameid:hover{
+    background-position: -915px -799px;
+}
+#btn-ok-new-gameid:active{
+    background-position: -915px -824px;
+}
+#btn-ok-new-gameid.disabled{
+    background-position: -915px -849px;
+}
+#btn-cancel-new-gameid{
+    background-position: -980px -774px;
+    bottom: 16px;
+    right: 31px;
+}
+#btn-cancel-new-gameid:hover{
+    background-position: -980px -799px;
+}
+#btn-cancel-new-gameid:active{
+    background-position: -980px -824px;
+}
+#btn-cancel-new-gameid.disabled{
+    background-position: -980px -849px;
+}
+/*** Season 3 roomlist_back **/
+
+.screen {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.AnimEnterFadeIn4 {
+    animation: AnimEnterFadeIn .4s;
+    animation-fill-mode: forwards
+}
+.ForceHW {
+    -webkit-transform: translateZ(0)
+}
+#channelName {
+    position: absolute;
+    left: 118px;
+    top: 4px;
+    width: 74px;
+    height: 52px;
+    background-position: -964px -1732px;
+}
+#filter_waiting,#filter_all,
+#buttonQuickJoin,#buttonCreateRoom,
+#filter_normal,#filter_score,
+#filter_all,#filter_friends,
+#filter_friends,#buttonJoin {
+    position: absolute;
+    top: 8px;
+    width: 62px;
+    height: 45px;
+}
+#filter_normal,#filter_score,#filter_all {
+    left: 442px;
+}
+.room__list-Waiting {
+    left: 235px;
+    background-position: -536px -1308px;
+}
+.room__list-Waiting:hover {
+    background-position: -598px -1308px;
+}
+.room__list-Waiting:active {
+    background-position: -660px -1308px;
+}
+.room__list-all {
+    left: 235px;
+    background-position: -536px -1353px
+}
+.room__list-all:hover {
+    background-position: -598px -1353px;
+}
+.room__list-all:active {
+    background-position: -660px -1353px;
+}
+.room__list-Quick {
+    left: 304px;
+    background-position: -536px -1398px
+}
+.room__list-Quick:hover {
+    background-position: -598px -1398px;
+}
+.room__list-Quick:active {
+    background-position: -660px -1398px;
+}
+.room__list-Create {
+    left: 373px;
+    background-position: -536px -1443px
+}
+.room__list-Create:hover {
+    background-position: -598px -1443px;
+}
+.room__list-Create:active {
+    background-position: -660px -1443px;
+}
+.room__list-Normal {
+    background-position: -536px -1488px
+}
+.room__list-Normal:hover {
+    background-position: -598px -1488px;
+}
+.room__list-Normal:active {
+    background-position: -660px -1488px;
+}
+.room__list-Score {
+    background-position: -536px -1578px
+}
+.room__list-Score:hover {
+    background-position: -598px -1578px;
+}
+.room__list-Score:active {
+    background-position: -660px -1578px;
+}
+.room__list-Friend {
+    left: 511px;
+    background-position: -536px -1668px
+}
+.room__list-Friend:hover {
+    background-position: -598px -1668px;
+}
+.room__list-Friend:active {
+    background-position: -660px -1668px;
+}
+.room__list-Number {
+    left: 580px;
+    background-position: -536px -1713px
+}
+.room__list-Number:hover {
+    background-position: -598px -1713px;
+}
+.room__list-Number:active {
+    background-position: -660px -1713px;
+}
+#roomsList {
+    position: absolute;
+    left: 102px;
+    top: 63px;
+    width: 534px;
+    height: 285px;
+    font-size: 11px;
+}
+.room {
+    position: absolute;
+    width: 534px;
+    height: 45px;
+    display: none;
+    background-position: 0 -1px;
+}
+#room0 {
+    top: 0;
+}
+#room1 {
+    top: 48px;
+}
+#room2 {
+    top: 96px;
+}
+#room3 {
+    top: 145px;
+}
+#room4 {
+    top: 192px;
+}
+#room5 {
+    top: 240px;
+}
+.room:hover {
+    background-position: 0 -46px;
+}
+.room:active {
+    background-position: 0 -91px;
+}
+.roomNumber {
+    position: absolute;
+    left: 21px;
+    top: 12px;
+    width: 10px;
+    height: 17px;
+    text-align: center;
+    background-position: -16px -1px;
+}
+.roomNumber_0{
+    background-position: -1px -1px;
+}
+.roomNumber_1{
+    width: 10px;
+    background-position: -16px -1px;
+}
+.roomNumber_2{
+    background-position: -27px -1px;
+}
+.roomNumber_3{
+    background-position: -42px -1px;
+}
+.roomNumber_4{
+    background-position: -57px -1px;
+}
+.roomNumber_5{
+    background-position: -72px -1px;
+}
+.roomNumber_6{
+    background-position: -87px -1px;
+}
+.roomNumber_7{
+    background-position: -102px -1px;
+}
+.roomNumber_8{
+    background-position: -117px -1px;
+}
+.roomNumber_9{
+    background-position: -132px -1px;
+}
+.status {
+    position: absolute;
+    left: 66px;
+    top: 12px;
+    width: 16px;
+    height: 18px;
+    background-position: -140px -1713px;
+}
+.status-waiting {
+    background-position: -140px -1713px;
+}
+.status-playing {
+    background-position: -157px -1713px;
+}
+.status-full {
+    background-position: -174px -1713px;
+}
+.roomTitle {
+    position: absolute;
+    width: 215px;
+    left: 104px;
+    top: 15px;
+}
+.roomLock {
+    position: absolute;
+    left: 319px;
+    top: 10px;
+    width: 23px;
+    height: 24px;
+    background-position: -940px -1733px;
+}
+.roomPlayers {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    left: 374px;
+    top: 13px;
+    background-position: -16px -18px;
+}
+.numPlayers {
+    width: 10px;
+    height: 17px;
+    background-position: -16px -18px;
+}
+.numPlayers-slash{
+    background-position: -147px -19px;
+    width: 10px;
+    height: 15px
+}
+.numPlayers_1 {
+    background-position: -16px -18px;
+}
+.numPlayers_2 {
+    background-position: -27px -18px;
+}
+.numPlayers_3 {
+    background-position: -42px -18px;
+}
+.numPlayers_4 {
+    background-position: -57px -18px;
+}
+.numPlayers_5 {
+    background-position: -72px -18px;
+}
+.numPlayers_6 {
+    background-position: -87px -18px;
+}
+.numPlayers_7 {
+    background-position: -102px -18px;
+}
+.numPlayers_8 {
+    background-position: -117px -18px;
+}
+.maxPlayers {
+    width: 10px;
+    height: 17px;
+    background-position: -16px -18px;
+}
+.maxPlayers_1 {
+    background-position: -16px -18px;
+}
+.maxPlayers_2 {
+    background-position: -27px -18px;
+}
+.maxPlayers_3 {
+    background-position: -42px -18px;
+}
+.maxPlayers_4 {
+    background-position: -57px -18px;
+}
+.maxPlayers_5 {
+    background-position: -72px -18px;
+}
+.maxPlayers_6 {
+    background-position: -87px -18px;
+}
+.maxPlayers_7 {
+    background-position: -102px -18px;
+}
+.maxPlayers_8 {
+    background-position: -117px -18px;
+}
+.gameMode {
+    position: absolute;
+    left: 434px;
+    top: 7px;
+    width: 97px;
+    height: 22px;
+}
+.gameMode0 {
+    color: #4a4d4a
+}
+
+.gameMode1 {
+    color: #4a4d4a
+}
+
+.gameMode2 {
+    color: #4a4d4a
+}
+
+.gameMode3 {
+    color: #4a4d4a
+}
+.roomLocked {
+    background-position: -940px -1733px;
+}
+.roomMap {
+    position: absolute;
+    left: 434px;
+    top: 7px;
+    width: 92px;
+    height: 27px;
+}
+#buttonRoomsListUp,#buttonRoomsListDown {
+    position: absolute;
+    left: 330px;
+    top: 351px;
+    width: 19px;
+    height: 22px
+}
+.room__list-left {
+    background-position: -140px -1454px;
+}
+.room__list-left:hover {
+    background-position: -159px -1454px;
+}
+.room__list-left:active {
+    background-position: -178px -1454px;
+}
+.roomsPage {
+    position: absolute;
+    left: 363px;
+    top: 354px;
+    width: 10px;
+    height: 17px;
+    background-position: -16px -36px;
+}
+.roomsPage_0{
+    background-position: -1px -36px;
+}
+.roomsPage_1{
+    width: 10px;
+    background-position: -16px -36px;
+}
+.roomsPage_2{
+    background-position: -28px -36px;
+}
+.roomsPage_3{
+    background-position: -43px -36px;
+}
+.roomsPage_4{
+    background-position: -58px -36px;
+}
+.roomsPage_5{
+    background-position: -74px -36px;
+}
+.roomsPage_6{
+    background-position: -89px -1px;
+}
+.roomsPage_7{
+    background-position: -104px -36px;
+}
+.roomsPage_8{
+    background-position: -119px -36px;
+}
+.roomsPage_9{
+    background-position: -134px -36px;
+}
+#buttonRoomsListDown {
+    left: 387px;
+}
+.room__list-right {
+    background-position: -198px -1454px
+}
+.room__list-right:hover {
+    background-position: -217px -1454px;
+}
+.room__list-right:active {
+    background-position: -236px -1454px;
+}
+.room__list-color {
+    position: absolute;
+    left: 169px;
+    top: 392px;
+    width: 21px;
+    height: 26px;
+    background-position: -140px -1477px
+}
+.room__list-color:hover {
+    background-position: -161px -1477px;
+}
+.room__list-color:active {
+    background-position: -182px -1477px;
+}
+#popup_color_chat {
+    position: absolute;
+    left: 355px;
+    top: 100px;
+    width: 305px;
+    height: 409px;
+    background-position: -940px -1322px;
+    display: none;
+}
+.b_col_1,
+.b_col_2,
+.b_col_3,
+.b_col_4 {
+    position: absolute;
+    left: 49px;
+    top: 74px;
+    width: 40px;
+    height: 40px;
+    background-position: -1247px -1144px;
+}
+.b_col_1:hover {
+    background-position: -1288px -1144px;
+}
+.b_col_1:active {
+    background-position: -1329px -1144px;
+}
+.b_col_1.select {
+    background-position: -1370px -1144px;
+}
+.b_col_2 {
+    left: 105px;
+    background-position: -1247px -1185px;
+}
+.b_col_2:hover {
+    background-position: -1288px -1185px;
+}
+.b_col_2:active {
+    background-position: -1329px -1185px;
+}
+.b_col_2.select  {
+    background-position: -1370px -1185px;
+}
+.b_col_3 {
+    left: 161px;
+    background-position: -1247px -1226px;
+}
+.b_col_3:hover {
+    background-position: -1288px -1226px;
+}
+.b_col_3:active {
+    background-position: -1329px -1226px;
+}
+.b_col_3.select {
+    background-position: -1370px -1226px;
+}
+.b_col_4 {
+    left: 217px;
+    background-position: -1247px -1267px;
+}
+.b_col_4:hover {
+    background-position: -1288px -1267px;
+}
+.b_col_4:active {
+    background-position: -1329px -1267px;
+}
+.b_col_4.select {
+    background-position: -1370px -1267px;
+}
+.b_col_5,
+.b_col_6,
+.b_col_7,
+.b_col_8 {
+    position: absolute;
+    left: 49px;
+    top: 123px;
+    width: 40px;
+    height: 40px;
+    background-position: -1247px -1308px;
+}
+.b_col_5:hover {
+    background-position: -1288px -1308px;
+}
+.b_col_5:active {
+    background-position: -1329px -1308px;
+}
+.b_col_5.select  {
+    background-position: -1370px -1308px;
+}
+.b_col_6 {
+    left: 105px;
+    background-position: -1247px -1349px;
+}
+.b_col_6:hover {
+    background-position: -1288px -1349px;
+}
+.b_col_6:active {
+    background-position: -1329px -1349px;
+}
+.b_col_6.select {
+    background-position: -1370px -1349px;
+}
+.b_col_7 {
+    left: 161px;
+    background-position: -1247px -1390px;
+}
+.b_col_7:hover {
+    background-position: -1288px -1390px;
+}
+.b_col_7:active {
+    background-position: -1329px -1390px;
+}
+.b_col_7.select {
+    background-position: -1370px -1390px;
+}
+.b_col_8 {
+    left: 217px;
+    background-position: -1247px -1431px;
+}
+.b_col_8:hover {
+    background-position: -1288px -1431px;
+}
+.b_col_8:active {
+    background-position: -1329px -1431px;
+}
+.b_col_8.select  {
+    background-position: -1370px -1431px;
+}
+.b_col_9,
+.b_col_10,
+.b_col_11,
+.b_col_12 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 49px;
+    top: 173px;
+    background-position: -1247px -1472px;
+}
+.b_col_9:hover {
+    background-position: -1288px -1472px;
+}
+.b_col_9:active {
+    background-position: -1329px -1472px;
+}
+.b_col_9.select  {
+    background-position: -1370px -1472px;
+}
+.b_col_10 {
+    left: 105px;
+    background-position: -1247px -1513px;
+}
+.b_col_10:hover {
+    background-position: -1288px -1513px;
+}
+.b_col_10:active {
+    background-position: -1329px -1513px;
+}
+.b_col_10.select {
+    background-position: -1370px -1513px;
+}
+.b_col_11 {
+    left: 161px;
+    background-position: -1247px -1554px;
+}
+.b_col_11:hover {
+    background-position: -1288px -1554px;
+}
+.b_col_11:active {
+    background-position: -1329px -1554px;
+}
+.b_col_11.select {
+    background-position: -1370px -1554px;
+}
+.b_col_12 {
+    left: 217px;
+    background-position: -1247px -1595px;
+}
+.b_col_12:hover {
+    background-position: -1288px -1595px;
+}
+.b_col_12:active {
+    background-position: -1329px -1595px;
+}
+.b_col_12.select {
+    background-position: -1370px -1595px;
+}
+.b_col_13,
+.b_col_14,
+.b_col_15,
+.b_col_16 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 49px;
+    top: 221px;
+    background-position: -1247px -1636px;
+}
+.b_col_13:hover {
+    background-position: -1288px -1636px;
+}
+.b_col_13:active {
+    background-position: -1329px -1636px;
+}
+.b_col_13.select {
+    background-position: -1370px -1636px;
+}
+.b_col_14 {
+    left: 105px;
+    background-position: -1247px -1677px;
+}
+.b_col_14:hover {
+    background-position: -1288px -1677px;
+}
+.b_col_14:active {
+    background-position: -1329px -1677px;
+}
+.b_col_14.select {
+    background-position: -1370px -1677px;
+}
+.b_col_15 {
+    left: 161px;
+    background-position: -1247px -1718px;
+}
+.b_col_15:hover {
+    background-position: -1288px -1718px;
+}
+.b_col_15:active {
+    background-position: -1329px -1718px;
+}
+.b_col_15.select {
+    background-position: -1370px -1718px;
+}
+.b_col_16 {
+    left: 217px;
+    background-position: -1247px -1759px;
+}
+.b_col_16:hover {
+    background-position: -1288px -1759px;
+}
+.b_col_16:active {
+    background-position: -1329px -1759px;
+}
+.b_col_16.select {
+    background-position: -1370px -1759px;
+}
+.b_col_9_off,
+.b_col_12_off,
+.b_col_15_off,
+.b_col_16_off {
+    position: absolute;
+    left: 49px;
+    top: 293px;
+    width: 40px;
+    height: 40px;
+    background-position: -1370px -1472px;
+}
+.b_col_12_off  {
+    left: 105px;
+    background-position: -1370px -1595px;
+}
+.b_col_15_off {
+    left: 161px;
+    background-position: -1370px -1718px;
+}
+.b_col_16_off {
+    left: 217px;
+    background-position: -1370px -1759px;
+}
+.b_popup_ok,
+.b_popup_cancel {
+    position: absolute;
+    left: 156px;
+    top: 378px;
+    width: 44px;
+    height: 19px;
+    background-position: -1202px -1732px;
+}
+.b_popup_ok:hover {
+    background-position: -1202px -1752px;
+}
+.b_popup_ok:active {
+    background-position: -1202px -1771px;
+}
+.b_popup_cancel {
+    width: 65px;
+    left: 213px;
+    background-position: -1411px -1740px;
+}
+.b_popup_cancel:hover {
+    background-position: -1411px -1760px;
+}
+.b_popup_cancel:active {
+    background-position: -1411px -1780px;
+}
+.room__list-bugle {
+    position: absolute;
+    left: 204px;
+    top: 396px;
+    width: 20px;
+    height: 19px;
+    background-position: -140px -1504px
+}
+.room__list-bugle:hover {
+    background-position: -160px -1504px;
+}
+.room__list-bugle:active {
+    background-position: -180px -1504px;
+}
+.room__list-nobugle {
+    position: absolute;
+    left: 238px;
+    top: 397px;
+    width: 23px;
+    height: 18px;
+    background-position: -140px -1524px
+}
+.room__list-nobugle:hover {
+    background-position: -163px -1524px;
+}
+.room__list-nobugle:active {
+    background-position: -186px -1524px;
+}
+#lobby_channel {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#channel {
+    position: absolute;
+    left: 103px;
+    top: 423px;
+    width: 515px;
+    height: 87px;
+    color: #000000
+}
+#channel .viewport {
+    width: 532px;
+    height: 116px;
+    overflow: hidden;
+    position: relative
+}
+#channel .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    word-wrap: break-word;
+    width: 522px
+}
+#channel .scrollbar {
+    position: relative;
+    float: right;
+    width: 13px;
+    padding-top: 11px
+}
+.room__list-SelectChatting {
+    position: absolute;
+    left: 106px;
+    top: 518px;
+    width: 79px;
+    height: 21px;
+    background-position: -140px -1543px
+}
+.room__list-SelectChatting:hover {
+    background-position: -140px -1565px;
+    cursor: pointer
+}
+.room__list-SelectChatting:active {
+    background-position: -140px -1587px;
+    cursor: pointer
+}
+#channelInput {
+    position: absolute;
+    left: 185px;
+    top: 519px;
+    width: 427px;
+    height: 15px;
+    color: #acf2f6;
+    background: transparent;
+    border: 1px solid transparent;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+#channelInput:focus {
+    background-color: #004283;
+    outline: none;
+    border: 0
+}
+#channelInputAlt {
+    position: absolute;
+    left: 540px;
+    top: 578px
+}
+.invite_block_on,.invite_block_off {
+    position: absolute;
+    left: 617px;
+    top: 517px;
+    width: 24px;
+    height: 22px;
+}
+.invite_block_on {
+    background-position: -433px -1735px;
+}
+.invite_block_on:hover {
+    background-position: -456px -1735px;
+}
+.invite_block_on:active {
+    background-position: -479px -1735px;
+}
+.invite_block_off {
+    width: 22px;
+    height: 16px;
+    top: 520px;
+    background-position: -255px -1469px;
+}
+.invite_block_off:hover {
+    background-position: -278px -1469px;
+}
+.invite_block_off:active {
+    background-position: -301px -1469px;
+}
+.invite_block_off.select {
+    background-position: -347px -1463px;
+}
+#channel_player {
+    position: absolute;
+    pointer-events: none;
+    left: 760px;
+    top: 128px
+}
+#myName4{
+    position: absolute;
+    left: 711px;
+    top: 176px;
+    transform: scale(1.4,1.4);
+}
+#myName2 {
+    position: absolute;
+    left: 708px;
+    top: 175px;
+}
+#myGPBar{
+    position: absolute;
+    height: 16px;
+    left: 707px;
+    top: 191px;
+    background: rgb(118,113,195);
+    background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1) 58%, rgba(162,176,238,1) 88%, rgba(97,141,193,1) 100%);
+}
+#myGP2 {
+    position: absolute;
+    left: 776px;
+    top: 193px;
+    z-index: 9;
+}
+#myGCoin,
+#myCash2,
+#myGold2 {
+    position: absolute;
+    top: 228px;
+    left: 687px;
+    right: 187px;
+    width: 86px;
+    display: flex;
+    justify-content: end;
+    transform: scale(1.1,1.4);
+}
+.room__list-point,
+.room__list-point2 {
+    position: absolute;
+    left: 708px;
+    top: 225px;
+    width: 14px;
+    height: 19px;
+    background-position: -1114px -1778px;
+}
+.room__list-point2 {
+    background-position: -1130px -1778px;
+}
+#myCash2 {
+    top: 247px;
+}
+#myGold2 {
+    top: 265px;
+}
+#buttonCharge2 {
+    position: absolute;
+    left: 791px;
+    top: 224px;
+    width: 78px;
+    height: 56px
+}
+.room__list-charge {
+    background-position: -140px -1397px
+}
+.room__list-charge:hover {
+    background-position: -218px -1397px;
+}
+.room__list-charge:active {
+    background-position: -296px -1397px;
+}
+#buttonAllBuddyList1 {
+    position: absolute;
+    left: 660px;
+    top: 305px;
+    width: 108px;
+    height: 25px;
+}
+.buttonAllBuddyList1 {
+    width: 73px;
+    height: 30px;
+    background-position: 0 -1733px;
+}
+.buttonAllBuddyList1.BuddyList {
+    background-position: -216px -1733px;
+    width: 108px
+}
+#playersList {
+    position: absolute;
+    left: 670px;
+    top: 345px;
+    width: 184px;
+    height: 168px;
+    z-index: 14;
+}
+#playersList .viewport {
     left: 0px;
+    top: 0px;
+    width: 184px;
+    height: 168px;
+    overflow: hidden;
+    position: relative
+}
+#playersList .overview {
+    list-style: none;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+#playersList .scrollbar {
+    position: relative;
+    float: right;
+    width: 13px;
+    padding-top: 11px
+}
+.room__list-channel {
+    position: absolute;
+    width: 28px;
+    height: 18px;
+    left: 17px;
+    top: 180px;
+    background-position: -207px -1477px
+}
+.room__list-tab {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    left: 47px;
+    top: 180px;
+    align-items: center;
+}
+.ch {
+    width: 16px;
+    height: 17px
+}
+.room__list-ch_1 {
+    background-position: -1px -95px;
+}
+.room__list-ch_1:hover {
+    background-position: -1px -113px;
+}
+.room__list-ch_1.select {
+    background-position: -1px -131px;
+}
+.room__list-ch_2 {
+    background-position: -16px -95px;
+}
+.room__list-ch_2:hover {
+    background-position: -16px -113px;
+}
+.room__list-ch_2.select {
+    background-position: -16px -131px;
+}
+.room__list-ch_3 {
+    background-position: -34px -95px;
+}
+.room__list-ch_3:hover {
+    background-position: -34px -113px;
+}
+.room__list-ch_3.select {
+    background-position: -34px -131px;
+}
+.room__list-ch_4 {
+    background-position: -52px -95px;
+}
+.room__list-ch_4:hover {
+    background-position: -52px -113px;
+}
+.room__list-ch_4.select {
+    background-position: -52px -131px;
+}
+.room__list-ch_5 {
+    background-position: -71px -95px;
+}
+.room__list-ch_5:hover {
+    background-position: -71px -113px;
+}
+.room__list-ch_5.select {
+    background-position: -71px -131px;
+}
+.room__list-ch_6 {
+    background-position: -89px -95px;
+}
+.room__list-ch_6:hover {
+    background-position: -89px -113px;
+}
+.room__list-ch_6.select {
+    background-position: -89px -131px;
+}
+.room__list-ch_7 {
+    background-position: -107px -95px;
+}
+.room__list-ch_7:hover {
+    background-position: -107px -113px;
+}
+.room__list-ch_7.select {
+    background-position: -107px -131px;
+}
+.room__list-ch_8 {
+    background-position: -124px -95px;
+}
+.room__list-ch_8:hover {
+    background-position: -124px -113px;
+}
+.room__list-ch_8.select {
+    background-position: -124px -131px;
+}
+#buttonAllBuddyList2 {
+    position: absolute;
+    left: 768px;
+    top: 305px;
+    width: 108px;
+    height: 25px;
+}
+.buttonAllBuddyList2 {
+    background-position: -108px -1733px
+}
+.buttonAllBuddyList2.BuddyList {
+    background-position: -324px -1733px
+}
+#friendsList {
+    position: absolute;
+    left: 670px;
+    top: 345px;
+    width: 184px;
+    height: 168px;
+    z-index: 13;
+}
+#friendsList.InGame {
+    top: 293px
+}
+#friendsList .viewport {
+    width: 198px;
+    height: 223px;
+    overflow: hidden;
+    position: relative
+}
+#friendsList .overview {
+    list-style: none;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+#friendsList .scrollbar {
+    position: relative;
+    float: right;
+    width: 13px;
+    padding-top: 11px
+}
+.room__list-font{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    left: 8px;
+    top: 181px;
+    align-items: center;
+    transform: scale(0.8, 0.8);
+}
+.room__list-font-slash{
+    background-position: -1px -150px;
+    width: 12px;
+    height: 16px
+}
+.room__list-font-0 {
+    background-position: -16px -150px;
+    width: 16px;
+    height: 16px
+}
+.room__list-font-1 {
+    background-position: -1173px 0
+}
+.room__list-fon-2 {
+    background-position: -1224px 0
+}
+.room__list-font-3 {
+    background-position: -1275px 0
+}
+.room__list-font-4 {
+    background-position: -1326px 0
+}
+.room__list-font-5 {
+    background-position: -1377px 0
+}
+.room__list-font-6 {
+    background-position: -1428px 0
+}
+.room__list-font-8 {
+    background-position: -1428px 0
+}
+.room__list-font-9 {
+    background-position: -1428px 0
+}
+.room__list-buddy-add{
+    position: absolute;
+    left: 134px;
+    top: 177px;
+    width: 22px;
+    height: 21px;
+    background-position: -1108px -1732px;
+}
+.room__list-buddy-add:hover {
+    background-position: -1131px -1732px;
+}
+.room__list-buddy-add:active {
+    background-position: -1154px -1732px;
+}
+.room__list-buddy-delete2{
+    position: absolute;
+    left: 167px;
+    top: 177px;
+    width: 18px;
+    height: 21px;
+    background-position: -1114px -1754px;
+}
+.room__list-buddy-delete2:hover {
+    background-position: -1133px -1754px;
+}
+.room__list-buddy-delete2:active {
+    background-position: -1152px -1754px;
+}
+.room__list-Downmenu,.room__list-menu  {
+    position: absolute;
+    left: 0;
     top: 559px;
     width: 960px;
     height: 41px;
     background-position: -1px -1759px
 }
-#filter_waiting {
+.room__list-menu {
+    left: 82px;
+    top: 563px;
+    width: 80px;
+    height: 34px;
+    background-position: -140px -1609px
+}
+.room__list-menu:hover {
+    background-position: -140px -1643px;
+}
+.room__list-menu:active {
+    background-position: -140px -1677px;
+}
+#buttonShop,
+#inventory,
+#buttonMyInfo,
+#Event,
+#Title,
+#Gamble,
+#Battle,
+#buttonOptions,
+#buttonChannels {
     position: absolute;
-    left: 235px;
-    top: 8px;
-    width: 62px;
-    height: 45px
+    left: 188px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
 }
-.room__list-Waiting {
-    background-position: -536px -1308px
+#inventory {
+    left: 239px;
 }
-.room__list-Waiting:hover {
-    background-position: -598px -1308px;
-    cursor: pointer
+#buttonMyInfo {
+    left: 292px;
 }
-.room__list-Waiting:active {
-    background-position: -660px -1308px;
-    cursor: pointer
+#Event {
+    left: 347px;
 }
-#filter_all {
-    width: 62px;
-    height: 45px;
+#Title {
+    left: 403px;
 }
-.room__list-all {
-    background-position: -536px -1353px
+#Gamble {
+    left: 459px;
 }
-.room__list-all:hover {
-    background-position: -598px -1353px;
-    cursor: pointer
+#Battle {
+    left: 508px;
 }
-.room__list-all:active {
-    background-position: -660px -1353px;
-    cursor: pointer
+#buttonOptions {
+    left: 784px;
 }
-#buttonQuickJoin {
-    position: absolute;
-    left: 304px;
-    top: 8px;
-    width: 62px;
-    height: 45px
+#buttonChannels {
+    left: 834px;
 }
-.room__list-Quick {
-    background-position: -536px -1398px
+.room__list-marcket {
+    background-position: -1px -1397px;
 }
-.room__list-Quick:hover {
-    background-position: -598px -1398px;
-    cursor: pointer
+.room__list-marcket:hover {
+    background-position: -47px -1397px;
 }
-.room__list-Quick:active {
-    background-position: -660px -1398px;
-    cursor: pointer
+.room__list-marcket:active {
+    background-position: -93px -1397px;
 }
-#buttonCreateRoom {
-    position: absolute;
-    left: 373px;
-    top: 8px;
-    width: 62px;
-    height: 45px
+.room__list-inventory {
+    background-position: -1px -1438px
 }
-.room__list-Create {
-    background-position: -536px -1443px
+.room__list-inventory:hover {
+    background-position: -47px -1438px;
 }
-.room__list-Create:hover {
-    background-position: -598px -1443px;
-    cursor: pointer
+.room__list-inventory:active {
+    background-position: -93px -1438px;
 }
-.room__list-Create:active {
-    background-position: -660px -1443px;
-    cursor: pointer
+.room__list-myinfo {
+    background-position: -1px -1479px
+}
+.room__list-myinfo:hover {
+    background-position: -47px -1479px;
+}
+.room__list-myinfo:active {
+    background-position: -93px -1479px;
+}
+.room__list-event {
+    background-position: -1px -1520px
+}
+.room__list-event:hover {
+    background-position: -47px -1520px;
+}
+.room__list-event:active {
+    background-position: -93px -1520px;
+}
+.room__list-Title {
+    background-position: -1px -1561px
+}
+.room__list-Title:hover {
+    background-position: -47px -1561px;
+}
+.room__list-Title:active {
+    background-position: -93px -1561px;
+}
+.room__list-gamble {
+    background-position: -399px -369px
+}
+.room__list-gamble:hover {
+    background-position: -445px -369px;
+}
+.room__list-gamble:active {
+    background-position: -491px -369px;
+}
+.room__list-battle {
+    background-position: -1px -1602px
+}
+.room__list-battle:hover {
+    background-position: -47px -1602px;
+}
+.room__list-battle:active {
+    background-position: -93px -1602px;
+}
+.room__list-option {
+    background-position: -1px -1643px
+}
+.room__list-option:hover {
+    background-position: -47px -1643px;
+}
+.room__list-option:active {
+    background-position: -93px -1643px;
+}
+.room__list-exit {
+    background-position: -1px -1684px
+}
+.room__list-exit:hover {
+    background-position: -47px -1684px;
+}
+.room__list-exit:active {
+    background-position: -93px -1684px;
 }
 #dialogCreateRoom {
     position: absolute;
-    left: 0%;
-    top: 0%;
+    left: 314px;
+    top: 155px;
     width: 341px;
-    height: 300px;
+    height: 258px;
     display: none;
     background-position: -1189px -218px;
     z-index: 1
@@ -7505,67 +7839,114 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     left: 114px;
     top: 41px;
     width: 191px;
-    color: #302f29;
+    color: #5a71c6;
     border: 0;
     height: 15px;
     padding-left: 4px;
     outline: none;
     border: 0;
     background: none
+}
+.room_list-optionleft {
+    background-position: -1082px -1px;
+    width: 7px;
+    height: 10px
+}
+.room_list-optionleft:hover {
+    background-position: -1090px -1px;
+}
+.room_list-optionleft:active {
+    background-position: -1098px -1px;
+}
+.room_list-optionright {
+    background-position: -1106px -1px;
+    width: 7px;
+    height: 10px
+}
+.room_list-optionright:hover {
+    background-position: -1114px -1px;
+}
+.room_list-optionright:active {
+    background-position: -1122px -1px;
 }
 #createRoomPasswordInput {
     position: absolute;
     left: 113px;
-    top: 65px;
+    top: 86px;
     width: 191px;
-    color: #302f29;
+    color: #5a71c6;
     height: 15px;
     padding-left: 4px;
     outline: none;
     border: 0;
     background: none
 }
+#CreateRoomPrivateCheckbox {
+    position: absolute;
+    left: 45px;
+    top: 64px
+}
+.checkboxOff {
+    width: 13px;
+    height: 13px;
+    background-position: -1174px -343px;
+}
+
+.checkboxOn {
+    width: 13px;
+    height: 13px;
+    background-position: -1174px -357px;
+}
 #CreateRoomPlayers {
     position: absolute;
-    left: 255px;
-    top: 95px;
-    font-weight: 900;
-    text-align: center;
-    width: 46px;
-    height: 15px
-}
-#CreateRoomMode {
-    position: absolute;
-    left: 255px;
-    top: 132px;
+    left: 172px;
+    top: 125px;
     font-weight: 900;
     text-align: center;
     width: 50px;
     height: 15px;
-    pointer-events: none
+}
+.players_vs_1{
+    background-position: -1091px -12px;
+}
+.players_vs_2{
+    background-position: -1091px -29px;
+}
+.players_vs_3{
+    background-position: -1091px -44px;
+}
+.players_vs_4{
+    background-position: -1091px -59px;
+}
+#CreateRoomMode {
+    position: absolute;
+    left: 172px;
+    top: 145px;
+    font-weight: 900;
+    text-align: center;
+    pointer-events: none;
+    width: 50px;
+    height: 15px;
+}
+.game_mode_tag {
+    background-position: -1091px -89px;
+}
+.game_mode_jewel{
+    background-position:-1089px -119px;
+}
+.game_mode_score{
+    background-position: -1090px -104px;
+}
+.game_mode_solo {
+    background-position: -1091px -74px;
 }
 #CreateRoomModeIcon {
     position: absolute;
     left: 271px;
-    top: 184px;
+    top: 127px;
     width: 32px;
     height: 30px
     
-}
-.gameMode0 {
-    color: #35f78c
-}
-
-.gameMode1 {
-    color: #ffac0d
-}
-
-.gameMode2 {
-    color: #ff07f1
-}
-
-.gameMode3 {
-    color: #52c6f6
 }
 .iconMode0 {
     background-position: -1156px -218px;
@@ -7580,97 +7961,29 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     background-position: -1156px -280px;
     filter: none
 }
-#dialogCreateRoomButtonOK {
-    left: 272px;
-    top: 255px
+#dialogCreateRoomButtonOK,
+#dialogCreateRoomButtonCancel {
+    position: absolute;
+    left: 201px;
+    top: 211px
 }
 #dialogCreateRoomButtonCancel {
-    left: 206px;
-    top: 255px
+    left: 266px;
 }
-#filter_normal,#filter_score,#filter_all {
+#dialog_join_room_ok {
     position: absolute;
-    left: 442px;
-    top: 8px;
-}
-#filter_normal {
-    width: 62px;
-    height: 45px
-}
-.room__list-Normal {
-    background-position: -536px -1488px
-}
-.room__list-Normal:hover {
-    background-position: -598px -1488px;
-    cursor: pointer
-}
-.room__list-Normal:active {
-    background-position: -660px -1488px;
-    cursor: pointer
-}
-#filter_score {
-    width: 62px;
-    height: 45px
-}
-.room__list-Score {
-    background-position: -536px -1578px
-}
-.room__list-Score:hover {
-    background-position: -598px -1578px;
-    cursor: pointer
-}
-.room__list-Score:active {
-    background-position: -660px -1578px;
-    cursor: pointer
-}
-#filter_friends {
-    position: absolute;
-    left: 511px;
-    top: 8px;
-    width: 62px;
-    height: 45px
-}
-.room__list-Friend {
-    background-position: -536px -1668px
-}
-.room__list-Friend:hover {
-    background-position: -598px -1668px;
-    cursor: pointer
-}
-.room__list-Friend:active {
-    background-position: -660px -1713px;
-    cursor: pointer
-}
-#buttonJoin {
-    position: absolute;
-    left: 580px;
-    top: 8px;
-    width: 62px;
-    height: 45px;
-}
-.room__list-Number {
-    background-position: -536px -1713px
-}
-.room__list-Number:hover {
-    background-position: -598px -1713px;
-    cursor: pointer
-}
-.room__list-Number:active {
-    background-position: -660px -1713px;
-    cursor: pointer
-}
-.HD #dialog_join_room_ok {
-    left: 147px;
-    top: 108px
+    right: 8px;
+    bottom: 18px
 }
 #dialog_join_room_cancel {
+    position: absolute;
     left: 81px;
-    top: 108px
+    bottom: 18px
 }
 #dialog_join_room_div {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 349px;
+    top: 159px;
     width: 216px;
     height: 153px;
     display: none;
@@ -7686,36 +7999,64 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     color: white;
     z-index: 2
 }
-.goto_OK {
+.input_Number {
+    outline: none;
+    border: 0;
+    background: none;
+    color: #4a61d6;
+    height: 15px;
+}
+#join_room_input {
+    width: 118px
+}
+#join_password_input {
+    width: 118px;
+    margin-top: 9px
+}
+.New_ok,.New_cancel {
     width: 61px;
     height: 27px;
     background-position: -437px -1397px
 }
-.goto_OK:hover {
+.New_ok:hover {
     background-position: -437px -1425px
 }
 
-.goto_OK:active {
+.New_ok:active {
     background-position: -437px -1453px
 }
-.goto_Cancel {
-    width: 61px;
-    height: 27px;
+.New_cancel {
     background-position: -375px -1397px
 }
-.goto_Cancel:hover {
+.New_cancel:hover {
     background-position: -375px -1425px
 }
-.goto_Cancel:active {
+.New_cancel:active {
     background-position: -375px -1453px
 }
-.popupbase_buddy {
+.popup_userinfo_exit {
+    width: 22px;
+    height: 24px;
+    background-position: -940px -153px
+}
+.popup_userinfo_exit:hover {
+    background-position: -963px -153px
+}
+.popup_userinfo_exit:active {
+    background-position: -986px -153px
+}
+.DialogLayer {
     position: absolute;
-    left: 330px;
-    top: 186px;
+    left: 314px;
+    top: 183px;
+    z-index: 999;
+    background-position: -221px -1542px;
     width: 300px;
     height: 190px;
-    z-index: 999;
+}
+.popupbase_buddy {
+    width: 300px;
+    height: 190px;
     background-position: -221px -1542px
 }
 .AlertBoxContent {
@@ -7724,8 +8065,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     top: 54px;
     padding-left: 21px;
     padding-right: 45px;
-    font-size: 12px;
-    color: white;
     z-index: 2
 }
 .HD #DragonDialogOK {
@@ -7759,9 +8098,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     background-position: -457px -1514px
 }
 .popup_userinfo {
-    position: absolute;
-    left: 166px;
-    top: 81px;
     width: 403px;
     height: 269px;
     z-index: 999;
@@ -7807,7 +8143,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     height: 33px;
     top: 41px;
 }
-
 .tab-information-background{
     width: 348px;
     top: 84px;
@@ -7817,10 +8152,7 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #4c5d9d;
-        font-size: 11px;
-    font-weight: 500;
 }
-
 .tab-info-row{
     display: grid;
     grid-template-columns: 71px 1fr;
@@ -7833,393 +8165,67 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     padding-left: 3px;
         padding-top: 1px;
 }
-
-.tab-info-row{
-}
 #changeNameDiv {
     position: absolute;
     top: 40px;
     left: 129px;
     width: 265px
 }
-.HD #dialog_change_name_ok {
-    left: 328px;
-    top: 223px
-}
-.HD #dialog_change_name_cancel {
-    left: 262px;
-    top: 223px
-}
-#buttonRoomsListUp {
+#buddy_add {
     position: absolute;
-    left: 330px;
-    top: 351px;
-    width: 19px;
-    height: 22px
+    left: 322px;
+    top: 221px
 }
-.room__list-left {
-    background-position: -140px -1454px;
-}
-.room__list-left:hover {
-    background-position: -159px -1454px;
-    cursor: pointer
-}
-.room__list-left:active {
-    background-position: -178px -1454px;
-    cursor: pointer
-}
-#buttonRoomsListDown {
+#user_info {
     position: absolute;
-    left: 387px;
-    top: 351px;
-    width: 19px;
-    height: 22px
+    left: 216px;
+    top: 219px;
+    width: 47px;
+    height: 35px;
 }
-.room__list-right {
-    background-position: -198px -1454px
+.room__list-user_info {
+    background-position: -940px -334px
 }
-.room__list-right:hover {
-    background-position: -217px -1454px;
-    cursor: pointer
+.room__list-user_info:hover {
+    background-position: -988px -334px;
 }
-.room__list-right:active {
-    background-position: -236px -1454px;
-    cursor: pointer
+.room__list-user_info:active {
+    background-position: -1036px -334px;
 }
-.room__list-color {
+.room__list-user_info.selected {
+    background-position: -536px -271px;
+    width: 403px;
+    height: 269px;
+}
+#userinfo_chat {
     position: absolute;
-    left: 169px;
-    top: 392px;
-    width: 21px;
-    height: 26px;
-    background-position: -140px -1477px
-}
-.room__list-color:hover {
-    background-position: -161px -1477px;
-    cursor: pointer
-}
-.room__list-color:active {
-    background-position: -182px -1477px;
-    cursor: pointer
-}
-.room__list-bugle {
-    position: absolute;
-    left: 204px;
-    top: 396px;
-    width: 20px;
-    height: 19px;
-    background-position: -140px -1504px
-}
-.room__list-bugle:hover {
-    background-position: -160px -1504px;
-    cursor: pointer
-}
-.room__list-bugle:active {
-    background-position: -180px -1504px;
-    cursor: pointer
-}
-.room__list-nobugle {
-    position: absolute;
-    left: 238px;
-    top: 397px;
-    width: 23px;
-    height: 18px;
-    background-position: -140px -1524px
-}
-.room__list-nobugle:hover {
-    background-position: -163px -1524px;
-    cursor: pointer
-}
-.room__list-nobugle:active {
-    background-position: -186px -1524px;
-    cursor: pointer
-}
-.room__list-SelectChatting {
-    position: absolute;
-    left: 106px;
-    top: 518px;
-    width: 79px;
-    height: 21px;
-    background-position: -140px -1543px
-}
-.room__list-SelectChatting:hover {
-    background-position: -140px -1565px;
-    cursor: pointer
-}
-.room__list-SelectChatting:active {
-    background-position: -140px -1587px;
-    cursor: pointer
-}
-#channel_player {
-    position: absolute;
-    pointer-events: none;
-    left: 760px;
-    top: 128px
-}
-#myName2,
-#myName3 {
-    position: absolute;
-    left: 708px;
-    top: 175px;
-    pointer-events: none
-}
-#myGP,
-#myGP2 {
-    position: absolute;
-    left: 776px;
-    top: 193px;
-    pointer-events: none;
-    z-index: 9;
-}
-#myGCoin,
-#myGCoin2 {
-    position: absolute;
-    top: 228px;
-    text-align: right;
-    pointer-events: none;
-    right: 187px;
-    width: 86px;
-    display: flex;
-    justify-content: end;
-    transform: scale(1.1,1.4);
-}
-#myCash,
-#myCash2 {
-    position: absolute;
-    top: 247px;
-    color: #8bc2ee;
-    text-align: right;
-    pointer-events: none;
-    right: 187px;
-    width: 86px;
-    display: flex;
-    justify-content: end;;
-    transform: scale(1.1,1.4);
-}
-#myGold,
-#myGold2 {
-    position: absolute;
-    top: 265px;
-    color: #ffea4a;
-    text-align: right;
-    pointer-events: none;
-    right: 187px;
-    width: 86px;
-    display: flex;
-    justify-content: end;;
-    transform: scale(1.1,1.4);
-}
-#buttonCharge2 {
-    position: absolute;
-    left: 791px;
-    top: 224px;
-    width: 78px;
-    height: 56px
-}
-.room__list-charge {
-    background-position: -140px -1397px
-}
-.room__list-charge:hover {
-    background-position: -218px -1397px;
-    cursor: pointer
-}
-.room__list-charge:active {
-    background-position: -296px -1397px;
-    cursor: pointer
-}
-.room__list-menu {
-    position: absolute;
-    left: 82px;
-    top: 563px;
-    width: 80px;
-    height: 34px;
-    background-position: -140px -1609px
-}
-.room__list-menu:hover {
-    background-position: -140px -1643px;
-    cursor: pointer
-}
-.room__list-menu:active {
-    background-position: -140px -1677px;
-    cursor: pointer
-}
-.room__list-marcket {
-    position: absolute;
-    left: 188px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1397px;
-}
-.room__list-marcket:hover {
-    background-position: -47px -1397px;
-    cursor: pointer
-}
-.room__list-marcket:active {
-    background-position: -93px -1397px;
-    cursor: pointer
-}
-.room__list-record {
-    position: absolute;
-    left: 239px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1438px
-}
-.room__list-record:hover {
-    background-position: -47px -1438px;
-    cursor: pointer
-}
-.room__list-record:active {
-    background-position: -93px -1438px;
-    cursor: pointer
-}
-.room__list-myinfo {
-    position: absolute;
-    left: 292px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1479px
-}
-.room__list-myinfo:hover {
-    background-position: -47px -1479px;
-    cursor: pointer
-}
-.room__list-myinfo:active {
-    background-position: -93px -1479px;
-    cursor: pointer
-}
-.room__list-event {
-    position: absolute;
-    left: 347px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1520px
-}
-.room__list-event:hover {
-    background-position: -47px -1520px;
-    cursor: pointer
-}
-.room__list-event:active {
-    background-position: -93px -1520px;
-    cursor: pointer
-}
-.room__list-mutelist {
-    position: absolute;
-    left: 403px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1561px
-}
-.room__list-mutelist:hover {
-    background-position: -47px -1561px;
-    cursor: pointer
-}
-.room__list-mutelist:active {
-    background-position: -93px -1561px;
-    cursor: pointer
-}
-.room__list-rank {
-    position: absolute;
-    left: 508px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1602px
-}
-.room__list-rank:hover {
-    background-position: -47px -1602px;
-    cursor: pointer
-}
-.room__list-rank:active {
-    background-position: -93px -1602px;
-    cursor: pointer
-}
-.room__list-option {
-    position: absolute;
-    left: 784px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1643px
-}
-.room__list-option:hover {
-    background-position: -47px -1643px;
-    cursor: pointer
-}
-.room__list-option:active {
-    background-position: -93px -1643px;
-    cursor: pointer
-}
-.room__list-exit {
-    position: absolute;
-    left: 834px;
-    top: 559px;
-    width: 46px;
-    height: 41px;
-    background-position: -1px -1684px
-}
-.room__list-exit:hover {
-    background-position: -47px -1684px;
-    cursor: pointer
-}
-.room__list-exit:active {
-    background-position: -93px -1684px;
-    cursor: pointer
-}
-#buttonAllBuddyList1 {
-    position: absolute;
-    left: 660px;
-    top: 305px;
-    width: 108px;
+    left: 275px;
+    top: 217px;
+    width: 27px;
     height: 25px;
-    cursor: pointer
 }
-.buttonAllBuddyList1 {
-    width: 73px;
-    height: 30px;
-    background-position: 0 -1733px
+.popup_userinfo_chat {
+    background-position: -219px -1516px
 }
-.buttonAllBuddyList1.BuddyList {
-    background-position: -216px -1733px;
-    width: 108px
+.popup_userinfo_chat:hover {
+    background-position: -247px -1516px;
 }
-.HD .buttonAllBuddyList1 {
-    background-position: 0 -1733px;
-    width: 108px
-}
-.HD .buttonAllBuddyList1.BuddyList {
-    background-position: -216px -1733px;
-    width: 108px
-}
-#buttonAllBuddyList2 {
-    position: absolute;
-    left: 768px;
-    top: 305px;
-    width: 108px;
-    height: 25px;
-    cursor: pointer
-}
-.buttonAllBuddyList2 {
-    background-position: -108px -1733px
-}
-
-.buttonAllBuddyList2.BuddyList {
-    background-position: -324px -1733px
-}
-
-.HD .buttonAllBuddyList2 {
-    background-position: -108px -1733px
-}
-.HD .buttonAllBuddyList2.BuddyList {
-    background-position: -324px -1733px
+.popup_userinfo_chat:active {
+    background-position: -275px -1516px;
 }
 /*** Season 3 ready_back **/
 
+#roomScreen {
+    display: none;
+    color: white;
+    font-size: 17px
+}
+#roomNumber {
+    position: absolute;
+    left: 118px;
+    width: 74px;
+    height: 32px;
+}
 #roomTitle {
     position: absolute;
     left: 230px;
@@ -8227,21 +8233,21 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     width: 321px;
     height: 16px;
 }
-.ready_title {
+#room_change_title_button {
     position: absolute;
     left: 571px;
     top: 8px;
     width: 15px;
     height: 15px;
+}
+.ready_title {
     background-position: -956px -888px
 }
 .ready_title:hover {
     background-position: -972px -888px;
-    cursor: pointer
 }
 .ready_title:active {
     background-position: -988px -888px;
-    cursor: pointer
 }
 #room_map {
     position: absolute;
@@ -8264,11 +8270,9 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .ready_start:hover {
     background-position: -1137px -477px;
-    cursor: pointer
 }
 .ready_start:active {
     background-position: -1298px -477px;
-    cursor: pointer
 }
 .ready_ready {
     position: absolute;
@@ -8280,11 +8284,9 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .ready_ready:hover {
     background-position: -1137px -406px;
-    cursor: pointer
 }
 .ready_ready:active {
     background-position: -1298px -406px;
-    cursor: pointer
 }
 .ready_team {
     position: absolute;
@@ -8349,7 +8351,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     height: 16px;
     background-color: transparent;
     border: 0;
-    font-size: 12px;
     color: #adf7f7;
     z-index: 111;
     -webkit-transform-origin: center bottom;
@@ -8361,11 +8362,9 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .ready_team:hover {
     background-position: -1115px -548px;
-    cursor: pointer
 }
 .ready_team:active {
     background-position: -1208px -548px;
-    cursor: pointer
 }
 .ready_SelectChatting {
     position: absolute;
@@ -8374,7 +8373,7 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .ready_item {
     position: absolute;
-    left: 654px;
+    left: 724px;
     top: 468px;
     width: 66px;
     height: 70px;
@@ -8382,15 +8381,13 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .ready_item:hover {
     background-position: -821px -561px;
-    cursor: pointer
 }
 .ready_item:active {
     background-position: -888px -561px;
-    cursor: pointer
 }
 .ready_room_option {
     position: absolute;
-    left: 724px;
+    left: 794px;
     top: 468px;
     width: 66px;
     height: 70px;
@@ -8398,69 +8395,1233 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .ready_room_option:hover {
     background-position: -821px -632px;
-    cursor: pointer
 }
 .ready_room_option:active {
     background-position: -888px -632px;
-    cursor: pointer
 }
-.ready_mobile {
+#roomButtonMobile {
     position: absolute;
-    left: 794px;
+    left: 654px;
     top: 468px;
     width: 66px;
     height: 70px;
+}
+#attkStatMobile {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #ef755a;
+    border-top: 0.2px solid #ff8a73;
+    border-bottom: 0.2px solid #bd6552;
+    bottom: 94px;
+    left: 259px;
+    max-width: 200px;
+    min-width: 0px;
+}
+#defStatMobile {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #73d36b;
+    border-top: 0.2px solid #9ceb94;
+    border-bottom: 0.2px solid #5a965a;
+    bottom: 82px;
+    left: 267px;
+    max-width: 200px;
+    min-width: 0px;
+}
+#timeStatMobile {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #d6d7d6;
+    border-top: 0.2px solid #ffffff;
+    border-bottom: 0.2px solid #a5a6a5;
+    bottom: 70px;
+    left: 276px;
+    max-width: 200px;
+    min-width: 0px;
+}
+#escStatMobile {
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    background: #a5b2ef;
+    border-top: 0.2px solid #849ad6;
+    border-bottom: 0.2px solid #7382bd;
+    bottom: 58px;
+    left: 285px;
+    max-width: 200px;
+    min-width: 0px;
+}
+#roomMobileSelect {
+    position: absolute;
+    left: 204.5px;
+    top: 5px;
+    width: 551px;
+    height: 560px;
+    z-index: 150;
+    background-position: -424px 0;
+    display: none;
+}
+#roomMobileButton{
+    position: absolute;
+    top: 197px;
+    left: 242px;
+}
+.buttonRareMobile{
+    width: 77px;
+    height: 77px;
+}
+#buttonTypeBio {
+	background-position: -976px -1px;
+}
+#buttonTypeBio:hover {
+	background-position: -1054px -1px;
+}
+#buttonTypeBio:active {
+	background-position: -1132px -1px;
+}
+#buttonTypeMech {
+	background-position: -976px -79px;
+}
+#buttonTypeMech:hover {
+	background-position: -1054px -79px;
+}
+#buttonTypeMech:active {
+	background-position: -1132px -79px;
+}
+#buttonTypePush {
+	background-position: -976px -157px;
+}
+#buttonTypePush:hover {
+	background-position: -1054px -157px;
+}
+#buttonTypePush:active {
+	background-position: -1132px -157px;
+}
+#buttonTypeRandom {
+	background-position: -976px -235px;
+}
+#buttonTypeRandom:hover {
+	background-position: -1054px -235px;
+}
+#buttonTypeRandom:active {
+	background-position: -1132px -235px;
+}
+#buttonTypeShield {
+	background-position: -976px -313px;
+}
+#buttonTypeShield:hover {
+	background-position: -1054px -313px;
+}
+#buttonTypeShield:active {
+	background-position: -1132px -313px;
+}
+.mobileSelectBtn {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    /*background: rgba(0, 70, 30, 0.75);
+    border: 3px solid #0f9;
+    border-radius: 15px;*/
+    float: left;
+    margin: 12px
+}
+.mobileName {
+    position: absolute;
+    left: -15px;
+    top: 73px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    color: #ff0
+}
+.glow_buttonx:hover {
+    box-shadow: 0 0 10px 10px #ff0 !important
+}
+.glow_buttonx:active {
+    box-shadow: 0 0 10px 10px #9f9 !important
+}
+#roomMobileSelectOk {
+    position: absolute;
+    left: 343px;
+    top: 517px;
+    width: 84px;
+    height: 26px;
+}
+#roomMobileSelectCancel {
+    position: absolute;
+    left: 436px;
+    top: 517px;
+    width: 84px;
+    height: 26px;
+}
+.popup_mobile_cancel {
+    background-position: -1107px -619px
+}
+.popup_mobile_cancel:hover {
+    background-position: -1107px -646px;
+}
+.popup_mobile_cancel:active {
+    background-position: -1107px -673px;
+}
+.popup_mobile_ok {
+    background-position: -1022px -619px
+}
+.popup_mobile_ok:hover {
+    background-position: -1022px -646px;
+}
+.popup_mobile_ok:active {
+    background-position: -1022px -673px;
+}
+.ready_mobile {
     background-position: -754px -703px
 }
 .ready_mobile:hover {
     background-position: -821px -703px;
-    cursor: pointer
 }
 .ready_mobile:active {
     background-position: -888px -703px;
-    cursor: pointer
 }
-.room__list-buddylist {
+#roomMyInfo {
+    position: absolute;
+    left: 182px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
+}
+#record {
+    position: absolute;
+    left: 240px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
+}
+#ready_buddylist {
     position: absolute;
     left: 297px;
     top: 559px;
     width: 46px;
     height: 41px;
+}
+#ready_mutelist {
+    position: absolute;
+    left: 351px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
+}
+#ready_invite {
+    position: absolute;
+    left: 401px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
+}
+#ready_event {
+    position: absolute;
+    left: 457px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
+}
+#buttonOptionsRoom {
+    position: absolute;
+    left: 784px;
+    top: 559px;
+    width: 46px;
+    height: 41px
+}
+#roomButtonBack {
+    position: absolute;
+    left: 834px;
+    top: 559px;
+    width: 46px;
+    height: 41px
+}
+.room__list-mutelist {
+    background-position: -154px -1900px
+}
+.room__list-mutelist:hover {
+    background-position: -200px -1900px;
+}
+.room__list-mutelist:active {
+    background-position: -246px -1900px;
+}
+.room__list-buddylist {
     background-position: -154px -1777px
 }
 .room__list-buddylist:hover {
-    background-position: -154px -1819px;
-    cursor: pointer
+    background-position: -200px -1777px;
 }
 .room__list-buddylist:active {
-    background-position: -154px -1861px;
-    cursor: pointer
+    background-position: -246px -1777px;
 }
-.ready_myinfo {
-    position: absolute;
-    left: 182px;
-    top: 559px
+.room__list-record {
+    background-position: -154px -1818px;
 }
-.ready_marcket {
-    position: absolute;
-    left: 239px;
-    top: 559px
+.room__list-record:hover {
+    background-position: -200px -1818px;
 }
-.ready_mutelist {
-    position: absolute;
-    left: 347px;
-    top: 559px
+.room__list-record:active {
+    background-position: -246px -1818px;
 }
-.ready_event {
+.room__list-invite {
+    background-position: -154px -1859px;
+}
+.room__list-invite:hover {
+    background-position: -200px -1859px;
+}
+.room__list-invite:active {
+    background-position: -246px -1859px;
+}
+#itemsSelection {
     position: absolute;
-    left: 397px;
-    top: 559px
+    left: 360px;
+    top: 116px;
+    width: 241px;
+    height: 388px;
+    z-index: 13;
+    display: block;
+}
+.ItemSelect_back {
+    background-position: -1586px -1px;
+}
+#itemsSelection.InRoom {
+    top: 116px;
+    background-color: inherit
+}
+#itemSlot0 {
+    position: absolute;
+    left: 16px;
+    top: 72px
+}
+#itemSlot1 {
+    position: absolute;
+    left: 35px;
+    top: 0
+}
+#itemSlot2 {
+    position: absolute;
+    left: 86px;
+    top: 72px
+}
+#itemSlot3 {
+    position: absolute;
+    left: 105px;
+    top: 0
+}
+#itemSlot4 {
+    position: absolute;
+    left: 156px;
+    top: 72px
+}
+#itemSlot5 {
+    position: absolute;
+    left: 175px;
+    top: 0
+}
+#itemSlot6 {
+    position: absolute;
+    left: 156px;
+    top: 106px
+}
+#itemSlot7 {
+    position: absolute;
+    left: 175px;
+    top: 0
+}
+#itemSlot8 {
+    position: absolute;
+    left: 86px;
+    top: 106px
+}
+#itemSlot9 {
+    position: absolute;
+    left: 175px;
+    top: 0
+}
+#item001,
+#item002,
+#item003,
+#item004,
+#item005 {
+    position: absolute;
+    left: 22px;
+    top: 190px;
+    width: 34px;
+    height: 31px
+}
+#item002 {
+    left: 62px;
+}
+#item003 {
+    left: 104px;
+}
+#item004 {
+    left: 145px;
+}
+#item005 {
+    left: 186px;
+}
+#itemDual,
+#itemDualP,
+#itemTeleport,
+#item008,
+#item009 {
+    position: absolute;
+    left: 22px;
+    top: 228px;
+    width: 69px;
+    height: 31px;
+}
+#itemDualP {
+    left: 99px;
+    top: 228px
+}
+#itemTeleport {
+    top: 304px
+}
+#item008 {
+    top: 266px
+}
+#item009 {
+    left: 99px;
+    top: 266px
+}
+.item001 {
+    background-position: -224px -1942px;
+    width: 34px;
+    height: 31px
+}
+.item001:hover {
+    background-position: -259px -1942px;
+}
+.item002 {
+    background-position: -224px -1974px;
+    width: 34px;
+    height: 31px
+}
+.item002:hover {
+    background-position: -259px -1974px;
+}
+.item003 {
+    background-position: -224px -2006px;
+    width: 34px;
+    height: 31px
+}
+.item003:hover {
+    background-position: -259px -2006px;
+}
+.item004 {
+    background-position: -224px -2038px;
+    width: 34px;
+    height: 31px
+}
+.item004:hover {
+    background-position: -259px -2038px;
+}
+.item005 {
+    background-position: -224px -2070px;
+    width: 34px;
+    height: 31px
+}
+.item005:hover {
+    background-position: -259px -2070px;
+}
+.itemDual {
+    width: 69px;
+    height: 31px;
+    background-position: -154px -1942px;
+}
+.itemDual:hover {
+    background-position: -154px -1974px;
+}
+.itemDualP {
+    background-position: -154px -2006px;
+    width: 69px;
+    height: 31px
+}
+.itemDualP:hover {
+    background-position: -154px -2038px;
+}
+.item008 {
+    background-position: -154px -2070px;
+    width: 69px;
+    height: 31px
+}
+.item008:hover {
+    background-position: -154px -2102px;
+}
+.item009 {
+    width: 69px;
+    height: 31px;
+    background-position: -154px -2134px;
+}
+.item009:hover {
+    background-position: -154px -2166px;
+}
+.itemTeleport {
+    background-position: -154px -2198px;
+    width: 69px;
+    height: 31px
+}
+.ItemBtn:active {
+    margin: 1px 0 0 1px;
+}
+.playerInRoom {
+    width: 195px;
+    height: 152px;
+    /*background: #001839;
+    display: none*/
+}
+.SideA .roomPlayerName {
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 194px;
+    height: 15px;
+    text-align: center;
+    z-index: 10;
+}
+.SideA .roomPlayerInfo {
+    position: absolute;
+    left: 150px;
+    top: 112px;
+    width: 43px;
+    height: 30px;
+    background-position: -260px -216px;
+    z-index: 8;
+    transform: scale(0.65) rotate(270deg);
+}
+.roomBotSelect {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    width: 82px;
+    height: 19px;
+    background-position: 0 -279px;
+    display: none;
+    z-index: 11;
+}
+.HD .roomBotSelect {
+    background-position: -751px -776px
+}
+.roomBotRemove {
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    width: 82px;
+    height: 19px;
+    background-position: 0 -299px;
+    display: none;
+    z-index: 11;
+}
+.HD .roomBotRemove {
+    background-position: -917px -776px
+}
+.SideA .roomPlayerNotReady {
+    position: absolute;
+    left: 56px;
+    top: 110px;
+    width: 84px;
+    height: 21px;
+    background-position: -1px -2394px;
+    z-index: 6;
+}
+.SideA .roomPlayerReady {
+    position: absolute;
+    left: 56px;
+    top: 110px;
+    width: 84px;
+    height: 21px;
+    background-position: -1px -2394px;
+    z-index: 6;
+}
+.SideA .roomPlayerMaster {
+    position: absolute;
+    left : 8px;
+    top: 53px;
+    width: 35px;
+    height: 33px;
+    background-position: -150px -2455px;
+    z-index: 2;
+}
+.SideA .roomPlayerMobile {
+    position: absolute;
+    left: 100px;
+    top: 88px
+}
+.roomPlayerMyself {
+    width: 201px;
+    height: 156px;
+    background-position: -754px -874px;
+}
+.SideA .roomPlayerMyself {
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    display: none;
+    z-index: 8
+}
+.SideA .roomPlayerShadow {
+    position: absolute;
+    left: 58px;
+    bottom: 10px;
+    width: 68px;
+    height: 10px;
+    background-position: -1px -2489px;
+}
+.SideA .roomPlayerBalloon {
+    position: absolute;
+    left: 55px;
+    bottom: 55px;
+    background-color: white;
+    min-width: 30px;
+    border: 1px solid black;
+    text-shadow: none;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: 300px;
+    word-wrap: break-word;
+    opacity: .9;
+    display: none;
+    z-index: 33
+}
+.roomPlayerBalloon a:link {
+    color: blue
+}
+.roomPlayerBalloon a:visited {
+    color: purple
+}
+.SideA .roomPlayerBalloonTip {
+    position: absolute;
+    left: 80px;
+    bottom: 48px;
+    background-position: -85px 0;
+    width: 9px;
+    height: 8px;
+    opacity: .9;
+    display: none;
+    z-index: 34
+}
+.SideA .roomPlayerBalloonTip {
+    background-position: -837.5px -514.5px
+}
+#playerInRoom0 {
+    position: absolute;
+    left: 5px;
+    top: 273px;
+}
+#playerInRoom2 {
+    position: absolute;
+    left: 5px;
+    top: 273px;
+}
+#playerInRoom4 {
+    position: absolute;
+    left: 5px;
+    top: 273px;
+}
+#playerInRoom6 {
+    position: absolute;
+    left: 5px;
+    top: 273px;
+}
+.SideB .roomPlayerName {
+    position: absolute;
+    left: 0px;
+    top: 33px;
+    width: 194px;
+    height: 15px;
+    text-align: center;
+    z-index: 10
+}
+.SideB .roomPlayerInfo {
+    position: absolute;
+    left: 150px;
+    top: 112px;
+    width: 43px;
+    height: 30px;
+    background-position: -260px -216px;
+    z-index: 8;
+    transform: scale(0.65) rotate(90deg)
+}
+.HD .roomPlayerInfo,
+.HD .chatDialogProfile {
+    background-position: -654.5px -156px
+}
+.SideB .roomPlayerRank {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 25px;
+    height: 15px;
+}
+.SideB .roomPlayerNotReady {
+    position: absolute;
+    left: 56px;
+    top: 110px;
+    width: 84px;
+    height: 21px;
+    background-position: -1px -2394px;
+    z-index: 6;
+}
+.SideB .roomPlayerReady {
+    position: absolute;
+    left: 56px;
+    top: 110px;
+    width: 84px;
+    height: 21px;
+    background-position: -1px -2394px;
+    z-index: 6;
+}
+.SideB .roomPlayerMaster {
+    position: absolute;
+    left : 8px;
+    top: 53px;
+    width: 35px;
+    height: 33px;
+    background-position: -150px -2455px;
+    z-index: 2;
+}
+.SideB .roomPlayerMobile {
+    position: absolute;
+    right: 100px;
+    top: 88px
+}
+.SideB .roomPlayerMyself {
+    position: absolute;
+    top: -4px;
+    left: -3px;
+    display: none;
+    z-index: 8;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"
+}
+.SideB .roomPlayerShadow {
+    position: absolute;
+    left: 58px;
+    bottom: 10px;
+    width: 68px;
+    height: 10px;
+    background-position: -1px -2489px;
+}
+.SideB.roomPlayerBalloon {
+    position: absolute;
+    right: 55px;
+    bottom: 55px;
+    background-color: white;
+    min-width: 30px;
+    border: 1px solid black;
+    text-shadow: none;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+    max-width: 300px;
+    word-wrap: break-word;
+    opacity: .9;
+    display: none;
+    z-index: 33
+}
+.SideB .roomPlayerBalloonTip {
+    position: absolute;
+    right: 80px;
+    bottom: 48px;
+    background-position: -95px 0;
+    width: 9px;
+    height: 8px;
+    opacity: .9;
+    display: none;
+    z-index: 34
+}
+.SideB .roomPlayerBalloonTip {
+    background-position: -847.5px -514.5px
+}
+#playerInRoom1 {
+    position: absolute;
+    left: 336px;
+    top: 36px;
+}
+#playerInRoom3 {
+    position: absolute;
+    left: 336px;
+    top: 36px;
+}
+#playerInRoom5 {
+    position: absolute;
+    left: 336px;
+    top: 36px;
+}
+#playerInRoom7 {
+    position: absolute;
+    left: 336px;
+    top: 36px;
+}
+#room_turn_time_text {
+    position: absolute;
+    right: 150px;
+    top: 244px;
+    font-weight: bold;
+}
+#room_game_mode {
+    position: absolute;
+    width: 57px;
+    height: 19px;
+    top: 202px;
+    left: 653px;
+    text-align: center;
+}
+.room_game_mode_0 {
+    background-position: -2px -1857px;
+}
+.room_game_mode_1 {
+    background-position: -2px -1877px;
+}
+.room_game_mode_2 {
+    background-position: -2px -1897px;
+}
+.room_game_mode_3 {
+    background-position: -2px -1917px;
+}
+#room_game_mode_4 {
+    background-position: -2px -1937px;
+}
+#room_players {
+    position: absolute;
+    left: 653px;
+    top: 221px;
+    text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black;
+    color: #ff6;
+    width: 50px;
+    height: 18px;
+    color: #ff6;
+    text-align: center
+}
+.room_players_1 {
+    background-position: -2px -1997px;
+}
+.room_players_2 {
+    background-position: -2px -2017px;
+}
+.room_players_3 {
+    background-position: -2px -2037px;
+}
+.room_players_4 {
+    background-position: -2px -2057px;
+}
+#room_mapa_mode {
+    position: absolute;
+    width: 57px;
+    height: 19px;
+    top: 240px;
+    left: 653px;
+    background-position: -2px -2077px;
+}
+#room_mapa_modes_1 {
+    background-position: -2px -2077px;
+}
+#room_mapa_modes_2 {
+    background-position: -2px -2097px;
+}
+#room_mode_items {
+    position: absolute;
+    width: 57px;
+    height: 19px;
+    left: 809px;
+    top: 202px;
+    background-position: -2px -2157px;
+}
+#room_mode_items_1 {
+    background-position: -2px -2157px;
+}
+#room_mode_items_2 {
+    background-position: -2px -2177px;
+}
+#room_mode_suvita {
+    position: absolute;
+    width: 57px;
+    height: 19px;
+    left: 809px;
+    top: 221px;
+    background-position: -2px -2197px;
+}
+#room_mode_suvita_1 {
+    background-position: -2px -2197px;
+}
+#room_mode_suvita_2 {
+    background-position: -2px -2217px;
+}
+#room_mode_suvita_3 {
+    background-position: -2px -2237px;
+}
+#room_mode_suvita_4 {
+    background-position: -2px -2257px;
+}
+#room_turn_time {
+    position: absolute;
+    left: 809px;
+    top: 240px;
+    width: 57px;
+    height: 19px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold
+}
+.room_turn_time_1 {
+    background-position: -2px -1777px;
+}
+.room_turn_time_2 {
+    background-position: -2px -1797px;
+}
+.room_turn_time_3 {
+    background-position: -2px -1817px;
+}
+.room_turn_time_4 {
+    background-position: -2px -1837px;
+}
+#popup_waitlist {
+    position: absolute;
+    width: 216px;
+    height: 281px;
+    left: 372px;
+    top: 160px;
+    background-position: -1828px -1px;
+    display: none;
+}
+#Waitlist_Invite {
+    position: absolute;
+    left: 40px;
+    top: 242px;
+}
+#Waitlist_Cancel {
+    position: absolute;
+    left: 116px;
+    top: 242px;
+}
+.New_invite {
+    width: 61px;
+    height: 27px;
+    background-position: -224px -2102px
+}
+.New_invite:hover {
+    background-position: -224px -2130px
+}
+.New_invite:active {
+    background-position: -224px -2158px
+}
+#waitlist {
+    position: absolute;
+    width: 185px;
+    height: 18px;
+    left: 16px;
+    top: 214px;
+    color: #3155ad;
+    outline: none;
+    border: 0;
+    background: none;
+}
+#popupbase_mutelist {
+    position: absolute;
+    width: 216px;
+    height: 251px;
+    left: 330px;
+    top: 150px;
+    background-position: -2045px -1px;
+    display: none;
+}
+#Mute_Cancel {
+    position: absolute;
+    left: 191px;
+    top: 7px;
+}
+#Mute_add,
+#Mute_delete2 {
+    position: absolute;
+    left: 144px;
+    top: 221px;
+}
+#Mute_delete2 {
+    left: 177px;
+}
+#Mute_font {
+    position: absolute;
+    left: 25px;
+    top: 223px;
+}
+#Popup_BuddyBack {
+    position: absolute;
+    width: 216px;
+    height: 251px;
+    left: 380px;
+    top: 100px;
+    background-position: -2262px -1px;
+    display: none;
+}
+#Gm_report {
+    position: absolute;
+    width: 434px;
+    height: 314px;
+    left: 262px;
+    top: 143px;
+    background-position: -2045px -506px;
+    display: none;
+}
+.popupbase_roomtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 216px;
+    height: 153px;
+    z-index: 999;
+    background-position: -1828px -283px;
+}
+.input_field {
+    position: absolute;
+    top: 55px;
+    left: 70px;
+    width: 111px;
+    outline: none;
+    border: 0;
+    background: none;
+    color: #4a61d6;
+}
+#dialog_change_title_ok {
+    position: absolute;
+    left: 82px;
+    top: 108px
+}
+#dialog_change_title_cancel {
+    position: absolute;
+    left: 146px;
+    top: 108px
+}
+#dialog_room_options {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 375px;
+    height: 404px;
+    z-index: 11
+}
+.ready_option {
+    background-position: -1210px -1px;
 }
 
+@media(max-height:590px) {
+    #dialog_room_options {
+        transform: scale(1.25)
+    }
+}
 
+@media(max-height:500px) {
+    #dialog_room_options {
+        transform: scale(1.5)
+    }
+}
+
+#RoomOptionsModePrev {
+    position: absolute;
+    left: 88px;
+    top: 63px
+}
+.HD .buttonPrev {
+    background-position: -620.5px -326.5px;
+    width: 18px;
+    height: 18px;
+    margin-left: -5px !important;
+    margin-top: -5px !important
+}
+#RoomOptionsModeNext {
+    position: absolute;
+    left: 212px;
+    top: 63px
+}
+#RoomOptionsMode {
+    position: absolute;
+    left: 105px;
+    top: 58px;
+    width: 100px;
+    text-align: center
+}
+#RoomOptionsModeIcon {
+    position: absolute;
+    left: 233px;
+    top: 48px
+}
+#RoomOptionsNumPlayersPrev {
+    position: absolute;
+    left: 88px;
+    top: 108px
+}
+#RoomOptionsNumPlayersNext {
+    position: absolute;
+    left: 212px;
+    top: 108px
+}
+#RoomOptionsPlayers {
+    position: absolute;
+    left: 97px;
+    top: 102px;
+    width: 115px;
+    color: #4a4d4a;
+    text-align: center
+}
+#RoomOptionsMapPrev {
+    position: absolute;
+    left: 88px;
+    top: 153px
+}
+#RoomOptionsMapNext {
+    position: absolute;
+    left: 212px;
+    top: 153px
+}
+#RoomOptionsMapName {
+    position: absolute;
+    left: 100px;
+    top: 146px;
+    color: #4a4d4a;
+    width: 110px;
+    text-align: center
+}
+#RoomOptionsMapImage {
+    position: absolute;
+    left: 47px;
+    top: 171px;
+    width: 213px;
+    height: 49px
+}
+#RoomOptionsMapLock {
+    position: absolute;
+    left: 47px;
+    top: 171px;
+    width: 211px;
+    height: 49px;
+}
+#RoomOptionsMapLockImg {
+    position: absolute;
+    left: 100px;
+    top: 13px
+}
+#RoomOptionsMapLockBtn {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    font-size: 9px;
+    padding: 0 5px
+}
+#RoomOptionsAvatars {
+    position: absolute;
+    left: 100px;
+    top: 262px;
+    width: 110px;
+    text-align: center
+}
+#RoomOptionsAvatarsGP {
+    position: absolute;
+    left: 135px;
+    top: 238px;
+    color: #ff0
+}
+#RoomOptionsAvatarsPrev {
+    position: absolute;
+    left: 88px;
+    top: 263px
+}
+#RoomOptionsAvatarsNext {
+    position: absolute;
+    left: 212px;
+    top: 263px
+}
+#RoomOptionsWind {
+    position: absolute;
+    left: 100px;
+    top: 309px;
+    width: 110px;
+    text-align: center
+}
+#RoomOptionsWindGP {
+    position: absolute;
+    left: 135px;
+    top: 287px;
+    color: #ff0
+}
+#RoomOptionsWindPrev {
+    position: absolute;
+    left: 88px;
+    top: 311px
+}
+#RoomOptionsWindNext {
+    position: absolute;
+    left: 212px;
+    top: 311px
+}
+#RoomOptionsCancel {
+    position: absolute;
+    left: 288px;
+    top: 370px;
+}
+#RoomOptionsOK {
+    position: absolute;
+    left: 223px;
+    top: 370px;
+}
 /*** Season 3 avatar_back **/
+
 #shopScreen {
     display: none
+}
+#shop_buy_dialog {
+    position: absolute;
+    left: 210px;
+    top: 127px;
+    width: 386px;
+    height: 383px;
+    background-color: transparent;
+    border: 0;
+    display: none;
+    z-index: 22;
+}
+#shop_buy_dialog .shop_item_icon {
+    left: 156px;
+    top: 33px
+}
+.shop_item_name {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#shop_buy_dialog .shop_item_name {
+    left: 133px;
+    top: 36px;
+    gap: 11px;
+}
+.stat_icon {
+    position: absolute;
+}
+#shop_buy_dialog .shop_item_image {
+    left: 234px;
+    top: 140px
 }
 #shopFilterMyAvatar {
     position: absolute;
@@ -8483,11 +9644,536 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .avatar__list-Align:hover {
     background-position: -360px -613px;
-    cursor: pointer
 }
 .avatar__list-Align:active {
     background-position: -360px -633px;
-    cursor: pointer
+}
+.group-buttons-shop{
+    position: absolute;
+    left: 97px;
+    top: 57px;
+    display: flex;
+    visibility: hidden;
+}
+.avatar__item-tab{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar__list-tab {
+    width: 70px;
+    height: 28px;
+    background-position: -290px -521px;
+}
+.avatar__list-tab:hover {
+    background-position: -290px -549px;
+}
+.avatar__list-tab:active {
+    background-position: -290px -611px;
+}
+.avatar__list-tab.selected {
+    background-position: -290px -577px
+}
+#shop_items {
+    position: absolute;
+    left: 111px;
+    top: 108px;
+}
+#shop_item0 {
+    left: 0px;
+}
+#shop_item1 {
+    left: 146px;
+}
+#shop_item2 {
+    left: 292px;
+}
+#shop_item3 {
+    top: 199px
+}
+#shop_item4 {
+    left: 146px;
+    top: 199px
+}
+#shop_item5 {
+    left: 292px;
+    top: 199px
+}
+.group-buttons-shop-main {
+    position: absolute;
+    left: 546px;
+    top: 109px;
+}
+.avatar__list-main.disabled{
+    filter: grayscale(1);
+}
+.avatar__list-main{
+    position: absolute;
+    width: 68px;
+    height: 45px;
+}
+#specialItem {
+    left: 0px;
+}
+#GcoinItem {
+    top: 53px;
+}
+#avatar {
+    top: 106px;
+}
+#setitem {
+    top: 159px;
+}
+#buttonShopExItem {
+    top: 211px;
+}
+#PetItem {
+    top: 265px;
+}
+#MobileCard {
+    top: 318px;
+}
+.avatar__list-specialAll {
+    background-position: -399px -47px;
+}
+.avatar__list-specialAll:hover {
+    background-position: -468px -47px;
+}
+.avatar__list-specialAll:active {
+    background-position: -537px -47px;
+}
+.avatar__list-specialAll.selected {
+    background-position: -537px -47px
+}
+.avatar__list-specialItem {
+    background-position: -399px -47px;
+}
+.avatar__list-specialItem:hover {
+    background-position: -468px -47px;
+}
+.avatar__list-specialItem:active {
+    background-position: -537px -47px;
+}
+.avatar__list-specialItem.selected {
+    background-position: -537px -47px
+}
+.avatar__list-GcoinItem {
+    background-position: -399px -93px;
+}
+.avatar__list-GcoinItem:hover {
+    background-position: -468px -93px;
+}
+.avatar__list-GcoinItem:active {
+    background-position: -537px -93px;
+}
+.avatar__list-GcoinItem.selected {
+    background-position: -537px -93px
+}
+.avatar__list-avatar {
+    background-position: -399px -139px;
+}
+.avatar__list-avatar:hover {
+    background-position: -468px -139px;
+}
+.avatar__list-avatar:active {
+    background-position: -537px -139px;
+}
+.avatar__list-avatar.selected {
+    background-position: -537px -139px
+}
+.avatar__list-setitem {
+    background-position: -399px -185px;
+}
+.avatar__list-setitem:hover {
+    background-position: -468px -185px;
+}
+.avatar__list-setitem:active {
+    background-position: -537px -185px;
+}
+.avatar__list-setitem.selected {
+    background-position: -537px -185px
+}
+.avatar__list-exitem {
+    background-position: -399px -231px;
+}
+.avatar__list-exitem:hover {
+    background-position: -468px -231px;
+}
+.avatar__list-exitem:active {
+    background-position: -537px -231px;
+}
+.avatar__list-exitem.selected {
+    background-position: -537px -231px
+}
+.avatar__list-PetItem {
+    background-position: -399px -277px;
+}
+.avatar__list-PetItem:hover {
+    background-position: -468px -277px;
+}
+.avatar__list-PetItem:active {
+    background-position: -537px -277px;
+}
+.avatar__list-PetItem.selected {
+    background-position: -537px -277px
+}
+.avatar__list-mobilecard {
+    background-position: -399px -323px;
+}
+.avatar__list-mobilecard:hover {
+    background-position: -468px -323px;
+}
+.avatar__list-mobilecard:active {
+    background-position: -537px -323px;
+}
+.avatar__list-mobilecard.selected {
+    background-position: -537px -323px
+}
+#shop_my_items_stats {
+    position: absolute;
+    left: 15px;
+    top: 482px;
+    font-size: 10px
+}
+#JewelEnchant,#Seal {
+    position: absolute;
+    left: 99px;
+    top: 510px;
+    width: 79px;
+    height: 23px
+}
+.avatar__list-JewelEnchant {
+    background-position: -360px -569px
+}
+.avatar__list-JewelEnchant:hover {
+    background-position: -440px -569px;
+}
+.avatar__list-JewelEnchant:active {
+    background-position: -520px -569px;
+}
+#Seal {
+    left: 182px;
+}
+.avatar__list-Seal {
+    background-position: -360px -545px
+}
+.avatar__list-Seal:hover {
+    background-position: -440px -545px;
+}
+.avatar__list-Seal:active {
+    background-position: -520px -545px;
+}
+#buttonShopPrev,#buttonShopNext,#shopPages {
+    position: absolute;
+    left: 270px;
+    top: 506px;
+    width: 19px;
+    height: 22px
+}
+#shopPages {
+    left: 292px;
+    top: 511px;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    width: 41px
+}
+#buttonShopNext {
+    left: 336px;
+}
+#shop_player {
+    position: absolute;
+    left: 752px;
+    top: 117px
+}
+#shop_my_items_container {
+    position: absolute;
+    left: 752px;
+    top: 117px
+}
+#shop_my_stats {
+    position: absolute;
+    left: 657px;
+    top: 147px;
+    z-index: 9;
+}
+.shop_item_stat {
+    position: absolute;
+}
+.shop_item_stat0 {
+    left: 110px;
+    top: 75px;
+}
+.shop_item_stat1 {
+    left: 110px;
+    top: 50px
+}.shop_item_stat2 {
+    left: 110px;
+    top: 25px;
+}
+.shop_item_stat3 {
+    top: 75px;
+}
+.shop_item_stat4 {
+    left: 110px;
+}
+.shop_item_stat5 {
+    top: 50px;
+}
+.shop_item_stat6 {
+    top: 25px;
+}
+.shop_item_stat7 {
+    top: 0;
+}
+#shop_my_Name4{
+    position: absolute;
+    left: 700px;
+    top: 265px;
+    transform: scale(1.4,1.4);
+}
+#shop_my_Name2 {
+    position: absolute;
+    left: 697px;
+    top: 264px;
+}
+#shop_my_GPBar {
+    position: absolute;
+    height: 16px;
+    left: 697px;
+    top: 282px;
+    background: rgb(118,113,195);
+    background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1) 58%, rgba(162,176,238,1) 88%, rgba(97,141,193,1) 100%);
+}
+#shop_my_GP2 {
+    position: absolute;
+    left: 776px;
+    top: 285px;
+    z-index: 9;
+}
+#shop_my_GCoin,
+#shop_my_gold,
+#shop_my_cash {
+    position: absolute;
+    left: 679px;
+    top: 319px;
+    right: 187px;
+    width: 86px;
+    display: flex;
+    justify-content: end;
+    transform: scale(1.1,1.4);
+}
+#shop_my_cash {
+    top: 337px;
+}
+#shop_my_gold {
+    top: 352px;
+}
+#buttonChargeShop1 {
+    position: absolute;
+    left: 781px;
+    top: 315px;
+    width: 78px;
+    height: 56px
+}
+#inven,
+#reset,
+#PetTraining {
+    position: absolute;
+    left: 666px;
+    top: 377px;
+    width: 57px;
+    height: 32px
+}
+#reset {
+    left: 728px;
+}
+#PetTraining {
+    left: 788px;
+}
+.avatar__list-inven {
+    background-position: 0 -528px
+}
+.avatar__list-inven:hover {
+    background-position: 0 -561px;
+}
+.avatar__list-inven:active {
+    background-position: 0 -594px;
+}
+.avatar__list-reset {
+    background-position: -58px -528px
+}
+.avatar__list-reset:hover {
+    background-position: -58px -561px;
+}
+.avatar__list-reset:active {
+    background-position: -58px -594px;
+}
+.avatar__list-PetTraining {
+    background-position: -232px -528px
+}
+.avatar__list-PetTraining:hover {
+    background-position: -232px -561px;
+}
+.avatar__list-PetTraining:active {
+    background-position: -232px -594px;
+}
+#shop_my_items_container {
+    left: 649px;
+    top: 446px;
+    width: 204px;
+    height: 103px;
+    z-index: 1
+}
+#shop_my_items_container .viewport {
+    width: 204px;
+    height: 248px;
+    overflow: hidden;
+    position: relative
+}
+.avatar___list-Bar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    align-items: center
+}
+.avatar___list-Bar1 {
+    width: 204px;
+    height: 35px;
+    background-position: 0 -374px
+}
+.avatar___list-Bar2 {
+    background-position: 0 -374px
+}
+.avatar___list-Bar3 {
+    background-position: 0 -374px
+}
+#shop_my_items_container .overview {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0
+}
+#shop_my_items_container .scrollbar {
+    position: absolute;
+    left: 205px;
+    width: 13px;
+    padding-top: 11px
+}
+#avatarMyInfo {
+    position: absolute;
+    top: 559px;
+    left: 188px;
+    width: 46px;
+    height: 41px;
+}
+#avatar_event {
+    position: absolute;
+    top: 559px;
+    left: 239px;
+    width: 46px;
+    height: 41px;
+}
+.avatar__list-CouponShop {
+    position: absolute;
+    left: 292px;
+    top: 559px;
+    width: 46px;
+    height: 41px;
+    background-position: -399px -410px
+}
+.avatar__list-CouponShop:hover {
+    background-position: -445px -410px;
+}
+.avatar__list-CouponShop:active {
+    background-position: -491px -410px;
+}
+#buttonShopExit {
+    position: absolute;
+    left: 834px;
+    top: 559px;
+    width: 46px;
+    height: 41px
+}
+.buy_option {
+    position: absolute;
+    text-align: center;
+    font-weight: bold
+}
+#buy_option1,
+#buy_option2,
+#buy_option3 {
+    position: absolute;
+    left: 90px;
+    top: 203px;
+    width: 84px;
+    height: 19px;
+    color: #ffde73;
+    text-align: center
+}
+#buy_option2 {
+    left: 186px;
+    color: #acceff;
+}
+#buy_option3 {
+    left: 282px;
+    color: #64f567;
+}
+#buy_cash_week {
+    left: 85px;
+    top: 264px;
+    width: 93px;
+    color: #8bc2ee
+}
+#buy_cash_month {
+    left: 181px;
+    top: 264px;
+    width: 93px;
+    color: #8bc2ee
+}
+#buy_cash_perm {
+    left: 277px;
+    top: 264px;
+    width: 93px;
+    color: #8bc2ee
+}
+#buy_gold_week {
+    left: 85px;
+    top: 294px;
+    width: 93px;
+    color: #ffd273
+}
+#buy_gold_month {
+    left: 181px;
+    top: 294px;
+    width: 93px;
+    color: #ffd273
+}
+#buy_gold_perm {
+    left: 277px;
+    top: 294px;
+    width: 93px;
+    color: #ffd273
+}
+
+
+/**** Fin ***/
+
+.room__list-stats {
+    position: absolute;
+    left: 575px;
+    top: 516px;
+    width: 13px;
+    height: 14px;
+    background-position: -205px -395px
+}
+.room__list-stats.selected {
+    background-position: -205px -395px
 }
 #SortBtnPop {
     position: absolute;
@@ -8529,66 +10215,15 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     left: 590px;
     top: 33px
 }
-#buttonShopBackgroundx {
+#buttonShopBackground {
     position: absolute;
     left: 547px;
-    top: 245px;
+    top: 545px;
     width: 57px;
     height: 26px
 }
 .avatar__list-main.disabled{
     filter: grayscale(1);
-}
-.avatar__list-exitem {
-    background-position: -401px -402px;
-}
-.avatar__list-exitem:hover {
-    background-position: -470px -402px;
-    cursor: pointer
-}
-.avatar__list-exitem:active {
-    background-position: -539px -402px;
-    cursor: pointer
-}
-.avatar__list-exitem.selected {
-    background-position: -539px -402px
-}
-.avatar__list-tab {
-    width: 70px;
-    height: 28px;
-    background-position: -290px -521px;
-}
-.avatar__list-tab:hover {
-    background-position: -290px -549px;
-    cursor: pointer
-}
-.avatar__list-tab:active {
-    background-position: -290px -611px;
-    cursor: pointer
-}
-.avatar__list-tab.selected {
-    background-position: -290px -577px
-}
-#specialItem {
-    position: absolute;
-    left: 546px;
-    top: 109px;
-    width: 68px;
-    height: 45px;
-}
-.avatar__list-specialItem {
-    background-position: -401px -218px;
-}
-.avatar__list-specialItem:hover {
-    background-position: -470px -218px;
-    cursor: pointer
-}
-.avatar__list-specialItem:active {
-    background-position: -539px -218px;
-    cursor: pointer
-}
-.avatar__list-specialItem.selected {
-    background-position: -539px -218px
 }
 #NewItem {
     position: absolute;
@@ -8626,27 +10261,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     justify-content: center;
     align-items: center;
 }
-#GcoinItem {
-    position: absolute;
-    left: 546px;
-    top: 162px;
-    width: 68px;
-    height: 45px;
-}
-.avatar__list-GcoinItem {
-    background-position: -401px -264px;
-}
-.avatar__list-GcoinItem:hover {
-    background-position: -470px -264px;
-    cursor: pointer
-}
-.avatar__list-GcoinItem:active {
-    background-position: -539px -264px;
-    cursor: pointer
-}
-.avatar__list-GcoinItem.selected {
-    background-position: -539px -264px
-}
 #Item {
     position: absolute;
     left: 373px;
@@ -8658,27 +10272,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     display: flex;
     justify-content: center;
     align-items: center
-}
-#avatar {
-    position: absolute;
-    left: 546px;
-    top: 215px;
-    width: 68px;
-    height: 45px;
-}
-.avatar__list-avatar {
-    background-position: -401px -310px;
-}
-.avatar__list-avatar:hover {
-    background-position: -470px -310px;
-    cursor: pointer
-}
-.avatar__list-avatar:active {
-    background-position: -539px -310px;
-    cursor: pointer
-}
-.avatar__list-avatar.selected {
-    background-position: -539px -310px
 }
 #buttonShopHead {
     position: absolute;
@@ -8740,27 +10333,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     justify-content: center;
     align-items: center
 }
-#setitem {
-    position: absolute;
-    left: 546px;
-    top: 268px;
-    width: 68px;
-    height: 45px;
-}
-.avatar__list-setitem {
-    background-position: -401px -356px;
-}
-.avatar__list-setitem:hover {
-    background-position: -470px -356px;
-    cursor: pointer
-}
-.avatar__list-setitem:active {
-    background-position: -539px -356px;
-    cursor: pointer
-}
-.avatar__list-setitem.selected {
-    background-position: -539px -356px
-}
 #Set {
     position: absolute;
     left: 97px;
@@ -8772,13 +10344,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#buttonShopExItem {
-    position: absolute;
-    left: 546px;
-    top: 320px;
-    width: 68px;
-    height: 45px;
 }
 #Item2 {
     position: absolute;
@@ -8852,27 +10417,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     justify-content: center;
     align-items: center
 }
-#PetItem {
-    position: absolute;
-    left: 546px;
-    top: 374px;
-    width: 68px;
-    height: 45px;
-}
-.avatar__list-PetItem {
-    background-position: -401px -448px;
-}
-.avatar__list-PetItem:hover {
-    background-position: -470px -448px;
-    cursor: pointer
-}
-.avatar__list-PetItem:active {
-    background-position: -539px -448px;
-    cursor: pointer
-}
-.avatar__list-PetItem.selected {
-    background-position: -539px -448px
-}
 #Pet {
     position: absolute;
     left: 97px;
@@ -8921,27 +10465,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     justify-content: center;
     align-items: center
 }
-#MobileCard {
-    position: absolute;
-    left: 546px;
-    top: 427px;
-    width: 68px;
-    height: 45px;
-}
-.avatar__list-mobilecard {
-    background-position: -401px -494px;
-}
-.avatar__list-mobilecard:hover {
-    background-position: -470px -494px;
-    cursor: pointer
-}
-.avatar__list-mobilecard:active {
-    background-position: -539px -494px;
-    cursor: pointer
-}
-.avatar__list-mobilecard.selected {
-    background-position: -539px -494px
-}
 #Card {
     position: absolute;
     left: 97px;
@@ -8954,98 +10477,7 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     justify-content: center;
     align-items: center
 }
-#buttonShopPrev {
-    position: absolute;
-    left: 270px;
-    top: 506px;
-    width: 19px;
-    height: 22px
-}
-#shopPages {
-    position: absolute;
-    left: 292px;
-    top: 511px;
-    font-size: 12px;
-    color: black;
-    text-align: center;
-    width: 41px
-}
-#buttonShopNext {
-    position: absolute;
-    left: 336px;
-    top: 506px;
-    width: 19px;
-    height: 22px
-}
-#Enchant1 {
-    position: absolute;
-    left: 99px;
-    top: 510px;
-    width: 79px;
-    height: 23px
-}
-.avatar__list-Enchant {
-    background-position: -360px -569px
-}
-.avatar__list-Enchant:hover {
-    background-position: -440px -569px;
-    cursor: pointer
-}
-.avatar__list-Enchant:active {
-    background-position: -520px -569px;
-    cursor: pointer
-}
-#Seal1 {
-    position: absolute;
-    left: 182px;
-    top: 510px;
-    width: 79px;
-    height: 23px
-}
-.avatar__list-Seal {
-    background-position: -360px -545px
-}
-.avatar__list-Seal:hover {
-    background-position: -440px -545px;
-    cursor: pointer
-}
-.avatar__list-Seal:active {
-    background-position: -520px -545px;
-    cursor: pointer
-}
-.room__list-stats {
-    position: absolute;
-    left: 575px;
-    top: 516px;
-    width: 13px;
-    height: 14px;
-    background-position: -205px -395px
-}
-.room__list-stats.selected {
-    background-position: -205px -395px
-}
-#buttonShopExit {
-    position: absolute;
-    left: 834px;
-    top: 559px;
-    width: 46px;
-    height: 41px
-}
-#buttonChargeShop1 {
-    position: absolute;
-    left: 781px;
-    top: 315px;
-    width: 78px;
-    height: 56px
-}
-#shop_my_items_container {
-    position: absolute;
-    left: 649px;
-    top: 446px;
-    width: 204px;
-    height: 103px;
-    z-index: 1
-}
+
 .shop_my_item_equip.equipped {
     position: fixed;
     left: 643px;
@@ -9068,189 +10500,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 }
 .HD .shop_my_item.selected {
     background-position: -0px -374px
-}
-.avatar___list-Bar {
-    position: absolute;
-    left: 649px;
-    top: 445px;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    align-items: center
-}
-.avatar___list-Bar1 {
-    width: 204px;
-    height: 35px;
-    background-position: 0 -374px
-}
-.avatar___list-Bar2 {
-    background-position: 0 -374px
-}
-.avatar___list-Bar3 {
-    background-position: 0 -374px
-}
-#Inventario {
-    position: absolute;
-    left: 666px;
-    top: 377px;
-    width: 57px;
-    height: 32px
-}
-.avatar__list-inven {
-    background-position: 0 -528px
-}
-.avatar__list-inven:hover {
-    background-position: 0 -561px;
-    cursor: pointer
-}
-.avatar__list-inven:active {
-    background-position: 0 -594px;
-    cursor: pointer
-}
-#AvatarReset {
-    position: absolute;
-    left: 728px;
-    top: 377px;
-    width: 57px;
-    height: 32px
-}
-.avatar__list-reset {
-    background-position: -58px -528px
-}
-.avatar__list-reset:hover {
-    background-position: -58px -561px;
-    cursor: pointer
-}
-.avatar__list-reset:active {
-    background-position: -58px -594px;
-    cursor: pointer
-}
-#AvatarPet {
-    position: absolute;
-    left: 788px;
-    top: 377px;
-    width: 57px;
-    height: 32px
-}
-.avatar__list-Pet {
-    background-position: -232px -528px
-}
-.avatar__list-Pett:hover {
-    background-position: -232px -561px;
-    cursor: pointer
-}
-.avatar__list-Pet:active {
-    background-position: -232px -594px;
-    cursor: pointer
-}
-/*item*/
-.shop_item_statx0 {
-    left: 767px;
-    top: 221px
-}
-.shop_item_statx1 {
-    left: 767px;
-    top: 196px
-}.shop_item_statx2 {
-    left: 767px;
-    top: 171px
-}
-.shop_item_statx3 {
-    left: 657px;
-    top: 221px
-}
-.shop_item_statx4 {
-    left: 767px;
-    top: 146px
-}
-.shop_item_statx5 {
-    left: 657px;
-    top: 196px
-}
-.shop_item_statx6 {
-    left: 657px;
-    top: 171px
-}
-.shop_item_statx7 {
-    left: 657px;
-    top: 146px
-}
-/*item*/
-
-#shop_my_stats {
-    position: absolute
-}
-.shop_item_stat {
-    position: absolute;
-    z-index: 9
-}
-.shop_item_stat0 {
-    left: 9px;
-    top: 40px
-}
-.shop_item_stat1 {
-    left: 9px;
-    top: 60px
-}
-.shop_item_stat2 {
-    left: 9px;
-    top: 80px
-}
-.shop_item_stat3 {
-    left: 9px;
-    top: 100px
-}
-.shop_item_stat4 {
-    left: 95px;
-    top: 40px
-}
-.shop_item_stat5 {
-    left: 95px;
-    top: 60px
-}
-.shop_item_stat6 {
-    left: 95px;
-    top: 80px
-}
-.shop_item_stat7 {
-    left: 548px;
-    top: 100px
-}
-#shop_item0 {
-    left: 111px;
-    top: 108px
-}
-#shop_item1 {
-    left: 257px;
-    top: 108px
-}
-#shop_item2 {
-    left: 403px;
-    top: 108px
-}
-#shop_item3 {
-    left: 111px;
-    top: 307px
-}
-#shop_item4 {
-    left: 257px;
-    top: 307px
-}
-#shop_item5 {
-    left: 403px;
-    top: 307px
-}
-#shop_item6 {
-    left: 823px;
-    top: 47px
-}
-#shop_item7 {
-    left: 823px;
-    top: 47px
-}
-#shop_item8 {
-    left: 823px;
-    top: 47px
 }
 .shop_item {
     position: absolute;
@@ -9309,177 +10558,89 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     cursor: pointer
 }
 .shop_item_icon {
-    float: left
+    float: left;
 }
-
-.shop_item_icon_hm,
-.shop_item_icon_ha {
-    width: 15px;
+.shop_item_icon_hf,
+.shop_item_icon_hm {
+    background-position: -52px -412px;
+    width: 13px;
+    height: 10px
+}
+.shop_item_icon_hm {
+    background-position: -38px -412px;
+}
+.shop_item_icon_bf,
+.shop_item_icon_bm {
+    background-position: -19px -410px;
+    width: 18px;
+    height: 13px
+}
+.shop_item_icon_bm {
+    background-position: 0 -410px;
+}
+.shop_item_icon_gf,
+.shop_item_icon_gm {
+    width: 18px;
     height: 11px;
-    background-position: 0 -149px
+    margin-top: 1px;
+    background-position: -85px -412px;
 }
-
-.shop_item_icon_bm,
+.shop_item_icon_gm {
+    background-position: -66px -412px;
+}
+.shop_item_icon_fa,
+.shop_item_icon_ff,
+.shop_item_icon_fm {
+    background-position: 0 -424px;
+    width: 12px;
+    height: 13px
+}
+.shop_item_icon_ff {
+    background-position: 0 -424px;
+}
+.shop_item_icon_fm {
+    background-position: -0px -424px;
+}
+.shop_item_icon_1a,
+.shop_item_icon_2a {
+    width: 16px;
+    height: 12px;
+    background-position: -34px -472px;
+}
+.shop_item_icon_2a {
+    background-position: -17px -472px
+}
+.shop_item_icon_xa {
+    width: 16px;
+    height: 16px;
+    background-position: -0px -468px
+}
+.shop_item_icon_ha {
+    width: 13px;
+    height: 10px;
+    background-position: -52px -412px;
+}
 .shop_item_icon_ba {
     width: 18px;
     height: 13px;
-    background-position: -15px -149px
+    background-position: -19px -410px;
 }
-
-.shop_item_icon_gm,
 .shop_item_icon_ga {
     width: 18px;
     height: 11px;
-    background-position: -33px -149px
+    background-position: -85px -412pxpx;
+    margin-top: 1px;
 }
-
-.shop_item_icon_fa {
-    width: 16px;
-    height: 13px;
-    background-position: -51px -149px
-}
-
 .SD .shop_item_icon_fm {
     width: 16px;
     height: 13px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAB3RJTUUH4AwZBxoR7aOImgAAAAlwSFlzAAAnEAAAJxABlGlRGQAAAARnQU1BAACxjwv8YQUAAAFvSURBVHjajZJNSwJRFIbfMzOpabmoVm7ya2zRstbRDwghaN+mP9CqiNb2U2rbJxT5A4KgiKTCGVFLEDSodOHHOKd7h1CnSfKFyzkznPvwnnMuYUjMjGg8xR2aAoGhoYWS+UQYISISNUOKxZNcLBi4fGlIHGytibnkCgf5HWUz9yfIBbAo4MSD4xCIFZGFcXiSheWrYTa5ygH+QMW8p5EAhupEwyihpzWwEF1E5lSWRHAkQKy0ENbXhKMaqsYNeQAEe5CzinwhD7J90BNxAZLwEJa2zrCX7iCSWGZZ9gvQ63shW7RDXecrbxbBImfFEtHCRnoHn+YteYbIUPooZwasOn+l9a6/CuV8Fyq3xeW7/hzcQ0Rg4EX7gjVRR+8iAx834Rfn1Xz0bMIFaCkzP/dttK+2MW1XUCo8j3wHHgX1dZZSU5sy4L8jpQwD5Bqvc3AsjysXYNKuYz9bQdgujw1w9Tcf01m+xjfzYay+5Rq/AZdrqfDmdry1AAAAAElFTkSuQmCC) !important
 }
-
 .SD .shop_item_icon_ff {
     width: 16px;
     height: 13px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAAB3RJTUUH4AwZBxoSdKrZIAAAAAlwSFlzAAAnEAAAJxABlGlRGQAAAARnQU1BAACxjwv8YQUAAAClSURBVHjaY2RAAv///2dIYZL/jyw2599DRgYcgJGRkYEFWQCkGaiBgWHPBRQxfAaxYBO8NX01wgW7NuI1CKsBd+/eBdPKyspww3AZhNUAfAaVBcYwqGWGwgxixGsAukEw0OXmD3bBXPRAJATWXjqOETMEDYBpwhUTLIQ04ksHGCCZUe4/CEBpBkIYBJgwTEFKRMQADAOQExExAMV/IKeT4m9QXgAAeWprQrDQiegAAAAASUVORK5CYII=) !important
 }
-
-.shop_item_icon_hf {
-    width: 15px;
-    height: 11px;
-    background-position: -67px -149px
-}
-
-.shop_item_icon_bf {
-    width: 18px;
-    height: 13px;
-    background-position: -82px -149px
-}
-
-.shop_item_icon_gf {
-    width: 18px;
-    height: 11px;
-    background-position: -100px -149px
-}
-
-.shop_item_icon_1a {
-    width: 16px;
-    height: 12px;
-    background-position: -153px -152px
-}
-
-.shop_item_icon_2a {
-    width: 16px;
-    height: 12px;
-    background-position: -136px -152px
-}
-
-.shop_item_icon_xa {
-    width: 16px;
-    height: 16px;
-    background-position: -119px -149px
-}
-
-.HD .shop_item_icon_hm {
-    background-position: -878px -966px;
-    width: 13px;
-    height: 10px
-}
-
-.HD .shop_item_icon_hf {
-    background-position: -891.5px -966px;
-    width: 13px;
-    height: 10px
-}
-
-.HD .shop_item_icon_ha {
-    background-position: -905px -966px;
-    width: 13px;
-    height: 10px
-}
-
-.HD .shop_item_icon_bm {
-    background-position: -918.5px -966px;
-    width: 18px;
-    height: 13px
-}
-
-.HD .shop_item_icon_bf {
-    background-position: -937px -966px;
-    width: 18px;
-    height: 13px
-}
-
-.HD .shop_item_icon_ba {
-    background-position: -955.5px -966px;
-    width: 18px;
-    height: 13px
-}
-
-.HD .shop_item_icon_gm {
-    background-position: -915.5px -979.5px;
-    width: 18px;
-    height: 9px;
-    margin-top: 1px
-}
-
-.HD .shop_item_icon_gf {
-    background-position: -934px -979.5px;
-    width: 18px;
-    height: 9px;
-    margin-top: 1px
-}
-
-.HD .shop_item_icon_ga {
-    background-position: -952.5px -979.5px;
-    width: 18px;
-    height: 9px;
-    margin-top: 1px
-}
-
-.HD .shop_item_icon_fm {
-    background-position: -878px -976.5px;
-    width: 12px;
-    height: 13px
-}
-
-.HD .shop_item_icon_ff {
-    background-position: -890.5px -976.5px;
-    width: 12px;
-    height: 13px
-}
-
-.HD .shop_item_icon_fa {
-    background-position: -903px -976.5px;
-    width: 12px;
-    height: 13px
-}
-
-.HD .shop_item_icon_1a {
-    background-position: -878px -990px;
-    width: 16px;
-    height: 12px
-}
-
-.HD .shop_item_icon_2a {
-    background-position: -894.5px -990px;
-    width: 16px;
-    height: 12px
-}
-
-.HD .shop_item_icon_xa {
-    background-position: -974px -966px;
-    width: 16px;
-    height: 16px
-}
-
 .shop_item_timer {
     position: absolute;
     left: 13px;
@@ -9492,60 +10653,64 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 2px white
 }
 
-.shop_item_name {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    font-size: 10px;
-    color: white
-}
-
 .shop_item_image {
     position: absolute;
     left: 74px;
     top: 117px
 }
 
-.stat_icon {
-    position: absolute;
-    width: 14px;
-    height: 14px
-}
 
 .stat_icon_time {
-    background-position: 0 -173px
+    background-position: -1px -514px;
+    width: 11px;
+    height: 13px;
+    
 }
 
 .stat_icon_dig {
-    background-position: -14px -173px
+    background-position: -13px -513px;
+    width: 14px;
+    height: 14px;
 }
 
 .stat_icon_atk {
-    background-position: -28px -173px
-}
-
-.stat_icon_life {
-    background-position: -42px -173px
+    background-position: -28px -514px;
+    width: 11px;
+    height: 13px;
 }
 
 .stat_icon_def {
-    background-position: -56px -173px
+    background-position: -28px -514px;
+    width: 11px;
+    height: 13px;
+}
+
+.stat_icon_life {
+    background-position: -54px -515px;
+    width: 13px;
+    height: 12px;
 }
 
 .stat_icon_item {
-    background-position: -70px -173px
+    background-position: -68px -514px;
+    width: 11px;
+    height: 13px;
 }
 
 .stat_icon_shld {
-    background-position: -84px -173px
+    background-position: -80px -514px;
+    width: 13px;
+    height: 13px;
 }
 
 .stat_icon_pop {
-    background-position: -98px -173px
+    background-position: -94px -514px;
+    width: 13px;
+    height: 13px;
 }
 
 .stat_icon_time- {
-    background-position: 0 -187px
+    background-position: -1 -187px
 }
 
 .stat_icon_dig- {
@@ -9576,79 +10741,15 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     background-position: -98px -187px
 }
 
-.HD .stat_icon_time {
-    background-position: -878px -935px
-}
-
-.HD .stat_icon_dig {
-    background-position: -892.5px -935px
-}
-
-.HD .stat_icon_atk {
-    background-position: -907px -935px
-}
-
-.HD .stat_icon_life {
-    background-position: -921.5px -935px
-}
-
-.HD .stat_icon_def {
-    background-position: -936px -935px
-}
-
-.HD .stat_icon_item {
-    background-position: -950.5px -935px
-}
-
-.HD .stat_icon_shld {
-    background-position: -965px -935px
-}
-
-.HD .stat_icon_pop {
-    background-position: -979.5px -935px
-}
-
-.HD .stat_icon_time- {
-    background-position: -878px -950.5px
-}
-
-.HD .stat_icon_dig- {
-    background-position: -892.5px -950.5px
-}
-
-.HD .stat_icon_atk- {
-    background-position: -907px -950.5px
-}
-
-.HD .stat_icon_life- {
-    background-position: -921.5px -950.5px
-}
-
-.HD .stat_icon_def- {
-    background-position: -936px -950.5px
-}
-
-.HD .stat_icon_item- {
-    background-position: -950.5px -950.5px
-}
-
-.HD .stat_icon_shld- {
-    background-position: -965px -950.5px
-}
-
-.HD .stat_icon_pop- {
-    background-position: -979.5px -950.5px
-}
-
 .stat_digit1 {
     position: absolute;
-    left: 15px;
+    left: 51px;
     top: 1px
 }
 
 .stat_digit2 {
     position: absolute;
-    left: 21px;
+    left: 57px;
     top: 1px
 }
 
@@ -9778,35 +10879,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     text-align: right;
     font-size: 11px;
     font-weight: bold
-}
-
-#shop_player {
-    position: absolute;
-    left: 752px;
-    top: 117px
-}
-
-#shop_my_items_container .viewport {
-    width: 204px;
-    height: 248px;
-    overflow: hidden;
-    position: relative
-}
-
-#shop_my_items_container .overview {
-    list-style: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 0;
-    margin: 0
-}
-
-#shop_my_items_container .scrollbar {
-    position: absolute;
-    left: 205px;
-    width: 13px;
-    padding-top: 11px
 }
 
 .DragonScroll .viewportx::-webkit-scrollbar-button:vertical:increment {
@@ -9959,113 +11031,14 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     top: 1px
 }
 
-#shop_my_cash {
-    position: absolute;
-    left: 702px;
-    top: 337px;
-    width: 150px;
-    height: 12px;
-    color: #8bc2ee;
-    font-size: 11px;
-    font-weight: bold
-}
-
-#shop_my_gold {
-    position: absolute;
-    left: 702px;
-    top: 319px;
-    width: 150px;
-    height: 12px;
-    color: #ffd273;
-    font-size: 11px;
-    font-weight: bold
-}
-
-#shop_buy_dialog {
-    position: absolute;
-    left: 210px;
-    top: 127px;
-    width: 386px;
-    height: 353px;
-    background-position: 0 -389px;
-    background-color: transparent;
-    border: 0;
-    display: none;
-    z-index: 22
-}
-
-.HD #shop_buy_dialog {
-    background-position: -491.5px -878px
-}
-
-#shop_buy_dialog .shop_item_icon {
-    left: 156px;
-    top: 33px
-}
-
-#shop_buy_dialog .shop_item_name {
-    left: 177px;
-    top: 36px
-}
-
-#shop_buy_dialog .shop_item_image {
-    left: 234px;
-    top: 140px
-}
-
-.buy_option {
-    position: absolute;
-    text-align: center;
-    font-size: 11px;
-    font-weight: bold
-}
-
-#buy_cash_week {
-    left: 85px;
-    top: 235px;
-    width: 93px;
-    color: #8bc2ee
-}
-
-#buy_cash_month {
-    left: 181px;
-    top: 235px;
-    width: 93px;
-    color: #8bc2ee
-}
-
-#buy_cash_perm {
-    left: 277px;
-    top: 235px;
-    width: 93px;
-    color: #8bc2ee
-}
-
-#buy_gold_week {
-    left: 85px;
-    top: 265px;
-    width: 93px;
-    color: #ffd273
-}
-
-#buy_gold_month {
-    left: 181px;
-    top: 265px;
-    width: 93px;
-    color: #ffd273
-}
-
-#buy_gold_perm {
-    left: 277px;
-    top: 265px;
-    width: 93px;
-    color: #ffd273
+.popup_avatarshop {
+    background-position: -2491px -1px
 }
 
 #buy_cancel_btn {
     position: absolute;
     left: 332px;
-    top: 324px;
+    top: 348px;
     width: 40px;
     height: 23px;
     background-position: -112px -304px
@@ -10117,14 +11090,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     text-align: center;
     padding-top: 3px;
     font-size: 12px
-}
-
-#BrokerTitle {
-    position: absolute;
-    left: -76px;
-    width: 100%;
-    color: white;
-    bottom: -75px;
 }
 
 #BrokerTotalPlayers {
@@ -10246,10 +11211,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     width: 178px
 }
 
-.InlineRank {
-    display: inline-block
-}
-
 #filter_boss {
     position: absolute;
     left: 50px;
@@ -10305,16 +11266,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
 
 .HD .buttonClose {
     background-position: -738px 0
-}
-
-#channelName {
-    position: absolute;
-    left: 106px;
-    top: 10px;
-    color: white;
-    font-size: 15px;
-    padding: 5px;
-    color: #057ed0;
 }
 
 #prixPoints {
@@ -11829,53 +12780,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     transform: scale(1.2)
 }
 
-#roomMobileSelect {
-    position: absolute;
-    left: 25px;
-    top: 105px;
-    width: 515px;
-    height: 408px;
-    background: rgba(0, 30, 50, 0.75);
-    z-index: 99;
-    display: none;
-    border-radius: 15px
-}
-
-#roomMobileSelectCancel {
-    position: absolute;
-    bottom: -3px;
-    right: -39px
-}
-
-.mobileSelectBtn {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background: rgba(0, 70, 30, 0.75);
-    border: 3px solid #0f9;
-    border-radius: 15px;
-    float: left;
-    margin: 12px
-}
-
-.mobileSelectBtn:hover {
-    background: rgba(70, 70, 0, 0.75)
-}
-
-.mobileSelectBtn:active {
-    background: rgba(40, 120, 0, 0.75)
-}
-
-.mobileName {
-    position: absolute;
-    left: -15px;
-    top: 73px;
-    width: 100px;
-    text-align: center;
-    font-size: 16px;
-    color: #ff0
-}
-
 /*#shopSearchBtn {
     color: black;
     position: absolute;
@@ -12422,59 +13326,12 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     background-position: -884px -1232.5px
 }
 
-#buy_option1 {
-    position: absolute;
-    left: 90px;
-    top: 203px;
-    width: 84px;
-    height: 19px;
-    color: #fede71;
-    font-size: 15px;
-    text-align: center
-}
-
-#buy_option2 {
-    position: absolute;
-    left: 186px;
-    top: 203px;
-    width: 84px;
-    height: 19px;
-    color: #5ff;
-    font-size: 15px;
-    text-align: center
-}
-
-#buy_option3 {
-    position: absolute;
-    left: 282px;
-    top: 203px;
-    width: 84px;
-    height: 19px;
-    color: #64f567;
-    font-size: 15px;
-    text-align: center
-}
-
 #buy_ui {
     position: absolute;
     bottom: 2px;
     left: 2px;
     color: #fff;
     font-size: 10px
-}
-
-#slidersection1 {
-    position: absolute;
-    left: 68px;
-    top: 3px;
-    width: 160px
-}
-
-#slidersection2 {
-    position: absolute;
-    left: 68px;
-    top: 27px;
-    width: 160px
 }
 
 .tooltip {
@@ -12549,13 +13406,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     top: 0;
     height: 100%;
     border-radius: 25px
-}
-
-#shop_my_items_stats {
-    position: absolute;
-    left: 15px;
-    top: 482px;
-    font-size: 10px
 }
 
 .yellowBtn {
@@ -12697,7 +13547,8 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     padding: 4px 10px;
     border-color: #bdc7d8;
     border-radius: 5px;
-    margin: 5px
+    margin: 5px;
+    font-family: Emoji,Verdana,sans-serif;
 }
 
 #LoginUsername {
@@ -12810,7 +13661,6 @@ background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1)
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     z-index: 99
 }
 
@@ -13900,12 +14750,6 @@ body .ui-tooltip {
     font-size: 1em
 }
 
-.ui-widget-content {
-    border: 1px solid #aaa;
-    background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
-    color: #222
-}
-
 .ui-widget-content a {
     color: #222
 }
@@ -14812,16 +15656,6 @@ body .ui-tooltip {
     border-radius: 8px
 }
 
-#lobby_channel {
-    color: white;
-    font-size: 13px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-
 .fbfan {
     border: 0;
     overflow: hidden;
@@ -15020,11 +15854,6 @@ body .ui-tooltip {
     animation-fill-mode: forwards
 }
 
-.AnimEnterFadeIn4 {
-    animation: AnimEnterFadeIn .4s;
-    animation-fill-mode: forwards
-}
-
 .AnimEnterFadeInLong {
     animation: AnimEnterFadeIn 2s;
     animation-fill-mode: forwards
@@ -15069,10 +15898,6 @@ body .ui-tooltip {
     100% {
         opacity: 0
     }
-}
-
-.ForceHW {
-    -webkit-transform: translateZ(0)
 }
 
 #notificationBtn {
@@ -16257,7 +17082,8 @@ img.emoji {
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    height: 9px;
+    height: 5px;
+    width: 146px;
     outline: 0;
     transition: filter .2s;
     border: 1px solid #aaa;
@@ -16415,379 +17241,24 @@ img.emoji {
     position: absolute;
     display: none;
 }
-
-#myName4{
-    position: absolute;
-    left: 711px;
-    top: 176px;
-    transform: scale(1.4,1.4);
-}
-
-.font-s3-system{
-    text-shadow: none!important;
-}
-
-.font-s3-color-gcoin{
-    color: #00fb5e!important;
-}
-.font-s3-shadow-gcoin{
-    color: #000!important;
-}
-.font-s3-color-cash{
-    color: #71bfe9!important;
-}
-.font-s3-shadow-cash{
-    color: #003564!important;
-}
-.font-s3-color-gold{
-    color: #ffe834!important;
-}
-.font-s3-shadow-gold{
-    color: #6d4300!important;
-}
-.font-s3-color-normal{
-    color: #FFF!important;
-}
-.font-s3-shadow-normal{
-    color: #494749!important;
-}
-.font-s3-color-base{
-    color: #FFF!important;
-}
-.font-s3-shadow-base{
-    color: #49475c!important;
-}
-.font-s3-color-6{
-    color: #ffdc9a!important;
-}
-.font-s3-shadow-6{
-    color: #ff4c09 !important;
-}
-.font-s3-color-9{
-    color: #9cffde!important;
-}
-.font-s3-shadow-9{
-    color: #41594a !important;
-}
 .ztext-content{
     margin-left: 18px;
 }
-.room__list-buddy-add{
-    position: absolute;
-    left: 134px;
-    top: 177px;
-    width: 22px;
-    height: 21px;
-    background-position: -1108px -1732px;
-}
-.room__list-buddy-add:hover {
-    background-position: -1131px -1732px;
-    cursor: pointer
-}
-.room__list-buddy-add:active {
-    background-position: -1154px -1732px;
-    cursor: pointer
-}
-.room__list-buddy-delete2{
-    position: absolute;
-    left: 167px;
-    top: 177px;
-    width: 18px;
-    height: 21px;
-    background-position: -1114px -1754px;
-}
-.room__list-buddy-delete2:hover {
-    background-position: -1133px -1754px;
-    cursor: pointer
-}
-.room__list-buddy-delete2:active {
-    background-position: -1152px -1754px;
-    cursor: pointer
-}
-.room__list-font{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    position: absolute;
-    left: 8px;
-    top: 181px;
-    align-items: center
-}
-.room__list-font-slash{
-    background-position: -940px -1733px;
-    width: 12px;
-    height: 16px
-}
-.room__list-font-0 {
-    background-position: -955px -1733px;
-    width: 16px;
-    height: 16px
-}
-.room__list-font-1 {
-    background-position: -1173px 0
-}
-.room__list-fon-2 {
-    background-position: -1224px 0
-}
-.room__list-font-3 {
-    background-position: -1275px 0
-}
-.room__list-font-4 {
-    background-position: -1326px 0
-}
-.room__list-font-5 {
-    background-position: -1377px 0
-}
-.room__list-font-6 {
-    background-position: -1428px 0
-}
-.room__list-font-8 {
-    background-position: -1428px 0
-}
-.room__list-font-9 {
-    background-position: -1428px 0
-}
-.room__list-ch {
-    position: absolute;
-    width: 28px;
-    height: 18px;
-    left: 17px;
-    top: 180px;
-    background-position: -207px -1477px
-}
-.room__list-tab {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    left: 47px;
-    top: 180px;
-    align-items: center
-}
-.room__list-ch1 {
-    background-position: -962px -1756px;
-    width: 18px;
-    height: 21px
-}
-.room__list-ch2 {
-    background-position: -981px -1756px;
-    width: 18px;
-    height: 21px
-}
-.room__list-ch3 {
-    background-position: -999px -1756px;
-    width: 18px;
-    height: 21px
-}
-.room__list-ch4 {
-    background-position: -1019px -1756px;
-    width: 18px;
-    height: 21px
-}
-.room__list-ch5 {
-    background-position: -1038px -1756px;
-    width: 18px;
-    height: 21px
-}
-.room__list-ch6 {
-    background-position: -1057px -1756px;
-    width: 18px;
-    height: 21px
-}
-.rom__list-ch7 {
-    background-position: -1076px -1756px;
-    width: 18px;
-    height: 21px
-}
-.room__list-ch8 {
-    background-position: -1095px -1756px;
-    width: 18px;
-    height: 21px
-}
-
 .player-list-channel-container{
     display: flex;
     flex-direction: column;
     position: absolute;
     left: 22px;
 }
-
-.font-s3-color-guild, .font-s3-color-guild-0{
-    color: #daad61!important;
-}
-.font-s3-shadow-guild, .font-s3-shadow-guild-0{
-    color: #613200!important;
-}
-
-.font-s3-color-guild-1{
-    color: #efc548!important;
-}
-.font-s3-shadow-guild-1{
-    color: #928444!important;
-}
-.font-s3-color-guild-2{
-    color: #b5bdcc!important;
-}
-.font-s3-shadow-guild-2{
-    color: #edf2fa!important;
-}
-.font-s3-color-guild-3{
-    color: #d21e1c!important;
-}
-.font-s3-shadow-guild-3{
-    color: #721e31!important;
-}
-.rank-vertical{
-    width: 15px;
-    height: 25px;
-}
-.rank_vertical_0{
-     background-position: -698px -27px;
-}
- .rank_vertical_1{
-     background-position: -698px -53px;
-}
- .rank_vertical_2{
-     background-position: -698px -79px;
-}
- .rank_vertical_3{
-     background-position: -698px -105px;
-}
- .rank_vertical_4{
-     background-position: -698px -131px;
-}
- .rank_vertical_5{
-     background-position: -698px -157px;
-}
- .rank_vertical_6{
-     background-position: -698px -183px;
-}
- .rank_vertical_7{
-     background-position: -698px -209px;
-}
- .rank_vertical_8{
-     background-position: -698px -235px;
-}
- .rank_vertical_9{
-     background-position: -698px -261px;
-}
- .rank_vertical_10{
-     background-position: -698px -287px;
-}
- .rank_vertical_11{
-     background-position: -698px -313px;
-}
- .rank_vertical_12{
-     background-position: -698px -339px;
-}
- .rank_vertical_13{
-     background-position: -698px -365px;
-}
- .rank_vertical_14{
-     background-position: -698px -391px;
-}
- .rank_vertical_15{
-     background-position: -698px -417px;
-}
- .rank_vertical_16{
-     background-position: -698px -443px;
-}
- .rank_vertical_17{
-     background-position: -698px -469px;
-}
- .rank_vertical_18{
-     background-position: -698px -495px;
-}
- .rank_vertical_19{
-     background-position: -698px -521px;
-}
- .rank_vertical_20{
-     background-position: -698px -547px;
-}
- .rank_vertical_21{
-     background-position: -698px -573px;
-}
- .rank_vertical_22{
-     background-position: -698px -599px;
-}
- .rank_vertical_23{
-     background-position: -698px -625px;
-}
- .rank_vertical_24{
-     background-position: -698px -651px;
-}
- .rank_vertical_25{
-     background-position: -698px -677px;
-}
- .rank_vertical_26{
-     background-position: -698px -703px;
-}
- .rank_vertical_27{
-     background-position: -698px -729px;
-}
- .rank_vertical_28{
-     background-position: -698px -755px;
-}
- .rank_vertical_29{
-     background-position: -698px -781px;
-}
- .rank_vertical_30{
-     background-position: -698px -807px;
-}
- .rank_vertical_31{
-     background-position: -698px -833px;
-}
- .rank_vertical_32{
-     background-position: -698px -859px;
-}
- .rank_vertical_33{
-     background-position: -698px -885px;
-}
- .rank_vertical_34{
-     background-position: -698px -911px;
-}
- .rank_vertical_35{
-     background-position: -698px -937px;
-}
- .rank_vertical_36{
-     background-position: -698px -963px;
-}
- .rank_vertical_37{
-     background-position: -698px -989px;
-}
- .rank_vertical_38{
-     background-position: -698px -1015px;
-}
- .rank_vertical_39{
-     background-position: -698px -1041px;
-}
- .rank_vertical_40{
-     background-position: -698px -1067px;
-}
- .rank_vertical_41{
-     background-position: -698px -1093px;
-}
- .rank_vertical_42{
-     background-position: -698px -1119px;
-}
- .rank_vertical_43{
-     background-position: -698px -1145px;
-}
-.rank_vertical_44{
-     background-position: -698px -2px;
-}
 .hand-animation{
-    background-image: url(/static/images/hand-animation.png);
-    background-repeat: no-repeat;
     height: 46px;
     width: 28px;
     position: absolute;
     top: -35px;
     left: 13px;
+    background-position: -941px -371px;
     animation: hand-animation 1.5s infinite alternate;
 }
-
 @keyframes hand-animation {
     0% {
         top: -35px;
@@ -16796,78 +17267,57 @@ img.emoji {
         top: -30px;
     }
 }
-#NewGameIdWindow{
-    width: 380px;
-    height: 217px;
+#BuddyTitle{
     position: absolute;
-    background-position: -1149px 0px;
-    z-index: 999;
-    left: 290px;
-    top: 114px;
+    left: 359px;
+    top: 207px;
+    z-index: 1;
     display: none;
 }
-#input-new-gameid{
+#BuddyTitle2{
     position: absolute;
-    top: 88px;
+    left: 359px;
+    top: 207px;
+    z-index: 1;
+    display: none;
+}
+.BuddyTitle{
+    width: 216px;
+    height: 190px;
+    background-position: -753px -974px;
+}
+.BuddyTitle_1,.BuddyTitle_2,.BuddyTitle_3
+.BuddyTitle_4{
+    position: absolute;
+    width: 212px;
+    height: 22px;
+    left: 2px;
+    top: 2px;
+    background-position: -753px -859px;
+}
+.BuddyTitle_2{
+    background-position: -753px -882px;
+}
+.BuddyTitle_3{
+    background-position: -753px -905px;
+}
+.BuddyTitle_4{
+    background-position: -887px -951px;
+}
+.BuddyTitle_5{
+    width: 212px;
+    height: 22px;
     left: 42px;
-    width: 292px;
-    height: 27px;
-    background: transparent;
-    border: none;
-    border-radius: 7px;
+    top: 74px;
+    background-position: -953px -974px;
 }
-#input-new-gameid:focus{
-    outline: none;
-}
-
-#btn-ok-new-gameid,#btn-cancel-new-gameid{
-    width: 64px;
-    height: 24px;
+#BuddyTitle_add,#BuddyTitle_cancel {
     position: absolute;
+    left: 78px;
+    top: 154px;
 }
-
-#btn-ok-new-gameid{
-    background-position: -915px -774px;
-    bottom: 16px;
-    right: 114px;
-}
-#btn-ok-new-gameid:hover{
-    background-position: -915px -799px;
-}
-#btn-ok-new-gameid:active{
-    background-position: -915px -824px;
-}
-#btn-ok-new-gameid.disabled{
-    background-position: -915px -849px;
-}
-#btn-cancel-new-gameid{
-    background-position: -980px -774px;
-    bottom: 16px;
-    right: 31px;
-}
-#btn-cancel-new-gameid:hover{
-    background-position: -980px -799px;
-}
-#btn-cancel-new-gameid:active{
-    background-position: -980px -824px;
-}
-
-#btn-cancel-new-gameid.disabled{
-    background-position: -980px -849px;
-}
-.group-buttons-shop{
-    position: absolute;
-    left: 97px;
-    top: 57px;
-    display: flex;
-    visibility: hidden;
-}
-.avatar__item-tab{
-    font-size: 11px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#BuddyTitle_cancel {
+    left: 143px;
 }
 .Popup_BuddyBack{
     position: fixed;
@@ -16877,7 +17327,6 @@ img.emoji {
     top: 95px;
     background-position: -536px -793px;
 }
-
 .item-background-effect .AniObject{
     width: 90px !important;
     height: 50px !important;

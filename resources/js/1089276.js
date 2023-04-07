@@ -12970,9 +12970,9 @@
                 e = a + e;
             return e
         }
-        var AUDIO_ARMOR_BLAST = "11blast", AUDIO_ARMOR_FIRE = "11fire", AUDIO_ARMOR_FIRE2 = "12fire", AUDIO_MAGE_FIRE = "21fire", AUDIO_MAGE_BLAST = "22blast", AUDIO_NAK_FIRE1 = "31fire", AUDIO_NAK_BLAST1 = "31blast", AUDIO_NAK_FIRE2 = "32fire", AUDIO_NAK_BLAST2 = "32blast", AUDIO_DINO_FIRE = "42fire", AUDIO_DINO_BLAST = "42blast", AUDIO_BIGFOOT_FIRE1 = "51fire", AUDIO_BIGFOOT_BLAST1 = "51blast", AUDIO_BIGFOOT_FIRE2 = "52fire", AUDIO_BIGFOOT_BLAST2 = "52blast", AUDIO_BOOMER_FIRE = "62fire", AUDIO_BOOMER_BLAST = "62blast", AUDIO_RAON1_FIRE = "71fire", AUDIO_RAON1_BLAST = "71blast", AUDIO_RAON2_FIRE = "72fire", AUDIO_RAON2_BLAST = "72blast", AUDIO_RAON_WALKER = "71move", AUDIO_LIGHTNING_FIRE = "82fire", AUDIO_LIGHTNING_BLAST = "82blast", AUDIO_JD_FIRE = "91fire", AUDIO_JD_BLAST1 = "91blast", AUDIO_JD_BLAST2 = "92blast", AUDIO_ASATE_FIRE = "10s1fire", AUDIO_ASATE_KNIGHT_BLAST = "10s1blast", AUDIO_ICE_BLAST = "111blast", AUDIO_ICE_FIRE = "111fire", AUDIO_ICE_BLAST2 = "112blast", AUDIO_TURTLE_FIRE = "121fire", AUDIO_TURTLE_BLAST = "121blast", AUDIO_GRUB_FIRE = "131fire", AUDIO_GRUB_BLAST = "132blast", AUDIO_DRAGON_FIRE = "141fire", AUDIO_DRAGON_BLAST = "142blast", AUDIO_KNIGHT_FIRE = "15s1fire", AUDIO_ADUKA_FIRE = "161fire", AUDIO_ADUKA_FIRE2 = "162fire", AUDIO_BUTTON_SELECT = "bpush1", AUDIO_BUTTON_SELECT2 = "bselect1", AUDIO_MY_TURN = "turn", AUDIO_TURN_TICK = "turntick1s", AUDIO_GOLD = "gold", AUDIO_WIND = "4moon", AUDIO_USE_ITEM = "dual_snd", AUDIO_NOTIFICATION = "noti.mp3", AUDIO_GAME_START = "start.mp3", AUDIO_LOGIN = "login.mp3", AUDIO_BROKER = "broker.mp3", AUDIO_DING = "ding.mp3", AUDIO_TOUCH = "touch2.mp3", AUDIO_WAIT = "wait.mp3", AUDIO_MUSIC_CHANNEL = "channel.mp3", AUDIO_MUSIC_ROOM = "dbWaiting2020.ogg", AUDIO_STAGE_MUSICS = "stage1.mp3 stage2.mp3 stage3.mp3 stage4.mp3 stage5.mp3 stage6.mp3 Stage7.mp3 Stage8.mp3 Stage9.mp3 dbparty.mp3 Stage11.mp3 EventMusic0.mp3 EventMusic2.mp3 EventMusic3.mp3 EventMusic4.mp3 EventMusic5.mp3 EventMusic6.mp3 dbBattleMiramoTown.mp3 dbBattleMiramoTown.mp3".split(" "), AUDIO_MUSIC_SUDDEN = "sudden.mp3", AUDIO_WIN = "result_win.mp3", AUDIO_LOSE = "result_lose.mp3", g_dragonAudio, AUDIO_LOGO = "logo.mp3", AUDIO_CHANNEL_S3 = "channel_gbs3.mp3", AUDIO_TITLE = "title.mp3";
+        var AUDIO_ARMOR_BLAST = "11blast", AUDIO_ARMOR_FIRE = "11fire", AUDIO_ARMOR_FIRE2 = "12fire", AUDIO_MAGE_FIRE = "21fire", AUDIO_MAGE_BLAST = "22blast", AUDIO_NAK_FIRE1 = "31fire", AUDIO_NAK_BLAST1 = "31blast", AUDIO_NAK_FIRE2 = "32fire", AUDIO_NAK_BLAST2 = "32blast", AUDIO_DINO_FIRE = "42fire", AUDIO_DINO_BLAST = "42blast", AUDIO_BIGFOOT_FIRE1 = "51fire", AUDIO_BIGFOOT_BLAST1 = "51blast", AUDIO_BIGFOOT_FIRE2 = "52fire", AUDIO_BIGFOOT_BLAST2 = "52blast", AUDIO_BOOMER_FIRE = "62fire", AUDIO_BOOMER_BLAST = "62blast", AUDIO_RAON1_FIRE = "71fire", AUDIO_RAON1_BLAST = "71blast", AUDIO_RAON2_FIRE = "72fire", AUDIO_RAON2_BLAST = "72blast", AUDIO_RAON_WALKER = "71move", AUDIO_LIGHTNING_FIRE = "82fire", AUDIO_LIGHTNING_BLAST = "82blast", AUDIO_JD_FIRE = "91fire", AUDIO_JD_BLAST1 = "91blast", AUDIO_JD_BLAST2 = "92blast", AUDIO_ASATE_FIRE = "10s1fire", AUDIO_ASATE_KNIGHT_BLAST = "10s1blast", AUDIO_ICE_BLAST = "111blast", AUDIO_ICE_FIRE = "111fire", AUDIO_ICE_BLAST2 = "112blast", AUDIO_TURTLE_FIRE = "121fire", AUDIO_TURTLE_BLAST = "121blast", AUDIO_GRUB_FIRE = "131fire", AUDIO_GRUB_BLAST = "132blast", AUDIO_DRAGON_FIRE = "141fire", AUDIO_DRAGON_BLAST = "142blast", AUDIO_KNIGHT_FIRE = "15s1fire", AUDIO_ADUKA_FIRE = "161fire", AUDIO_ADUKA_FIRE2 = "162fire", AUDIO_BUTTON_SELECT = "bpush1", AUDIO_BUTTON_SELECT2 = "bselect1", AUDIO_MY_TURN = "turn", AUDIO_TURN_TICK = "turntick1s", AUDIO_GOLD = "gold", AUDIO_WIND = "4moon", AUDIO_USE_ITEM = "dual_snd", AUDIO_NOTIFICATION = "noti.mp3", AUDIO_GAME_START = "start.mp3", AUDIO_LOGIN = "login.mp3", AUDIO_BROKER = "broker.mp3", AUDIO_DING = "ding.mp3", AUDIO_TOUCH = "touch2.mp3", AUDIO_WAIT = "wait.mp3", AUDIO_MUSIC_CHANNEL = "channel.mp3", AUDIO_MUSIC_ROOM = "dbWaiting2020.ogg", AUDIO_STAGE_MUSICS = "stage1.mp3 stage2.mp3 stage3.mp3 stage4.mp3 stage5.mp3 stage6.mp3 Stage7.mp3 Stage8.mp3 Stage9.mp3 dbparty.mp3 Stage11.mp3 EventMusic0.mp3 EventMusic2.mp3 EventMusic3.mp3 EventMusic4.mp3 EventMusic5.mp3 EventMusic6.mp3 dbBattleMiramoTown.mp3 dbBattleMiramoTown.mp3".split(" "), AUDIO_MUSIC_SUDDEN = "sudden.mp3", AUDIO_WIN = "result_win.mp3", AUDIO_LOSE = "result_lose.mp3", g_dragonAudio, AUDIO_LOGO = "logo.mp3", AUDIO_CHANNEL_S3 = "channel_gbs3.mp3", AUDIO_SHOP_S3 = "Inventory.mp3", AUDIO_READY_S3 = "ready_gbs3.mp3", AUDIO_TITLE = "title.mp3";
         function AudioInit() {
-            (g_dragonAudio = new DragonAudio).PreloadAudios([AUDIO_TITLE, AUDIO_LOGO, AUDIO_CHANNEL_S3, AUDIO_LOGIN, AUDIO_BROKER, AUDIO_BUTTON_SELECT, AUDIO_BUTTON_SELECT2, AUDIO_GAME_START, AUDIO_MY_TURN, AUDIO_TURN_TICK])
+            (g_dragonAudio = new DragonAudio).PreloadAudios([AUDIO_TITLE, AUDIO_LOGO, AUDIO_CHANNEL_S3, AUDIO_SHOP_S3, AUDIO_READY_S3, AUDIO_LOGIN, AUDIO_BROKER, AUDIO_BUTTON_SELECT, AUDIO_BUTTON_SELECT2, AUDIO_GAME_START, AUDIO_MY_TURN, AUDIO_TURN_TICK])
         }
         function AudioPlay(e, t) {
             return g_dragonAudio.Play(e, t)
@@ -15180,9 +15180,16 @@
           , ITEM_DUAL = 0
           , ITEM_TELEPORT = 1
           , ITEM_DUAL_PLUS = 2
-          , ITEM_CLASS = ["itemDual", "itemTeleport", "itemDualP"]
+          , ITEM_1 = 3
+          , ITEM_2 = 4
+          , ITEM_3 = 5
+          , ITEM_4 = 6
+          , ITEM_5 = 7
+          , ITEM_RAYO = 8
+          , ITEM_CURA = 9
+          , ITEM_CLASS = ["itemDual", "itemTeleport", "itemDualP", "item001", "item002", "item003", "item004", "item005", "item008", "item009"]
           , ITEM_NAME = ["Dual", "Teleport", "Dual+"]
-          , ITEM_SIZE = [2, 2, 2]
+          , ITEM_SIZE = [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
           , DIR_LEFT = 0
           , DIR_RIGHT = 1
           , PLAYER_LOOK_LEFT = DIR_LEFT
@@ -15254,8 +15261,8 @@
           , GAME_MODE_BOSS = 1
           , GAME_MODE_SAME = 2
           , GAME_MODE_SCORE = 3
-          , GAME_MODE_NAMES = ["SOLO", "TAG", "JEWEL", "SCORE"]
-          , GAME_MODE_NAMES_LOWER = ["SOLO", "TAG", "JEWEL", "SCORE"]
+          , GAME_MODE_NAMES = ["Solo", "Tag", "Jewel", "Score"]
+          , GAME_MODE_NAMES_LOWER = ["Solo", "Tag", "Jewel", "Score"]
           , GAME_MODES = GAME_MODE_NAMES.length
           , CHAT_TYPE_NORMAL = 0
           , CHAT_TYPE_DEAD = 2
@@ -17578,7 +17585,7 @@
         function DragonAudio(e, t) {
             e = void 0 === e ? ["ogg", "flac", "wav", "mp3"] : e,
             this.files = {},
-            this.defaultFolder = void 0 === t ? "/static/audio/" : t,
+            this.defaultFolder = void 0 === t ? "/static/Sound/" : t,
             this.defaultTypes = e,
             this.Constructor()
         }
@@ -17951,8 +17958,18 @@
             g_is_apk || ($("#DragonThemeDialog").draggable2(),
             $("#freecashWindow").draggable2(),
             $("#dialogCreateRoom").draggable2(),
+            $("#popup_color_chat").draggable2(),
+            $("#popup_title").draggable2(),
+            $("#Gm_report").draggable2(),
+            $("#Popup_BuddyBack").draggable2(),
+            $("#popupbase_mutelist").draggable2(),
+            $("#popup_waitlist").draggable2(),
             $("#dialog__event-nyxcafe").draggable2(),
+            $("#BuddyTitle").draggable2(),
+            $("#BuddyTitle2").draggable2(),
             $("#dialog_join_room_div").draggable2(),
+            $("#dialog_change_name_div").draggable2(),
+            $("#itemsSelection").draggable2(),
             $("#OptionsDialog").draggable2()),
             $("select,input").bind("mousedown touchstart click", function(e) {
                 e.stopPropagation()
@@ -18770,7 +18787,6 @@
         }
         function GuiCloseChannelScreen() {
             $("#dialogCreateRoom").hide(),
-            $("#dialog_join_room_div").hide(),
             $("#OptionsDialog").hide(),
             DragonWindowClose($("#freecashWindow")),
             $("#channelScreen").fadeOut(0, function() {
@@ -18840,7 +18856,8 @@
                     $("#channelInput").val(""),
                     $("#channelScreen").show(),
                     ChannelPlayerInfoUpdate(e.myPlayerInfo, 1 == g_server_type ? e.lobbyMobile : void 0),
-                    AudioPlayMusic(dragonTheme.Get("channel_music") || AUDIO_MUSIC_CHANNEL),
+                    //AudioPlayMusic(dragonTheme.Get("channel_music") || AUDIO_MUSIC_CHANNEL),
+                    AudioPlayMusic(dragonTheme.Get("channel_music") || AUDIO_CHANNEL_S3),
                     g_tabsMenu.curTab == TAB_ITEMS && 1 != g_server_type ? g_tabsMenu.TabChangeTo(TAB_ALL) : g_tabsMenu.show(),
                     DragonScrollUpdate($("#playersList"), "top"),
                     DragonScrollUpdate($("#channel"), "bottom");
@@ -18874,7 +18891,8 @@
                     $("#playerInfoDialog").hide(),
                     $("#itemsSelection").addClass("InRoom"),
                     $("#roomScreen").show(),
-                    AudioPlayMusic(AUDIO_MUSIC_ROOM),
+                    //AudioPlayMusic(AUDIO_MUSIC_ROOM),
+                    AudioPlayMusic(AUDIO_READY_S3),
                     g_tabsMenu.curTab == TAB_ALL ? g_tabsMenu.TabChangeTo(TAB_ITEMS) : g_tabsMenu.show(),
                     VortexStart(),
                     RoomPlayerUpdateGUI(e.myPlayerInfo),
@@ -18926,6 +18944,7 @@
                     $("#shopScreen").show(),
                     e.location = GUI_LOCATION_SHOP,
                     $("#container").removeClass("Lobby Room Shop Game").addClass("Shop"),
+                    AudioPlayMusic(AUDIO_SHOP_S3),
                     ShopEntered(e)
                 }))
             })
@@ -18997,16 +19016,6 @@
         }
         function DragonWindowOpen(e, t) {
             CenterDialog(e),
-            t ? e.show() : 1 == e.css("scale") ? (e.addClass("AnimEnterScaleIn").show(),
-            setTimeout(function() {
-                e.removeClass("AnimEnterScaleIn")
-            }, 400)) : (e.addClass("AnimEnterFadeIn4").show(),
-            setTimeout(function() {
-                e.removeClass("AnimEnterFadeIn4")
-            }, 400))
-        }
-        function JoinWindowOpen(e, t) {
-            CenterJoin(e),
             t ? e.show() : 1 == e.css("scale") ? (e.addClass("AnimEnterScaleIn").show(),
             setTimeout(function() {
                 e.removeClass("AnimEnterScaleIn")
@@ -19095,7 +19104,7 @@
             $("#friendsListExtra").text(this.t('You can add friends by clicking "Info" near them and then "Add".')),
             $("#guildRoomTabExtra").text(this.t('A guild leader can invite you to a guild by clicking on your "Info" and then "Guild Invite".')),
             $("#dialog_change_title_div .AlertBoxTitle").text(this.t("Room Title")),
-            $("#dialog_change_title_div label").text(this.t("New Title")),
+            $("#dialog_change_title_div label").text(this.t("")),
             $("#infoLoading").text(this.t("Loading") + "..."),
             $("#infoKey1").text(this.t("Ranking")),
             $("#infoKey2").text(this.t("Gender")),
@@ -19122,6 +19131,8 @@
             $("#changePassLink").text("⚙ " + this.t("Password / Photo / Settings")),
             $("#buttonCreateRoom").attr("original-title", l.t("Create a new room")),
             $("#buttonMyInfo").attr("original-title", l.t("Change name/photo/settings")),
+            $("#avatarMyInfo").attr("original-title", l.t("Change name/photo/settings")),
+            $("#roomMyInfo").attr("original-title", l.t("Change name/photo/settings")),
             $("#buttonShop").attr("original-title", l.t("Buy items")),
             $("#buttonCharge2").attr("original-title", l.t("Get Free & Paid Cash")),
             $("#buttonJoin").attr("original-title", l.t("Join known room")),
@@ -19669,7 +19680,7 @@
             "Shooting Mode": "Modo de Tiro",
             "(Space Key)": "(Espacio)",
             Sounds: "Sonidos",
-            Music: "Música",
+            Music: "Sonido",
             Language: "Idioma",
             Theme: "Tema",
             Graphics: "Gráficos",
@@ -19947,12 +19958,21 @@
             css: ""
         }
           , ThemeClassicHD = {
-            stuff_HD: "/static/images/themes/classicHD/stuff_HD.png?A",
-            scores_bg: "/static/images/themes/classicHD/scores_bg.png",
-            lobby_bg: "/static/images/themes/classicHD/lobby_bg.png",
-            room_bg: "/static/images/themes/classicHD/room_bg.png",
-            shop_bg: "/static/images/themes/classicHD/shop_bg.png",
-            css: ""
+            stuff_HD: "/static/images/themes/val2022/stuff_HD.png",
+            scores_bg: "/static/images/themes/val2022/scores_bg.png",
+            server_ad: "/static/images/themes/season3/server_ad.png",
+            server_bg: "/static/images/themes/TH/serverlist_back.png",
+            lobby_bg: "/static/images/themes/season3/roomlist_back.png",
+            room_bg: "/static/images/themes/season3/ready_back.png",
+            shop_bg: "/static/images/themes/season3/avatar_back.png",
+            bg_full: "/static/images/themes/val2022/bg_full.jpg",
+            bg_tour: "/static/images/themes/val2022/bg_tour.jpg?2",
+            numberfont: "/static/images/themes/season3/numberfont.png",
+            serverlist_back: "/static/images/themes/season3/serverlist_back2.png",
+            roomlist_back: "/static/images/themes/season3/roomlist_back2.png",
+            avatar_back: "/static/images/themes/season3//avatar_back2.png",
+            ready_back: "/static/images/themes/season3/ready_back2.png",
+            css: "#myInfoBox{box-shadow:white 0 0 15px,white 0 0 15px inset;border:2px solid white}#container.Lobby.Auto #itemsSelection,#container.Lobby.Auto #friendsList,#container.Lobby.Auto #guildMembersList{box-shadow:white 0 0 15px,white 0 0 15px inset;border:2px solid white;left:582px}",
         };
         CopyMissingProps(ThemeClassic, ThemeClassicHD);
         var ThemeDB = {
@@ -20099,12 +20119,14 @@
         ThemeSeason3 = {
           stuff_HD: "/static/images/themes/val2022/stuff_HD.png",
             scores_bg: "/static/images/themes/val2022/scores_bg.png",
+            server_ad: "/static/images/themes/season3/server_ad.png",
             server_bg: "/static/images/themes/season3/serverlist_back.png",
             lobby_bg: "/static/images/themes/season3/roomlist_back.png",
             room_bg: "/static/images/themes/season3/ready_back.png",
             shop_bg: "/static/images/themes/season3/avatar_back.png",
             bg_full: "/static/images/themes/val2022/bg_full.jpg",
             bg_tour: "/static/images/themes/val2022/bg_tour.jpg?2",
+            numberfont: "/static/images/themes/season3/numberfont.png",
             serverlist_back: "/static/images/themes/season3/serverlist_back2.png",
             roomlist_back: "/static/images/themes/season3/roomlist_back2.png",
             avatar_back: "/static/images/themes/season3//avatar_back2.png",
@@ -20595,11 +20617,13 @@
             !e.stuff_HD && (e.lobby_stuff || e.room_stuff || e.ready_stuff || e.shop_stuff || e.game_stuff || e.scores_stuff) && delete t.stuff_HD,
             !e.scores_bg && e.scores_stuff && delete t.scores_bg;
             var a = t.lobby_bg
+              , k = t.server_ad
               , q = t.server_bg
               , o = t.shop_bg
               , i = t.room_bg
               , n = t.lobby_stuff
               , rs = t.ready_stuff
+              , numberfont = t.numberfont
               , serverlist_back = t.serverlist_back
               , roomlist_back = t.roomlist_back
               , avatar_back = t.avatar_back
@@ -20614,7 +20638,7 @@
             t.HD = 1,
             GAME_STUFF = GAME_STUFF_HD) : GAME_STUFF = GAME_STUFF_SD,
             $("body").toggleClass("SD", !s).toggleClass("HD", !!s),
-            s = "\n    body {background-image: url(" + h + "); cursor: url(" + f + "), default}\n    .rank {background-image: url(" + serverlist_back + ");background-repeat:no-repeat;}\n    " + (s ? "" : ".rank21,.rank27,.rank28,.rank29,.rank30,.rank31 {background-image: url(" + u + ") !important}") + "\n    .ItemBtn {background-image: url(" + g + ");background-repeat:no-repeat;background-size:" + m + "}\n    .roomMap, #room_map, #RoomOptionsMapImage {background-image:url(/static/images/maps/minimaps.png?A);background-repeat:no-repeat;}\n\n    " + ("." != a ? "#channelScreen {background-image: url(" + a + ")}" : "") + "\n    " + ("." != i ? "#roomScreen {background-image: url(" + i + ");}" : "") + "\n    " + ("." != o ? "#shopScreen {background-image: url(" + o + ");}" : "") + "\n    " + (p ? "#BrokerWindow {background-image: url(" + p + ");background-repeat:no-repeat}" : "") + "\n\n    .room,.roomExtraInfo,.status,.roomLocked,.LobbyButton,\n    .players1v1,.players2v2,.players3v3,.players4v4,.players1vB,.players2vB,.players3vB,.players4vB,\n    .checkboxOff,.checkboxOn,.CheckboxOff,.CheckboxOn,\n    .AlertBox,#ConnectWithPassword,#buttonRanking,#dialogCreateLocked,#RoomOptionsModeLocked,.FBLoginBtn,\n    #OptionsOK,#OptionsLeave,.RadioOn,.RadioOff,#infoAddBuddy,#infoGuildInvite,.chatDialogDelete,.chatDialogGuildKick,.chatDialogGuildInvite,\n    .roomBuddy,.roomGuildMember,#guild_create,#guild_leave,.paypal_corner,.buttonClose,#new_img,\n    .BrokerChannelFullIcon,.imgLock,.buttonAllBuddyList1x,.buttonAllBuddyList2x,.buttonAllBuddyList3x {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    .buttonMobile,.roomPlayerInfo,.roomPlayerNotReady,.roomPlayerReady,\n    .roomPlayerMaster,.roomPlayerShadow,.roomBotSelect,.roomBotRemove,.roomPlayerBalloonTip,#room_timer,.GamePlayerBalloonTip,\n    #add_bot_button,#playerInfoDialog,#infoRankingTab,.chatDialogProfile,\n    #infoChat,#infoClose,.ChatDialog,.chatDialogClose,#room_item_buddy_tab1,#room_item_buddy_tab2,#room_item_buddy_tab3,\n    #dialog_room_options,.room_item_buddy_tab1,.room_item_buddy_tab2,.room_item_buddy_tab3 {\n        background-image: url(" + roomlist_back + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    " + (s ? "#FilterBtnAll,.zotata-chat-icon,.relationshipIcon,.relationshipIconE,.relationshipIconM,.heartBrokenIcon,.buttonOK,.buttonCancel,#notificationBtn,.DragonWindowClose,.EmptyStar,.FullStar,.QuestionMark,#CollectCashBtn," : "") + "\n    .shopButton,.shop_itemx,.shop_item_icon,.stat_icon,.stat_font,.shop_my_item_cash,\n    .shop_my_item_gift,.shop_my_item_icon,#shop_buy_dialog,.FilterBtn {\n        background-image: url(" + c + ");background-repeat:no-repeat;background-size:" + m + "}\n\n#BrokerWindow{ background-image: url(" + serverlist_back + ");background-repeat:no-repeat; }.weather-0,.weather-1,.weather-2,.weather-3,.weather-4,.weather-5,.weather-6,.weather-7,.weather-8,.weather-9,\n    .weather-10,#message_over_items.items_locked,#message_over_items.sudden_death,#gameui,#powerBar," + (s ? "#walkBar," : "") + "\n    #powerMark,.DamageDigit,.LastAngleDigit,.UIGoldDigit,#btnShot1,#btnShot2,#btnShotSS,#btnPass,#btnEsc,\n    #last_power_mark,#all_chat,#team_chat,.turn_line_number,#slice_drag_button,.imgS1 {\n        background-image: url(" + e + ") !important;background-repeat:no-repeat;background-size:" + m + "}\n\n    #scores_lose_a,#scores_lose_b,.score,.score_me {\n    background-image: url(" + l + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    #btn-ok-new-gameid,#btn-cancel-new-gameid {background-image: url(" + rs + ");background-repeat:no-repeat}#game_over {background-image: url(" + b + ");background-repeat:no-repeat}\n    \n    #buttonSendGift {background-image: url(" + (s ? c + ");background-size:" + m : "/static/images/gift.png)") + "}\n    .BrokerChannel,#lobby_close_small,#lobby_refresh,.server__name-number,.server__batery-online,.rank-0,.rank-1,.broker__avatar,.server___rank-up,.server___rank-down{ background-image: url(" + serverlist_back + ");background-repeat:no-repeat; }\n    .room__list-Downmenu,.room__list-Waiting,.room__list-all,.room__list-Quick,.room__list-Create,.room__list-Normal,.room__list-Score,.room__list-Friend,.room__list-Number,.room__list-left,.room__list-right,.room__list-charge,.room__list-bugle,.room__list-myinfo,#dialog__event-nyxcafe,.room__list-marcket,.room__list-option,.room__list-exit,.buttonAllBuddyList1,.buttonAllBuddyList2,.room__list-color,.room__list-nobugle,.room__list-SelectChatting,.room__list-menu,.room__list-record,.room__list-event,.room__list-mutelist,.room__list-rank,.room__list-ch,.PopupRoomList,#dialog_join_room_div,.button_OK,.button_Cancel,.goto_OK,.goto_Cancel,.popupbase_buddy,.popup_userinfo,.tab_user_info,.tab_user_rank,#dialogCreateRoom,.room_list-optionleft,.room_list-optionright,.iconMode0,.iconMode1,.iconMode2,.iconMode3,.NORMAL,.room__list-buddy-add,.room__list-tab,.room__list-buddy-delete2,.room__list-font-slash,.room__list-font-0,.room__list-font-1,.room__list-ch1,.room__list-ch2,.room__list-ch3,.room__list-ch4,.room__list-ch5,.room__list-ch6,.room__list-ch7,.room__list-ch8,#NewGameIdWindow,.Popup_BuddyBack { background-image: url(" + roomlist_back + ");background-repeat:no-repeat; }\n    .shop_item,.avatar__list-tab,.avatar__list-buy,.avatar__list-garbage,.avatar__list-specialItem,.avatar__list-GcoinItem,.avatar__list-avatar,.avatar__list-setitem,.avatar__list-exitem,.avatar__list-PetItem,.avatar__list-mobilecard,.shop_my_item,.shop_my_item_equip.equipped,.avatar__list-inven,.avatar__list-reset,.avatar__list-Pet,.avatar__list-Align,.avatar___list-Bar1,.avatar___list-Bar2,.avatar___list-Bar3,.room__list-stats,.avatar__list-Enchant,.avatar__list-Seal {background-image: url(" + avatar_back + ");background-repeat:no-repeat; }\n    .ready_title,.room__list-buddylist,.ready_item,.ready_room_option,.ready_mobile,#btn-ok-new-gameid,#btn-cancel-new-gameid,.ItemSelect_back,.ready_start,.ready_ready,.ready_team {background-image: url(" + ready_back + ");background-repeat:no-repeat; }\n    ",
+            s = "\n    body {background-image: url(" + h + "); cursor: url(" + f + "), default}\n    .server__name-number,.roomNumber,.room__list-ch_1,.room__list-ch_2,.room__list-ch_3,.room__list-ch_4,.room__list-ch_5,.room__list-ch_6,.room__list-ch_7,.room__list-ch_8,.numPlayers,.numPlayers-slash,.maxPlayers,.roomsPage,.room__list-font-0,.room__list-font-1,.room__list-font-slash {background-image: url(" + numberfont + ");background-repeat:no-repeat;}\n    .rank {background-image: url(" + serverlist_back + ");background-repeat:no-repeat;}\n    " + (s ? "" : ".rank21,.rank27,.rank28,.rank29,.rank30,.rank31 {background-image: url(" + u + ") !important}") + "\n    .roomMap, #room_map, #RoomOptionsMapImage {background-image:url(/static/images/maps/minimaps.png?A);background-repeat:no-repeat;}\n\n    " + ("." != k ? ".NewUserBoxBackground {background-image: url(" + k + ")}" : "") + "\n    " + ("." != q ? ".AlertBoxBackground {background-image: url(" + q + ")}" : "") + "\n    " + ("." != a ? "#channelScreen {background-image: url(" + a + ")}" : "") + "\n    " + ("." != i ? "#roomScreen {background-image: url(" + i + ");}" : "") + "\n    " + ("." != o ? "#shopScreen {background-image: url(" + o + ");}" : "") + "\n\n    .roomExtraInfo,.LobbyButton,\n    .players1v1,.players2v2,.players3v3,.players4v4,.players1vB,.players2vB,.players3vB,.players4vB,\n    .CheckboxOff,.CheckboxOn,\n    .AlertBox,#ConnectWithPassword,#buttonRanking,#dialogCreateLocked,#RoomOptionsModeLocked,.FBLoginBtn,\n    #OptionsLeave,#infoAddBuddy,#infoGuildInvite,.chatDialogDelete,.chatDialogGuildKick,.chatDialogGuildInvite,\n    .roomBuddy,.roomGuildMember,#guild_create,#guild_leave,.paypal_corner,.buttonClose,#new_img,\n    .BrokerChannelFullIcon,.imgLock,.buttonAllBuddyList1x,.buttonAllBuddyList2x,.buttonAllBuddyList3x {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    .roomPlayerInfo,\n    .roomBotSelect,.roomBotRemove,.roomPlayerBalloonTip,#room_timer,.GamePlayerBalloonTip,\n    #add_bot_button,#playerInfoDialog,#infoRankingTab,.chatDialogProfile,\n    #infoChat,#infoClose,.ChatDialog,.chatDialogClose,#room_item_buddy_tab1,#room_item_buddy_tab2,#room_item_buddy_tab3,\n    .room_item_buddy_tab1,.room_item_buddy_tab2,.room_item_buddy_tab3 {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    " + (s ? "#FilterBtnAll,.zotata-chat-icon,.relationshipIcon,.relationshipIconE,.relationshipIconM,.heartBrokenIcon,.buttonOK,.buttonCancel,#notificationBtn,.DragonWindowClose,.EmptyStar,.FullStar,.QuestionMark,#CollectCashBtn," : "") + "\n    .shopButton,.shop_itemx,.stat_font,.shop_my_item_cash,\n    .shop_my_item_gift,.shop_my_item_icon,.FilterBtn {\n        background-image: url(" + c + ");background-repeat:no-repeat;background-size:" + m + "}\n\n.weather-0,.weather-1,.weather-2,.weather-3,.weather-4,.weather-5,.weather-6,.weather-7,.weather-8,.weather-9,\n    .weather-10,#message_over_items.items_locked,#message_over_items.sudden_death,#gameui,#powerBar," + (s ? "#walkBar," : "") + "\n    #powerMark,.DamageDigit,.LastAngleDigit,.UIGoldDigit,#btnShot1,#btnShot2,#btnShotSS,#btnPass,#btnEsc,\n    #last_power_mark,#all_chat,#team_chat,.turn_line_number,#slice_drag_button,.imgS1 {\n        background-image: url(" + e + ") !important;background-repeat:no-repeat;background-size:" + m + "}\n\n    #scores_lose_a,#scores_lose_b,.score,.score_me {\n    background-image: url(" + l + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    #btn-ok-new-gameid,#btn-cancel-new-gameid {background-image: url(" + rs + ");background-repeat:no-repeat}#game_over {background-image: url(" + b + ");background-repeat:no-repeat}\n    \n    #buttonSendGift {background-image: url(" + (s ? c + ");background-size:" + m : "/static/images/gift.png)") + "}\n    #BrokerWindow,.BrokerChannel,#lobby_close_small,#lobby_refresh,.server__batery-online,.rank-0,.rank-1,.broker__avatar,.server___rank-up,.server___rank-down { background-image: url(" + serverlist_back + ");background-repeat:no-repeat; }\n    #channelName,.room__list-Downmenu,.room__list-Waiting,.room__list-all,.room__list-Quick,.room__list-Create,.room__list-Normal,.room__list-Score,.room__list-Friend,.room__list-Number,.room,.room__list-left,.room__list-right,.room__list-charge,.room__list-bugle,.room__list-myinfo,#dialog__event-nyxcafe,.room__list-marcket,.room__list-option,.room__list-exit,.buttonAllBuddyList1,.buttonAllBuddyList2,.room__list-color,.room__list-nobugle,.room__list-SelectChatting,.room__list-menu,.room__list-inventory,.room__list-event,.room__list-Title,.room__list-battle,.room__list-channel,.PopupRoomList,#dialog_join_room_div,.button_OK,.button_Cancel,.New_ok,.New_cancel,.popup_userinfo_exit,.popupbase_buddy,.popup_userinfo,.tab_user_info,.tab_user_rank,#dialogCreateRoom,.room_list-optionleft,.room_list-optionright,.invite_block_on,.invite_block_off,.iconMode0,.iconMode1,.iconMode2,.iconMode3,.NORMAL,.room__list-buddy-add,.popup_userinfo_chat,.room__list-user_info,.room__list-buddy-delete2,#NewGameIdWindow,.Popup_BuddyBack,.status,.roomLocked,.roomLock,.room__list-point,.room__list-point2,.BuddyTitle,.BuddyTitle_1,.BuddyTitle_2,#CreateRoomMode,#CreateRoomPlayers,.BuddyTitle_3.BuddyTitle_4,.BuddyTitle_5,#popup_color_chat,#popup_title,.b_col_1,.b_col_2,.b_col_2,.b_col_3,.b_col_4,.b_col_5,.b_col_6,.b_col_7,.b_col_8,.b_col_9,.b_col_10,.b_col_11,.b_col_12,.b_col_13,.b_col_14,.b_col_15,.b_col_16,.b_col_9_off,.b_col_12_off,.b_col_15_off,.b_col_16_off,.b_popup_ok,.b_popup_cancel,#OptionsDialog,#OptionsOK,.RadioOn,.RadioOff,.checkboxOff,.checkboxOn,.Title,.title_normal,.title_rare,.title_epic,.title_legend,.popup_close { background-image: url(" + roomlist_back + ");background-repeat:no-repeat; }\n    .room__list-gamble,.shop_item,.avatar__list-tab,.avatar__list-buy,.avatar__list-garbage,.avatar__list-specialItem,.avatar__list-GcoinItem,.avatar__list-avatar,.avatar__list-setitem,.avatar__list-exitem,.avatar__list-PetItem,.avatar__list-mobilecard,.avatar__list-CouponShop,.shop_my_item,.shop_my_item_equip.equipped,.avatar__list-inven,.avatar__list-reset,.avatar__list-PetTraining,.avatar__list-Align,.avatar___list-Bar1,.avatar___list-Bar2,.avatar___list-Bar3,.room__list-stats,.avatar__list-JewelEnchant,.avatar__list-Seal,.popup_avatarshop,.shop_item_icon,.stat_icon {background-image: url(" + avatar_back + ");background-repeat:no-repeat; }\n    .ready_title,.room__list-buddylist,.ready_item,.ready_room_option,.ready_mobile,#btn-ok-new-gameid,#btn-cancel-new-gameid,.ItemSelect_back,.ready_start,.ready_ready,.ready_team,.room__list-record,.room__list-mutelist,.room__list-invite,.ItemSelect_back,.ItemBtn,#roomMobileSelect,.popup_mobile_cancel,.popup_mobile_ok,.buttonRareMobile,.roomPlayerNotReady,.roomPlayerReady,.roomPlayerMaster,.roomPlayerShadow,.roomPlayerMyself,#room_mapa_mode,#room_players,#room_game_mode,#room_turn_time,#room_mode_items,#room_mode_suvita,#popupbase_mutelist,#popup_waitlist,.New_invite,#Popup_BuddyBack,#Gm_report,.popupbase_roomtitle,.ready_option {background-image: url(" + ready_back + ");background-repeat:no-repeat; }\n    ",
             t.css && -1 == t.css.indexOf("<") && -1 == t.css.indexOf(">") && (s += t.css),
             $("#DragonTheme").text(s),
             t = $("#channelName,#channel,#channelInput"),
@@ -27150,7 +27174,36 @@
                     height: 370
                 }),
                 i.slideDown("fast")
+                $("#buttonTypeRandom").click();
             }),
+            $("#buttonTypeBio").click(function(){
+                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Random);
+                $("#                buttonTypeMech").show();
+                $(this).hide();
+            });
+            $("#buttonTypeMech").click(function(){
+                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Random);
+                $("#buttonTypeRandom").show();
+                $(this).hide();
+            });
+            $("#buttonTypePush").click(function(){
+                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Shield);
+                $("#buttonTypeShield").show();
+                $(this).hide(); 
+    
+            });
+            $("#buttonTypeRandom").click(function(){
+                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Push);
+                $("#buttonTypePush").show();
+                $("#buttonTypeMech").hide();
+                $("#buttonTypeShield").hide();
+                $(this).hide();
+            });
+            $("#buttonTypeShield").click(function(){
+                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Mech);
+                $("#buttonTypeMech").show();
+                $(this).hide();
+            });
             $("#roomMobileSelectCancel").click(function() {
                 AudioPlay(AUDIO_BUTTON_SELECT2),
                 t()
@@ -27184,6 +27237,28 @@
             $("#itemTeleport").click(function() {
                 $(this).hasClass("grayscale") || RoomSelectItem(ITEM_TELEPORT)
             }),
+            $("#item001").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_1)
+            }),
+            $("#item002").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_2)
+            }),
+            $("#item003").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_3)
+            }),
+            $("#item004").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_4)
+            }),
+            $("#item005").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_5)
+            }),
+            $("#item008").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_RAYO)
+            }),
+            $("#item009").click(function() {
+                $(this).hasClass("grayscale") || RoomSelectItem(ITEM_CURA)
+            }),
+            
             $("#itemSlot0").click(function() {
                 RoomRemoveItemFromSlot(0)
             }),
@@ -27608,14 +27683,16 @@
             $("#roomTutorialBack,#roomTutorialStart,#help_btn").toggle(a),
             $("#game_dnd_btn,#btnFriendsText,#gameBcm").toggle(!a),
             i = t.game_mode,
-            $("#room_game_mode").removeClass("gameMode0 gameMode1 gameMode2 gameMode3").addClass("gameMode" + i).html(GAME_MODE_NAMES[i]),
+            $("#room_game_mode").removeClass("room_game_mode_1 room_game_mode_2 room_game_mode_3 room_game_mode_4 room_game_mode_5").addClass("room_game_mode_" + i),
             g_game_mode = g_game_options_mode = i,
             RoomOptionsChangeMode(i, e.myPlayerInfo.unlock, e.myPlayerInfo.rank),
             a = t.max_players,
             i == GAME_MODE_BOSS ? (a *= 2,
-            $("#roomButtonChangeTeam").hide()) : g_can_change_team && $("#roomButtonChangeTeam").show(),
+            $("#roomButtonChangeTeam").show()) : g_can_change_team && $("#roomButtonChangeTeam").show(),
             g_max_players = a,
-            $("#RoomOptionsPlayers,#room_players").text(RoomPlayersNumberToString(g_max_players, i)),
+             $("#RoomOptionsPlayers,#room_players")
+            .removeClass(RESTRICTED_CLASS_VS_PLAYERS_ROOM.join(" "))
+            .addClass(RoomPlayersNumberToString(g_max_players, i, "room_players_"))
             i != GAME_MODE_SAME && g_can_change_mobile && $("#roomButtonMobile").show(),
             a = t.room_map,
             $("#room_map").html("").css("background-position", "0 " + GetMapImageOffset(a) + "px"),
@@ -27675,7 +27752,9 @@
             RemoveItemsOfType(ITEM_DUAL_PLUS) && e.SendRoomChangeReady(!1)) : ($("#RoomOptionsDualP").removeClass("grayscale"),
             t.is_s1_disabled || $("#itemDualP").removeClass("grayscale")),
             turnTimeSetting = t.turn_time,
-            $("#room_turn_time").text(turnTimeSetting + " " + l.t("Seconds")),
+            $("#room_turn_time")
+            .removeClass(RESTRICTED_CLASS_ROOM_TURN_TIME.join(" "))
+            .addClass("room_turn_time_" + (Number(turnTimeSetting) / 5))
             $("#RoomOptionsTurnTime").text(l.t("Turn Time") + ": " + turnTimeSetting).toggleClass("es", l.lang == LANGUAGE.ES),
             !g_is_room_for_sale && t.room_for_sale ? (g_is_room_for_sale = t.room_for_sale,
             ChatReceived(l.t("== This room is for sale == 🛒 You can buy the room by sending a gift from the shop, or PIN CODES with the command:") + " 👉 /offer PIN-CODE-1 PIN-CODE-2 ...", "", CHAT_TYPE_SYSTEM)) : g_is_room_for_sale && !t.room_for_sale && (g_is_room_for_sale = t.room_for_sale,
@@ -27777,6 +27856,7 @@
         }
         var g_can_change_team = !0, g_can_change_mobile = !0, g_master_username = "", g_vortex_start, g_vortex_interval, g_isSearchingTeam;
         function RoomPlayerUpdateGUI(e) {
+            console.log("calling!!")
             $("#roomButtonReady").hide(),
             $("#roomButtonStart").hide();
             var t, a = 0, i = 0, o = 0, n = g_room_players_slots.length, r = !0;
@@ -27861,8 +27941,8 @@
             -1 != g_server_force_mobile && -2 != g_server_force_mobile && (g_can_change_mobile = !1),
             1 == g_server_type ? (g_can_change_team = !1,
             $("#room_options_button").hide()) : $("#room_options_button").show(),
-            g_can_change_mobile ? $("#roomButtonMobile").show() : $("#roomButtonMobile").hide(),
-            g_can_change_team ? $("#roomButtonChangeTeam").show() : $("#roomButtonChangeTeam").hide(),
+            //g_can_change_mobile ? $("#roomButtonMobile").hide() : $("#roomButtonMobile").show(),
+            //g_can_change_team ? $("#roomButtonChangeTeam").hide() : $("#roomButtonChangeTeam").show(),
             a = Math.max(i, Math.floor(g_max_players / 2)),
             g_game_mode == GAME_MODE_BOSS ? 4 > (s = o) && s++ : s = Math.max(o, Math.floor(g_max_players / 2)),
             u = !!dragonTheme.Get("vortex") && g_server_subtype != SERVER_SUB_TYPE_COUPLES,
@@ -27871,8 +27951,8 @@
                 h = "#playerInRoom" + c,
                 d = $(h),
                 h = 0 == c % 2 ? a : s,
-                g = (u ? 257 - 48 * (Math.floor(h) - 1) : 113) + 97 * Math.floor(c / 2),
-                d.css("top", g),
+                g = (u ? 257 - 48 * (Math.floor(h) - 1) : 84) + 199 * Math.floor(c / 2),
+                d.css("left", g),
                 (d = $("#vortex" + c)).css("top", g - 50),
                 t ? d.hide() : (Math.floor(c / 2) < h && (0 == c % 2 || 1 != g_server_type) && u ? d.show() : d.hide(),
                 g_game_mode == GAME_MODE_BOSS && c == 2 * s - 1 && 0 < e.unlock && e.is_master && ($("#add_bot_button").css("top", g + 40).show(),
@@ -27966,11 +28046,13 @@
                 $("#mobile_info").removeClass().addClass("mobile_info" + t)))
         }
         function ChangedTeam(e, t, a, i) {
+            console.log("calling  change team!!!")
             g_no_winning_bonus_for = i;
             var o, n = g_room_players_slots.length;
             for (i = 0; i < n && (!(o = g_room_players_slots[i]) || o.user_id != e); i++)
                 ;
             if (!(i >= n) && i % 2 == ("A" == t)) {
+                console.log("i'm here!!")
                 for (e = g_room_players_slots[i]; g_room_players_slots[i]; )
                     g_room_players_slots[i] = g_room_players_slots[i + 2],
                     i += 2;
@@ -28929,8 +29011,15 @@
             }
         }
         function ShopSetMyGoldCash(e, t) {
-            $("#shop_my_cash").html(Commatize(t) + ""),
-            $("#shop_my_gold").html(Commatize(e) + "")
+            $("#shop_my_Name4").html(fontNormal(e.game_id))
+            $("#shop_my_Name2").html("").append(createName2(0, "", e.rank, e.guild, "", "", 2)),
+            $("#shop_my_GP2").html(fontBase(Commatize(e) + " %")),
+            $("#shop_my_GPBar").css({ "width": Math.round((157 * e) / 100)}),
+            $("#shop_my_GCoin").html(fontGcoin(Commatize(e)) + ""),
+            $("#shop_my_cash").html(fontCash(Commatize(t)) + ""),
+            $("#shop_my_gold").html(fontGold(Commatize(e)) + "")
+            //$("#shop_my_cash").html(Commatize(t) + ""),
+            //$("#shop_my_gold").html(Commatize(e) + "")
         }
         function ShopSelectMyItem(e, t, a) {
             if (a.hasClass("selected")) {
@@ -29238,9 +29327,6 @@
                     $("#shop_my_stats .shop_item_stat" + a + " .stat_icon").removeClass().addClass("stat_icon stat_icon_" + (0 <= i ? o : o + "-")).show(),
                     $("#shop_my_stats .shop_item_stat" + a + " .stat_digit1").removeClass().addClass("stat_digit1 stat_font stat_font" + Math.floor(Math.abs(i / 10))).show(),
                     $("#shop_my_stats .shop_item_stat" + a + " .stat_digit2").removeClass().addClass("stat_digit2 stat_font stat_font" + Math.abs(i % 10)).show()
-                    $("#shop_my_stats .shop_item_statx" + a + " .stat_icon").removeClass().addClass("stat_icon stat_icon_" + (0 <= i ? o : o + "-")).show(),
-                    $("#shop_my_stats .shop_item_statx" + a + " .stat_digit1").removeClass().addClass("stat_digit1 stat_font stat_font" + Math.floor(Math.abs(i / 10))).show(),
-                    $("#shop_my_stats .shop_item_statx" + a + " .stat_digit2").removeClass().addClass("stat_digit2 stat_font stat_font" + Math.abs(i % 10)).show()
                 }
         }
         function GetEquipped() {
@@ -29362,7 +29448,7 @@
         }
         var TAB_ALL = 0, TAB_ITEMS = 3, TAB_FRIENDS = 1, TAB_GUILD = 2, GUILD_JOB_MEMBER = 0, GUILD_JOB_LEADER = 1, GUILD_JOB_SEMI_LEADER = 2, g_rankings_button_clicked, ROOM_NAMES = "Hello;My Room;DragonBound;Welcome;Let's Rock!;Come to play;A Game!;More gold;And if we play?;Join the room".split(";"), ROOM_NAMES_ES = "Hola;Mi Sala;DragonBound;Bienvenido;Ven a jugar;A Jugar!;Más oro;Y si jugamos?;Únete a la sala!".split(";"), g_privateChat;
         var filterGame = new observable(0);
-        var typesGamePlayerID = "#filter_normal;#filter_score;#filter_all";
+        var typesGamePlayerID = "#filter_normal;#filter_score";
         filterGame.onChange((e) => {
             typesGamePlayerID.split(";").map((id) => $(id).hide());      
             $(typesGamePlayerID.split(";")[e]).show();
@@ -29390,12 +29476,84 @@
             DragonScroll("#friendsList"),
             DragonScroll("#guildMembersList"),
             g_privateChat = new PrivateChat(e),
+            $(".room__list-color").click(function(){
+                
+                if($("#popup_color_chat").is(":visible")){
+                    $("#popup_color_chat").hide();
+                }else{
+                    $("#popup_color_chat").show();
+                }
+            }),
+            $(".room__list-record").click(function(){
+                
+                if($("#Gm_report").is(":visible")){
+                    $("#Gm_report").hide();
+                }else{
+                    $("#Gm_report").show();
+                }
+            }),
+            $(".room__list-buddylist").click(function(){
+                
+                if($("#Popup_BuddyBack").is(":visible")){
+                    $("#Popup_BuddyBack").hide();
+                }else{
+                    $("#Popup_BuddyBack").show();
+                }
+            }),
+            $(".room__list-mutelist").click(function(){
+                
+                if($("#popupbase_mutelist").is(":visible")){
+                    $("#popupbase_mutelist").hide();
+                }else{
+                    $("#popupbase_mutelist").show();
+                }
+            }),
+            $(".room__list-invite").click(function(){
+                
+                if($("#popup_waitlist").is(":visible")){
+                    $("#popup_waitlist").hide();
+                }else{
+                    $("#popup_waitlist").show();
+                }
+            }),
             $(".room__list-event").click(function(){
                 
                 if($("#dialog__event-nyxcafe").is(":visible")){
                     $("#dialog__event-nyxcafe").hide();
                 }else{
                     $("#dialog__event-nyxcafe").show();
+                }
+            }),
+            $(".room__list-Title").click(function(){
+                
+                if($("#popup_title").is(":visible")){
+                    $("#popup_title").hide();
+                }else{
+                    $("#popup_title").show();
+                }
+            }),
+            $(".room__list-buddy-add").click(function(){
+                
+                if($("#BuddyTitle").is(":visible")){
+                    $("#BuddyTitle").hide();
+                }else{
+                    $("#BuddyTitle").show();
+                }
+            }),
+            $(".room__list-buddy-delete2").click(function(){
+                
+                if($("#BuddyTitle2").is(":visible")){
+                    $("#BuddyTitle2").hide();
+                }else{
+                    $("#BuddyTitle2").show();
+                }
+            }),
+            $(".ready_item").click(function(){
+                
+                if($("#itemsSelection").is(":visible")){
+                    $("#itemsSelection").hide();
+                }else{
+                    $("#itemsSelection").show();
                 }
             }),
             $("#buttonCreateRoom").click(function() {
@@ -29464,12 +29622,11 @@
                     AudioPlay(AUDIO_BUTTON_SELECT2),
                     $("#join_password_input").val(""),
                     FadeInDialog("dialog_join_room_div");
-                    JoinWindowOpen($("#dialog_join_room_div"));
                     var e = $("#join_room_input").val("");
                     g_is_mobile_device || e.focus()
                 }
             }),
-            $("#buttonMyInfo").click(function() {
+            $("#buttonMyInfo,#avatarMyInfo,#roomMyInfo").click(function() {
                 AudioPlay(AUDIO_BUTTON_SELECT2),
                 $("#display_name").val(e.myPlayerInfo.game_id).css({
                     "background-color": ""
@@ -30226,39 +30383,11 @@
             i < t ? t = (t - i) / 2 : (n = min(t / i * 0, n),
             t = 0),
             e.css({
-                left: t,
-                top: a,
+                //left: t,
+                //top: a,
                 scale: n
             }).css("z-index", g_draggable_z_index += 1)
         }
-        function CenterJoin(e) {
-            var t = window.innerWidth
-              , a = window.innerHeight
-              , i = 372 * e.outerWidth()
-              , o = 223.5 * e.outerHeight()
-              , n = 1;
-            a = 223.5,
-            t = 372,
-            e.css({
-                left: t,
-                top: a,
-                scalex: n
-            }).css("z-index", g_draggable_z_index += 1)
-        }
-        //function CenterJoin(e) {
-            //var t = window.innerWidth
-              //, a = window.innerHeight
-              //, i = 372 * e.outerWidth()
-              //, o = 223.5 * e.outerHeight()
-              //, n = 1;
-            //a = 223.5,
-            //t = 372,
-            //e.css({
-                //left: t,
-                //top: a,
-                //scalex: n
-            //}).css("z-index", g_draggable_z_index += 1)
-        //}
         function PrepareOptionsDialog(e, t) {
             var a = $("#OptionsDialog");
             if (e) {
@@ -30273,7 +30402,7 @@
                 }
             } else
                 $("#OptionsLeave").hide(),
-                $("#OptionsOK").css("left", "106px"),
+                $("#OptionsOK").css("left", "254px"),
                 t || CenterDialog(a);
             if (g_is_game_slice ? ($("#OptionsShootingModeSlice").removeClass("RadioOff").addClass("RadioOn"),
             $("#OptionsShootingModeDrag").removeClass("RadioOn").addClass("RadioOff")) : ($("#OptionsShootingModeSlice").removeClass("RadioOn").addClass("RadioOff"),
@@ -30387,12 +30516,18 @@
         }
         var g_create_room_game_mode = GAME_MODE_NORMAL
           , g_create_room_max_players = 8;
+        var generateListKeyWithId = (key, max, pointer = 1) => Array.from(new Array(max),(_v,index)=> key + Number(Number(index) + pointer)) 
+        var RESTRICTED_CLASS_VS_PLAYERS = generateListKeyWithId("players_vs_", 4);
+        var RESTRICTED_CLASS_VS_PLAYERS_ROOM = generateListKeyWithId("room_players_", 4);
+        var RESTRICTED_CLASS_ROOM_TURN_TIME = generateListKeyWithId("room_turn_time_1", 4);
         function UpdateNumPlayersCreate() {
-            $("#CreateRoomPlayers").text(RoomPlayersNumberToString(g_create_room_max_players, g_create_room_game_mode))
+            $("#CreateRoomPlayers")
+            .removeClass(RESTRICTED_CLASS_VS_PLAYERS.join(" "))
+            .addClass(RoomPlayersNumberToString(g_create_room_max_players, g_create_room_game_mode))
         }
-        function RoomPlayersNumberToString(e, t) {
+        function RoomPlayersNumberToString(e, t, o) {
             var a = floor(e / 2);
-            return a + (t == GAME_MODE_BOSS ? " vs BOT" : " vs " + a)
+            return (o ? o : "players_vs_") + a;
         }
         function CreateRoomDialogGUI(e) {
             UpdateNumPlayersCreate(),
@@ -30435,7 +30570,7 @@
         function CreateRoomChangeMode(e, t) {
             if (g_create_room_game_mode = e,
             UpdateNumPlayersCreate(),
-            $("#CreateRoomMode").text(GAME_MODE_NAMES[e]).removeClass("gameMode0 gameMode1 gameMode2 gameMode3").addClass("gameMode" + e),
+            $("#CreateRoomMode").removeClass("game_mode_tag game_mode_jewel game_mode_score game_mode_solo").addClass(`game_mode_${GAME_MODE_NAMES[e].toLowerCase()}`),
             $("#CreateRoomModeIcon").removeClass().addClass("iconMode" + e),
             e == GAME_MODE_NORMAL && 1 > t)
                 $("#dialogCreateLocked").show(),
@@ -30775,7 +30910,7 @@
             $("#myName4").html(fontNormal(e.game_id))
             $("#myName2").html("").append(createName2(0, "", e.rank, e.guild, "", "", 2)),
             $("#myGP2").html(fontBase(Commatize(e.gp) + " %")),
-            $("#myGPBar").css({ "width": Math.round((157 * e.gp) / 100)}),
+            $("#myGPBar").css({ "width": Math.round((15 * e.gp) / 100)}),
             $("#myCash2").html(fontCash(Commatize(e.cash)) + ""),
             $("#myGold2").html(fontGold(Commatize(e.gold)) + ""),
             $("#myGCoin").html(fontGcoin(Commatize(e.gold)) + ""),
@@ -31188,7 +31323,7 @@
                 this.allDiv.hide(),
                 $("#friendsListExtra").hide(),
                 $("#guildRoomTabExtra").hide(),
-                this.itemsDiv.show(),
+                this.itemsDiv.hide(),
                 t && this.dn.SendTabWatch(TAB_ITEMS);
             else if (e == TAB_FRIENDS)
                 this.buttons.removeClass("Guild").addClass("BuddyList"),
@@ -31196,7 +31331,7 @@
                 this.guildsDiv.hide(),
                 this.allDiv.hide(),
                 $("#playersList .scrollbar").hide(),
-                this.itemsDiv.hide(),
+                this.itemsDiv.show(),
                 $("#friendsListExtra").show(),
                 $("#guildRoomTabExtra").hide(),
                 t && this.dn.SendTabWatch(TAB_FRIENDS);
@@ -31208,7 +31343,7 @@
                 this.guildsDiv.show(),
                 this.allDiv.hide(),
                 $("#playersList .scrollbar").hide(),
-                this.itemsDiv.hide(),
+                this.itemsDiv.show(),
                 $("#friendsListExtra").hide(),
                 $("#guildRoomTabExtra").show(),
                 t && this.dn.SendTabWatch(TAB_GUILD)

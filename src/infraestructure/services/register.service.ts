@@ -2,6 +2,7 @@ import { errorList } from "@/shared/functions/errorList"
 import { RegisterRequest } from "@/shared/types/request"
 import { Supplier } from "gunbound-typescript-sdk/dist/shared/types"
 import * as iamSupplier from "../suppliers/iam"
+import * as avatarEquippedSupplier from "../suppliers/avatarEquipped"
 import * as yup from "yup"
 import { RegiterSchema } from "@/schemas/register.schema"
 import { ERROR_VALIDATION_MESSAGE } from "@/shared/enum/messages"
@@ -33,15 +34,18 @@ export const register = async (data: RegisterRequest, supplier: Supplier) => {
         rank: 1,
         gold: 0,
         cash: 0,
-        gp: 0
+        gp: 0,
+        gender: data.gender,
     }, supplier)
+
+    await avatarEquippedSupplier.createDefault({ userSlug: userCreated.slug, gender: data.gender }, supplier)
 
     const payload = {
         token: "wilmer"
     }
 
     const { token } = await jwt.generate(payload);
-    
+
     await iamSupplier.signup({
         username: data.name,
         password: data.password,

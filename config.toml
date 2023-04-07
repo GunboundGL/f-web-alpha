@@ -18,6 +18,9 @@ host = "http://localhost:3002"
 [supplier.user]
 host = "http://localhost:3003"
 
+[supplier.avatar-equipped]
+host = "http://localhost:3004"
+
 [jwt]
 secret = "lnferno"
 refreshSecret = "lnferno"

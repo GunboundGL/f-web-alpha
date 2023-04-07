@@ -14,6 +14,7 @@ export type CreateSupplierUserRequest = {
     gold: number;
     cash: number;
     gp: number;
+    gender: string;
 }
 
 export type SigninSupplierIamRequest = {
@@ -27,4 +28,9 @@ export type GetByWhereSupplierIamRequest = {
         slug?: string;
         _id?: string;
     }
+}
+
+export type CreateDefaultSupplierAvatarEquippedRequest = {
+    userSlug: string;
+    gender: string;
 }
