@@ -16639,24 +16639,24 @@
           , MAP = {
             CUSTOM: -2,
             RANDOM: -1,
-            MIRAMO: 0,
-            NIRVANA: 1,
-            METRO: 2,
-            SEA: 3,
-            ADIUM: 4,
-            DRAGON: 5,
-            COZY: 6,
-            DUMMY: 7,
-            STAR: 8,
-            METAMINE: 9,
-            CAVE: 10,
-            SECRET: 11,
+            MIRAMO: 1,
+            NIRVANA: 2,
+            METRO: 3,
+            SEA: 4,
+            ADIUM: 5,
+            DRAGON: 6,
+            COZY: 7,
+            DUMMY: 8,
+            STAR: 9,
+            METAMINE: 10,
+            CAVE: 0,
+            SECRET: 28,
             ICECAVE: 12,
-            TREEOFLIFE: 13,
-            ICEFISH: 14,
-            SOCCER: 15,
-            CANDY: 16,
-            MONSTER: 17,
+            TREEOFLIFE: 38,
+            ICEFISH: 32,
+            SOCCER: 34,
+            CANDY: 36,
+            MONSTER: 38,
             MIRAMO2: 18,
             NIRVANA2: 19,
             METRO2: 20,
@@ -16667,17 +16667,17 @@
             DUMMY2: 25,
             STAR2: 26,
             METAMINE2: 27,
-            LOVEYOU: 28,
+            LOVEYOU: 11,
             LOVEYOU2: 29,
             LOND: 30,
             LOND2: 31,
-            DESERT: 32,
+            DESERT: 14,
             DESERT2: 33,
-            GRAY: 34,
+            GRAY: 15,
             GRAY2: 35,
-            JUNGLE: 36,
+            JUNGLE: 16,
             JUNGLE2: 37,
-            MYROOM: 38,
+            MYROOM: 17,
             MYROOM2: 39,
             DUMMY3: 40,
             ADIUM3: 41,
@@ -16696,10 +16696,11 @@
             ASTRONAUT: 54,
             TOXIMIZER: 55,
             NEVADASNOW: 56,
-            NUMBER_OF_MAPS: 57
+            NUMBER_OF_MAPS: 57,
+            FOURHEADS: 13
         }
           , MAPS_PACK = [MAP.NIRVANA2, MAP.METRO2, MAP.SEA2, MAP.AUDIM2, MAP.DRAGON2, MAP.COZY2, MAP.DUMMY2, MAP.STAR2, MAP.METAMINE2, MAP.LOVEYOU, MAP.LOVEYOU2, MAP.LOND, MAP.LOND2, MAP.DESERT, MAP.DESERT2, MAP.GRAY, MAP.GRAY2, MAP.JUNGLE, MAP.JUNGLE2, MAP.MYROOM, MAP.MYROOM2, MAP.DUMMY3]
-          , SELECTABLE_MAPS_NEW = [MAP.RANDOM, MAP.MIRAMO, MAP.NIRVANA, MAP.METRO, MAP.SEA, MAP.ADIUM, MAP.DRAGON, MAP.COZY, MAP.DUMMY, MAP.STAR, MAP.METAMINE, MAP.ICECAVE, MAP.TREEOFLIFE, MAP.CANDY, MAP.ICEFISH, MAP.MONSTER, MAP.SOCCER].concat(MAPS_PACK).concat([MAP.CLOCKTOWER, MAP.CLOCKTOWER2])
+          , SELECTABLE_MAPS_NEW = [MAP.RANDOM, MAP.CAVE, MAP.MIRAMO, MAP.NIRVANA, MAP.METRO, MAP.SEA, MAP.ADIUM, MAP.DRAGON, MAP.COZY, MAP.DUMMY, MAP.STAR, MAP.METAMINE, MAP.LOVEYOU, MAP.LOND, MAP.FOURHEADS, MAP.DESERT, MAP.GRAY, MAP.JUNGLE, MAP.MYROOM]
           , SELECTABLE_MAPS = SELECTABLE_MAPS_NEW
           , MAPS = [];
         MAPS[MAP.MIRAMO] = {
@@ -17147,7 +17148,7 @@
             data: "2307o307430bo10b3X0fnZ0f3R0jnX0j3N0lnV0l3L0nnT0n3J0pnR0p3H0qnR0q3F0rnR0r3D0snR0s3C0tnP0t3B0unP0u3z0vnP0v3y0vnP0v3x0wnP0w3w0wnP0w3v0xnP0x3u0xnP0x3t0ynP0y3s0ynP0y3s0ynP0y3r0znP0z3q0znP0z3p0AnP0A3o0AnP0A3n0BnP0B3m0BnP0B3m0BnP0B3l0CnP0C3k0CnP0C3k0CnP0C3j0DnP0D3i0DnP0D3i0DnP0D3i0DnP0D3h0EnP0E3g0EnP0E3g0EnP0E3f0FnP0F3e0FnP0F3e0FnP0F3d0GnP0G3c0GnP0G3c0GnP0G3c0GnP0G3b0HnP0H3a0HnP0H3a0HnP0H3a0HnP0H390InP0I380InP0I380InP0I380InP0I380InP0I370JnP0J360JnP0J360JnP0J360JnP0J350KnP0K340KnP0K340KnP0K340KnP0K340KnP0K330MnN0M320MnN0M320MnN0M320MnN0M320MnN0M320MnN0M310NnN0N300NnN0N300NnN0N300OnL0O300OnL0O300OnL0O300OnL0O300OnL0O2Z0PnL0P2Y0PnL0P2Y0PnL0P2Y0QnJ0Q2Y0QnJ0Q2Y0Wnx0W2Y12nl122Y16nd162Y19n7192Y1cn11c2Y1dmZ1d2X1gmV1g2U1jmT1j2Q1mmR1m2N1omP1o2K1rmN1r2G1zmB1z2C1Fmt1F2z1Jmn1J2w1Pmf1P2t1Smb1S2r1Vm71V2p1Ym31Y2n21lZ212l23lX232j25lV252g28lT282d2blP2b2b2dlN2d292flL2f272hlJ2h252jlH2j232mlD2m212olB2o1Z2qlz2q1X2ult2u1V2Alj2A1T2LkZ2L1R31kv311P3ijZ3i1N3Fjh3F1L3Nj33N1J3QiZ3Q1H3SiX3S1F3UiV3U1D3WiT3W1C3XiR3X1B3YiR3Y1z40iP401x41iP411v42iP421t44iN441r45iN451p46iN461o46iN461n47iN471l48iN481j48iP481i48iP481h49iP491f4aiP4a1d4biP4b1c4biP4b1b4biR4b194ciR4c174ciT4c154ciV4c134diV4d124ciX4c114diX4d0Z4diZ4d0Y4diZ4d0X4dj14d0V4ej14e0U4ej14e0T4ej34e0S4dj54d0R4ej54e0P4ej74e0O4dj94d0N4ej94e0L4ejb4e0K4djd4d0J4djf4d0I4djf4d0H4djh4d0G4cjj4c0F4djj4d0D4djl4d0C4cjn4c0B4bjr4b0A4ajt4a0z48jz480y46jD460x43jL430w3Vk13V0w3Ikr3I0v3wkR3w0u3klf3k0t3clx3c0s37lH370r39lF390q39lF390p3blD3b0o3clB3c0n3dlB3d0m3elz3e0m3elz3e0l3glx3g0k3hlv3h0k3hlv3h0j3jlt3j0i3jlt3j0i3klr3k0h3llr3l0g3mlp3m0g3nln3n0f3oln3o0e3pll3p0e3qlj3q0d3rlj3r0c3slh3s0c3slh3s0b3ulf3u0a3vld3v0a3vld3v0a3wlb3w093yl93y083yl93y083zl73z083Al53A073Bl53B063Cl33C063Dl13D053El13E043FkZ3F043FkZ3F043GkX3G033IkV3I023IkV3I023JkT3J023JkT3J013LkR7wkR7wkR7xkP3M013LkP3L023MkN3M033LkN3L053KkN3K083JkL3J0b3IkL3I0e3GkL3G0i3F1f03i9031f3F0m3D1c08i5081c3D0p3C190ci30c193C0s3A160gi10g163A0v3A130jhZ0j133A0x3z120lhX0l123z0A3x110nhV0n113x0G3t100phT0p103t0N3q0Z0qhT0q0Z3q0S3s0U0rhT0r0U3s0W3v0O0shT0s0O3v103v0L0thT0t0L3v143u0J0vhR0v0J3u183t0I0vhR0v0I3t193u0H0whR0w0H3u173v0H0whR0w0H3v163v0G0xhR0x0G3v163v0G0xhR0x0G3v163v0G0xhR0x0G3v153w0F0yhR0y0F3w143w0F0yhR0y0F3w143v0F0zhR0z0F3v143v0F0zhR0z0F3v143v0E0AhR0A0E3v143v0E0AhR0A0E3v143v0E0AhR0A0E3v153t0E0BhR0B0E3t163t0E0BhR0B0E3t173s0D0ChR0C0D3s183r0E0ChR0C0E3r193q0E0ChR0C0E3q1b3p0E0ChR0C0E3p1d3o0D0DhR0D0D3o1f3m0E0DhR0D0E3m1h3l0E0DhR0D0E3l1k3j0D0EhR0E0D3j1m3i0E0EhR0E0E3i1m3i0E0EhR0E0E3i1n3g0E0FhR0F0E3g1o3g0E0FhR0F0E3g1o3g0E0FhR0F0E3g1p3e0F0FhR0F0F3e1q3e0E0GhR0G0E3e1r3d0E0GhR0G0E3d1s3c0F0GhR0G0F3c1s3c0E0HhR0H0E3c1t3a0F0HhR0H0F3a1u3a0F0HhR0H0F3a1u3a0F0HhR0H0F3a1v380F0IhR0I0F381w380F0IhR0I0F381x370F0IhR0I0F371y360G0IhR0I0G361z350G0IhR0I0G351A350F0JhR0J0F351B340F0JhR0J0F341C340F0JhR0J0F341D330F0JhR0J0F331F320E0KhR0K0E321G320E0KhR0K0E321H310E0KhR0K0E311I310E0KhR0K0E311J300E0KhR0K0E301K300D0LhR0L0D301L2Z0D0LhR0L0D2Z1M2Z0D0MhP0M0D2Z1N2Y0D0MhP0M0D2Y1O2Y0D0MhP0M0D2Y1P2X0D0MhP0M0D2X1R2W0C0NhP0N0C2W1S2W0C0NhP0N0C2W1T2V0C0NhP0N0C2V1V2U0C0NhP0N0C2U1X2T0C0NhP0N0C2T1Z2S0C0OhN0O0C2S202S0C0OhN0O0C2S212R0B0PhN0P0B2R232Q0B0PhN0P0B2Q252P0B0PhN0P0B2P272O0B0PhN0P0B2O292N0B0PhN0P0B2N2b2M0B0QhL0Q0B2M2d2L0B0QhL0Q0B2L2e2L0B0Zht0Z0B2L2f2K0B13hl130B2K2h2J0B16hf160B2J2j2I0B1ah71a0B2I2l2H0A1dh31d0A2H2n2G0A1fgZ1f0A2G2p2F0A1ggX1g0A2F2r2E0y1jgV1j0y2E2t2D0w1ngR1n0w2D2v2C0u1qgP1q0u2C2y2A0s1tgN1t0s2A2B2z0q1AgD1A0q2z2D2y0p1Fgv1F0p2y2F2x0n1Lgn1L0n2x2I2v0m1Pgh1P0m2v2L2u0l1Sgd1S0l2u2N2t0k1Vg91V0k2t2Q2r0j1Yg51Y0j2r2T2q0h22g1220h2q2V2p0g24fZ240g2p2Y2n0f26fX260f2n312m0e28fV280e2m332l0d2bfR2b0d2l362j0c2dfP2d0c2j3a2g0c2ffN2f0c2g3e2d0b2ifL2i0b2d3i2a0b2kfJ2k0b2a3n260b2nfF2n0b263s1b020R0a2pfD2p0a0R021b3w17040R092sfz2s090R04173A12080Q082vfv2v080Q08123E0Y0b0P072Dfh2D070P0b0Y3J0V0c0O062PeV2P060O0c0V3O0T0d0M0734er34070M0d0T3S0R0e0K073ndR3n070K0e0R3W0O0g0I073Idd3I070I0g0O410C02060j0E083Nd53N080E0j06020C4c0m0b030r0t0c3Qd13Q0c0t0r030b0m5Z3ScZ3S7D3UcX3U7B3WcV3W7z3YcT3Y7x3ZcT3Z7v41cR417t42cR427s42cR427r44cP447p45cP457n46cP467l47cP477k47cP477j48cP487h48cR487f49cR497e49cR497d4acR4a7b4bcR4b794ccR4c774ccT4c764bcV4b754ccV4c734ccX4c714ccZ4c704ccZ4c6Z4cd14c6X4dd14d6V4ed14e6U4dd34d6T4ed34e6S4dd54d6R4ed54e6P4ed74e6O4ed74e6N4ed94e6M4ddb4d6L4ddd4d6J4ddf4d6I4ddf4d6H4ddh4d6F4ddj4d6E4ddj4d6D4ddl4d6C4cdn4c6B4cdp4c6A4bdr4b6z4bdt4b6y49dx496x48dB486w46dF466v41dR416u3Se93S6t3FeB3F6s3teZ3t6r3jfl3j6q3afD3a6q37fJ376p39fH396o39fH396n3bfF3b6m3cfD3c6l3dfD3d6k3efB3e6j3ffB3f6i3gfz3g6i3hfx3h6h3ifx3i6g3jfv3j6g3jfv3j6g3kft3k6f3lft3l6e3mfr3m6e3nfp3n6d3ofp3o6c3pfn3p6c3qfl3q6b3rfl3r6a3sfj3s6a3sfj3s693ufh3u683vff3v683vff3v673xfd3x663yfb3y663yfb3y663zf93z653Bf73B643Bf73B643Cf53C643Df33D633Ef33E623Ff13F623Ff13F613HeZ3H603IeX3I603IeX3I603JeV3J5Z3KeV3K5Y3LeT3L5Y3LeT3L5Y3LeT3L5Y3MeR3M5Z3LeR3L603MeP3M613LeP3L643JeP3J673JeN3J693IeN3I6c3GeN3G6g3FeL3F6k3DeL3D6o3BeL3B6r3AeL3A6t3AeJ3A6v3zeJ3z6y3xeJ3x6F3seJ3s6M3reH3r6R3sez3s6V3wep3w6Y3ven3v723uel3u763tej3t773uej3u753vej3v743vej3v743v0T03cr030T3v743v0R07cn070R3v733w0O0bcl0b0O3w723v0M0fcj0f0M3v723v0J0kcf0k0J3v723v0I0mcd0m0I3v723v0H0ocb0o0H3v723v0G0pcb0p0G3v723u0G0qcb0q0G3u733t0F0sc90s0F3t743t0F0sc90s0F3t753r0F0tc90t0F3r763r0E0uc90u0E3r773q0D0vc90v0D3q793p0D0vc90v0D3p7b3n0D0wc90w0D3n7d3m0D0wc90w0D3m7f3l0C0xc90x0C3l7i3i0D0xc90x0D3i7k3i0D0xc90x0D3i7k3i0C0yc90y0C3i7l3g0D0yc90y0D3g7m3g0C0zc90z0C3g7m3f0D0zc90z0D3f7n3e0D0zc90z0D3e7o3e0C0Ac90A0C3e7p3c0D0Ac90A0D3c7q3c0C0Bc90B0C3c7q3c0C0Bc90B0C3c7r3a0D0Bc90B0D3a7s3a0C0Cc90C0C3a7s3a0C0Cc90C0C3a7t380D0Cc90C0D387u380C0Dc90D0C387v360D0Dc90D0D367w360D0Dc90D0D367x350C0Ec90E0C357y350C0Ec90E0C357z340C0Ec90E0C347A340C0Ec90E0C347B330B0Fc90F0B337D320B0Fc90F0B327E320B0Fc90F0B327F310A0Gc90G0A317G310A0Gc90G0A317H300A0Gc90G0A307I300A0Gc90G0A307J2Z0z0Hc90H0z2Z7K2Z0z0Hc90H0z2Z7L2Y0z0Hc90H0z2Y7M2Y0z0Hc90H0z2Y7N2X0y0Ic90I0y2X7P2W0y0Ic90I0y2W7Q2W0y0Ic90I0y2W7R2V0y0Ic90I0y2V7T2U0y0Ic90I0y2U7V2T0x0Jc90J0x2T7X2S0x0Jc90J0x2S7Z2R0x0Kc70K0x2R802R0x0Kc70K0x2R812Q0x0Kc70K0x2Q832P0w0Lc70L0w2P852O0w0Lc70L0w2O872N0w0Lc70L0w2N892M0w0Lc70L0w2M8b2L0v0Mc70M0v2L8c2L0v0Mc70M0v2L8d2K0v0Mc70M0v2K8f2J0v0Mc70M0v2J8h2I0v0Mc70M0v2I8j2H0v0Nc50N0v2H8l2G0v0Nc50N0v2G8n2F0u0Oc50O0u2F8p2E0u0Oc50O0u2E8r2D0u0Oc50O0u2D8u2B0u0Oc50O0u2B8x2A0u0Oc50O0u2A8z2z0u0Oc50O0u2z8B2y0u0Pc30P0u2y8E2w0u0Pc30P0u2w8H2v0t0Qc30Q0t2v8J2u0t0Qc30Q0t2u8M2s0t0Qc30Q0t2s8P2r0t0ZbL0Z0t2r8R2q0t13bD130t2q8T2p0t17bv170t2p8W2n0t1abp1a0t2n8Z2m0t1dbj1d0t2m912l0t1ebh1e0t2l942j0s1gbf1g0s2j982g0r1kbb1k0r2g9d2c0q1nb91n0q2c9i290q1pb71p0q299m1e010R0p1sb51s0p0R011e9q1a030R0n1AaT1A0n0R031a9u16050R0l1GaL1G0l0R05169z11080Q0k1LaD1L0k0Q08119E0X0b0P0i1Qax1Q0i0P0b0X9I0V0c0O0h1Tat1T0h0O0c0V9N0S0d0M0h1Wap1W0h0M0d0S9R0R0e0K0h1Zal1Z0h0K0e0R9U0O0g0I0h21aj210h0I0g0Oa00A03060k0C0j23ah230j0C0k06030Aak050j030B080x26ad260x080B030j05cf29ab29dT2ba92bdR2da72ddP2fa52fdN2ia12idL2k9Z2kdJ2m9X2mdH2p9T2pdF2r9R2rdD2u9N2udB2C9z2Cdz2P9b2Pdx348J34dv3n893ndt3I7v3Idr3O7l3Odp3Q7j3Qdn3T7f3Tdm3U7d3Udl3W7b3Wdj3X7b3Xdh3Z793Zdf407940dd427742db437743d9447744d7457745d6457745d5467746d3477747d1487748d0487748cZ497749cX497949cV4a794acT4b794bcS4b794bcR4c794ccP4c7b4ccN4c7d4ccL4d7d4dcJ4d7f4dcI4c7h4ccH4d7h4dcF4d7j4dcE4d7j4dcD4e7j4ecB4e7l4ecA4e7l4ecz4e7n4ecy4e7n4ecx4e7p4ecv4e7r4ecu4e7r4ect4e7t4ecr4e7v4ecq4d7x4dcp4d7z4dco4d7z4dcn4d7B4dcm4d7B4dcl4d7D4dcj4d7F4dci4c7H4cci4a7L4ach497P49cg477T47cf467X46ce408940cd3T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472ljz2n452njx2q412qjv2s3Z2sjt2w3T2wjr2E3F2Ejq2R3f2Rjp372L37jn3q2b3qjl3J1B3Jjj3O1t3Ojh3Q1r3Qjf3T1n3Tjd3V1l3Vjb3X1j3Xj93Y1j3Yj7401h40j5411h41j4411h41j3431f43j1441f44iZ451f45iX461f46iV471f47iU471f47iT481f48iR481h48iP491h49iO491h49iN4a1h4aiL4b1h4biJ4c1h4ciI4b1j4biH4c1j4ciF4c1l4ciD4c1n4ciB4c1p4ciA4c1p4ciz4c1r4cix4d1r4diw4d1r4div4d1t4dit4e1t4eis4e1t4eir4e1v4eip4e1x4eio4e1x4ein4e1z4eim4d1B4dil4d1D4dij4d1F4dii4d1F4dih4d1H4dig4d1H4dif4d1J4did4d1L4dic4c1N4cib4c1P4cia4b1R4bi94b1T4bi8491X49i7482148i6452745i53Z2l3Zi43R2B3Ri33D353Di23r3t3ri23h3N3hi1384738i0374937hZ394739hY394739hX3b453bhW3c433chV3d433dhU3e413ehU3e413ehT3g3Z3ghS3h3X3hhS3h3X3hhR3j3V3jhQ3j3V3jhQ3k3T3khP3l3T3lhO3m3R3mhO3n3P3nhN3o3P3ohM3p3N3phM3q3L3qhL3r3L3rhK3s3J3shK3s3J3shJ3u3H3uhI3v3F3vhI3v3F3vhI3w3D3whH3y3B3yhG3y3B3yhG3z3z3zhG3A3x3AhF3B3x3BhE3C3v3ChE3D3t3DhD3E3t3EhC3F3r3FhC3F3r3FhC3G3p3GhB3I3n3IhA3I3n3IhA3J3l3JhA3J3l3Jhz3L3j3Lhy3L3j3Lhy3L3j3Lhz3L3h3LhA3L3h3LhB3L3f3LhD3K3f3KhF3J3f3JhH3J3d3JhK3H3d3HhO3F3d3FhS3E3b3EhV3D3b3DhY3B3b3Bi13A3b3Ai33A393Ai53z393zi83x393xig3r393rio3r353ris3t2X3tiv3w2P3wiy3v2N3viC3u2L3uiG3t2J3tiH3u2J3uiF3v2J3viE3v2J3viE3v2J3viE3v2J3viD3w2J3wiC3w2J3wiC3w2J3wiC3v2L3viC3v2L3viC3v2L3viC3v2L3viD3t2N3tiE3t2N3tiF3s2N3siG3r2P3riH3q2P3qiJ3p2P3piL3o2P3oiN3m2R3miP3l2R3liS3j2R3jiU3i2T3iiV3h2T3hiW3g2V3giW3g2V3giX3f2V3fiY3e2X3eiY3e2X3eiZ3d2X3dj03c2Z3cj13b2Z3bj23a313aj23a313aj3393139j4383338j5373337j6373337j7353535j8353535j9343534ja343534jb333533jc333533jd323532je323532jf313531jg313531jh303530jj2Z352Zjk2Z352Zjl2Y352Yjm2Y352Yjn2X352Xjo2X352Xjp2W352Wjr2V352Vjs2V352Vjt2U352Ujv2T352Tjx2S352Sjz2R352RjB2Q352QjD2P352PjF2O352OjG2O352OjH2N352NjJ2M352MjL2L352LjN2K352KjP2J352JjR2I352IjS2I352IjT2H352HjV2G352GjX2F352FjZ2E352Ek22C352Ck52B352Bk72A352Aka2y352ykd2x352xkf2w352wkh2v352vkk2t352tkn2s352skp2r352rks2p352pkv2o352okx2n352nkz2m352mkC2k352kkG2i352ikK2f372fkO2c392ckS293b29kX1d010S3b0S011dl219030S3b0S0319l615050S3b0S0515la10090Q3d0Q0910le0X0b0P3d0P0b0Xlj0U0c0O3d0O0c0Ulo0S0d0M3f0M0d0Slr0R0e0K3h0K0e0Rlv0N0h0H3j0H0h0NlC0z03060l0A3r0A0l06030zmj035l03+cSH02sj07se0asc0csa0es80gs60is40js30ls20ms00ns00ns00orY0prY0qrW0rrW0rrV0srV0srU0trR0wrP0zpM031A090f0zpJ0b1t0e0c0ApI0e1p0i090BpH0h1l0l070CpG0j1i0p040DpF0m1e18pE0o1c18pF0q181apE0s161bpE0u121dpE0w0X01011dpF0z0y08091kpF0C0t0c051lpF0G0p0e031lpG0I0i0k011mpG0L0c1JpH0N071MpH2FpH2FpI2Epz01092Dpw09052Bpx0d012Bpx2Opy2Npz2NpA2LpB2MpA2Ppx2Spq04012Tpn32pj36pg39oZ0c023boW3toT3wns091f3znp0c1c3Bnm0g193Dnj0k163Gng0n133IdB0I8V0p0Z3Mdx0N8T0r0v4fdu0R8Q0v0e4udr0U8O5fdo0X8M5hdl0Z8M5jdh128K5lde158J5mdb178J5nd9198I5od71a8I5pd51c8760d21e8465cZ1g8267cX1h8169cV1j7Z6bcS1l7Z6bcR1n7X6dcP1o7X6ecN1q7W6fcL1r76030N6gcJ1t730k0y6hcH1u720z0k6icG1v5K070S0f020P056jcE1w5E0e0m7ZcD1y5w0m078ecC1z5p8OcA1A5k8Ucy1C5d91cx1C5897cv1E539cct1F4Y9ics1G4T9mcr1H4P9rcp1J4K9wco1K4E9Ccm1L4A9Hck1N4x9Jck1O4u9Mci1P4t9Nch1R4s9Ocg1S4q9Qce1T4n9Tce1U4i9Ycc1W4da3cb1X48a7ca1Z44abc9203Zagc7223Uakc7233Qaoc5253Latc4263Gaxc3283BaCc2293waHc02b3raLc02c3maQbY2f3gaVbX2g3baZbW2j35b4bV2k30b8bU2n2UbdbT2o2ObibS2r2E0301bnbR2s2wbybR2u2mbHbQ2x2cbObP2A23bWbO2D1Sc4bO2F1JccbM2J1s0304cjbM2L1pcsbL2N1lcubL2T12cIbK320td8bKgEbJgEbJgFbIgFbHgHbGgHbGgIbFgIbFgIbFgJbEgJbEgKbDgKbCgLbCgMbBgMbBgMbBgNbAgNbAgNbAgObzgObygQbxgQbxgQbxgRbwgRbwgRbwgRbwgSbvgSbvgSbvgTbugTbtgUbtgUbtgVbsgVbsgVbsgWbrgWbrgWbrgWbrgXbqgXbqgXbqgYbpgYbpgYbogZbogZboh0bnh0bnh0bnh0bnh0bnh1bmh1bmh1bmh1bmh1bmh2blh2blh2blh2blh2blh2blh3bkh3bkh3bkh3bkh3bkh3bkh3bkh3bkh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bkh3bkh3bkh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh4bjh5bih5bjh4bgh7bfh8beh9beh9bdhabdhabdhabdhabdhabdhabdhabdhabdhabdhabdhabdh9beh9beh8bfh8bfh7bgh7bhh5bih5bih5bjh4blh1bogZbogZbogZbogYbpgYbpgYbpgYbpgXbqgXbqgXbqgXbqgWbsgVbsgVbsgU5I"
         },
         MAPS[MAP.GRAY] = {
-            name: "Gray City",
+            name: "BonKeRs",
             fg: "gray_fg.jpg",
             bg: "gray_bg.jpg",
             bgcolor: "#a5aea5",
@@ -17434,6 +17435,19 @@
         },
         MAPS[MAP.NEVADASNOW] = {
             name: "Nevada Snow",
+            fg: "snow_fg.jpg",
+            bg: "snow_bg.jpg",
+            bgcolor: "#763dca",
+            w: 810,
+            h: 607,
+            ground_size: 1400,
+            offset_x: 295,
+            offset_y: 593,
+            bg_size: 1e3,
+            data: "6c2u8L5P697K4y943qa12AaM1Wbm1sbL19c20Yca0Rcf0Ncj0Ico0Ecr0Bcu0ycx0vcA0tcC0qcF0ocG0mcJ0kcL0icM0gcP0ecQ0dcR0ccT0bcT0acU09cW07cX07cX06cY05cZ05cZ04d103d103d102d202d202d202d201d301d202d202d202d202d202d202d203d004d004d004d004cZ06cY06cY06cX08cW08cW09cU0acU0bcS0ccS0dcQ0ecQ0fcO0hcM0icM0jcK0lcI0mcH0ocG0pcF0qcE0rcD0scD0rcD0scC0tcB0vcA0vcz0wcy0xcx0ycw0zcv0zcv0Acu0Bct0Bct0Ccs0Dcr0Dcr0Ecp0G8F043F0H8E083B0H8D0c3y0I8C0f3v0J8A0j3r0K8z0n3o0L8x0r3l0M8v0v3i0M8v0y3f0N4e0b440C3b0P490h410G380Q470k3Y0J360Q470l3W0N330R450o3T0R2Z0T1G012d03070q3P0W2W0U1E042806070s3M0Z2U0U1E072308070t3K131N0c0R0W1C0a1Y0c060v3H161I0i0O0X1A0e1T0e060x3E1a1D0n0K0Z1y0i1O0g050z3C1d1z0r0I101x0k1J0k040B3y1i1u0v0F111w0o1E0m040D3v1l1q0z0D121u0r1A0o040F3s1p1l0D0A141s0v1v0r020H3p1t1i0G0y151q0y1q1f3m1w1e0K0v171o0C1l1j3i1B190O0s181n0F1h1n3f1E160R0q191m0I1c1q3d1H130U0n1b1k0L181u391L0Z0Y0j1e1i0P131y2n010I1O0W120f1g1g0S0Z1B2k040F1S0S170a1j1e0W0U1F2h060D1V0P2C1c100P1J2e090z1Z0L2E1b130L1N2b0b0x210J2G19170G1Q290e0t250F2J171a0C1U260g0q280D2L151e0x1Y230j0n2b0z2O131h0t21210l0k2e0x2Q101m0o251Y0n0i2h0t2T0Y1p0k291V0q0e2k0q2W0W1t0f2d1S0s0b2n0n2Z0U1w0b2g1Q0v072r0j320S1A062k1M0y052u0f350Q1E022n1J0A022z083a0N471G6v0L491E6y0H4d1B6A0F4g1y6C0D4j1v6E0A4m1t6H0w4q1p6K0t4u1m6N0p4y1j6Q0l4C1g6T0h4F1e6W0c4K1b71054P17bZ14c112c40Zc70Wca0Sce0Pch0Mcj0Kcm0Gcq0Dct0Acw0wcA0tcD0qcG0mcK0jcN0fcS0acW06+clf1e7J1e2E2l5Z2m2l2r5T2s2f2x5O2w2b2B5K2A272E5H2E242H5E2H202K5C2J1Y2M5A2L1W2O5y2N1U2Q5w2P1S2S5u2R1R2S5t2T1P2U5r2V1N2W5q2V1N2W5p2X1L2Y5o2X1L2Y5n2Z1K2Z5m2Z1J305m2Z1J305l301J305l311I315k311I315k311I315k311I315j321I315j321I315j321I315j321I315j321I315j311J315j311K305k301K305k301K2Z5l301K2Z5m2Y1M2X5o2X1M2U5u2U1N04022M5w2L02051P02042K5x2K05021X2I5z2J252G5B2H272F5C2F282D5F2D2a2B5H2B2c2z5J2z2e2x5M2x2f2v5O2v2h23060j5R0k06232i22090g5U0g09212k1Z0d0c5X0d0d1Y2m1X0g0960090g1W2o0a020p050Z030c0k0564050k0b040Z050p020a2p08040m080X06080o016w08070X080m04082r06060i0c0V08066Y05090V0c0i06062t03090e0g0T0b0271030b0S0g0f09032H0a0k0R7t0R0k0b2U070o0P7v0P0o082U040t0M7x0N0s042W030u0K7z0L0u032W030v0z05047B04060z0v032W030w0v7Z0v0x022Y010y0s830s0y023z0o880o4b0l8c0l4d0h8i0g4h0c8n0d4k078t08+h9v202N206b2p2b2p622v252v5X2z212z5T2D1X2D5Q2F1V2F5N2I1T2I5K2L1P2L5I2N1N2N5G2P1L2P5E2Q1L2Q5C2S1J2S5A2U1H2U5z2V1G2U5y2W1F2W5x2X1D2X5w2Y1D2Y5v2Y1D2Y5v2Z1B2Z5u301B305t301B305t311z315t311z315t311z315t311z315t311z315t311z315t311z315t311z315t311z315t311z315u301z305v301z305v301z305v2Z1B2Z5w2Y1B2Y5x2U1J2U5x06012M1L2M01065y04032L1L2L03045H2J1N2J5Q2H1P2I5Q2G1R2G5S2E1T2E5U2C1V2C5W2A1X2A5Y2y1Z2y5Z2w232w6025040l250l04256222080i270i082264200b0e2b0e0b20661X0f0b2d0b0f1X680a020q031g0i072h070i1g030q020a6a08030o070X06090m032l030m0a050Y060o03096a08040l0a0W07073b07080V0b0k05076c06060h0e0U09043f04090U0e0h07056q0d0i0S3H0S0i0d6E090m0Q3J0Q0m096F060q0O3L0O0q066F040t0M3N0M0t046G030u0B03063P06030B0u036H030w0x07033R03070x0w036I020x0t4h0t0y017j0q4l0q7U0n4p0n7X0i4v0i800f4z0f830a4F0a87044N04+jSy2e7Q2e0H2q7C2q0A2v7w2v0v2A7s2A0r2C7q2C0o2G7m2G0l2I7k2I0i2L7i2L0f2N7g2N0d2P7e2P0b2R7c2R0a2S7a2S092U782U072V782V062W762W052X762X042Y742Y032Z742Z022Z742Z023072300230723002307230013172637064706470647032013170320131703102317031023170310231703102307230032Z722Z042Z722Z042Y742Y052T7c2T0605022M7c2M02050703042K7e2K04030f2J7g2J0n2H7i2H0p2F7k2F0r2D7m2D0t2B7o2B0v2z7q2A0v2y7s2y0x2w7u2w0z24050k7y0k05240B22080h7A0h08220D1Z0c0e7D0d0c1Z0F1X0f0a7G0b0e1Y0F0b010q0410020d0j067K070i0d0210040q010b0H09030n070Y050a0m027O020m0a050Y070n03090J07050k0a0W08068E06080W0a0k05070L05070g0e0U0a048G040a0U0e0g07050Z0c0j0R9a0R0j0c1d080n0P9c0P0n081e050r0N9e0N0r051e040t0L9g0L0t041e040u0A04059i05040A0u041f020w0x08029k02080x0w021g020y0t9I0t0y021R0p9O0p2t0m9S0m2w0i9W0i2z0ea20e2C09a809eo"
+        },
+        MAPS[MAP.FOURHEADS] = {
+            name: "Fourheads",
             fg: "snow_fg.jpg",
             bg: "snow_bg.jpg",
             bgcolor: "#763dca",
@@ -17970,6 +17984,7 @@
             $("#dialog_join_room_div").draggable2(),
             $("#dialog_change_name_div").draggable2(),
             $("#itemsSelection").draggable2(),
+            $("#dialog_room_options").draggable2(),
             $("#OptionsDialog").draggable2()),
             $("select,input").bind("mousedown touchstart click", function(e) {
                 e.stopPropagation()
@@ -20638,7 +20653,7 @@
             t.HD = 1,
             GAME_STUFF = GAME_STUFF_HD) : GAME_STUFF = GAME_STUFF_SD,
             $("body").toggleClass("SD", !s).toggleClass("HD", !!s),
-            s = "\n    body {background-image: url(" + h + "); cursor: url(" + f + "), default}\n    .server__name-number,.roomNumber,.room__list-ch_1,.room__list-ch_2,.room__list-ch_3,.room__list-ch_4,.room__list-ch_5,.room__list-ch_6,.room__list-ch_7,.room__list-ch_8,.numPlayers,.numPlayers-slash,.maxPlayers,.roomsPage,.room__list-font-0,.room__list-font-1,.room__list-font-slash {background-image: url(" + numberfont + ");background-repeat:no-repeat;}\n    .rank {background-image: url(" + serverlist_back + ");background-repeat:no-repeat;}\n    " + (s ? "" : ".rank21,.rank27,.rank28,.rank29,.rank30,.rank31 {background-image: url(" + u + ") !important}") + "\n    .roomMap, #room_map, #RoomOptionsMapImage {background-image:url(/static/images/maps/minimaps.png?A);background-repeat:no-repeat;}\n\n    " + ("." != k ? ".NewUserBoxBackground {background-image: url(" + k + ")}" : "") + "\n    " + ("." != q ? ".AlertBoxBackground {background-image: url(" + q + ")}" : "") + "\n    " + ("." != a ? "#channelScreen {background-image: url(" + a + ")}" : "") + "\n    " + ("." != i ? "#roomScreen {background-image: url(" + i + ");}" : "") + "\n    " + ("." != o ? "#shopScreen {background-image: url(" + o + ");}" : "") + "\n\n    .roomExtraInfo,.LobbyButton,\n    .players1v1,.players2v2,.players3v3,.players4v4,.players1vB,.players2vB,.players3vB,.players4vB,\n    .CheckboxOff,.CheckboxOn,\n    .AlertBox,#ConnectWithPassword,#buttonRanking,#dialogCreateLocked,#RoomOptionsModeLocked,.FBLoginBtn,\n    #OptionsLeave,#infoAddBuddy,#infoGuildInvite,.chatDialogDelete,.chatDialogGuildKick,.chatDialogGuildInvite,\n    .roomBuddy,.roomGuildMember,#guild_create,#guild_leave,.paypal_corner,.buttonClose,#new_img,\n    .BrokerChannelFullIcon,.imgLock,.buttonAllBuddyList1x,.buttonAllBuddyList2x,.buttonAllBuddyList3x {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    .roomPlayerInfo,\n    .roomBotSelect,.roomBotRemove,.roomPlayerBalloonTip,#room_timer,.GamePlayerBalloonTip,\n    #add_bot_button,#playerInfoDialog,#infoRankingTab,.chatDialogProfile,\n    #infoChat,#infoClose,.ChatDialog,.chatDialogClose,#room_item_buddy_tab1,#room_item_buddy_tab2,#room_item_buddy_tab3,\n    .room_item_buddy_tab1,.room_item_buddy_tab2,.room_item_buddy_tab3 {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    " + (s ? "#FilterBtnAll,.zotata-chat-icon,.relationshipIcon,.relationshipIconE,.relationshipIconM,.heartBrokenIcon,.buttonOK,.buttonCancel,#notificationBtn,.DragonWindowClose,.EmptyStar,.FullStar,.QuestionMark,#CollectCashBtn," : "") + "\n    .shopButton,.shop_itemx,.stat_font,.shop_my_item_cash,\n    .shop_my_item_gift,.shop_my_item_icon,.FilterBtn {\n        background-image: url(" + c + ");background-repeat:no-repeat;background-size:" + m + "}\n\n.weather-0,.weather-1,.weather-2,.weather-3,.weather-4,.weather-5,.weather-6,.weather-7,.weather-8,.weather-9,\n    .weather-10,#message_over_items.items_locked,#message_over_items.sudden_death,#gameui,#powerBar," + (s ? "#walkBar," : "") + "\n    #powerMark,.DamageDigit,.LastAngleDigit,.UIGoldDigit,#btnShot1,#btnShot2,#btnShotSS,#btnPass,#btnEsc,\n    #last_power_mark,#all_chat,#team_chat,.turn_line_number,#slice_drag_button,.imgS1 {\n        background-image: url(" + e + ") !important;background-repeat:no-repeat;background-size:" + m + "}\n\n    #scores_lose_a,#scores_lose_b,.score,.score_me {\n    background-image: url(" + l + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    #btn-ok-new-gameid,#btn-cancel-new-gameid {background-image: url(" + rs + ");background-repeat:no-repeat}#game_over {background-image: url(" + b + ");background-repeat:no-repeat}\n    \n    #buttonSendGift {background-image: url(" + (s ? c + ");background-size:" + m : "/static/images/gift.png)") + "}\n    #BrokerWindow,.BrokerChannel,#lobby_close_small,#lobby_refresh,.server__batery-online,.rank-0,.rank-1,.broker__avatar,.server___rank-up,.server___rank-down { background-image: url(" + serverlist_back + ");background-repeat:no-repeat; }\n    #channelName,.room__list-Downmenu,.room__list-Waiting,.room__list-all,.room__list-Quick,.room__list-Create,.room__list-Normal,.room__list-Score,.room__list-Friend,.room__list-Number,.room,.room__list-left,.room__list-right,.room__list-charge,.room__list-bugle,.room__list-myinfo,#dialog__event-nyxcafe,.room__list-marcket,.room__list-option,.room__list-exit,.buttonAllBuddyList1,.buttonAllBuddyList2,.room__list-color,.room__list-nobugle,.room__list-SelectChatting,.room__list-menu,.room__list-inventory,.room__list-event,.room__list-Title,.room__list-battle,.room__list-channel,.PopupRoomList,#dialog_join_room_div,.button_OK,.button_Cancel,.New_ok,.New_cancel,.popup_userinfo_exit,.popupbase_buddy,.popup_userinfo,.tab_user_info,.tab_user_rank,#dialogCreateRoom,.room_list-optionleft,.room_list-optionright,.invite_block_on,.invite_block_off,.iconMode0,.iconMode1,.iconMode2,.iconMode3,.NORMAL,.room__list-buddy-add,.popup_userinfo_chat,.room__list-user_info,.room__list-buddy-delete2,#NewGameIdWindow,.Popup_BuddyBack,.status,.roomLocked,.roomLock,.room__list-point,.room__list-point2,.BuddyTitle,.BuddyTitle_1,.BuddyTitle_2,#CreateRoomMode,#CreateRoomPlayers,.BuddyTitle_3.BuddyTitle_4,.BuddyTitle_5,#popup_color_chat,#popup_title,.b_col_1,.b_col_2,.b_col_2,.b_col_3,.b_col_4,.b_col_5,.b_col_6,.b_col_7,.b_col_8,.b_col_9,.b_col_10,.b_col_11,.b_col_12,.b_col_13,.b_col_14,.b_col_15,.b_col_16,.b_col_9_off,.b_col_12_off,.b_col_15_off,.b_col_16_off,.b_popup_ok,.b_popup_cancel,#OptionsDialog,#OptionsOK,.RadioOn,.RadioOff,.checkboxOff,.checkboxOn,.Title,.title_normal,.title_rare,.title_epic,.title_legend,.popup_close { background-image: url(" + roomlist_back + ");background-repeat:no-repeat; }\n    .room__list-gamble,.shop_item,.avatar__list-tab,.avatar__list-buy,.avatar__list-garbage,.avatar__list-specialItem,.avatar__list-GcoinItem,.avatar__list-avatar,.avatar__list-setitem,.avatar__list-exitem,.avatar__list-PetItem,.avatar__list-mobilecard,.avatar__list-CouponShop,.shop_my_item,.shop_my_item_equip.equipped,.avatar__list-inven,.avatar__list-reset,.avatar__list-PetTraining,.avatar__list-Align,.avatar___list-Bar1,.avatar___list-Bar2,.avatar___list-Bar3,.room__list-stats,.avatar__list-JewelEnchant,.avatar__list-Seal,.popup_avatarshop,.shop_item_icon,.stat_icon {background-image: url(" + avatar_back + ");background-repeat:no-repeat; }\n    .ready_title,.room__list-buddylist,.ready_item,.ready_room_option,.ready_mobile,#btn-ok-new-gameid,#btn-cancel-new-gameid,.ItemSelect_back,.ready_start,.ready_ready,.ready_team,.room__list-record,.room__list-mutelist,.room__list-invite,.ItemSelect_back,.ItemBtn,#roomMobileSelect,.popup_mobile_cancel,.popup_mobile_ok,.buttonRareMobile,.roomPlayerNotReady,.roomPlayerReady,.roomPlayerMaster,.roomPlayerShadow,.roomPlayerMyself,#room_mapa_mode,#room_players,#room_game_mode,#room_turn_time,#room_mode_items,#room_mode_suvita,#popupbase_mutelist,#popup_waitlist,.New_invite,#Popup_BuddyBack,#Gm_report,.popupbase_roomtitle,.ready_option {background-image: url(" + ready_back + ");background-repeat:no-repeat; }\n    ",
+            s = "\n    body {background-image: url(" + h + "); cursor: url(" + f + "), default}\n    .server__name-number,.roomNumber,.room__list-ch_1,.room__list-ch_2,.room__list-ch_3,.room__list-ch_4,.room__list-ch_5,.room__list-ch_6,.room__list-ch_7,.room__list-ch_8,.numPlayers,.numPlayers-slash,.maxPlayers,.roomsPage,.room__list-font-0,.room__list-font-1,.room__list-font-slash {background-image: url(" + numberfont + ");background-repeat:no-repeat;}\n    .rank {background-image: url(" + serverlist_back + ");background-repeat:no-repeat;}\n    " + (s ? "" : ".rank21,.rank27,.rank28,.rank29,.rank30,.rank31 {background-image: url(" + u + ") !important}") + "\n    .roomMap, #room_map, #RoomOptionsMapImage {background-image:url(/static/images/maps/minimaps.png?A);background-repeat:no-repeat;}\n\n    " + ("." != k ? ".NewUserBoxBackground {background-image: url(" + k + ")}" : "") + "\n    " + ("." != q ? ".AlertBoxBackground {background-image: url(" + q + ")}" : "") + "\n    " + ("." != a ? "#channelScreen {background-image: url(" + a + ")}" : "") + "\n    " + ("." != i ? "#roomScreen {background-image: url(" + i + ");}" : "") + "\n    " + ("." != o ? "#shopScreen {background-image: url(" + o + ");}" : "") + "\n\n    .roomExtraInfo,.LobbyButton,\n    .players1v1,.players2v2,.players3v3,.players4v4,.players1vB,.players2vB,.players3vB,.players4vB,\n    .CheckboxOff,.CheckboxOn,\n    .AlertBox,#ConnectWithPassword,#buttonRanking,#dialogCreateLocked,#RoomOptionsModeLocked,.FBLoginBtn,\n    #OptionsLeave,#infoAddBuddy,#infoGuildInvite,.chatDialogDelete,.chatDialogGuildKick,.chatDialogGuildInvite,\n    .roomBuddy,.roomGuildMember,#guild_create,#guild_leave,.paypal_corner,.buttonClose,#new_img,\n    .BrokerChannelFullIcon,.imgLock,.buttonAllBuddyList1x,.buttonAllBuddyList2x,.buttonAllBuddyList3x {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    .roomPlayerInfo,\n    .roomBotSelect,.roomBotRemove,.roomPlayerBalloonTip,#room_timer,.GamePlayerBalloonTip,\n    #add_bot_button,#playerInfoDialog,#infoRankingTab,.chatDialogProfile,\n    #infoChat,#infoClose,.ChatDialog,.chatDialogClose,#room_item_buddy_tab1,#room_item_buddy_tab2,#room_item_buddy_tab3,\n    .room_item_buddy_tab1,.room_item_buddy_tab2,.room_item_buddy_tab3 {\n        background-image: url(" + n + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    " + (s ? "#FilterBtnAll,.zotata-chat-icon,.relationshipIcon,.relationshipIconE,.relationshipIconM,.heartBrokenIcon,.buttonOK,.buttonCancel,#notificationBtn,.DragonWindowClose,.EmptyStar,.FullStar,.QuestionMark,#CollectCashBtn," : "") + "\n    .shopButton,.shop_itemx,.stat_font,.shop_my_item_cash,\n    .shop_my_item_gift,.shop_my_item_icon,.FilterBtn {\n        background-image: url(" + c + ");background-repeat:no-repeat;background-size:" + m + "}\n\n.weather-0,.weather-1,.weather-2,.weather-3,.weather-4,.weather-5,.weather-6,.weather-7,.weather-8,.weather-9,\n    .weather-10,#message_over_items.items_locked,#message_over_items.sudden_death,#gameui,#powerBar," + (s ? "#walkBar," : "") + "\n    #powerMark,.DamageDigit,.LastAngleDigit,.UIGoldDigit,#btnShot1,#btnShot2,#btnShotSS,#btnPass,#btnEsc,\n    #last_power_mark,#all_chat,#team_chat,.turn_line_number,#slice_drag_button,.imgS1 {\n        background-image: url(" + e + ") !important;background-repeat:no-repeat;background-size:" + m + "}\n\n    #scores_lose_a,#scores_lose_b,.score,.score_me {\n    background-image: url(" + l + ");background-repeat:no-repeat;background-size:" + m + "}\n\n    #btn-ok-new-gameid,#btn-cancel-new-gameid {background-image: url(" + rs + ");background-repeat:no-repeat}#game_over {background-image: url(" + b + ");background-repeat:no-repeat}\n    \n    #buttonSendGift {background-image: url(" + (s ? c + ");background-size:" + m : "/static/images/gift.png)") + "}\n    #BrokerWindow,.BrokerChannel,#lobby_close_small,#lobby_refresh,.server__batery-online,.rank-0,.rank-1,.broker__avatar,.server___rank-up,.server___rank-down { background-image: url(" + serverlist_back + ");background-repeat:no-repeat; }\n    #channelName,.room__list-Downmenu,.room__list-Waiting,.room__list-all,.room__list-Quick,.room__list-Create,.room__list-Normal,.room__list-Score,.room__list-Friend,.room__list-Number,.room,.room__list-left,.room__list-right,.room__list-charge,.room__list-bugle,.room__list-myinfo,#dialog__event-nyxcafe,.room__list-marcket,.room__list-option,.room__list-exit,.buttonAllBuddyList1,.buttonAllBuddyList2,.room__list-color,.room__list-nobugle,.room__list-SelectChatting,.room__list-menu,.room__list-inventory,.room__list-event,.room__list-Title,.room__list-battle,.room__list-channel,.PopupRoomList,#dialog_join_room_div,.button_OK,.button_Cancel,.New_ok,.New_cancel,.popup_userinfo_exit,.popupbase_buddy,.popup_userinfo,.tab_user_info,.tab_user_rank,#dialogCreateRoom,.room_list-optionleft,.room_list-optionright,.invite_block_on,.invite_block_off,.iconMode0,.iconMode1,.iconMode2,.iconMode3,.NORMAL,.room__list-buddy-add,.popup_userinfo_chat,.room__list-user_info,.room__list-buddy-delete2,#NewGameIdWindow,.Popup_BuddyBack,.status,.roomLocked,.roomLock,.room__list-point,.room__list-point2,.BuddyTitle,.BuddyTitle_1,.BuddyTitle_2,#CreateRoomMode,#CreateRoomPlayers,.BuddyTitle_3.BuddyTitle_4,.BuddyTitle_5,#popup_color_chat,#popup_title,.b_col_1,.b_col_2,.b_col_2,.b_col_3,.b_col_4,.b_col_5,.b_col_6,.b_col_7,.b_col_8,.b_col_9,.b_col_10,.b_col_11,.b_col_12,.b_col_13,.b_col_14,.b_col_15,.b_col_16,.b_col_9_off,.b_col_12_off,.b_col_15_off,.b_col_16_off,.b_popup_ok,.b_popup_cancel,#OptionsDialog,#OptionsOK,.RadioOn,.RadioOff,.checkboxOff,.checkboxOn,.Title,.title_normal,.title_rare,.title_epic,.title_legend,.popup_close { background-image: url(" + roomlist_back + ");background-repeat:no-repeat; }\n    .room__list-gamble,.shop_item,.avatar__list-tab,.avatar__list-buy,.avatar__list-garbage,.avatar__list-specialItem,.avatar__list-GcoinItem,.avatar__list-avatar,.avatar__list-setitem,.avatar__list-exitem,.avatar__list-PetItem,.avatar__list-mobilecard,.avatar__list-CouponShop,.shop_my_item,.shop_my_item_equip.equipped,.avatar__list-inven,.avatar__list-reset,.avatar__list-PetTraining,.avatar__list-Align,.avatar___list-Bar1,.avatar___list-Bar2,.avatar___list-Bar3,.room__list-stats,.avatar__list-JewelEnchant,.avatar__list-Seal,.popup_avatarshop,.shop_item_icon,.stat_icon {background-image: url(" + avatar_back + ");background-repeat:no-repeat; }\n    .ready_title,.room__list-buddylist,.ready_item,.ready_room_option,.ready_mobile,#btn-ok-new-gameid,#btn-cancel-new-gameid,.ItemSelect_back,.ready_start,.ready_ready,.mobile__selector-item,.room_stuff_skin,.ready_team,.room__list-record,.room__list-mutelist,.room__list-invite,.ItemSelect_back,.ItemBtn,#roomMobileSelect,.popup_mobile_cancel,.popup_mobile_ok,.buttonRareMobile,.roomPlayerNotReady,.roomPlayerReady,.roomPlayerMaster,.roomPlayerShadow,.roomPlayerMyself,#room_mapa_mode,#room_players,#room_game_mode,#room_turn_time,#room_mode_items,#room_mode_suvita,#popupbase_mutelist,#popup_waitlist,.New_invite,#Popup_BuddyBack,#Gm_report,.popupbase_roomtitle,.ready_option {background-image: url(" + ready_back + ");background-repeat:no-repeat; }\n    ",
             t.css && -1 == t.css.indexOf("<") && -1 == t.css.indexOf(">") && (s += t.css),
             $("#DragonTheme").text(s),
             t = $("#channelName,#channel,#channelInput"),
@@ -25137,6 +25152,10 @@
             }
             ,
             k[SERVER_OPCODE.room_update] = function(e, t, a) {
+                console.log("room update")
+                console.log(e)
+                console.log(t)
+                console.log(a)
                 RoomChangeDetails(e, t, a)
             }
             ,
@@ -25747,7 +25766,7 @@
             return e == MAP.RANDOM ? "Random" : e == MAP.CUSTOM ? "Custom" : dragonTheme.IsClassicMobiles() && CLASSIC_MAPS[e] ? CLASSIC_MAPS[e].name : MAPS[e] ? MAPS[e].name : "Unknown"
         }
         function GetMapImageOffset(e) {
-            return -50 * (e + 1)
+            return -47 * (e + 1)
         }
         function CGround(e, t) {
             var a = "number" != typeof e
@@ -27105,13 +27124,232 @@
         ,
         DragonFreeze(CPlayer);
         var g_options_map = MAP.RANDOM, g_custom_map, g_max_players = 8, g_game_mode = GAME_MODE_NORMAL, g_game_options_mode = g_game_mode, g_add_bot_to_slot, RANK_FOR_DISABLE_TELE = 11, RANK_FOR_DISABLE_DUAL_PLUS = 10, RANK_FOR_DISABLE_S1 = 9, RANK_FOR_RANDOM_TEAMS = 7, RANK_FOR_CUSTOM_MAP = 13, RANK_FOR_TURN_TIME = 15, g_room_options_wind = 0;
+        class MobileRoomManager {
+            typeGroup = {
+                push: 0,
+                shield: 1,
+                mech: 2,
+                random: 3,
+                bio: 4
+            };
+            typeGroupDiv = ["#buttonTypePush","#buttonTypeShield","#buttonTypeMech", "#buttonTypeRandom", "#buttonTypeBio"];
+            mobileInfoList = [];
+            typeGroupSelected = null;
+            mobileSelected = null;
+            beforeMobileSelected = null;
+
+            constructor() {
+                this.typeGroupSelected = this.typeGroup.bio;
+                this.init();
+            }
+
+            getMaxTypeGroup() {
+                return Math.max(...this.getTypeGroupNumbers());
+            }
+
+            getMinTypeGroup() {
+                return Math.min(...this.getTypeGroupNumbers());
+            }
+
+            getTypeGroupNumbers() {
+                return Object.values(this.typeGroup);
+            }
+
+            init() {
+                this.fetchMobileInfoList();
+                this.loadButtons();
+            }
+
+            async fetchMobileInfoList() {
+                const response = await fetch("/mobile-info");
+                const data = await response.json();
+                this.mobileInfoList = data;
+            }
+
+            loadButtons() {
+                this.hideAllTypeGroupDiv();
+                this.addEventToAllTypeGroupDiv();
+            }
+
+            addEventToAllTypeGroupDiv() {
+                this.typeGroupDiv.map((divId) => $(divId).click(() => this.toggleButton()));
+            }
+
+            toggleButton() {
+                this.hideAllTypeGroupDiv();
+                const nextTypeGroup = this.guessNextTypeGroup();
+                this.showTypeGroupDiv(nextTypeGroup);
+                this.cleanMobileList();
+                this.renderMobiles(nextTypeGroup);
+                this.setTypeGroupSelected(nextTypeGroup);
+            }
+
+            guessNextTypeGroup() {
+                const max = this.getMaxTypeGroup();
+                const min = this.getMinTypeGroup();
+                let typeGroup = this.typeGroupSelected === max ? min : this.typeGroupSelected + 1;
+
+                if (typeGroup === this.typeGroup.push) {
+                    typeGroup = this.typeGroup.shield;
+                }
+
+                return typeGroup;
+            }
+
+            showTypeGroupDiv(typeGroup) {
+                const id = this.typeGroupDiv[typeGroup];
+                $(id).show()
+            }
+
+            renderMobiles(typeGroup) {
+                const mobiles = this.getMobilesByType(typeGroup);
+                const onClick = () => this.onClickMobile(mobiles);
+                mobiles.map((mobile, index) => this.onRenderMobile(mobile, index, onClick));
+            }
+
+            onRenderMobile(mobile, index, callbackOnClick) {
+                const item = $(`<div class="mobile__selector-item mobile___selector-item-${index}"></div>`);
+                
+                const positionInitial = "-424px -" + (Number(mobile.y)) + "px";
+                const positionHover = "-490px -" + (Number(mobile.y)) + "px"
+                const positionDisabled = "-622px -" + (Number(mobile.y)) + "px"
+                const positionSelected = "-688px -" + (Number(mobile.y)) + "px"
+
+
+                $(`<div>
+                        <div class="font-S3 font-s3-system font-s3-shadow-${mobile?.package ? "gray": "black"}">${mobile.name}</div>
+                        <div class="font-S3 font-s3-system ">${mobile.name}</div>
+                    </div>`)
+                .appendTo(item);
+
+                if(mobile.advertise) {
+                    const advertise = $(`<div class="mobile__advertise">${mobile.advertise}</div>`)
+
+                    advertise.appendTo(item);
+                    item.hover((e)=> {
+                        const limit = 80;
+
+                        const isPositive = Math.round(Math.random());
+
+                        const getRandomNumber = Math.floor(Math.random() * limit) + 1;
+
+                        const result = isPositive ? getRandomNumber : -getRandomNumber;
+
+                        advertise.css("top", result + "px").show();
+                    }, ()=> {
+                        advertise.hide();
+                    })  
+                }
+
+                item.css("background-position", positionInitial);
+
+                if(mobile.id === this.mobileSelected) {
+                    item.css("background-position", positionSelected)
+                }
+
+                if(mobile.package || mobile.disabled) {
+                    item.css("background-position", positionDisabled)   
+                }
+                else {
+                    item.hover(()=> {
+                        if(mobile.id !== this.mobileSelected) {
+                            item.css("background-position", positionHover)
+                        }                    
+                    }, ()=>{
+                        if(mobile.id !== this.mobileSelected) {
+                            item.css("background-position", positionInitial)
+                        }
+                    })
+                    .click(()=> {
+                        if(mobile.id !== this.mobileSelected) {
+                            callbackOnClick(mobile.id)
+                            item.css("background-position", positionSelected)
+                            this.mobileSelected = mobile.id;
+                            $(".descriptionMobil").html(mobile.description)
+
+                            $("#roomMobilePreview").css("background-position", "-323px -" + mobile.prevY + "px")
+                        }
+                    });
+                }
+                
+                item.appendTo($("#roomMobilesList"));
+            }
+
+            onClickMobile(mobiles) {
+                mobiles.map((mobile, index) => {
+                    const item = $(`.mobile___selector-item-${index}`);
+                    const positionDisabled = "-622px -" + (Number(mobile.y)) + "px"
+                    if(mobile.package || mobile.disabled) {
+                        item.css("background-position", positionDisabled)   
+                    }
+                    else {
+                        item.css("background-position-x", "-424px")
+                    }
+                })
+            }
+
+            getMobilesByType(typeGroup) {
+                return this.mobileInfoList.filter((mobileInfo) => mobileInfo.group === typeGroup);
+            }
+
+            hideAllTypeGroupDiv() {
+                $(this.typeGroupDiv.join(",")).hide();
+            }
+
+            setTypeGroupSelected(typeGroup) {
+                this.typeGroupSelected = typeGroup;
+            }
+
+            initial() {
+                this.hideAllTypeGroupDiv();
+                this.showTypeGroupDiv(this.typeGroup.push);
+            }
+
+            cleanMobileList() {
+                $("#roomMobilesList").html("")
+            }
+
+            setMobileSelected(a) {
+                this.mobileSelected = a;
+            }
+
+            setBeforeMobileSelected(a) {
+                this.beforeMobileSelected = a;
+            }
+
+            onAccepted(callback) {
+                this.beforeMobileSelected = this.mobileSelected;
+                callback(this.mobileSelected);
+            }
+
+            onCancel() {
+                this.mobileSelected = this.beforeMobileSelected;
+            }
+
+            reSelectMobile(mobileId) {
+                const mobile = this.mobileInfoList.find(a => a.id === mobileId);
+                if(mobile) {
+                    const mobilePointer = this.mobileInfoList.findIndex((a) => a.id === mobileId);
+                    const positionSelected = "-688px -" + (Number(mobile.y)) + "px"
+
+                    $("mobile___selector-item-" + mobilePointer).css("background-position", positionSelected);
+                    $(".descriptionMobil").html(mobile.description)
+                    $("#roomMobilePreview").css("background-position", "-323px -" + mobile.prevY + "px")
+
+                    this.hideAllTypeGroupDiv();
+                    this.cleanMobileList();
+                    this.renderMobiles(mobile.group);
+                }
+            }
+        }
         function RoomGUI(e) {
+            var mobileRoomManager = new MobileRoomManager()
             function t() {
                 for (var e = 0; e < a.length; e++)
                     a[e].remove();
                 a = [],
                 $(".mobileSelectBtn").remove(),
-                $("#roomMobileSelect").slideUp("fast")
+                $("#roomMobileSelect").hide()
             }
             DragonScroll("#roomChat", !1, !0),
             $("#roomButtonBack").click(function() {
@@ -27138,75 +27376,30 @@
                 e.SendRoomChangeTeam("A" == e.myPlayerInfo.team ? "B" : "A")
             });
             var a = [];
+            var mobile_selected = 4;
+            var restoreSelectListMobile = () => {
+                MOBILES_DATA_SELECTOR_CLEANED.map((a, index) => {
+                    $(`.mobile___selector-item-${index}`).css("background-position", "-424px -" + a.y + "px")
+                })
+            }
             $("#roomButtonMobile").click(function() {
-                AudioPlay(AUDIO_BUTTON_SELECT2),
-                t();
-                for (var i = $("#roomMobileSelect"), o = SELECTABLE_MOBILES, n = {}, r = 0; r < o.length; n = {
-                    nameDiv: n.nameDiv,
-                    m: n.m,
-                    j: n.j,
-                    anim: n.anim
-                },
-                r++) {
-                    n.j = o[r],
-                    n.m = MOBILES[n.j],
-                    n.nameDiv = void 0;
-                    var s = $('<div class="mobileSelectBtn glow_button" style="cursor: pointer;"><div class="mobileName blackShadow">' + n.m.name + '</div><div class="Alt">' + r.toString(16).toUpperCase() + "</div>").click(function(a) {
-                        return function() {
-                            a.nameDiv.text() == a.m.name && (e.SendRoomChangeMobile(a.j),
-                            t(),
-                            AudioPlay(AUDIO_BUTTON_SELECT2))
-                        }
-                    }(n)).appendTo(i);
-                    n.nameDiv = s.children().eq(0);
-                    var l = n.m.epa && n.m.epa.file ? n.m.epa.file : n.m.file;
-                    l.includes("/") || (l = "mobiles/" + l + ".png"),
-                    n.anim = new CAnimatedObject2(l,n.m.epa || n.m.graphics,n.j == MOBILE.RANDOM ? 29 : 35,n.j == MOBILE.RANDOM ? 63 : 55,s,1,MOBILE_FPS,!0,LOOP_NORMAL,0,1,!0),
-                    a.push(n.anim),
-                    s.hover(function(e) {
-                        return function() {
-                            return e.anim.ChangeEpaAnim("emotion1", "normal")
-                        }
-                    }(n), function() {})
-                }
-                $(".Alt").is(":visible") && $(".Alt").show(),
-                15 == o.length && i.css({
-                    height: 370
-                }),
-                i.slideDown("fast")
-                $("#buttonTypeRandom").click();
-            }),
-            $("#buttonTypeBio").click(function(){
-                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Random);
-                $("#                buttonTypeMech").show();
-                $(this).hide();
-            });
-            $("#buttonTypeMech").click(function(){
-                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Random);
-                $("#buttonTypeRandom").show();
-                $(this).hide();
-            });
-            $("#buttonTypePush").click(function(){
-                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Shield);
-                $("#buttonTypeShield").show();
-                $(this).hide(); 
-    
-            });
-            $("#buttonTypeRandom").click(function(){
-                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Push);
-                $("#buttonTypePush").show();
-                $("#buttonTypeMech").hide();
-                $("#buttonTypeShield").hide();
-                $(this).hide();
-            });
-            $("#buttonTypeShield").click(function(){
-                DragonLibrary.mobile.process(DragonLibrary.mobile.type.Mech);
-                $("#buttonTypeMech").show();
-                $(this).hide();
+                t()
+                mobileRoomManager.reSelectMobile(e.myPlayerInfo.mobile)
+                var i = $("#roomMobileSelect")
+                i.show()
+                mobileRoomManager.initial();
             });
             $("#roomMobileSelectCancel").click(function() {
                 AudioPlay(AUDIO_BUTTON_SELECT2),
-                t()
+                t(),
+                mobileRoomManager.onCancel()
+            }),
+            $("#roomMobileSelectOk").click(function() {
+                AudioPlay(AUDIO_BUTTON_SELECT2),
+                t(),
+                mobileRoomManager.onAccepted((mobileId)=>{
+                    e.SendRoomChangeMobile(mobileId)
+                })
             }),
             $(".playerInRoom").click(function() {
                 var e = Number(this.id.slice(-1));
