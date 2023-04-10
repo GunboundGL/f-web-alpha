@@ -18971,7 +18971,8 @@
             var r;
             DragonDialogClose(!0),
             $("#myDialog .AlertBoxTitle").html(e),
-            $("#myDialog .AlertBoxContent").html(t.replace(/\n/g, "<br>")),
+            $("#myDialog .AlertBoxContent")
+            .html(`<div style="position:relative"><div class="font-S3 font-s3-system font-size-dialog font-s3-shadow-black">${t.replace(/\n/g, "<br>")}</div><div class="font-S3 font-size-dialog font-s3-system ">${t.replace(/\n/g, "<br>")}</div></div>`),
             a == DIALOG_BUTTONS_NONE || null == a ? ($("#myDialog .AlertBoxOK").hide(),
             $("#myDialog .AlertBoxCancel").hide()) : a == DIALOG_BUTTONS_OK ? ($("#myDialog .AlertBoxCancel").hide(),
             $("#myDialog .AlertBoxOK").show().unbind("click").bind("click", function(e) {
@@ -28101,10 +28102,26 @@
                     d.children(".roomPlayerReady").hide(),
                     d.children(".roomPlayerMaster").show(),
                     g_master_username = t.game_id) : (d.children(".roomPlayerMaster").hide(),
-                    t.is_ready ? (d.children(".roomPlayerNotReady").hide(),
-                    d.children(".roomPlayerReady").show()) : (d.children(".roomPlayerNotReady").show(),
-                    d.children(".roomPlayerReady").hide(),
-                    r = !1)),
+                    // ready
+                    e.is_master ? (
+                        t.is_ready ? (
+                            d.children(".roomPlayerReady").show(),
+                            d.children(".roomPlayerNotReady").hide()
+                        ) : (
+                            d.children(".roomPlayerReady").hide(),
+                            d.children(".roomPlayerNotReady").hide(),
+                            r = !1
+                        )
+                    ) : (
+                       t.is_ready ? (
+                            d.children(".roomPlayerReady").hide(),
+                            d.children(".roomPlayerNotReady").show()
+                        ) : (
+                            d.children(".roomPlayerReady").hide(),
+                            d.children(".roomPlayerNotReady").hide(),
+                            r = !1
+                        ) 
+                    )),
                     t.is_bot ? (e.is_master && d.children(".roomBotSelect").show(),
                     d.children(".roomPlayerInfo").unbind().hide(),
                     a++) : (d.children(".roomBotSelect").hide(),

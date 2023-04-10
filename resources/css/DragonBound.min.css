@@ -5823,11 +5823,14 @@ a:active {
 }
 .font-S3:last-child{
     font-family: 'S4';
-    color: #ffffff
+    color: #ffffff;
 }
 .font-S3:first-child,
 .font-S3:last-child{
     letter-spacing: -1.3px;
+}
+.font-size-dialog {
+    font-size: 16px;
 }
 .font-s3-system{
     text-shadow: none!important;
@@ -8068,10 +8071,11 @@ a:active {
 .AlertBoxContent {
     position: absolute;
     left: 0;
-    top: 54px;
+    top: 45px;
     padding-left: 21px;
     padding-right: 45px;
-    z-index: 2
+    z-index: 2;
+    width: 192px;
 }
 .HD #DragonDialogOK {
     left: 231px;
@@ -8939,10 +8943,10 @@ a:active {
 .SideA .roomPlayerReady {
     position: absolute;
     left: 56px;
-    top: 110px;
+    top: 110px; 
     width: 84px;
     height: 21px;
-    background-position: -1px -2394px;
+    background-position: -1px -2418px;
     z-index: 6;
 }
 .SideA .roomPlayerMaster {
@@ -9081,7 +9085,7 @@ a:active {
     top: 110px;
     width: 84px;
     height: 21px;
-    background-position: -1px -2394px;
+    background-position: -1px -2418px;
     z-index: 6;
 }
 .SideB .roomPlayerMaster {
