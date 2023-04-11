@@ -822,8 +822,9 @@ a:active {
 
 .span_rank2 {
     display: inline-block;
-    position: relative;
-    top: 3px
+    position: absolute;
+    top: -7px;
+    left: 1px
 }
 
 #myPUGP {
@@ -5633,11 +5634,8 @@ a:active {
 /*** Season 3 popup**/
 #popup_title {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    top: 76px;
+    left: 171px;
     width: 712px;
     height: 499px;
     background-position: -2088px -1301px;
@@ -5864,6 +5862,9 @@ a:active {
 }
 .font-s3-shadow-black{
     color: #000!important;
+}
+.font-s3-shadow-grey{
+    color: #4a4d4a!important;
 }
 .font-s3-color-base{
     color: #FFF!important;
@@ -8688,12 +8689,12 @@ a:active {
 }
 #itemsSelection {
     position: absolute;
-    left: 360px;
-    top: 116px;
+    left: 591.5px;
+    top: 149.5px;
     width: 241px;
     height: 388px;
     z-index: 13;
-    display: block;
+    display: none;
 }
 .ItemSelect_back {
     background-position: -1586px -1px;
@@ -8701,6 +8702,32 @@ a:active {
 #itemsSelection.InRoom {
     top: 116px;
     background-color: inherit
+}
+.tab_Item1,
+.tab_Item2 {
+    position: absolute;
+    left: 13px;
+    top: 37px;
+    width: 70px;
+    height: 27px;
+    background-position: -213px -1px;
+}
+.tab_Item2 {
+    left: 83px;
+    background-position: -213px -153px;
+}
+.ReadyMode_slot_up,
+.ReadyMode_slot_down {
+    position: absolute;
+    left: 183px;
+    top: 103px;
+    width: 21px;
+    height: 9px;
+    background-position: -284px -1px;
+}
+.ReadyMode_slot_down {
+    left: 204px;
+    background-position: -284px -41px;
 }
 #itemSlot0 {
     position: absolute;
@@ -8880,6 +8907,11 @@ a:active {
 .ItemBtn:active {
     margin: 1px 0 0 1px;
 }
+#itemOk {
+    position: absolute;
+    left: 160px;
+    top: 353px;
+}
 .playerInRoom {
     width: 195px;
     height: 152px;
@@ -8888,8 +8920,8 @@ a:active {
 }
 .SideA .roomPlayerName {
     position: absolute;
-    left: -50px;
-    top: 23px;
+    left: 0px;
+    top: 33px;
     width: 194px;
     height: 15px;
     text-align: center;
@@ -9418,11 +9450,8 @@ a:active {
 }
 #dialog_room_options {
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    left: 496px;
+    top: 127px;
     width: 375px;
     height: 404px;
     z-index: 11
