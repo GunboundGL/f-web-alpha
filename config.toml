@@ -3,6 +3,9 @@ id = "web-alpha"
 name = "web-alpha"
 port = 9000
 
+[database]
+uri = "http://localhost:9000"
+
 [mongoose.test]
 uri = "mongodb://0.0.0.0:27017/test"
 
@@ -26,3 +29,10 @@ secret = "lnferno"
 refreshSecret = "lnferno"
 expiresIn = "1h"
 refreshExpiresIn = "1h"
+
+[session]
+secret = "gunbound"
+database = "mongodb://0.0.0.0:27017"
+
+[kafka]
+enabled = false

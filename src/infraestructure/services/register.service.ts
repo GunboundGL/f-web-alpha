@@ -8,8 +8,9 @@ import { RegiterSchema } from "@/schemas/register.schema"
 import { ERROR_VALIDATION_MESSAGE } from "@/shared/enum/messages"
 import { create } from "../suppliers/users/create.supplier"
 import { jwt } from "@/jwt"
+import { Session } from "gunbound-typescript-sdk/dist/web/session"
 
-export const register = async (data: RegisterRequest, supplier: Supplier) => {
+export const register = async (data: RegisterRequest, supplier: Supplier, session: Session) => {
     const existIam = await iamSupplier.getByUsername({ username: data.name }, supplier)
 
     if (existIam) return errorList({
@@ -51,6 +52,12 @@ export const register = async (data: RegisterRequest, supplier: Supplier) => {
         password: data.password,
         userId: userCreated._id as any
     }, supplier);
+
+    try {
+        session.set("test", 1);
+    } catch (ex) {
+        console.log(ex)
+    }
 
     return [0, userCreated.rank, token, userCreated.slug, userCreated.username]
 }

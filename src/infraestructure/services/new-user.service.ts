@@ -1,5 +1,13 @@
-export const newUser = async () => {
+import { Session } from "gunbound-typescript-sdk/dist/web/session"
+
+export const newUser = async (data: any, request: any, session: Session) => {
+    console.log("==============")
+    console.log(data)
+    console.log(request)
+    console.log("=======================")
+
+    console.log(session.get("test"))
     return {
-        is: 0
+        is: 1
     }
 }
