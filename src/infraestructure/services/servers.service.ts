@@ -20,7 +20,8 @@ export const getServers = async (supplier: Supplier) => {
             server.rank.down,
             server.playerOnline === server.maxPlayer,
             server.typeAvatar,
-            server.isActive
+            server.isActive,
+            server.zone
         ]),
         Date.now()
     ]

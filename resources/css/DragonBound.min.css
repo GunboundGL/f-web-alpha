@@ -226,7 +226,7 @@ body {
   }
   100%{ 
     cursor: url("/static/images/cursor/10000016.png"), auto;
-  } 
+  }
 }
 
 .NoSelect {
@@ -6533,13 +6533,16 @@ a:active {
 .ForceHW {
     -webkit-transform: translateZ(0)
 }
-#roomlist_zone {
+#roomlist_zone, #roomlist_zone_room {
     position: absolute;
     left: 101px;
     top: 14px;
     width: 102px;
     height: 34px;
-    background-position: -536px -826px;
+}
+#roomlist_zone_room {
+    top: -2px;
+    left: 93px;
 }
 #filter_waiting,#filter_all,
 #buttonQuickJoin,#buttonCreateRoom,
@@ -17458,4 +17461,26 @@ img.emoji {
     position: absolute;
     left: 61px;
     background-position: -323px -1px
+}
+.font-type-12 {
+    width: 15px;
+    height: 18px;
+}
+.font-type-12-number-0 { background-position: -1px -191px; }
+.font-type-12-number-1 { background-position: -17px -191px; }
+.font-type-12-number-2 { background-position: -33px -191px; }
+.font-type-12-number-3 { background-position: -49px -191px; }
+.font-type-12-number-4 { background-position: -65px -191px; }
+.font-type-12-number-5 { background-position: -81px -191px; }
+.font-type-12-number-6 { background-position: -97px -191px; }
+.font-type-12-number-7 { background-position: -113px -191px; }
+.font-type-12-number-8 { background-position: -129px -191px; }
+.font-type-12-number-9 { background-position: -145px -191px; }
+
+#room_zone_server_number{
+        position: absolute;
+        top: 5px;
+    left: 190px;
+    width: 22px;
+    height: 23px;
 }

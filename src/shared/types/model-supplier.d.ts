@@ -39,4 +39,5 @@ export type Server = {
     _id: string;
     slug: string;
     batery: number;
+    zone: number;
 }
