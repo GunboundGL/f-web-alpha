@@ -6533,13 +6533,13 @@ a:active {
 .ForceHW {
     -webkit-transform: translateZ(0)
 }
-#channelName {
+#roomlist_zone {
     position: absolute;
-    left: 118px;
-    top: 4px;
-    width: 74px;
-    height: 52px;
-    background-position: -964px -1732px;
+    left: 101px;
+    top: 14px;
+    width: 102px;
+    height: 34px;
+    background-position: -536px -826px;
 }
 #filter_waiting,#filter_all,
 #buttonQuickJoin,#buttonCreateRoom,
@@ -8229,15 +8229,14 @@ a:active {
 }
 #roomNumber {
     position: absolute;
-    left: 118px;
-    width: 74px;
-    height: 32px;
+    left: 242px;
+    top: 6px;
 }
 #roomTitle {
     position: absolute;
-    left: 230px;
-    top: 8px;
-    width: 321px;
+    left: 261px;
+    top: 6px;
+    width: 285px;
     height: 16px;
 }
 #room_change_title_button {
