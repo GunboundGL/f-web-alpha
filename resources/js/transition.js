@@ -205,7 +205,7 @@
 
                         VALUES.SLEEP.forEach((item) => {
                             if (item.x <= dataTemporal.LEFT && item.y >= dataTemporal.RIGHT) {
-                                dataTemporal.defaultFPS = VALUES.FPS + item.r;
+                                dataTemporal.defaultFPS = VALUES.FPS + item.r + 12
                             }
                         })
 
@@ -267,6 +267,7 @@
         }
 
         async sleep(data) {
+            var self = this;
             const time = data?.time || VALUES.SECONDS_SLEEP;
             const clicked = data?.clicked || false;
             return new Promise((resolve) => {
@@ -275,12 +276,12 @@
                     count++;
                     if (this.clicked && clicked) {
                         clearInterval(_sleep);
-                        this.removeClicked();
+                        self.removeClicked();
                         resolve();
                     }
                     if (count >= time / 100) {
                         clearInterval(_sleep);
-                        this.removeClicked();
+                        self.removeClicked();
                         resolve();
                     }
                 }, VALUES.SECONDS_INTERVAL);
