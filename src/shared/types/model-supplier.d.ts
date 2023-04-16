@@ -15,6 +15,7 @@ export type User = {
     cash: number;
     gp: number;
     slug: string;
+    isNew: boolean;
 }
 
 export type Server = {

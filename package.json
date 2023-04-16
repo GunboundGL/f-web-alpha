@@ -1,6 +1,6 @@
 {
   "name": "boilerplate",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "express": "^4.18.2",
     "express-mongodb-session": "^3.2.1",
     "grunt": "^1.6.1",
-    "gunbound-typescript-sdk": "^1.2.280",
+    "gunbound-typescript-sdk": "^1.2.291",
     "http-status-codes": "^2.2.0",
     "joi": "^17.9.1",
     "mongoose": "^7.0.3",

@@ -8,6 +8,7 @@
     "rootDir": "./src",
     "baseUrl": "src",
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "paths": {
       "@/*": ["*"]
     }

@@ -9,3 +9,7 @@ export type LoginRequest = {
     p: string;
     r: number;
 }
+
+export type UpdateNicknameRequest = {
+    nickname: string;
+}

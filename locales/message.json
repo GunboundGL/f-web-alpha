@@ -1,0 +1,9 @@
+{
+    "0": "Tiene una palabra prohibida.\nPor favor use otras palabras.",
+    "1": "Tu Nickname es corto. La longitud \ndel Nickname deberia ser de 4 a 11 letras.",
+    "2": "Tu Nickname es largo. La longitud \ndel Nickname deberia ser de 4 a 11 letras.",
+    "3": "Tiene una palabra prohibida.\nPor favor use solo Ingles o numeros.",
+    "4": "El nickname ya esta usado por otro\njugador. Por favor use otro.",
+    "5": "El ID de Juego es mismo con el actual\nID de Juego.",
+    "6": "Message Code: 247\nLa conexión al servidor se termina\nLa información ha sido modificada y usted necesitará entrar de nuevo.\nLa conexion se cerró."
+}

@@ -17484,3 +17484,18 @@ img.emoji {
     width: 22px;
     height: 23px;
 }
+
+#ad-background-1 {
+    display: none;
+    background-image: url("/static/images/themes/season3/server_ad1.png")
+}
+#ad-background-2 {
+    display: none;
+    background-image: url("/static/images/themes/season3/server_ad2.png")
+}
+
+.background-container {
+    width: 960px;
+    height: 600px;
+    background-size: cover;
+}

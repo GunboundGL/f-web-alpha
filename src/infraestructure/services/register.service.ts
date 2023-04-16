@@ -53,11 +53,7 @@ export const register = async (data: RegisterRequest, supplier: Supplier, sessio
         userId: userCreated._id as any
     }, supplier);
 
-    try {
-        session.set("test", 1);
-    } catch (ex) {
-        console.log(ex)
-    }
+    session.set("user", userCreated.slug);
 
     return [0, userCreated.rank, token, userCreated.slug, userCreated.username]
 }

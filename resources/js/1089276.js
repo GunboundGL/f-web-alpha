@@ -25883,7 +25883,28 @@
                             self.showScreenNewNickname();
                         })
                     }else{
-                        self.EnterServer(self.lastConnectServer)
+                        (async () => {
+                            await window.tgb.closeAndOpen(()=>{
+                                $("#BrokerScreen").hide();
+                                $("#ad-background-1").show();
+                                $("#ad-background-2").hide();
+                            });
+                            await window.tgb.sleep();
+                            await window.tgb.closeAndOpen(()=>{
+                                $("#ad-background-2").show();
+                                $("#ad-background-1").hide();
+                            });
+                            await window.tgb.sleep();
+                            await window.tgb.closeAndOpen(()=>{
+                                $("#ad-background-1").hide();
+                                $("#ad-background-2").hide();
+                                $(".NewUserBoxBackground,#NewGameIdWindow").hide();
+                                $(".AlertBoxBackground,#BrokerWindow").show();  
+                                $("#BrokerScreen").show();
+                                self.EnterServer(self.lastConnectServer) 
+                            })
+                            $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
+                        })();
                     }
                 },
                 fail: function(e, t, a) {
@@ -30097,24 +30118,52 @@
                     },
                     success: function(t) {
                         $("#NewGameIdWindow").hide();
-                        const { nickname } = t; 
-                        if(nickname === newNickname){
+                        if(t.ok){
                             DragonDialogOpen("", l.t("Let's play with your new nickname.\nGood luck! :)"),  DIALOG_BUTTONS_OK, function() {
                                 $("#btn-cancel-new-gameid,#btn-ok-new-gameid").removeClass("disabled")
+                                $("#lobby_close_small,#lobby_refresh").hide();
                                 document.querySelector("#input-new-gameid").removeAttribute('disabled');
-                                window.tgb.closeAndOpen(()=>{
-                                    $(".NewUserBoxBackground,#NewGameIdWindow").hide();
-                                    $(".AlertBoxBackground,#BrokerWindow").show();  
-                                    e.EnterServer(e.lastConnectServer);    
-                                })
+                                (async () => {
+                                    await window.tgb.closeAndOpen(()=>{
+                                        $("#ad-background-1").show();
+                                        $("#ad-background-2").hide();
+                                        $(".NewUserBoxBackground,#NewGameIdWindow").hide();
+                                    });
+                                    await window.tgb.sleep();
+                                    await window.tgb.closeAndOpen(()=>{
+                                        $("#ad-background-2").show();
+                                        $("#ad-background-1").hide();
+                                    });
+                                    await window.tgb.sleep();
+                                    await window.tgb.closeAndOpen(()=>{
+                                        $("#ad-background-1").hide();
+                                        $("#ad-background-2").hide();
+                                        $(".AlertBoxBackground,#BrokerWindow").show();  
+                                        e.EnterServer(e.lastConnectServer);    
+                                    })
+                                    $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
+                                    $("#lobby_close_small,#lobby_refresh").show()
+                                })();
                             })
-                        }else{
-                            DragonDialogOpen("", l.t("The nick is already in use.\nEnter another nickname"),  DIALOG_BUTTONS_OK, function() {
+                        }else if(t.error){
+                            DragonDialogOpen("", t.error,  DIALOG_BUTTONS_OK, function() {
                                 $("#NewGameIdWindow").show();
                                 $("#btn-cancel-new-gameid,#btn-ok-new-gameid").removeClass("disabled")
                                 document.querySelector("#input-new-gameid").removeAttribute('disabled');
                             })
-                        } 
+                        } else {
+                            DragonDialogOpen("", t,  DIALOG_BUTTONS_OK, function() {
+                                window.tgb.syncCloseAndOpen(()=>{
+                                    e.dragonLogin.Logout();
+                                    localStorage.lastVolumeMusic = g_dragonAudio.GeVolumeMusic();
+                                    SetVolumeMusic(0);
+                                    $(".NewUserBoxBackground,#NewGameIdWindow").hide();
+                                    $("#btn-cancel-new-gameid,#btn-ok-new-gameid").removeClass("disabled")
+                                    $(".AlertBoxBackground,#BrokerWindow").show();
+                                    $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
+                                })
+                            })
+                        }
                     },
                     fail: function(e, t, a) {
                         dlog("WORLDS ERROR:", e, t, a)

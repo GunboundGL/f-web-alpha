@@ -1,13 +1,17 @@
 import { Session } from "gunbound-typescript-sdk/dist/web/session"
+import { getByWhere } from "../suppliers/users"
+import { Supplier } from "gunbound-typescript-sdk/dist/shared/types";
 
-export const newUser = async (data: any, request: any, session: Session) => {
-    console.log("==============")
-    console.log(data)
-    console.log(request)
-    console.log("=======================")
+export const newUser = async (data: any, request: any, session: Session, supplier: Supplier) => {
+    const userSlug = session.get("user");
 
-    console.log(session.get("test"))
+    const user = await getByWhere({
+        where: {
+            slug: userSlug
+        }
+    }, supplier)
+
     return {
-        is: 1
+        is: user?.isNew ? 1 : 0
     }
 }

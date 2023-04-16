@@ -34,3 +34,19 @@ export type CreateDefaultSupplierAvatarEquippedRequest = {
     userSlug: string;
     gender: string;
 }
+
+export type UpdateByWhereSupplierUserRequest = {
+    where: {
+        username?: string;
+        slug?: string;
+        _id?: string;
+    },
+    data: {
+        rank?: number;
+        gold?: number;
+        cash?: number;
+        gp?: number;
+        username?: string;
+        isNew?: boolean;
+    };
+}
