@@ -25884,6 +25884,7 @@
                         })
                     }else{
                         (async () => {
+                            $("#channelScreen").hide();
                             await window.tgb.closeAndOpen(()=>{
                                 $("#BrokerScreen").hide();
                                 $("#ad-background-1").show();
@@ -25901,6 +25902,7 @@
                                 $(".NewUserBoxBackground,#NewGameIdWindow").hide();
                                 $(".AlertBoxBackground,#BrokerWindow").show();  
                                 $("#BrokerScreen").show();
+                                $("#channelScreen").show();
                                 self.EnterServer(self.lastConnectServer) 
                             })
                             $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
@@ -30123,6 +30125,7 @@
                                 $("#btn-cancel-new-gameid,#btn-ok-new-gameid").removeClass("disabled")
                                 $("#lobby_close_small,#lobby_refresh").hide();
                                 document.querySelector("#input-new-gameid").removeAttribute('disabled');
+                                $("#channelScreen").hide();
                                 (async () => {
                                     await window.tgb.closeAndOpen(()=>{
                                         $("#ad-background-1").show();
@@ -30143,6 +30146,7 @@
                                     })
                                     $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
                                     $("#lobby_close_small,#lobby_refresh").show()
+                                    $("#channelScreen").show();
                                 })();
                             })
                         }else if(t.error){
