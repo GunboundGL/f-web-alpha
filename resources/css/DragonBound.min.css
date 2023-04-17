@@ -17478,8 +17478,8 @@ img.emoji {
 .font-type-12-number-9 { background-position: -145px -191px; }
 
 #room_zone_server_number{
-        position: absolute;
-        top: 5px;
+    position: absolute;
+    top: 5px;
     left: 190px;
     width: 22px;
     height: 23px;
@@ -17487,11 +17487,11 @@ img.emoji {
 
 #ad-background-1 {
     display: none;
-    background-image: url("/static/images/themes/season3/server_ad1.png")
+    background-image: url(/static/images/themes/season3/server_ad_1.png)
 }
 #ad-background-2 {
     display: none;
-    background-image: url("/static/images/themes/season3/server_ad2.png")
+    background-image: url(/static/images/themes/season3/server_ad_2.png)
 }
 
 .background-container {
