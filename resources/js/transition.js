@@ -6,23 +6,23 @@
             WHITE: "#fff"
         },
         WINDOW: {
-            WIDTH: 800,
-            HEIGHT: 600,
+            WIDTH: 960,
+            HEIGHT: 200,
             MIN: 0,
         },
         FPS: 20,
-        SECONDS_INTERVAL: 10,
+        SECONDS_INTERVAL: 19,
         SECONDS_SLEEP: 15000,
         SIZE: {
             CLOSE: {
                 LEFT: 0,
-                RIGHT: 600,
+                RIGHT: 200,
             },
             OPEN: {
-                LEFT: 600,
+                LEFT: 200,
                 RIGHT: 0,
             },
-            MAX_MIN: 630
+            MAX_MIN: 600
         },
         SLEEP: [
             {
@@ -37,7 +37,7 @@
             },
             {
                 x: 60,
-                y: 600,
+                y: 200,
                 r: 0
             }
         ]
@@ -178,7 +178,7 @@
                 try {
                     let dataTemporal = {
                         ...VALUES.SIZE.CLOSE,
-                        defaultFPS: 1
+                        defaultFPS: 25
                     }
                     const _open = setInterval(() => {
 
@@ -205,7 +205,7 @@
 
                         VALUES.SLEEP.forEach((item) => {
                             if (item.x <= dataTemporal.LEFT && item.y >= dataTemporal.RIGHT) {
-                                dataTemporal.defaultFPS = VALUES.FPS + item.r + 12
+                                dataTemporal.defaultFPS = VALUES.FPS + item.r + 0
                             }
                         })
 
