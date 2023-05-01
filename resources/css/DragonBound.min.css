@@ -17524,3 +17524,60 @@ img.emoji {
     height: 600px;
     background-size: cover;
 }
+.player-room-info___container {
+    width: 204px;
+    height: 38px;
+    position: absolute;
+    top: -24px;
+    left: 1px;
+}
+
+.player-room-info___coups {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-room-info___coups .rank{
+    display: inline-block;
+}
+
+.player-room-info___ranks {
+    position: absolute;
+    top: 22px;
+    height: 21px;
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-room-info___ranks .country{
+    
+}
+
+.player-room-info___names {
+    position: absolute;
+    top: 12px;
+    left: 76px;
+}
+
+.player-room-info___names .name {
+    display: flex;
+    justify-content: center;
+}
+
+.player-room-info___names .name:first-child {
+    margin-top: 1px;
+}
+
+.player-room-info___names .name:last-child {
+    margin-top: -2px;
+}
+
+.rank__country {
+    width: 12px;
+    height: 8px;
+    background-position: -715px -1px;
+    position: absolute;
+    top: -7px;
+    left: 0px;
+}
