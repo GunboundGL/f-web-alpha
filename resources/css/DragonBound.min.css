@@ -3372,10 +3372,6 @@ a:active {
     font-weight: normal
 }
 
-#dialog_join_room_divx .xAlertBoxx {
-    top: 150px
-}
-
 #dialogGift {
     display: none;
     position: absolute;
@@ -4480,7 +4476,7 @@ a:active {
     top: 221px;
     width: 323px;
     height: 245px;
-    background-position: -536px -541px;
+    background-position: -588px -541px;
     z-index: 100;
     display: none;
     font-weight: 900;
@@ -4536,13 +4532,13 @@ a:active {
 .RadioOn {
     width: 10px;
     height: 10px;
-    background-position: -860px -562px
+    background-position: -912px -562px
 }
 
 .RadioOff {
     width: 10px;
     height: 10px;
-    background-position: -860px -573px
+    background-position: -912px -573px
 }
 
 #OptionsText8 {
@@ -4568,19 +4564,19 @@ a:active {
 }
 #slidersection2 {
     position: absolute;
-    left: 301px;
-    top: 36px;
-    width: 200px
+    left: 103px;
+    top: 108px;
+    width: 200px;
 }
 #OptionsText1 {
     position: absolute;
     left: 38px;
-    top: 46px;
+    top: 45px;
 }
 #slidersection1 {
     position: absolute;
-    left: 301px;
-    top: 57px;
+    left: 103px;
+    top: 129px;
     width: 200px;
 }
 #OptionsText2 {
@@ -4588,8 +4584,9 @@ a:active {
 }
 #OptionsText7 {
     position: absolute;
-    left: 255px;
-    top: 25px;
+    left: 58px;
+    top: 92px;
+
 }
 #OptionsShootingModeDrag {
     position: absolute;
@@ -6535,13 +6532,12 @@ a:active {
 }
 #roomlist_zone, #roomlist_zone_room {
     position: absolute;
-    left: 101px;
+    left: 62px;
     top: 14px;
     width: 102px;
     height: 34px;
 }
 #roomlist_zone_room {
-    left: 0px;
     top: -2px;
 }
 #filter_waiting,#filter_all,
@@ -6555,100 +6551,100 @@ a:active {
     height: 45px;
 }
 #filter_normal,#filter_score,#filter_all {
-    left: 442px;
+    left: 468px;
 }
 .room__list-Waiting {
-    left: 235px;
-    background-position: -536px -1308px;
+    left: 261px;
+    background-position: -588px -1308px;
 }
 .room__list-Waiting:hover {
-    background-position: -598px -1308px;
+    background-position: -650px -1308px;
 }
 .room__list-Waiting:active {
-    background-position: -660px -1308px;
+    background-position: -712px -1308px;
 }
 .room__list-all {
     left: 235px;
-    background-position: -536px -1353px
+    background-position: -588px -1353px
 }
 .room__list-all:hover {
-    background-position: -598px -1353px;
+    background-position: -650px -1353px;
 }
 .room__list-all:active {
-    background-position: -660px -1353px;
+    background-position: -712px -1353px;
 }
 .room__list-Quick {
-    left: 304px;
-    background-position: -536px -1398px
+    left: 330px;
+    background-position: -588px -1398px
 }
 .room__list-Quick:hover {
-    background-position: -598px -1398px;
+    background-position: -650px -1398px;
 }
 .room__list-Quick:active {
-    background-position: -660px -1398px;
+    background-position: -712px -1398px;
 }
 .room__list-Create {
-    left: 373px;
-    background-position: -536px -1443px
+    left: 399px;
+    background-position: -588px -1443px
 }
 .room__list-Create:hover {
-    background-position: -598px -1443px;
+    background-position: -650px -1443px;
 }
 .room__list-Create:active {
-    background-position: -660px -1443px;
+    background-position: -712px -1443px;
 }
 .room__list-Normal {
-    background-position: -536px -1488px
+    background-position: -588px -1488px
 }
 .room__list-Normal:hover {
-    background-position: -598px -1488px;
+    background-position: -650px -1488px;
 }
 .room__list-Normal:active {
-    background-position: -660px -1488px;
+    background-position: -712px -1488px;
 }
 .room__list-Score {
-    background-position: -536px -1578px
+    background-position: -588px -1578px
 }
 .room__list-Score:hover {
-    background-position: -598px -1578px;
+    background-position: -650px -1578px;
 }
 .room__list-Score:active {
-    background-position: -660px -1578px;
+    background-position: -712px -1578px;
 }
 .room__list-Friend {
-    left: 511px;
-    background-position: -536px -1668px
+    left: 537px;
+    background-position: -588px -1668px
 }
 .room__list-Friend:hover {
-    background-position: -598px -1668px;
+    background-position: -650px -1668px;
 }
 .room__list-Friend:active {
-    background-position: -660px -1668px;
+    background-position: -712px -1668px;
 }
 .room__list-Number {
-    left: 580px;
-    background-position: -536px -1713px
+    left: 606px;
+    background-position: -588px -1713px
 }
 .room__list-Number:hover {
-    background-position: -598px -1713px;
+    background-position: -650px -1713px;
 }
 .room__list-Number:active {
-    background-position: -660px -1713px;
+    background-position: -712px -1713px;
 }
 #roomsList {
     position: absolute;
-    left: 102px;
+    left: 76px;
     top: 63px;
-    width: 534px;
+    width: 586px;
     height: 285px;
     font-size: 11px;
 }
 .room {
     position: absolute;
-    width: 534px;
+    width: 586px;
     height: 45px;
     display: none;
-    background-position: 0 -1px;
+    background-position: -1px -1px;
 }
 #room0 {
     top: 0;
@@ -6669,10 +6665,10 @@ a:active {
     top: 240px;
 }
 .room:hover {
-    background-position: 0 -46px;
+    background-position: -1px -46px;
 }
 .room:active {
-    background-position: 0 -91px;
+    background-position: -1px -91px;
 }
 .roomNumber {
     position: absolute;
@@ -6739,7 +6735,7 @@ a:active {
 }
 .roomLock {
     position: absolute;
-    left: 319px;
+    left: 368px;
     top: 10px;
     width: 23px;
     height: 24px;
@@ -6751,7 +6747,7 @@ a:active {
     flex-direction: row;
     gap: 3px;
     align-items: center;
-    left: 374px;
+    left: 426px;
     top: 13px;
     background-position: -16px -18px;
 }
@@ -6820,9 +6816,9 @@ a:active {
 }
 .gameMode {
     position: absolute;
-    left: 434px;
+    left: 486px;
     top: 7px;
-    width: 97px;
+    width: 92px;
     height: 22px;
 }
 .gameMode0 {
@@ -6845,7 +6841,7 @@ a:active {
 }
 .roomMap {
     position: absolute;
-    left: 434px;
+    left: 486px;
     top: 7px;
     width: 92px;
     height: 27px;
@@ -6919,7 +6915,7 @@ a:active {
 }
 .room__list-color {
     position: absolute;
-    left: 169px;
+    left: 143px;
     top: 392px;
     width: 21px;
     height: 26px;
@@ -7227,7 +7223,7 @@ a:active {
 }
 .room__list-bugle {
     position: absolute;
-    left: 204px;
+    left: 178px;
     top: 396px;
     width: 20px;
     height: 19px;
@@ -7241,7 +7237,7 @@ a:active {
 }
 .room__list-nobugle {
     position: absolute;
-    left: 238px;
+    left: 212px;
     top: 397px;
     width: 23px;
     height: 18px;
@@ -7262,7 +7258,7 @@ a:active {
 }
 #channel {
     position: absolute;
-    left: 103px;
+    left: 77px;
     top: 423px;
     width: 515px;
     height: 87px;
@@ -7291,7 +7287,7 @@ a:active {
 }
 .room__list-SelectChatting {
     position: absolute;
-    left: 106px;
+    left: 80px;
     top: 518px;
     width: 79px;
     height: 21px;
@@ -7307,7 +7303,7 @@ a:active {
 }
 #channelInput {
     position: absolute;
-    left: 185px;
+    left: 159px;
     top: 519px;
     width: 427px;
     height: 15px;
@@ -7329,7 +7325,7 @@ a:active {
 }
 .invite_block_on,.invite_block_off {
     position: absolute;
-    left: 617px;
+    left: 643px;
     top: 517px;
     width: 24px;
     height: 22px;
@@ -7361,32 +7357,34 @@ a:active {
 #channel_player {
     position: absolute;
     pointer-events: none;
-    left: 760px;
+    left: 786px;
     top: 128px
 }
 #myName4{
     position: absolute;
-    left: 711px;
+    left: 737px;
     top: 173px;
     transform: scale(1.1,1.2);
 }
 #myName2 {
     position: absolute;
-    left: 708px;
+    left: 734px;
     top: 174px;
 }
 #myGPBar{
     position: absolute;
     height: 16px;
-    left: 707px;
+    left: 733px;
     top: 191px;
     background: rgb(118,113,195);
     background: linear-gradient(360deg, rgba(118,113,195,1) 34%, rgba(162,176,238,1) 58%, rgba(162,176,238,1) 88%, rgba(97,141,193,1) 100%);
 }
 #myGP2 {
     position: absolute;
-    left: 776px;
+    left: 733px;
     top: 193px;
+    width: 150px;
+    justify-content: center;
     z-index: 9;
 }
 #myGCoin,
@@ -7394,7 +7392,7 @@ a:active {
 #myGold2 {
     position: absolute;
     top: 228px;
-    left: 687px;
+    left: 713px;
     right: 187px;
     width: 86px;
     display: flex;
@@ -7421,7 +7419,7 @@ a:active {
 }
 #buttonCharge2 {
     position: absolute;
-    left: 791px;
+    left: 817px;
     top: 224px;
     width: 78px;
     height: 56px
@@ -7437,7 +7435,7 @@ a:active {
 }
 #buttonAllBuddyList1 {
     position: absolute;
-    left: 660px;
+    left: 686px;
     top: 305px;
     width: 108px;
     height: 25px;
@@ -7453,7 +7451,7 @@ a:active {
 }
 #playersList {
     position: absolute;
-    left: 670px;
+    left: 696px;
     top: 345px;
     width: 184px;
     height: 168px;
@@ -7577,7 +7575,7 @@ a:active {
 }
 #buttonAllBuddyList2 {
     position: absolute;
-    left: 768px;
+    left: 794px;
     top: 305px;
     width: 108px;
     height: 25px;
@@ -7590,7 +7588,7 @@ a:active {
 }
 #friendsList {
     position: absolute;
-    left: 670px;
+    left: 696px;
     top: 345px;
     width: 184px;
     height: 168px;
@@ -7702,7 +7700,7 @@ a:active {
 }
 .room__list-menu {
     position: absolute;
-    left: 2px;
+    left: 56px;
     top: 563px;
     width: 80px;
     height: 34px;
@@ -7724,34 +7722,34 @@ a:active {
 #buttonOptions,
 #buttonChannels {
     position: absolute;
-    left: 188px;
+    left: 162px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #inventory {
-    left: 239px;
+    left: 213px;
 }
 #buttonMyInfo {
-    left: 292px;
+    left: 266px;
 }
 #Event {
-    left: 347px;
+    left: 321px;
 }
 #Title {
-    left: 403px;
+    left: 377px;
 }
 #Gamble {
-    left: 459px;
+    left: 433px;
 }
 #Battle {
-    left: 508px;
+    left: 482px;
 }
 #buttonOptions {
-    left: 784px;
+    left: 810px;
 }
 #buttonChannels {
-    left: 834px;
+    left: 860px;
 }
 .room__list-marcket {
     background-position: -1px -1397px;
@@ -7997,7 +7995,7 @@ a:active {
     width: 216px;
     height: 153px;
     display: none;
-    background-position: -723px -1605px;
+    background-position: -1193px -1017px;
     z-index: 1
     
 }
@@ -8112,7 +8110,7 @@ a:active {
     width: 403px;
     height: 269px;
     z-index: 999;
-    background-position: -536px -1px
+    background-position: -1127px -477px
 }
 .tab_user_info {
     position: absolute;
@@ -8233,19 +8231,19 @@ a:active {
 }
 #roomNumber {
     position: absolute;
-    left: 164px;
+    left: 216px;
     top: 6px;
 }
 #roomTitle {
     position: absolute;
-    left: 181px;
+    left: 234px;
     top: 6px;
     width: 285px;
     height: 16px;
 }
 #room_change_title_button {
     position: absolute;
-    left: 491px;
+    left: 545px;
     top: 8px;
     width: 15px;
     height: 15px;
@@ -8454,6 +8452,15 @@ a:active {
 .ready_emoti:active {
     background-position: -888px -1033px;
 }
+#popup_emoticon {
+    position: absolute;
+    width: 436px;
+    height: 252px;
+    left: 262px;
+    top: 174px;
+    background-position: -2045px -253px;
+    display: none;
+}
 #roomButtonMobile {
     position: absolute;
     left: 612px;
@@ -8641,56 +8648,56 @@ a:active {
 }
 #roomMyInfo {
     position: absolute;
-    left: 182px;
+    left: 162px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #record {
     position: absolute;
-    left: 240px;
+    left: 213px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #ready_buddylist {
     position: absolute;
-    left: 297px;
+    left: 266px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #ready_mutelist {
     position: absolute;
-    left: 351px;
+    left: 321px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #ready_invite {
     position: absolute;
-    left: 401px;
+    left: 377px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #ready_event {
     position: absolute;
-    left: 457px;
+    left: 433px;
     top: 559px;
     width: 46px;
     height: 41px;
 }
 #buttonOptionsRoom {
     position: absolute;
-    left: 827px;
+    left: 810px;
     top: 559px;
     width: 46px;
     height: 41px
 }
 #roomButtonBack {
     position: absolute;
-    left: 891px;
+    left: 860px;
     top: 559px;
     width: 46px;
     height: 41px
@@ -8957,7 +8964,7 @@ a:active {
     top: 353px;
 }
 .playerInRoom {
-    width: 207px;
+    width: 208px;
     height: 152px;
     /*background: #001839;
     display: none*/
@@ -8966,7 +8973,7 @@ a:active {
     position: absolute;
     left: 0px;
     top: 33px;
-    width: 194px;
+    width: 205px;
     height: 15px;
     text-align: center;
     z-index: 10;
@@ -9040,7 +9047,7 @@ a:active {
     top: 136px
 }
 .roomPlayerMyself {
-    width: 213px;
+    width: 214px;
     height: 158px;
     background-position: -754px -1559px;
 }
@@ -17504,8 +17511,8 @@ img.emoji {
 
 #room_zone_server_number{
     position: absolute;
-    left: 108px;
-    top: 5px;
+    left: 167px;
+    top: 8px;
     width: 22px;
     height: 23px;
 }
@@ -17525,7 +17532,7 @@ img.emoji {
     background-size: cover;
 }
 .player-room-info___container {
-    width: 204px;
+    width: 205px;
     height: 38px;
     position: absolute;
     top: -24px;
@@ -17557,7 +17564,7 @@ img.emoji {
 .player-room-info___names {
     position: absolute;
     top: 12px;
-    left: 76px;
+    width: 205px;
 }
 
 .player-room-info___names .name {
