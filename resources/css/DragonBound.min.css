@@ -6729,9 +6729,9 @@ a:active {
 }
 .roomTitle {
     position: absolute;
-    width: 215px;
+    width: 260px;
     left: 104px;
-    top: 15px;
+    top: 11px;
 }
 .roomLock {
     position: absolute;
@@ -6816,25 +6816,23 @@ a:active {
 }
 .gameMode {
     position: absolute;
-    left: 486px;
-    top: 7px;
-    width: 92px;
-    height: 22px;
+    left: 506px;
+    top: 13px;
+    width: 50px;
+    height: 15px;
 }
 .gameMode0 {
-    color: #4a4d4a
+    background-position: -1090px -104px;
 }
-
 .gameMode1 {
-    color: #4a4d4a
+    background-position: -1090px -89px
 }
-
 .gameMode2 {
-    color: #4a4d4a
+    background-position: -1090px -74px
 }
-
 .gameMode3 {
-    color: #4a4d4a
+    background-position: -1090px -119px;
+    filter: none
 }
 .roomLocked {
     background-position: -940px -1733px;
@@ -9525,6 +9523,28 @@ a:active {
     top: 58px;
     width: 100px;
     text-align: center
+}
+.RoomMode {
+    position: absolute;
+    left: 506px;
+    top: 13px;
+    width: 50px;
+    height: 15px;
+}
+.RoomMode0 {
+    color: #4a4d4a
+}
+
+.RoomMode1 {
+    color: #4a4d4a
+}
+
+.RoomMode2 {
+    color: #4a4d4a
+}
+
+.RoomMode3 {
+    color: #4a4d4a
 }
 #RoomOptionsModeIcon {
     position: absolute;
