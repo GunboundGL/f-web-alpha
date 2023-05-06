@@ -1,0 +1,1138 @@
+@charset "utf-8";
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 16px;
+    font-size: 1.6rem
+}
+
+h1 {
+    font-size: 24px;
+    font-size: 2.4rem
+}
+
+body,
+div,
+ul,
+li,
+dl,
+dt,
+dd,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form {
+    margin: 0;
+    padding: 0;
+    letter-spacing: -.02rem
+}
+
+ul,
+ol,
+dl,
+li {
+    list-style: none
+}
+
+em,
+address {
+    font-style: normal
+}
+
+img,
+fieldset {
+    border: 0;
+    vertical-align: middle
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+a {
+    color: #757575;
+    outline: 0;
+    text-decoration: none
+}
+
+.clear:after,
+.row:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.blind {
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px
+}
+
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background: #c1c1c1;
+    background-clip: padding-box;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: inset -1px -1px 0 rgba(0, 0, 0, .05), inset 1px 1px 0 rgba(0, 0, 0, .05)
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    src: local('※');
+    src: url('/static/images/font/Oswald-Light.eot');
+    src: url('/static/images/font/Oswald-Light.eot?#iefix') format('embedded-opentype'), url('/static/images/font/Oswald-Light.woff') format('woff'), url('/static/images/font/Oswald-Light.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: local('※');
+    src: url('/static/images/font/Oswald-Regular.eot');
+    src: url('/static/images/font/Oswald-Regular.eot?#iefix') format('embedded-opentype'), url('/static/images/font/Oswald-Regular.woff') format('woff'), url('/static/images/font/Oswald-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    src: local('※');
+    src: url('/static/images/font/Oswald-SemiBold.eot');
+    src: url('/static/images/font/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'), url('/static/images/font/Oswald-SemiBold.woff') format('woff'), url('/static/images/font/Oswald-SemiBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 800;
+    src: local('※');
+    src: url('/static/images/font/Oswald-Bold.eot');
+    src: url('/static/images/font/Oswald-Bold.eot?#iefix') format('embedded-opentype'), url('/static/images/font/Oswald-Bold.woff') format('woff'), url('/static/images/font/Oswald-Bold.ttf') format('truetype')
+}
+
+.inner {
+    position: relative;
+    margin: 0 auto
+}
+
+#head_wrap {
+    width: 100%;
+    height: 6rem;
+    background: #2c2c2c
+}
+
+#head_wrap>h1 {
+    position: absolute;
+    left: 3rem;
+    top: 0;
+    height: 6rem
+}
+
+#head_wrap>h1>a {
+    width: 9.2rem;
+    height: 100%;
+    display: block
+}
+
+#head_wrap>h1>a>img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle
+}
+
+#head_wrap .hd_top {
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    height: 6rem;
+    z-index: 110
+}
+
+.hd_top .member,
+.hd_top .lang,
+.hd_top .all_menu {
+    cursor: pointer;
+    position: relative
+}
+
+.hd_top .member {
+    display: block;
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    margin-top: .5rem;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_sign.svg') no-repeat center;
+    background-size: 2.6rem
+}
+
+.hd_top .member.on {
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_sign_in.svg') no-repeat center;
+    background-size: 2.6rem
+}
+
+.hd_top .lang {
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    margin-top: .5rem;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_lang.svg') no-repeat center;
+    background-size: 2.6rem
+}
+
+.hd_top .member:hover,
+.hd_top .member:active,
+.hd_top .lang:hover,
+.hd_top .lang:active,
+.hd_top .all_menu:hover,
+.hd_top .all_menu:active {
+    fill: orange
+}
+
+.hd_top .all_menu button {
+    width: 100%;
+    height: 100%;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_nav.svg') no-repeat center;
+    background-size: 1.6rem 1.4rem;
+    border: 0;
+    outline: 0;
+    font-size: 0;
+    cursor: pointer
+}
+
+.lang>.menu {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    right: 0;
+    width: max-content;
+    background: #fff;
+    border-radius: .4rem;
+    padding: 1rem 1.6rem
+}
+
+.member>.menu {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 50%;
+    width: max-content;
+    transform: translate(-50%, 0);
+    background: #fff;
+    border-radius: .4rem;
+    padding: 1rem 1.6rem
+}
+
+.lang>.menu:hover,
+.member>.menu:hover {
+    opacity: 1
+}
+
+.lang>.menu li,
+.member>.menu li {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #222;
+    font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic';
+    letter-spacing: .02rem
+}
+
+.lang>.menu li+li,
+.member>.menu li+li {
+    margin-top: .5rem
+}
+
+.member>.menu li+li:nth-child(3) {
+    margin-top: 0
+}
+
+.lang>.menu li a,
+.member>.menu li a {
+    display: block
+}
+
+.lang>.menu li a:hover,
+.member>.menu li a:hover {
+    color: #f17100
+}
+
+.hd_top .all_menu {
+    display: none
+}
+
+.nav_area {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    width: 90%;
+    z-index: 300;
+    overflow: auto
+}
+
+.nav_btn_area {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    padding: 1.6rem 2rem;
+    box-sizing: border-box;
+    background: #e8e8e8;
+    position: relative
+}
+
+.nav_btn_area a {
+    display: inline-block;
+    padding: .4rem 1rem;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    font-family: Castoro, tahoma, Geneva, sans-serif;
+    text-transform: uppercase
+}
+
+.nav_btn_area a+a {
+    margin-left: .4rem
+}
+
+.nav_btn_area a.btn_top_member {
+    border: 1px solid #cdab5c;
+    background: #f5ba2e;
+    color: #fff
+}
+
+.nav_btn_area a.btn_top_cash {
+    border: 1px solid #9c0000;
+    background: #c90000;
+    color: #fff
+}
+
+.nav_btn_area a:hover {
+    border: 1px solid #d6d6d6;
+    background: #fff;
+    color: #222
+}
+
+.nav_btn_area .btn_nav_close {
+    position: absolute;
+    right: 2rem;
+    top: 1.6rem;
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: url('https://img.softnyx.com/resources/www/esp/common/btn_nav_close.jpg') no-repeat center;
+    font-size: 0;
+    border: 0;
+    outline: 0
+}
+
+.nav_btn_area .btn_nav_close:hover {
+    border-radius: .4rem;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .15)
+}
+
+.softnyx_allMenu {
+    width: 100%;
+    padding: 2rem 0;
+    order: 2;
+    position: relative
+}
+
+.softnyx_allMenu>h1 {
+    width: 100%;
+    padding-left: 2rem;
+    box-sizing: border-box
+}
+
+.softnyx_allMenu>h1>a {
+    width: 9rem;
+    display: block
+}
+
+.softnyx_menu {
+    width: 100%;
+    margin-top: 1.5rem
+}
+
+.softnyx_menu li {
+    width: 100%;
+    display: block;
+    cursor: pointer
+}
+
+.softnyx_menu li>span,
+.softnyx_menu>li:last-child>a>span,
+.limenu {
+    display: block;
+    position: relative;
+    width: fit-content;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    line-height: 3.6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'tahoma', 'sans-serif', "맑은 고딕", 'Malgun Gothic';
+    text-transform: uppercase;
+    color: #222;
+    cursor: pointer
+}
+
+.softnyx_menu>li:hover>span,
+.softnyx_menu>li:last-child:hover>a>span {
+    color: #f19c12
+}
+
+.softnyx_menu>li>span:after {
+    position: absolute;
+    right: -1.8rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #231815
+}
+
+.softnyx_menu>li.active>span:after {
+    transform: translate(0, -50%) rotate(180deg);
+    color: #f19c12
+}
+
+.softnyx_menu .sub {
+    width: 100%;
+    background: #313131;
+    padding: .5rem 2rem;
+    box-sizing: border-box;
+    display: none;
+    height: auto !important
+}
+
+.softnyx_menu .sub:after {
+    display: block;
+    content: '';
+    clear: both
+}
+
+.softnyx_menu .sub li {
+    width: 50%;
+    float: left;
+    padding: 1rem 0
+}
+
+.softnyx_menu .sub li a {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    opacity: .75
+}
+
+.softnyx_menu .sub li a:hover {
+    opacity: 1;
+    transition: .2s
+}
+
+.softnyx_menu .sub li a img {
+    width: 5rem;
+    border-radius: .4rem
+}
+
+.softnyx_menu .sub li a span {
+    margin-left: 1.2rem;
+    font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic';
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.25
+}
+
+.softnyx_menu .sub li a:hover span {
+    color: #f19c12 !important;
+    transition: .2s
+}
+
+.nav_softnyx {
+    z-index: 1000;
+    position: relative;
+    width: 100%;
+    background: #2c2c2c;
+    font-size: 0;
+    font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic'
+}
+
+.nav_softnyx .inner:after {
+    display: block;
+    content: '';
+    clear: both
+}
+
+.gnb_logo {
+    float: left;
+    height: 5rem
+}
+
+.gnb_logo h1 {
+    height: 100%
+}
+
+.gnb_logo h1 a {
+    display: block;
+    height: 100%;
+    font-size: 0;
+    padding-left: 2rem
+}
+
+.gnb_logo h1 a img {
+    width: 6.4rem;
+    height: 1.6rem;
+    margin-top: 1.7rem
+}
+
+.gnb_btn {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    font-size: 0;
+    padding-right: 1rem
+}
+
+.gnb_btn a {
+    opacity: .5
+}
+
+.gnb_btn a:hover,
+.gnb_btn a:focus {
+    opacity: 1
+}
+
+.gnb_btn a.member,
+.gnb_btn a.lang,
+.gnb_btn a.menu {
+    padding: 0 1rem;
+    position: relative;
+    display: block
+}
+
+.gnb_btn a.member {
+    display: none
+}
+
+.gnb_btn a.member span {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 1.7rem;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_sign.svg') no-repeat center
+}
+
+.gnb_btn a.menu span {
+    display: block;
+    width: 1.6rem;
+    height: 1.2rem;
+    margin-top: 1.9rem;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_nav.svg') no-repeat center
+}
+
+.gnb_btn a.lang span {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 1.7rem;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_lang.svg') no-repeat center
+}
+
+.gnb_menu {
+    display: none;
+    padding-top: 5rem;
+    width: 100%
+}
+
+.gnb_menu ul {
+    display: block;
+    background: #3a3a3a
+}
+
+.gnb_menu ul.menu li a {
+    display: block;
+    padding: 2rem 2rem 1rem;
+    color: #e1e1e1;
+    font-size: 1.3rem;
+    text-transform: uppercase
+}
+
+.gnb_menu .menu>li:hover>a,
+.gnb_menu ul.menu>li>a:hover {
+    color: #f15d1e !important
+}
+
+.gnb_menu ul.sub {
+    background: #2c2c2c;
+    margin: 0 1.6rem;
+    border-radius: .4rem;
+    padding: .2rem .5rem
+}
+
+.gnb_menu ul.sub li {
+    display: inline-block;
+    margin-right: 2rem
+}
+
+.gnb_menu ul.sub li a {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: #999
+}
+
+.gnb_menu ul li:hover a:hover {
+    color: #fff !important
+}
+
+.gnb_menu ul.sub li a img {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    border-radius: .4rem;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .8)
+}
+
+.gnb_menu ul.sub li a span {
+    width: 10rem;
+    padding-left: 13px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.25
+}
+
+.gnb_menu ul.user {
+    margin: 0;
+    padding: 0
+}
+
+.gnb_menu ul.user:after {
+    content: none
+}
+
+.gnb_menu ul.user span {
+    display: inline-block;
+    height: 36px;
+    padding-left: 50px;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_user.png') no-repeat
+}
+
+.gnb_menu ul.user span.login {
+    background-position: 0 0
+}
+
+.gnb_menu ul.user span.sign_up {
+    background-position: 0 -50px
+}
+
+.top_lang {
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    background: #fff;
+    border-radius: .4rem;
+    padding: 1rem 1.6rem;
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 400
+}
+
+.sign {
+    position: absolute;
+    right: 4.3rem;
+    top: 4rem;
+    background: #fff;
+    border-radius: .4rem;
+    padding: 1rem 1.6rem;
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 400
+}
+
+.top_lang li,
+.sign li {
+    width: 100%
+}
+
+.top_lang li a,
+.sign li a {
+    display: block;
+    width: 100%
+}
+
+.top_lang li+li,
+.sign li+li {
+    margin-top: .5rem
+}
+
+.top_lang li a:hover,
+.top_lang li.active a,
+.sign li a:hover,
+.sign li.active a {
+    color: #f15d1e
+}
+
+.foot_softnyx {
+    padding: 20px 0 60px;
+    background: #2c2c2c;
+    font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic'
+}
+
+.foot_softnyx .inner {
+    padding: 0 1.5rem !important
+}
+
+.foot_softnyx * {
+    font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic' !important;
+    font-weight: 300 !important
+}
+
+.footer_wrap a {
+    color: #fff
+}
+
+.footer_wrap a:hover {
+    color: #757575
+}
+
+.footer_wrap .top_btn {
+    position: relative;
+    height: 12px;
+    margin: 0 auto;
+    padding-bottom: 18px;
+    border-bottom: 5px solid #fff
+}
+
+.footer_wrap .top_btn a {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -16px;
+    border-bottom: 12px solid #fff;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    font-size: 0
+}
+
+.footer_wrap .company {
+    margin: 26px 0;
+    padding: 5px 0;
+    font-size: 0
+}
+
+.footer_wrap .company .ci {
+    display: inline-block;
+    margin-right: 20px
+}
+
+.footer_wrap .company ul {
+    display: inline-block;
+    padding-left: 20px;
+    border-left: 2px solid #fff;
+    vertical-align: middle
+}
+
+.footer_wrap .company ul li {
+    display: inline-block;
+    margin: 0 6px
+}
+
+.footer_wrap .company ul li a {
+    display: block;
+    background: url('https://img.softnyx.com/resources/www/esp/common/ico_sns.png') no-repeat
+}
+
+.footer_wrap .company ul li a.dc_btn {
+    width: 25px;
+    height: 29px;
+    background-position: 0 0
+}
+
+.footer_wrap .company ul li a.yt_btn {
+    width: 28px;
+    height: 27px;
+    background-position: 0 -50px
+}
+
+.footer_wrap .company ul li a.fb_btn {
+    width: 28px;
+    height: 27px;
+    background-position: 0 -100px
+}
+
+.footer_wrap .info {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300
+}
+
+.footer_wrap .info .social>li {
+    display: block;
+    position: relative;
+    letter-spacing: 0
+}
+
+.footer_wrap .info .social .time {
+    margin-left: 0
+}
+
+.footer_wrap .info .social .global:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+    background: #fff
+}
+
+.footer_wrap .info .social .global ul {
+    display: none;
+    z-index: 100;
+    overflow: hidden;
+    position: absolute;
+    top: -60px;
+    left: 60px;
+    width: 234px;
+    height: 196px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #252525;
+    box-sizing: border-box
+}
+
+.footer_wrap .info .social .global ul li {
+    position: relative
+}
+
+.footer_wrap .info .social .global ul li:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 5px solid transparent
+}
+
+.footer_wrap .info .social .global ul li:hover:before {
+    border-left: 10px solid #fff
+}
+
+.footer_wrap .info .social .global ul li a {
+    display: block;
+    margin-left: 30px;
+    padding: 4px 0;
+    font-size: 20px;
+    text-align: left
+}
+
+.footer_wrap .info .social .global ul li:first-child {
+    display: block;
+    width: 100%;
+    height: 32px;
+    padding: 0;
+    background: #fff
+}
+
+.footer_wrap .info .social .global ul li:first-child:before {
+    content: none
+}
+
+.footer_wrap .info .social .global ul li:first-child a {
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding: 4px 0;
+    color: #000;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.footer_wrap .info .nav {
+    font-size: 0
+}
+
+.footer_wrap .info .nav li {
+    display: block
+}
+
+.footer_wrap .info .nav li:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #fff
+}
+
+.footer_wrap .info .nav li a {
+    padding-left: 10px;
+    font-size: 24px
+}
+
+.footer_wrap .copyright {
+    font-weight: 400
+}
+
+@media all and (max-width:1024px) {
+    .hd_top .member {
+        display: none
+    }
+    .hd_top .lang {
+        width: 4rem;
+        height: 4rem;
+        background-size: 1.6rem
+    }
+    #head_wrap {
+        height: 5rem
+    }
+    #head_wrap>h1 {
+        left: 2rem;
+        height: 5rem
+    }
+    #head_wrap>h1>a>img {
+        width: 6.4rem
+    }
+    #head_wrap .hd_top {
+        right: 1rem
+    }
+    .lang>.menu,
+    .member>.menu {
+        top: 3.5rem
+    }
+    .hd_top .all_menu {
+        display: block;
+        float: left;
+        width: 4rem;
+        height: 4rem;
+        margin-top: .5rem
+    }
+    .softnyx_menu li.mb_none {
+        display: none
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .inner {
+        padding: 0;
+        max-width: 1600px
+    }
+    .nav_area {
+        display: block !important;
+        background: none;
+        width: 100%;
+        z-index: 300;
+        left: 15rem;
+        position: inherit
+    }
+    .nav_btn_area {
+        display: none
+    }
+    .softnyx_allMenu {
+        position: absolute;
+        left: 15rem;
+        top: 0 !important;
+        display: flex;
+        padding: 0;
+        width: auto;
+        height: 6rem;
+        z-index: 20
+    }
+    .softnyx_allMenu>h1 {
+        display: none
+    }
+    .softnyx_menu {
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        padding-left: 0
+    }
+    .softnyx_menu li {
+        width: auto;
+        height: 100%;
+        cursor: pointer
+    }
+    .softnyx_menu>li {
+        position: relative
+    }
+    .softnyx_menu>li:hover:after {
+        display: block;
+        position: absolute;
+        content: '';
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 0);
+        display: '';
+        width: 70%;
+        height: .3rem;
+        border-radius: 1.5rem;
+        background: #f19c12;
+        color: #f19c12
+    }
+    .softnyx_menu>li:hover>span,
+    .softnyx_menu>li:last-child:hover>a>span {
+        color: #f19c12
+    }
+    .softnyx_menu>li>span:after {
+        display: none
+    }
+    .softnyx_menu>li.active>span:after {
+        transform: translate(0, -50%) rotate(180deg);
+        color: #f19c12
+    }
+    .softnyx_menu .sub {
+        width: 100%;
+        background: #1b1b1b;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 6rem
+    }
+    .softnyx_menu .sub:after {
+        display: block;
+        content: '';
+        clear: both
+    }
+    .softnyx_menu .sub li {
+        width: auto;
+        float: left;
+        padding: 1.5rem
+    }
+    .softnyx_menu .sub li a {
+        display: flex;
+        align-items: center;
+        font-size: 0
+    }
+    .softnyx_menu .sub li a img {
+        width: 6rem;
+        border-radius: .4rem
+    }
+    .softnyx_menu .sub li a span {
+        margin-left: 1.2rem;
+        font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic';
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 1.25
+    }
+    .softnyx_menu li>span,
+    .softnyx_menu>li:last-child>a>span,
+    .limenu {
+        height: 100%;
+        color: #fff;
+        font-family: 'Oswald', 'sans-serif', "맑은 고딕", 'Malgun Gothic';
+        padding: 0 3rem;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center
+    }
+    .footer_wrap .info .social>li {
+        display: inline-block
+    }
+    .footer_wrap .info .social .global:before {
+        top: inherit;
+        width: 2px;
+        height: 15px;
+        margin: 0 20px
+    }
+    .footer_wrap .info .social .global ul {
+        left: 280px
+    }
+    .footer_wrap .info .nav li {
+        display: inline-block
+    }
+    .footer_wrap .info .nav li:before {
+        display: inline-block;
+        top: inherit;
+        width: 2px;
+        height: 15px;
+        margin: 0 20px
+    }
+    .footer_wrap .info .nav li:first-child:before {
+        content: none
+    }
+    .footer_wrap .info .nav li a {
+        padding: 0
+    }
+    .info_line {
+        width: 100%;
+        display: inline-block
+    }
+    .info_line>p {
+        display: inline-block;
+        vertical-align: baseline
+    }
+    .footer_lang_slt {
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 0;
+        font-size: 0;
+        vertical-align: baseline;
+        position: relative
+    }
+    .footer_lang_slt::before {
+        position: absolute;
+        display: block;
+        content: '';
+        left: -43px;
+        top: 8px;
+        background: #fff;
+        border-radius: 50px;
+        width: 2px;
+        height: 15px;
+        margin: 0 20px
+    }
+}

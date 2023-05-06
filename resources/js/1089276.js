@@ -19190,7 +19190,7 @@
             $("#LoginResetA").text(l.t("Reset password?")),
             $("#LoginPass,#password").attr("placeholder", l.t("Password")),
             $("#name").attr("placeholder", l.t("Name")),
-            $("#LoginUsername").attr("placeholder", l.t("Name") + " / Email / UserID"),
+            $("#LoginUsername").attr("placeholder", l.t("Name")),
             $("#LoginSubmit").attr("value", l.t("Login")),
             $("#registerTitle").text(l.t("New Account")),
             $("#MaleTxt").text(l.t("Male")),
@@ -19247,7 +19247,7 @@
             "Show my photo": "Mostrar mi foto",
             "Join Room": "Entrar a Sala",
             Number: "",
-            Password: "",
+            Password: "PASSWORD",
             'You can add friends by clicking "Info" near them and then "Add".': 'Puedes agregar amigos haciendo click en "Info" cerca de ellos y luego "Añadir"',
             'A guild leader can invite you to a guild by clicking on your "Info" and then "Guild Invite".': 'El líder de un guild puede invitarte haciendo click en tu "Info" y luego pulsando "Invitación para Guild"',
             "Room Title": "Título de Sala",
@@ -19539,7 +19539,7 @@
             "Sorry, I am busy right now.": ["Disculpa, estoy ocupado en este momento."],
             "You got a PM from": ["Has recibido un mensaje privado de"],
             "Sort:": "Ordenar:",
-            Name: "Nombre",
+            Name: "Softnyx ID",
             "Can't Buy": "No Puede",
             "^ Click to buy ^": "^ Click para Comprar ^",
             "Need more cash?": "Necesitas más cash?",
@@ -23365,7 +23365,7 @@
         DragonLogin.prototype.ShowConnectToFacebookButton = function() {
             DragonDialogClose(!0),
             $("#LoginWindowBG").show(),
-            $("#container").addClass("behindDialog"),
+            $("#container").removeClass("behindDialog"),
             g_is_mobile_device || $("#LoginUsername").focus()
         }
         ,
