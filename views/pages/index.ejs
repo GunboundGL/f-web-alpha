@@ -20,11 +20,13 @@
     <meta name="referrer" content="same-origin">
     <link rel="manifest" href="/static/app.json?3">
     <script type="text/javascript" src="/static/js/transition.js"></script>
-    <script defer="" src="/static/js/snow.js"></script>
     <script type="text/javascript" src="/static/js/1089276.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <!--<script type='text/javascript' src="/static/js/jquery.minx.js"></script>-->
+    <script type='text/javascript' src="/static/js/jquery.banner.js"></script>
     <link rel="stylesheet" id="DragonStyle" href="/static/css/DragonBound.min.css?14401" />
-    <link rel="stylesheet" href="/static/css/member.css" />
-    <link rel="stylesheet" href="/static/css/css.css" />
+    <link rel="stylesheet" href="/static/css/main_140102.css" />
+    <!--link rel="stylesheet" href="/static/css/css.css" />-->
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy"
@@ -529,72 +531,50 @@
     </a>-->
     <div id="TouchShot" class="NoSelect"><br><br>Drag me<br>to shoot&rArr;</div>
     <div id="Dragon2D"></div>
-    <div id="container" class="Lobby">
-        <div id="LoginWindowBG">
-            <main class="content login">
-                <div class="container contents_op7">
-                    <section class="login_wrap">
-                        <div class="logo_area">
-                            <a href="/"><img src="/static/images/img_softnyx.png" alt="Softnyx logo" width="170" height="59"></a>
-                            <h2>JUEGO GRATIS, REGISTRO GRATIS</h2>
-                            <p>
-                                Todos los juegos en este servidor, así como el registro, se proporcionan de forma gratuita.
-                            </p>
-                        </div>
-                        <div class="login_area">
-                            <!-- ID, PW -->
-                            <div class="command">
-                                <input type="text" name="username" title="ID" placeholder="Softnyx ID" id="LoginUsername" autocomplete="username" maxlength="16">
-                                <input type="password" name="pass" title="Password" placeholder="PASSWORD" id="LoginPass" maxlength="16">
-                            </div>
-            
-                            <div id="keyboard"></div>
-                            <div id="capsLock" class="help">
-                                <p>La tecla Caps Lock está activada. Verifícalo, por favor.</p>
-                            </div>
-                            <div id="recaptcha" class="chance"></div>
-                            <button type="submit" value="Login" id="LoginSubmit">OK</button>
-                            <ul>
-                                <li><a href="/accounts/password/reset/">Olvidé mi contraseña</a></li>
-                                <li><a href="/member/join">Regístrate</a></li>
-                            </ul>
-                        </div>
-                        <div class="sns_area">
-                            <ul>
-            
-                                <li><button type="button" class="facebook" id="btnFacebookLogin">Ingresar con Facebook</button></li>
-                                
-                                
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-            </main>
-            <!--
+    <div id="LoginWindowBG">
+        <div id="LoginWindow">
+            <div id="loginTitle">Login to DragonBound</div>
+            <span id="LoginFBStatus">Existing FB users only</span>
+            <div id="myLoginFB"></div>
+            <div id="ConnectWithFacebook" class="grayscale FBLoginBtn"></div>
+            <div id="LoginMute" class="volume glow_button_anim"></div>
+            <div id="LoginLang" class="glow_button_anim NoSelect">EN</div>
+            <div id="LoginOR1">- OR -</div>
+            <div id="LoginSap"></div>
+            <div id="LoginPart">
+                <input class="inputField" id="LoginUsername" name="username" placeholder="Name / Email / UserID"
+                    maxlength="100" autocomplete="username" value="123456"><br>
+                <input class="inputField" type="password" id="LoginPass" name="pass" placeholder="Password"
+                    maxlength="100" value="123456"> <input type="submit" value="Login" id="LoginSubmit"
+                    class="blueBtn"><br>
+                <span class="resetPass"><a href="/accounts/password/reset/" id="LoginResetA">Reset password?</a></span>
+            </div>
+            <div id="registerTitle">Or Create Account</div>
             <div id="RegisterPart">
-                    <br>
-                    <div class="formLine">
-                        <input class="inputField" id="name" name="name" placeholder="Name" maxlength="15" value="">
-                    </div>
-                    <div class="formLine">
-                        <input class="inputField" type="password" id="password" name="password" placeholder="New Password"
-                            maxlength="100" autocomplete="new-password">
-                    </div>
-                    <div class="formLine" id="formLineGender">
-                        <input type="radio" name="gender" id="male" value="m"><label for="male"><span
-                                id="MaleTxt">Male</span> <span class="Male"></span></label> &nbsp; &nbsp; &nbsp;
-                        <input type="radio" name="gender" id="female" value="f"><label for="female"><span
-                                id="FemaleTxt">Female</span> <span class="Female"></span></label>
-                    </div>
-                    <br><br>
-                    <div class="formLine" id="formLineSubmit">
-                        <button type="submit" id="RegisterSubmit" class="registerButton"></button>
-                    </div>
+                <br>
+                <div class="formLine">
+                    <input class="inputField" id="name" name="name" placeholder="Name" maxlength="15" value="">
                 </div>
-                <a id="toslink" class="blackShadow" href="/static/termsofservice.txt" target="_blank">Terms of Service</a>
-                <a id="pplink" class="blackShadow" href="/static/privacypolicy.txt" target="_blank">Privacy Policy</a>
-            </div>-->
+                <div class="formLine">
+                    <input class="inputField" type="password" id="password" name="password" placeholder="New Password"
+                        maxlength="100" autocomplete="new-password">
+                </div>
+                <div class="formLine" id="formLineGender">
+                    <input type="radio" name="gender" id="male" value="m"><label for="male"><span
+                            id="MaleTxt">Male</span> <span class="Male"></span></label> &nbsp; &nbsp; &nbsp;
+                    <input type="radio" name="gender" id="female" value="f"><label for="female"><span
+                            id="FemaleTxt">Female</span> <span class="Female"></span></label>
+                </div>
+                <br><br>
+                <div class="formLine" id="formLineSubmit">
+                    <button type="submit" id="RegisterSubmit" class="registerButton"></button>
+                </div>
+            </div>
+            <a id="toslink" class="blackShadow" href="/static/termsofservice.txt" target="_blank">Terms of Service</a>
+            <a id="pplink" class="blackShadow" href="/static/privacypolicy.txt" target="_blank">Privacy Policy</a>
         </div>
+    </div>
+    <div id="container" class="Lobby">
         <div id="Mensaje">
             <div class="DialogLayer hide">
                 <div id="myDialog">
