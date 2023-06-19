@@ -6,7 +6,7 @@ applet,
 object,
 iframe,
 h1,
-h2,
+h,
 h3,
 h4,
 h5,
@@ -7443,6 +7443,14 @@ a:active {
     background-position: -216px -1733px;
     width: 108px
 }
+#playersListx {
+    position: absolute;
+    left: 696px;
+    top: 345px;
+    width: 184px;
+    height: 168px;
+    z-index: 14;
+}
 #playersList {
     position: absolute;
     left: 696px;
@@ -7579,6 +7587,14 @@ a:active {
 }
 .buttonAllBuddyList2.BuddyList {
     background-position: -324px -1733px
+}
+#friendsListx {
+    position: absolute;
+    left: 696px;
+    top: 345px;
+    width: 184px;
+    height: 168px;
+    z-index: 13;
 }
 #friendsList {
     position: absolute;
@@ -13743,7 +13759,6 @@ a:active {
     width: 100%;
     height: 100%;
     z-index: 1001;
-    background-color: #fff;
 }
 
 #LoginOR1 {
