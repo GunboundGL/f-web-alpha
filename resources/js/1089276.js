@@ -29878,7 +29878,12 @@
                 }
             }),
             $("#buttonMyInfo,#avatarMyInfo,#roomMyInfo").click(function() {
-                AudioPlay(AUDIO_BUTTON_SELECT2),
+                AudioPlay(AUDIO_BUTTON_SELECT2);
+                if($(".popup_userinfo").is(":visible")){
+                    $(".popup_userinfo").hide();
+                }else{
+                    $(".popup_userinfo").show();
+                }
                 $("#display_name").val(e.myPlayerInfo.game_id).css({
                     "background-color": ""
                 }),
@@ -29892,7 +29897,7 @@
                 AudioPlay(AUDIO_BUTTON_SELECT2)
                 const a = $(this);
                 const b = $("#tab_user_information");
-                !a.hasClass("selected") ? a.addClass("selected") : a.removeClass("selected"); 
+                !a.hasClass("selected") ? a.addClass("selected") : a.addClass("selected"); 
                 if(b.hasClass("selected")){
                     b.removeClass("selected");    
                 }
@@ -29906,7 +29911,7 @@
                 AudioPlay(AUDIO_BUTTON_SELECT2)
                 const a = $(this);
                 const b = $("#tab_user_ranking");
-                !a.hasClass("selected") ? a.addClass("selected") : a.removeClass("selected"); 
+                !a.hasClass("selected") ? a.addClass("selected") : a.addClass("selected"); 
                 if(b.hasClass("selected")){
                     b.removeClass("selected");    
                 }

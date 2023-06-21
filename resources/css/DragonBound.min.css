@@ -8120,7 +8120,8 @@ a:active {
     width: 403px;
     height: 269px;
     z-index: 999;
-    background-position: -1127px -477px
+    background-position: -1127px -477px;
+    display: none;
 }
 .tab_user_info {
     position: absolute;
