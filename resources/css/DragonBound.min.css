@@ -3356,12 +3356,6 @@ a:active {
     top: 217px
 }
 
-#dialog_change_name_cancel {
-    position: absolute;
-    left: 363px;
-    top: 217px
-}
-
 #myInfoProfile {
     position: absolute;
     color: inherit;
@@ -5802,7 +5796,6 @@ a:active {
 .font{
     display: flex;
     align-items: center;
-    /*font-size: 16px;*/
     justify-content: space-between;
     transform: scale(1,1.2);
     transform-origin: left;
@@ -5810,7 +5803,6 @@ a:active {
 .font-S3:first-child{
     position: absolute;
     font-family: 'S3';
-    color: #fff;
     color: #49475C;
 }
 .font-S3:last-child{
@@ -8053,6 +8045,9 @@ a:active {
     background-position: -375px -1453px
 }
 .popup_userinfo_exit {
+    position: absolute;
+    left: 363px;
+    top: 217px;
     width: 22px;
     height: 24px;
     background-position: -940px -153px
@@ -8191,19 +8186,34 @@ a:active {
     left: 129px;
     width: 265px
 }
-#buddy_add {
+.buddy_add {
     position: absolute;
     left: 322px;
     top: 221px
 }
-#user_info {
+#dialog_change_name_cancel,
+#userinfo,
+#userinfo_chat,
+#buddy_add {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+#buddy_add,
+#dialog_change_name_cancel,
+#userinfo_chat {
+    bottom: -9px;
+}
+.room__list-user_info {
     position: absolute;
     left: 216px;
     top: 219px;
     width: 47px;
     height: 35px;
-}
-.room__list-user_info {
     background-position: -940px -334px
 }
 .room__list-user_info:hover {
@@ -8217,14 +8227,12 @@ a:active {
     width: 403px;
     height: 269px;
 }
-#userinfo_chat {
+.popup_userinfo_chat {
     position: absolute;
     left: 275px;
     top: 217px;
     width: 27px;
     height: 25px;
-}
-.popup_userinfo_chat {
     background-position: -219px -1516px
 }
 .popup_userinfo_chat:hover {
@@ -9764,7 +9772,7 @@ a:active {
     align-items: center;
 }
 .avatar__list-tab {
-    width: 70px;
+    width: 69px;
     height: 28px;
     background-position: -290px -521px;
 }
@@ -9775,6 +9783,9 @@ a:active {
     background-position: -290px -611px;
 }
 .avatar__list-tab.selected {
+    position: relative;
+    top: -5px;
+    height: 34px;
     background-position: -290px -577px
 }
 #shop_items {
@@ -10197,7 +10208,7 @@ a:active {
 }
 #buttonShopExit {
     position: absolute;
-    left: 834px;
+    left: 860px;
     top: 559px;
     width: 46px;
     height: 41px
@@ -13111,7 +13122,7 @@ a:active {
 }
 
 .tipsy {
-    font-size: 14px;
+    font-size: 18px;
     position: absolute;
     padding: 5px;
     z-index: 100000;
@@ -13119,14 +13130,15 @@ a:active {
 }
 
 .tipsy-inner {
-    background-color: #000;
-    color: #FFF;
+    background-color: #eeeea4;
+    color: #000;
     max-width: 200px;
     padding: 5px 8px 4px 8px;
     text-align: center
 }
 
 .tipsy-inner {
+    border: 2px solid #dddd95; 
     border-radius: 3px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px

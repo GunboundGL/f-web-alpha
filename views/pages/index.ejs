@@ -324,23 +324,29 @@
     </div>
     <div id="dialog_change_name_div">
         <div class="popup_userinfo">
-            <!--!<div id="changeNameDiv">
+            <!--<div id="changeNameDiv">
                 <input type="text" value="" id="display_name" maxlength="15" disabled />
             </div>-->
             <div class="tab_user_info" id="tab_user_information"></div>
             <div class="tab_user_rank" id="tab_user_ranking"></div>
-            <div class="room__list-user_info" id="user_info"></div>
             <div class="tab-information-background">
                 <div class="tab-info-table-a">
                 </div>
                 <div class="tab-info-table-b">
                 </div>
             </div>
-            <!--<div id="dialog_change_name_ok" class="New_ok"></div>-->
-            <!--<div class="room__list-user_info" id="user_info"></div>-->
-            <div class="popup_userinfo_chat" id="userinfo_chat"></div>
-            <div class="room__list-buddy-add" id="buddy_add"></div>
-            <div class="popup_userinfo_exit" id="dialog_change_name_cancel"></div>
+            <div class="room__list-user_info">
+                <span id="userinfo"></span>
+            </div>
+            <div class="popup_userinfo_chat">
+                <span id="userinfo_chat"></span>
+            </div>
+            <div class="room__list-buddy-add buddy_add">
+                <div id="buddy_add"></div>
+            </div>
+            <div class="popup_userinfo_exit">
+                <div id="dialog_change_name_cancel"></div>
+            </div>
         </div>
     </div>
     <div id="OptionsDialog" class="ui-widget-content NoSelect">
@@ -691,21 +697,21 @@
             </div>
             <!--<div id="tournament_waiting" class="anim_ease"></div>-->
             <div class="NoSelect" id="roomlist_zone"></div>
-            <div class="NoSelect room__list-Waiting Tip" id="filter_waiting">
+            <div class="NoSelect room__list-Waiting TipN" id="filter_waiting">
                 <div class="Alt">T</div>
             </div>
-            <div class="NoSelect room__list-all Tip" id="filter_all">
+            <div class="NoSelect room__list-all TipN" id="filter_all">
                 <div class="Alt">L</div>
             </div>
-            <div class="NoSelect room__list-Quick Tip" id="buttonQuickJoin">
+            <div class="NoSelect room__list-Quick TipN" id="buttonQuickJoin">
                 <div class="Alt">S</div>
             </div>
             <div class="NoSelect room__list-Create TipN" id="buttonCreateRoom">
                 <div class="Alt">C</div>
             </div>
-            <div class="NoSelect room__list-Normal Tip" id="filter_normal"></div>
-            <div class="NoSelect room__list-Score Tip" id="filter_score"></div>
-            <div class="NoSelect room__list-Friend Tip" id="filter_friends"></div>
+            <div class="NoSelect room__list-Normal TipN" id="filter_normal"></div>
+            <div class="NoSelect room__list-Score TipN" id="filter_score"></div>
+            <div class="NoSelect room__list-Friend TipN" id="filter_friends"></div>
             <div class="NoSelect room__list-Number TipN" id="buttonJoin">
                 <div class="Alt">J</div>
             </div>
@@ -929,11 +935,11 @@
             </div>
             <div class="NoSelect room__list-Downmenu"></div>
             <div class="NoSelect room__list-menu" id="b_down_menu"></div>
-            <div class="NoSelect room__list-marcket TipN" id="buttonShop">
+            <div class="NoSelect room__list-marcket Tip" id="buttonShop">
                 <div class="Alt">H</div>
             </div>
             <div class="NoSelect room__list-inventory" id="inventory"></div>
-            <div class="NoSelect room__list-myinfo TipN" id="buttonMyInfo">
+            <div class="NoSelect room__list-myinfo Tip" id="buttonMyInfo">
                 <div class="Alt">I</div>
             </div>
             <div class="NoSelect room__list-event" id="Event"></div>
@@ -1042,7 +1048,7 @@
             <div class="NoSelect room__list-mutelist" id="ready_mutelist"></div>
             <div class="NoSelect room__list-event" id="ready_event"></div>
             <div class="room__list-invite" id="ready_invite"></div>
-            <div class="NoSelect room__list-option Tip" id="buttonOptionsRoom">
+            <div class="NoSelect room__list-option" id="buttonOptionsRoom">
                 <div class="Alt">O</div>
             </div>
             <div class="room__list-exit" id="roomButtonBack"></div>
@@ -1772,12 +1778,12 @@
              </div>
             <div class="NoSelect room__list-Downmenu"></div>
             <div class="NoSelect room__list-menu" id="b_down_menu"></div>
-            <div class="NoSelect room__list-myinfo TipN" id="avatarMyInfo">
+            <div class="NoSelect room__list-myinfo" id="avatarMyInfo">
                 <div class="Alt">I</div>
              </div>
             <div class="NoSelect room__list-event" id="avatar_event"></div>
             <div class="NoSelect avatar__list-CouponShop"></div>
-            <div class="NoSelect room__list-option Tip" id="buttonOptions">
+            <div class="NoSelect room__list-option" id="buttonOptions">
                <div class="Alt">O</div>
             </div>
             <div class="NoSelect room__list-exit" id="buttonShopExit">

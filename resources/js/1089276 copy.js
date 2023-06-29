@@ -19197,10 +19197,6 @@
             $("#FemaleTxt").text(l.t("Female")),
             $("#RegisterSubmit").text(l.t("Create")),
             $("#room_turn_time_text").text(l.t("Turn Time") + ":"),
-            $("#userinfo").text(l.t("Info")),
-            $("#userinfo_chat").text(l.t("Chat")),
-            $("#buddy_add").text(l.t("Add")),
-            $("#dialog_change_name_cancel").text(l.t("Add")),
             $("#OptionsText1").text(l.t("Shooting Mode")),
             $("#OptionsText5").text(l.t("(Space Key)")),
             $("#OptionsText6").text(l.t("Sounds")),
@@ -28897,78 +28893,18 @@
                 ShopDoPurchase(!0, e))
             }),
             $("#btn-shop-avatar-head").click(function() {
-                const a = $(this);
-                const b = $("#btn-shop-avatar-body");
-                const c = $("#btn-shop-avatar-glass");
-                const d = $("#btn-shop-avatar-flag");
-                const e = $("#btn-shop-avatar-background");
-                !a.hasClass("selected") ? a.addClass("selected") : a.addClass("selected"); 
-                if(
-                    b.removeClass("selected"),
-                    c.removeClass("selected"),
-                    d.removeClass("selected"),
-                    e.removeClass("selected")
-                )
                 ShopSetPage(AVATAR_TYPE_HEAD, 0, e.myPlayerInfo.gender, e.myPlayerInfo.rank)
             }),
             $("#btn-shop-avatar-body").click(function() {
-                const a = $("#btn-shop-avatar-head" );
-                const b = $(this);
-                const c = $("#btn-shop-avatar-glass");
-                const d = $("#btn-shop-avatar-flag");
-                const e = $("#btn-shop-avatar-background");
-                !b.hasClass("selected") ? b.addClass("selected") : b.addClass("selected"); 
-                if(
-                    a.removeClass("selected"),
-                    c.removeClass("selected"),
-                    d.removeClass("selected"),
-                    e.removeClass("selected")
-                )
                 ShopSetPage(AVATAR_TYPE_BODY, 0, e.myPlayerInfo.gender, e.myPlayerInfo.rank)
             }),
             $("#btn-shop-avatar-glass").click(function() {
-                const a = $("#btn-shop-avatar-head");
-                const b = $("#btn-shop-avatar-body");
-                const c = $(this);
-                const d = $("#btn-shop-avatar-flag");
-                const e = $("#btn-shop-avatar-background");
-                !c.hasClass("selected") ? c.addClass("selected") : c.addClass("selected"); 
-                if(
-                    a.removeClass("selected"),
-                    b.removeClass("selected"),
-                    d.removeClass("selected"),
-                    e.removeClass("selected")
-                )
                 ShopSetPage(AVATAR_TYPE_EYES, 0, e.myPlayerInfo.gender, e.myPlayerInfo.rank)
             }),
             $("#btn-shop-avatar-flag").click(function() {
-                const a = $("#btn-shop-avatar-head");
-                const b = $("#btn-shop-avatar-body");
-                const c = $("#btn-shop-avatar-glass");
-                const d = $(this);
-                const e = $("#btn-shop-avatar-background");
-                !d.hasClass("selected") ? d.addClass("selected") : d.addClass("selected"); 
-                if(
-                    a.removeClass("selected"),
-                    b.removeClass("selected"),
-                    c.removeClass("selected"),
-                    e.removeClass("selected")
-                )
                 ShopSetPage(AVATAR_TYPE_FLAG, 0, e.myPlayerInfo.gender, e.myPlayerInfo.rank)
             }),
             $("#btn-shop-avatar-background").click(function() {
-                const a = $("#btn-shop-avatar-head");
-                const b = $("#btn-shop-avatar-body");
-                const c = $("#btn-shop-avatar-glass");
-                const d = $("#btn-shop-avatar-flag");
-                const e = $(this);
-                !e.hasClass("selected") ? e.addClass("selected") : e.addClass("selected"); 
-                if(
-                    a.removeClass("selected"),
-                    b.removeClass("selected"),
-                    c.removeClass("selected"),
-                    d.removeClass("selected")
-                )
                 ShopSetPage(AVATAR_TYPE_BACKGROUND, 0, e.myPlayerInfo.gender, e.myPlayerInfo.rank)
             }),
             $("#buy_cash_week").click(function() {
@@ -29992,10 +29928,14 @@
             }),
             $("#dialog_change_name_cancel").click(function() {
                 AudioPlay(AUDIO_BUTTON_SELECT2),
-                ExplodeDialog("dialog_change_name_div")
+                ExplodeDialog("dialog_change_name_div"),
+                $("#tab_user_information").removeClass("selected"),
+                $("#tab_user_ranking").removeClass("selected")
             }),
             $("#dialog_change_name_ok").click(function() {
                 AudioPlay(AUDIO_BUTTON_SELECT2),
+                $("#tab_user_information").removeClass("selected"),
+                $("#tab_user_ranking").removeClass("selected"),
                 ExplodeDialog("dialog_change_name_div", !0);
                 var t = $("#display_name").val()
                   , a = $("#can_show_photo").is(":checked");
@@ -31602,7 +31542,6 @@
                 $("#group-buttons-shop-" + a).css("visibility", "hidden");
                 $("#"+othersMainKeys[i]).removeClass('selected')
              })
-             $("#btn-shop-avatar-head").click()
         }
         function ResellersGUI(e) {
             $("#buttonCharge2, #buttonChargeShop, #buttonChargeShop1").click(function() {
