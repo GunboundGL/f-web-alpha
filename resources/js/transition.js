@@ -153,8 +153,8 @@
 
         async closeAndOpen(onClose) {
             this.show();
+            await this.sleep({ clicked: true });
             await this.close();
-            await this.sleep();
             onClose();
             await this.open();
             this.hide();

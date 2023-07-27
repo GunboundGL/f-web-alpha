@@ -19200,7 +19200,7 @@
             $("#userinfo").text(l.t("Info")),
             $("#userinfo_chat").text(l.t("Chat")),
             $("#buddy_add").text(l.t("Add")),
-            $("#dialog_change_name_cancel").text(l.t("Add")),
+            $("#dialog_change_name_cancel").text(l.t("Close")),
             $("#OptionsText1").text(l.t("Shooting Mode")),
             $("#OptionsText5").text(l.t("(Space Key)")),
             $("#OptionsText6").text(l.t("Sounds")),
@@ -25858,9 +25858,9 @@
             this.FocusAt(e.w / 2, 0)
         }
         DragonNetwork.prototype.showScreenNewNickname = function(){
-            $(".AlertBoxBackground,#BrokerWindow").hide();
-            $(".NewUserBoxBackground,#NewGameIdWindow").show();
-            $("#lobby_close_small,#lobby_refresh").addClass("disabled")
+                $(".AlertBoxBackground,#BrokerWindow").hide();
+                $(".NewUserBoxBackground,#NewGameIdWindow").show();
+                $("#lobby_close_small,#lobby_refresh").addClass("disabled")
         }
         DragonNetwork.prototype.EnterServer = function(e) {
             var t = localStorage.select ? Number(localStorage.select) : random(1, 24)
@@ -25887,33 +25887,29 @@
                 success: function(t) {
                     const { is } = t;
                     if(is === 1){
+                        window.tgb.addClicked();
                         window.tgb.closeAndOpen(()=>{
                             self.showScreenNewNickname();
                         })
                     }else{
                         (async () => {
-                            /*$("#channelScreen").hide();
+                            $("#channelScreen").hide();
+                            await window.tgb.addClicked();
                             await window.tgb.closeAndOpen(()=>{
                                 $("#BrokerScreen").hide();
                                 $("#ad-background-1").show();
                                 $("#ad-background-2").hide();
                             });
-                            await window.tgb.sleep();
                             await window.tgb.closeAndOpen(()=>{
                                 $("#ad-background-2").show();
                                 $("#ad-background-1").hide();
                             });
-                            await window.tgb.sleep();
                             await window.tgb.closeAndOpen(()=>{
                                 $("#ad-background-1").hide();
                                 $("#ad-background-2").hide();
-                                $(".NewUserBoxBackground,#NewGameIdWindow").hide();
-                                $(".AlertBoxBackground,#BrokerWindow").show();  
-                                $("#BrokerScreen").show();
                                 $("#channelScreen").show();
-                                self.EnterServer(self.lastConnectServer) 
+                                self.EnterServer(self.lastConnectServer)
                             })
-                            $("#lobby_close_small,#lobby_refresh").removeClass("disabled")*/
                             self.EnterServer(self.lastConnectServer) 
                         })();
                     }
@@ -29994,6 +29990,10 @@
                 AudioPlay(AUDIO_BUTTON_SELECT2),
                 ExplodeDialog("dialog_change_name_div")
             }),
+            $(".popup_close").click(function() {
+                AudioPlay(AUDIO_BUTTON_SELECT2),
+                ExplodeDialog("popup_title")
+            }),
             $("#dialog_change_name_ok").click(function() {
                 AudioPlay(AUDIO_BUTTON_SELECT2),
                 ExplodeDialog("dialog_change_name_div", !0);
@@ -30158,9 +30158,13 @@
                 $("#chargeWindowClose").click(),
                 $("#freecashWindow .DragonWindowClose").click(),
                 DragonWindowClose($("#OptionsDialog")),
-                window.tgb.closeAndOpen(()=>{
-                    e.OpenBrokerWindow()
-                })
+                (async () => {
+                    await window.tgb.addClicked();
+                    await window.tgb.closeAndOpen(()=>{
+                        e.OpenBrokerWindow()
+                    })
+                    e.OpenBrokerWindow() 
+                })();
             });
             var i = !0
               , o = $("#lobby_refresh").click(function() {
@@ -30175,8 +30179,8 @@
             });
             $("#btn-cancel-new-gameid").click(function() {
                 if($("#btn-cancel-new-gameid").hasClass("disabled")) return
-                window.tgb
-                .closeAndOpen(()=>{
+                window.tgb.addClicked();
+                window.tgb.closeAndOpen(()=>{
                     $(".NewUserBoxBackground,#NewGameIdWindow").hide();
                     $(".AlertBoxBackground,#BrokerWindow").show();
                     $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
@@ -30204,24 +30208,16 @@
                                 $("#btn-cancel-new-gameid,#btn-ok-new-gameid").removeClass("disabled")
                                 $("#lobby_close_small,#lobby_refresh").hide();
                                 document.querySelector("#input-new-gameid").removeAttribute('disabled');
-                                $("#channelScreen").hide();
                                 (async () => {
+                                    await window.tgb.addClicked();
                                     await window.tgb.closeAndOpen(()=>{
                                         $("#ad-background-1").show();
-                                        $("#ad-background-2").hide();
                                         $(".NewUserBoxBackground,#NewGameIdWindow").hide();
                                     });
-                                    await window.tgb.sleep();
-                                    await window.tgb.closeAndOpen(()=>{
-                                        $("#ad-background-2").show();
-                                        $("#ad-background-1").hide();
-                                    });
-                                    await window.tgb.sleep();
                                     await window.tgb.closeAndOpen(()=>{
                                         $("#ad-background-1").hide();
-                                        $("#ad-background-2").hide();
-                                        $(".AlertBoxBackground,#BrokerWindow").show();  
-                                        e.EnterServer(e.lastConnectServer);    
+                                        $(".AlertBoxBackground,#BrokerWindow").show();
+                                        e.EnterServer(e.lastConnectServer);
                                     })
                                     $("#lobby_close_small,#lobby_refresh").removeClass("disabled")
                                     $("#lobby_close_small,#lobby_refresh").show()
@@ -30963,8 +30959,8 @@
             s
         }
         function BuildInfoBasicPlayerRoom(){ 
-            const game_id = "Alex";
-            const guild = "GM [ 1 / 1 ]"
+            const game_id = "SolYluna";
+            const guild = "Gunbound [ 1 / 1 ]"
             const country = 18;
 
             const coupes = [];

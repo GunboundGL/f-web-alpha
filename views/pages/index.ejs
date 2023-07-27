@@ -257,266 +257,6 @@
             <textarea id="themeFull"></textarea>
         </div>
     </div>
-    <!--<div id="dialogCreateRoom" class="NoSelect">
-        <input type="text" id="createRoomTitle" value="Hello World" maxlength="30">
-        <div id="CreateRoomPrivateCheckbox" class="checkboxOff"></div>
-        <div id="CreateRoomPassword" class="hide">
-        <input type="text" id="createRoomPasswordInput" value="" maxlength="10">
-        </div>
-        <div id="CreateRoomNumPlayersPrev" class="room_list-optionleft"></div>
-        <div id="CreateRoomNumPlayersNext" class="room_list-optionright"></div>
-        <div id="CreateRoomPlayers" class="blackShadow2"></div>
-        <div id="CreateRoomModePrev" class="room_list-optionleft"></div>
-        <div id="CreateRoomModeNext" class="room_list-optionright"></div>
-        <div id="CreateRoomMode" class="blackShadow2"></div>
-        <div id="CreateRoomModeIcon" class="iconMode1"></div>
-        <div id="dialogCreateRoomButtonCancel" class="button_Cancel"></div>
-        <div id="dialogCreateRoomButtonOK" class="button_OK"></div>
-        <div id="dialogCreateMessage"></div>
-    </div>-->
-    <div id="dialog_join_room_div">
-        <div class="changeNumber">
-                <label for="join_room_input" id="join_room1"></label>
-                <input type="text" value="" id="join_room_input" maxlength="10" class="input_Number" />
-                <label for="join_password_input" id="join_room2"></label>
-                <input type="text" value="" id="join_password_input" maxlength="10" class="input_Number" />
-        </div>
-        <div id="dialog_join_room_ok" class="New_ok"></div>
-        <div id="dialog_join_room_cancel" class="New_cancel"></div>
-    </div>
-    <div id="popup_title">
-        <div class="title_normal"></div>
-        <div class="title_rare"></div>
-        <div class="title_epic"></div>
-        <div class="title_legend"></div>
-        <div class="Title"></div>
-        <div class="NoSelect room__list-left" id="titleListUp">
-            <div class="Alt">↑</div>
-        </div>
-        <div class="NoSelect room__list-right" id="titleListDown">
-            <div class="Alt">↓</div>
-        </div>
-        <div class="popup_close"></div>
-    </div>
-    <div id="popup_color_chat">
-        <div class="b_col_1"></div>
-        <div class="b_col_2"></div>
-        <div class="b_col_3"></div>
-        <div class="b_col_4"></div>
-        <div class="b_col_5"></div>
-        <div class="b_col_6"></div>
-        <div class="b_col_7"></div>
-        <div class="b_col_8"></div>
-        <div class="b_col_9"></div>
-        <div class="b_col_10"></div>
-        <div class="b_col_11"></div>
-        <div class="b_col_12"></div>
-        <div class="b_col_13"></div>
-        <div class="b_col_14"></div>
-        <div class="b_col_15"></div>
-        <div class="b_col_16"></div>
-        <div class="b_col_9_off"></div>
-        <div class="b_col_12_off"></div>
-        <div class="b_col_15_off"></div>
-        <div class="b_col_16_off"></div>
-        <div class="b_popup_ok"></div>
-        <div class="b_popup_cancel"></div>
-    </div>
-    <div id="dialog_change_name_div">
-        <div class="popup_userinfo">
-            <!--<div id="changeNameDiv">
-                <input type="text" value="" id="display_name" maxlength="15" disabled />
-            </div>-->
-            <div class="tab_user_info" id="tab_user_information"></div>
-            <div class="tab_user_rank" id="tab_user_ranking"></div>
-            <div class="tab-information-background">
-                <div class="tab-info-table-a">
-                </div>
-                <div class="tab-info-table-b">
-                </div>
-            </div>
-            <div class="room__list-user_info">
-                <span id="userinfo"></span>
-            </div>
-            <div class="popup_userinfo_chat">
-                <span id="userinfo_chat"></span>
-            </div>
-            <div class="room__list-buddy-add buddy_add">
-                <div id="buddy_add"></div>
-            </div>
-            <div class="popup_userinfo_exit">
-                <div id="dialog_change_name_cancel"></div>
-            </div>
-        </div>
-    </div>
-    <div id="OptionsDialog" class="ui-widget-content NoSelect">
-        <!--<div class="OptionsDialogTitle"></div>-->
-        <div id="OptionsText1" class="OptionTitle1">Shooting Mode</div>
-        <div id="OptionsDrag">
-            <div id="OptionsText2" class="OptionTitle2">Drag</div>
-            <div id="OptionsShootingModeDrag" class="RadioOff"></div>
-            <!--<div id="OptionsText4" class="OptionTitle2 blackShadow opacity_button">(Mouse Click & Drag)</div>-->
-        </div>
-        <div id="OptionsSlice">
-            <div id="OptionsText3" class="OptionTitle2">Slice</div>
-            <div id="OptionsShootingModeSlice" class="RadioOn"></div>
-            <!--<<div id="OptionsText5" class="OptionTitle2 blackShadow opacity_button">(Space Key)</div>-->
-        </div>
-        <span id="OptionsText7" class="GOption2 OptionTitle1">Music</span>
-            <div id="slidersection2" class="slidecontainer">
-                <span class="tooltip"></span>
-                <input type="range" min="0" max="100" value="50" class="slider">
-                <span class="volume opacity_button"></span>
-            </div>
-            <!--<span id="OptionsText6" class="GOption2 OptionTitle1 blackShadow">Sounds</span>-->
-            <div id="slidersection1" class="slidecontainer">
-                <span class="tooltip"></span>
-                <input type="range" min="0" max="100" value="50" class="slider">
-                <span class="volume opacity_button"></span>
-            </div>
-        <!--<div id="OptionsBG">
-            <div id="OptionsLineTheme">
-                <span id="OptionsText9" class="GOption2 OptionTitle1 blackShadow">Theme</span>
-                <select id="theme_select">
-                    <option value="auto" class="CurAutoTheme">Auto (Default)</option>
-                    <option value="classicHD" class="MainTheme">Classic (HD)</option>
-                    <option value="dragonbound">DragonBound</option>
-                    <option value="halloween2015">Halloween 2015</option>
-                    <option value="halloween2016">Halloween 2016</option>
-                    <option value="halloween2017">Halloween 2017</option>
-                    <option value="halloween2018">Halloween 2018</option>
-                    <option value="halloween2019">Halloween 2019</option>
-                    <option value="halloween2020">Halloween 2020</option>
-                    <option value="halloween2021">Halloween 2021</option>
-                    <option value="xmas2012">XMAS 2012</option>
-                    <option value="xmas2013">XMAS 2013</option>
-                    <option value="xmas2014">XMAS 2014</option>
-                    <option value="xmas2015">XMAS 2015</option>
-                    <option value="xmas2016">XMAS 2016</option>
-                    <option value="xmas2017">XMAS 2017</option>
-                    <option value="xmas2018">XMAS 2018</option>
-                    <option value="xmas2019">XMAS 2019</option>
-                    <option value="xmas2020">XMAS 2020</option>
-                    <option value="xmas2021">XMAS 2021</option>
-                    <option value="val2016">Valentines 2016</option>
-                    <option value="val2017">Valentines 2017</option>
-                    <option value="val2018">Valentines 2018</option>
-                    <option value="val2019">Valentines 2019</option>
-                    <option value="val2020">Valentines 2020</option>
-                    <option value="val2021">Valentines 2021</option>
-                    <option value="val2022" class="CurAutoTheme">Valentines 2022</option>
-                    <option value="birthday2017">Anniversary 2017</option>
-                    <option value="birthday2019">Anniversary 2019</option>
-                    <option value="birthday2020">Anniversary 2020</option>
-                    <option value="birthday2021">Anniversary 2021</option>
-                    <option value="april2016">April Fools Day</option>
-                    <option value="easter2018">Easter 2018</option>
-                    <option value="easter2019">Easter 2019</option>
-                    <option value="easter2020">Easter 2020</option>
-                    <option value="easter2021">Easter 2021</option>
-                    <option value="mundial2018">Mundial 2018</option>
-                    <option value="custom">Custom</option>
-                </select>
-                <button id="OptionsTheme">Custom</button>
-            </div>
-            <span id="OptionsText10" class="GOption2 OptionTitle1 blackShadow">Graphics</span>
-            <span class="GOption"><label><input type="checkbox" id="OptionBackground"><span
-                        class="blackShadow OptionText" id="OptionBackgroundText">Background</span></label></span>
-            <br>
-            <span class="GOption"><label for="OptionRenderer" id="OptionRendererLabel"><span
-                        class="blackShadow OptionText" id="OptionRendererText">Renderer</span></label>
-                <select id="OptionRenderer">
-                    <option value="2">WebGL</option>
-                    <option value="1">Canvas</option>
-                    <option value="0">CSS</option>
-                </select>
-            </span>
-        </div>
-        <span id="OptionsText8" class="GOption2 OptionTitle1 blackShadow">Language</span>
-        <div class="opacity_button RadioOn" id="OptionsLangEN"></div>
-        <div id="OptionsTextEN" class="opacity_button OptionTitle1 blackShadow">English</div>
-        <div class="opacity_button RadioOff" id="OptionsLangES"></div>
-        <div id="OptionsTextES" class="opacity_button OptionTitle1 blackShadow">Español</div>-->
-        <div class="New_ok" id="OptionsOK">
-            <div class="Alt">Enter</div>
-        </div>
-        <div class="opacity_button" id="OptionsLeave">
-            <div class="Alt">Q</div>
-        </div>
-    </div>
-    <div id="itemsSelection" class="NoSelect ItemSelect_back">
-        <div class="tab_Item1"></div>
-        <div class="tab_Item2"></div>
-        <div class="ReadyMode_slot_up"></div>
-        <div class="ReadyMode_slot_down"></div>
-        <div id="itemSlot0" class="ItemBtn itemDual"></div>
-        <div id="itemSlot1"></div>
-        <div id="itemSlot2" class="ItemBtn itemDualP"></div>
-        <div id="itemSlot3"></div>
-        <div id="itemSlot4" class="ItemBtn itemTeleport"></div>
-        <div id="itemSlot5"></div>
-        <div id="itemDual" class="ItemBtn itemDual"></div>
-        <div id="itemDualP" class="ItemBtn itemDualP"></div>
-        <div id="itemTeleport" class="ItemBtn itemTeleport"></div>
-        <div id="item001" class="ItemBtn item001"></div>
-        <div id="item002" class="ItemBtn item002"></div>
-        <div id="item003" class="ItemBtn item003"></div>
-        <div id="item004" class="ItemBtn item004"></div>
-        <div id="item005" class="ItemBtn item005"></div>
-        <div id="item008" class="ItemBtn item008"></div>
-        <div id="item009" class="ItemBtn item009"></div>
-        <div class="New_ok" id="itemOk"></div>
-        <!--<div id="itemsSelectText" class="blackShadow"></div>-->
-    </div>
-    <div id="dialog_room_options" class="hide ready_option NoSelect">
-        <div id="RoomOptionsModePrev" class="NoSelect room_list-optionleft"></div>
-        <div id="RoomOptionsMode" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsModeNext" class="NoSelect room_list-optionright"></div>
-        <div id="RoomOptionsNumPlayersPrev" class="NoSelect room_list-optionleft"></div>
-        <div id="RoomOptionsPlayers" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsNumPlayersNext" class="NoSelect room_list-optionright"></div>
-        <!--<div id="RoomOptionsModeIcon" class="NoSelect iconMode1"></div>
-        <div id="RoomOptionsModeLocked" class="NoSelect imgLock"></div>-->
-        <div id="RoomOptionsMapPrev" class="NoSelect room_list-optionleft"></div>
-        <div id="RoomOptionsMapName" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsMapNext" class="NoSelect room_list-optionright"></div>
-        <div id="RoomOptionsMapImage" class="NoSelect"></div>
-        <div id="RoomOptionsMapLock" class="NoSelect">
-            <!--<div id="RoomOptionsMapLockBtn" class="NoSelect blueBtn">Get More Maps</div>-->
-            <div id="RoomOptionsMapLockImg" class="NoSelect imgLock"></div>
-        </div>
-        <!--<div id="RoomOptionsAvatars" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsAvatarsPrev" class="NoSelect room_list-optionleft"></div>
-        <div id="RoomOptionsAvatarsNext" class="NoSelect room_list-optionright"></div>
-        <div id="RoomOptionsAvatarsGP" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsWind" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsWindPrev" class="NoSelect room_list-optionleft"></div>
-        <div id="RoomOptionsWindNext" class="NoSelect room_list-optionright"></div>
-        <div id="RoomOptionsWindGP" class="NoSelect blackShadow"></div>
-        <div id="RoomOptionsRandomTeams" class="NoSelect grayscale blackShadow glow_button">[ ] Random Teams
-        </div>
-        <div id="RoomOptionsRandomTeamsRank" class="NoSelect rank rank7"></div>
-        <div id="RoomOptionsRandomTeamsLock" class="NoSelect imgLock"></div>
-        <div id="RoomOptionsTele" class="NoSelect ItemBtn itemTeleport glow_button"></div>
-        <div id="RoomOptionsTeleRank" class="NoSelect rank rank11"></div>
-        <div id="RoomOptionsTeleLock" class="NoSelect imgLock"></div>
-        <div id="RoomOptionsS1" class="NoSelect imgS1 glow_button"></div>
-        <div id="RoomOptionsS1Rank" class="NoSelect rank rank9"></div>
-        <div id="RoomOptionsS1Lock" class="NoSelect imgLock"></div>
-        <div id="RoomOptionsDualP" class="NoSelect ItemBtn itemDualP glow_button"></div>
-        <div id="RoomOptionsDualPRank" class="NoSelect rank rank10"></div>
-        <div id="RoomOptionsDualPLock" class="NoSelect imgLock"></div>
-        <div id="RoomOptionsTurnTime" class="NoSelect blueBtn"></div>
-        <div id="RoomOptionsTurnTimeRank" class="NoSelect rank rank15"></div>
-        <div id="RoomOptionsTurnTimeLock" class="NoSelect imgLock"></div>
-        <a id="PlayCustomMap" href="/static/images/custom_maps.png" target=_blank class="blueBtn">Play Custom
-            Map</a>
-        <a id="GetCustomMaps" href="http://dragonbound-forums.com/forumdisplay.php?fid=62" target="_blank"
-            class="blueBtn" rel="noopener">Get Custom Maps</a>-->
-        <div id="RoomOptionsCancel" class="NoSelect New_cancel"></div>
-        <div id="RoomOptionsOK" class="NoSelect New_ok"></div>
-    </div>
-    <div id="dialog__event-nyxcafe"></div>
     <div id="freecashWindow" class="DragonWindow blackShadow">
         <div class="DragonWindowTitleBar NoSelect"><span class="DragonWindowTitle">Daily Free Cash</span>
             <div class="DragonWindowClose opacity_button"></div>
@@ -695,6 +435,178 @@
                 <div id="dialogCreateRoomButtonOK" class="button_OK"></div>
                 <div id="dialogCreateMessage"></div>
             </div>
+            <div id="dialog_join_room_div">
+                <div class="changeNumber">
+                        <label for="join_room_input" id="join_room1"></label>
+                        <input type="text" value="" id="join_room_input" maxlength="10" class="input_Number" />
+                        <label for="join_password_input" id="join_room2"></label>
+                        <input type="text" value="" id="join_password_input" maxlength="10" class="input_Number" />
+                </div>
+                <div id="dialog_join_room_ok" class="New_ok"></div>
+                <div id="dialog_join_room_cancel" class="New_cancel"></div>
+            </div>
+            <div id="popup_color_chat">
+                <div class="b_col_1"></div>
+                <div class="b_col_2"></div>
+                <div class="b_col_3"></div>
+                <div class="b_col_4"></div>
+                <div class="b_col_5"></div>
+                <div class="b_col_6"></div>
+                <div class="b_col_7"></div>
+                <div class="b_col_8"></div>
+                <div class="b_col_9"></div>
+                <div class="b_col_10"></div>
+                <div class="b_col_11"></div>
+                <div class="b_col_12"></div>
+                <div class="b_col_13"></div>
+                <div class="b_col_14"></div>
+                <div class="b_col_15"></div>
+                <div class="b_col_16"></div>
+                <div class="b_col_9_off"></div>
+                <div class="b_col_12_off"></div>
+                <div class="b_col_15_off"></div>
+                <div class="b_col_16_off"></div>
+                <div class="b_popup_ok"></div>
+                <div class="b_popup_cancel"></div>
+            </div>
+            <div id="dialog_change_name_div">
+                <div class="popup_userinfo">
+                    <!--<div id="changeNameDiv">
+                        <input type="text" value="" id="display_name" maxlength="15" disabled />
+                    </div>-->
+                    <div class="tab_user_info" id="tab_user_information"></div>
+                    <div class="tab_user_rank" id="tab_user_ranking"></div>
+                    <div class="tab-information-background">
+                        <div class="tab-info-table-a">
+                        </div>
+                        <div class="tab-info-table-b">
+                        </div>
+                    </div>
+                    <div class="room__list-user_info">
+                        <span id="userinfo"></span>
+                    </div>
+                    <div class="popup_userinfo_chat">
+                        <span id="userinfo_chat"></span>
+                    </div>
+                    <div class="room__list-buddy-add buddy_add">
+                        <div id="buddy_add"></div>
+                    </div>
+                    <div class="popup_userinfo_exit">
+                        <div id="dialog_change_name_cancel"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dialog__event-nyxcafe"></div>
+            <div id="popup_title">
+                <div class="title_normal"></div>
+                <div class="title_rare"></div>
+                <div class="title_epic"></div>
+                <div class="title_legend"></div>
+                <div class="Title"></div>
+                <div class="NoSelect room__list-left" id="titleListUp">
+                    <div class="Alt">↑</div>
+                </div>
+                <div class="NoSelect room__list-right" id="titleListDown">
+                    <div class="Alt">↓</div>
+                </div>
+                <div class="popup_close"></div>
+            </div>
+            <div id="OptionsDialog" class="ui-widget-content NoSelect">
+                <!--<div class="OptionsDialogTitle"></div>-->
+                <div id="OptionsText1" class="OptionTitle1">Shooting Mode</div>
+                <div id="OptionsDrag">
+                    <div id="OptionsText2" class="OptionTitle2">Drag</div>
+                    <div id="OptionsShootingModeDrag" class="RadioOff"></div>
+                    <!--<div id="OptionsText4" class="OptionTitle2 blackShadow opacity_button">(Mouse Click & Drag)</div>-->
+                </div>
+                <div id="OptionsSlice">
+                    <div id="OptionsText3" class="OptionTitle2">Slice</div>
+                    <div id="OptionsShootingModeSlice" class="RadioOn"></div>
+                    <!--<<div id="OptionsText5" class="OptionTitle2 blackShadow opacity_button">(Space Key)</div>-->
+                </div>
+                <span id="OptionsText7" class="GOption2 OptionTitle1">Music</span>
+                    <div id="slidersection2" class="slidecontainer">
+                        <span class="tooltip"></span>
+                        <input type="range" min="0" max="100" value="50" class="slider">
+                        <span class="volume opacity_button"></span>
+                    </div>
+                    <!--<span id="OptionsText6" class="GOption2 OptionTitle1 blackShadow">Sounds</span>-->
+                    <div id="slidersection1" class="slidecontainer">
+                        <span class="tooltip"></span>
+                        <input type="range" min="0" max="100" value="50" class="slider">
+                        <span class="volume opacity_button"></span>
+                    </div>
+                <!--<div id="OptionsBG">
+                    <div id="OptionsLineTheme">
+                        <span id="OptionsText9" class="GOption2 OptionTitle1 blackShadow">Theme</span>
+                        <select id="theme_select">
+                            <option value="auto" class="CurAutoTheme">Auto (Default)</option>
+                            <option value="classicHD" class="MainTheme">Classic (HD)</option>
+                            <option value="dragonbound">DragonBound</option>
+                            <option value="halloween2015">Halloween 2015</option>
+                            <option value="halloween2016">Halloween 2016</option>
+                            <option value="halloween2017">Halloween 2017</option>
+                            <option value="halloween2018">Halloween 2018</option>
+                            <option value="halloween2019">Halloween 2019</option>
+                            <option value="halloween2020">Halloween 2020</option>
+                            <option value="halloween2021">Halloween 2021</option>
+                            <option value="xmas2012">XMAS 2012</option>
+                            <option value="xmas2013">XMAS 2013</option>
+                            <option value="xmas2014">XMAS 2014</option>
+                            <option value="xmas2015">XMAS 2015</option>
+                            <option value="xmas2016">XMAS 2016</option>
+                            <option value="xmas2017">XMAS 2017</option>
+                            <option value="xmas2018">XMAS 2018</option>
+                            <option value="xmas2019">XMAS 2019</option>
+                            <option value="xmas2020">XMAS 2020</option>
+                            <option value="xmas2021">XMAS 2021</option>
+                            <option value="val2016">Valentines 2016</option>
+                            <option value="val2017">Valentines 2017</option>
+                            <option value="val2018">Valentines 2018</option>
+                            <option value="val2019">Valentines 2019</option>
+                            <option value="val2020">Valentines 2020</option>
+                            <option value="val2021">Valentines 2021</option>
+                            <option value="val2022" class="CurAutoTheme">Valentines 2022</option>
+                            <option value="birthday2017">Anniversary 2017</option>
+                            <option value="birthday2019">Anniversary 2019</option>
+                            <option value="birthday2020">Anniversary 2020</option>
+                            <option value="birthday2021">Anniversary 2021</option>
+                            <option value="april2016">April Fools Day</option>
+                            <option value="easter2018">Easter 2018</option>
+                            <option value="easter2019">Easter 2019</option>
+                            <option value="easter2020">Easter 2020</option>
+                            <option value="easter2021">Easter 2021</option>
+                            <option value="mundial2018">Mundial 2018</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                        <button id="OptionsTheme">Custom</button>
+                    </div>
+                    <span id="OptionsText10" class="GOption2 OptionTitle1 blackShadow">Graphics</span>
+                    <span class="GOption"><label><input type="checkbox" id="OptionBackground"><span
+                                class="blackShadow OptionText" id="OptionBackgroundText">Background</span></label></span>
+                    <br>
+                    <span class="GOption"><label for="OptionRenderer" id="OptionRendererLabel"><span
+                                class="blackShadow OptionText" id="OptionRendererText">Renderer</span></label>
+                        <select id="OptionRenderer">
+                            <option value="2">WebGL</option>
+                            <option value="1">Canvas</option>
+                            <option value="0">CSS</option>
+                        </select>
+                    </span>
+                </div>
+                <span id="OptionsText8" class="GOption2 OptionTitle1 blackShadow">Language</span>
+                <div class="opacity_button RadioOn" id="OptionsLangEN"></div>
+                <div id="OptionsTextEN" class="opacity_button OptionTitle1 blackShadow">English</div>
+                <div class="opacity_button RadioOff" id="OptionsLangES"></div>
+                <div id="OptionsTextES" class="opacity_button OptionTitle1 blackShadow">Español</div>-->
+                <div class="New_ok" id="OptionsOK">
+                    <div class="Alt">Enter</div>
+                </div>
+                <div class="opacity_button" id="OptionsLeave">
+                    <div class="Alt">Q</div>
+                </div>
+            </div>
+
             <!--<div id="tournament_waiting" class="anim_ease"></div>-->
             <div class="NoSelect" id="roomlist_zone"></div>
             <div class="NoSelect room__list-Waiting TipN" id="filter_waiting">
@@ -992,6 +904,78 @@
             <div id="tournament_timer" class="blackShadow NoSelect"></div>-->
         </div>
         <div class="screen AnimEnterFadeIn4" id="roomScreen">
+            <div id="dialog_room_options" class="hide ready_option NoSelect">
+                <div id="RoomOptionsModePrev" class="NoSelect room_list-optionleft"></div>
+                <div id="RoomOptionsMode" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsModeNext" class="NoSelect room_list-optionright"></div>
+                <div id="RoomOptionsNumPlayersPrev" class="NoSelect room_list-optionleft"></div>
+                <div id="RoomOptionsPlayers" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsNumPlayersNext" class="NoSelect room_list-optionright"></div>
+                <!--<div id="RoomOptionsModeIcon" class="NoSelect iconMode1"></div>
+                <div id="RoomOptionsModeLocked" class="NoSelect imgLock"></div>-->
+                <div id="RoomOptionsMapPrev" class="NoSelect room_list-optionleft"></div>
+                <div id="RoomOptionsMapName" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsMapNext" class="NoSelect room_list-optionright"></div>
+                <div id="RoomOptionsMapImage" class="NoSelect"></div>
+                <div id="RoomOptionsMapLock" class="NoSelect">
+                    <!--<div id="RoomOptionsMapLockBtn" class="NoSelect blueBtn">Get More Maps</div>-->
+                    <div id="RoomOptionsMapLockImg" class="NoSelect imgLock"></div>
+                </div>
+                <!--<div id="RoomOptionsAvatars" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsAvatarsPrev" class="NoSelect room_list-optionleft"></div>
+                <div id="RoomOptionsAvatarsNext" class="NoSelect room_list-optionright"></div>
+                <div id="RoomOptionsAvatarsGP" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsWind" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsWindPrev" class="NoSelect room_list-optionleft"></div>
+                <div id="RoomOptionsWindNext" class="NoSelect room_list-optionright"></div>
+                <div id="RoomOptionsWindGP" class="NoSelect blackShadow"></div>
+                <div id="RoomOptionsRandomTeams" class="NoSelect grayscale blackShadow glow_button">[ ] Random Teams
+                </div>
+                <div id="RoomOptionsRandomTeamsRank" class="NoSelect rank rank7"></div>
+                <div id="RoomOptionsRandomTeamsLock" class="NoSelect imgLock"></div>
+                <div id="RoomOptionsTele" class="NoSelect ItemBtn itemTeleport glow_button"></div>
+                <div id="RoomOptionsTeleRank" class="NoSelect rank rank11"></div>
+                <div id="RoomOptionsTeleLock" class="NoSelect imgLock"></div>
+                <div id="RoomOptionsS1" class="NoSelect imgS1 glow_button"></div>
+                <div id="RoomOptionsS1Rank" class="NoSelect rank rank9"></div>
+                <div id="RoomOptionsS1Lock" class="NoSelect imgLock"></div>
+                <div id="RoomOptionsDualP" class="NoSelect ItemBtn itemDualP glow_button"></div>
+                <div id="RoomOptionsDualPRank" class="NoSelect rank rank10"></div>
+                <div id="RoomOptionsDualPLock" class="NoSelect imgLock"></div>
+                <div id="RoomOptionsTurnTime" class="NoSelect blueBtn"></div>
+                <div id="RoomOptionsTurnTimeRank" class="NoSelect rank rank15"></div>
+                <div id="RoomOptionsTurnTimeLock" class="NoSelect imgLock"></div>
+                <a id="PlayCustomMap" href="/static/images/custom_maps.png" target=_blank class="blueBtn">Play Custom
+                    Map</a>
+                <a id="GetCustomMaps" href="http://dragonbound-forums.com/forumdisplay.php?fid=62" target="_blank"
+                    class="blueBtn" rel="noopener">Get Custom Maps</a>-->
+                <div id="RoomOptionsCancel" class="NoSelect New_cancel"></div>
+                <div id="RoomOptionsOK" class="NoSelect New_ok"></div>
+            </div>
+            <div id="itemsSelection" class="NoSelect ItemSelect_back">
+                <div class="tab_Item1"></div>
+                <div class="tab_Item2"></div>
+                <div class="ReadyMode_slot_up"></div>
+                <div class="ReadyMode_slot_down"></div>
+                <div id="itemSlot0" class="ItemBtn itemDual"></div>
+                <div id="itemSlot1"></div>
+                <div id="itemSlot2" class="ItemBtn itemDualP"></div>
+                <div id="itemSlot3"></div>
+                <div id="itemSlot4" class="ItemBtn itemTeleport"></div>
+                <div id="itemSlot5"></div>
+                <div id="itemDual" class="ItemBtn itemDual"></div>
+                <div id="itemDualP" class="ItemBtn itemDualP"></div>
+                <div id="itemTeleport" class="ItemBtn itemTeleport"></div>
+                <div id="item001" class="ItemBtn item001"></div>
+                <div id="item002" class="ItemBtn item002"></div>
+                <div id="item003" class="ItemBtn item003"></div>
+                <div id="item004" class="ItemBtn item004"></div>
+                <div id="item005" class="ItemBtn item005"></div>
+                <div id="item008" class="ItemBtn item008"></div>
+                <div id="item009" class="ItemBtn item009"></div>
+                <div class="New_ok" id="itemOk"></div>
+                <!--<div id="itemsSelectText" class="blackShadow"></div>-->
+            </div>
             <div id="roomlist_zone_room"></div>
             <div id="room_zone_server_number"></div>
             <div id="roomNumber" class="blackShadow"></div>
@@ -1645,11 +1629,11 @@
                 <div class="NoSelect avatar__item-tab avatar__list-tab" id="btn-shop-avatar-g-item">Item</div>
             </div>
             <div class="group-buttons-shop" id="group-buttons-shop-avatar">
-                <div class="NoSelect avatar__item-tab avatar__list-tab" id="btn-shop-avatar-head">Cabeza</div>
-                <div class="NoSelect avatar__item-tab avatar__list-tab" id="btn-shop-avatar-body">Cuerpo</div>
-                <div class="NoSelect avatar__item-tab avatar__list-tab" id="btn-shop-avatar-glass">Lentes</div>
-                <div class="NoSelect avatar__item-tab avatar__list-tab" id="btn-shop-avatar-flag">Bandera</div>
-                <div class="NoSelect avatar__item-tab avatar__list-tab" id="btn-shop-avatar-background">Fondo</div>
+                <div class="NoSelectX avatar__item-tab avatar__list-tab" id="btn-shop-avatar-head">Cabeza</div>
+                <div class="NoSelectX avatar__item-tab avatar__list-tab" id="btn-shop-avatar-body">Cuerpo</div>
+                <div class="NoSelectX avatar__item-tab avatar__list-tab" id="btn-shop-avatar-glass">Lentes</div>
+                <div class="NoSelectX avatar__item-tab avatar__list-tab" id="btn-shop-avatar-flag">Bandera</div>
+                <div class="NoSelectX avatar__item-tab avatar__list-tab" id="btn-shop-avatar-background">Fondo</div>
                 
             </div>
             <div class="group-buttons-shop" id="group-buttons-shop-set">
@@ -1680,13 +1664,13 @@
             <div class="avatar__list-garbage" id="shop_delete_avatar"></div>
             <div class="NoSelect avatar__list-buy" id="buttonShopBuy"></div>
             <div class="group-buttons-shop-main">
-                <div class="NoSelect avatar__list-main avatar__list-specialItem" id="specialItem"></div>
-                <div class="NoSelect avatar__list-main avatar__list-GcoinItem" id="GcoinItem"></div>
-                <div class="NoSelect avatar__list-main avatar__list-avatar" id="avatar"></div>
-                <div class="NoSelect avatar__list-main avatar__list-setitem" id="setitem"></div>
-                <div class="NoSelect avatar__list-main avatar__list-exitem" id="buttonShopExItem"></div>
-                <div class="NoSelect avatar__list-main avatar__list-PetItem" id="PetItem"></div>
-                <div class="NoSelect avatar__list-main avatar__list-mobilecard" id="MobileCard"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-specialItem" id="specialItem"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-GcoinItem" id="GcoinItem"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-avatar" id="avatar"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-setitem" id="setitem"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-exitem" id="buttonShopExItem"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-PetItem" id="PetItem"></div>
+                <div class="NoSelectX avatar__list-main avatar__list-mobilecard" id="MobileCard"></div>
             </div>
             <div id="shop_my_items_stats" class="blackShadow"></div>
             <div class="NoSelect avatar__list-JewelEnchant" id="JewelEnchant"></div>
